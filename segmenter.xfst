@@ -45,4 +45,4 @@ read regex GrammarBM.i .o. Grammar ;
 
 save stack fst/cjs-segmenter.bin
 
-echo «Расчленитель» собран в fst/cjs-segmenter.bin
+echo «Расчленитель» собран в fst/cjs-segmenter-u.bin
