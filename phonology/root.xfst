@@ -1,0 +1,9 @@
+! Допустимая структура корня/основы для P{Nominal,Verbal}Stem
+! За неимением описания шорской взята хакасская : Б-238
+define PRoot [ (C) V (V) (C)
+	|      (C) V (V) C V (C)
+	|      (C) V (V) CSonorant C (V)
+	|      (C) V (V) CSonorant C  V (C)
+	] ;
+
+

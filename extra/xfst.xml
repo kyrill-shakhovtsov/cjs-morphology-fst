@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+
+<language name="XFST" version="0.02" kateversion="3.4" section="Scientific" extensions="*.xfst;*.lexc;*.foma" mimetype="text" casesensitive="1" license="GPL" author="Kyrill Shakhovtsov kyrill@iea.ras.ru">
+
+  <highlighting>
+
+    <list name="xfst_keywords">
+      <item> compose </item>
+      <item> define </item>
+      <item> echo </item>
+      <item> eliminate </item>
+      <item> ignore </item>
+      <item> intersect </item>
+      <item> invert </item>
+      <item> load </item>
+      <item> negate </item>
+      <item> quit </item>
+      <item> read </item>
+      <item> regex </item>
+      <item> rotate </item>
+      <item> save </item>
+      <item> source </item>
+      <item> substitute </item>
+      <item> turn </item>
+    </list>
+
+    <list name="xfst_operations">
+      <item> defined </item>
+      <item> for </item>
+      <item> lexc </item>
+      <item> flags </item>
+      <item> flag </item>
+      <item> net </item>
+      <item> stack </item>
+    </list>
+
+    <list name="lexc_keywords">
+      <item> LEXICON </item>
+      <item> Multichar_Symbols </item>
+    </list>
+
+    <contexts>
+
+      <context name="Normal" attribute="Normal Text" lineEndContext="#stay">
+
+        <!-- Handling of keywords, functions, identifiers, numbers and braces -->
+        <keyword context="#stay" attribute="XFST Keyword" String="xfst_keywords" />
+        <keyword context="#stay" attribute="XFST Operation" String="xfst_operations" />
+        <keyword context="#stay" attribute="LEXC Keyword" String="lexc_keywords"/>
+	<RegExpr context="#stay" attribute="Flag Diacritic" String="@[CDNPRU]\.\w+(\.\w+)?@" />
+        <RegExpr context="#stay" attribute="Number" String="\b([1-9]\d*)\b" />
+        <AnyChar context="#stay" attribute="Delimiter" String="(){}[]"/>
+
+        <!-- operators -->
+        <StringDetect context="#stay" attribute="Operator" String="+"/>
+        <StringDetect context="#stay" attribute="Operator" String="-"/>
+        <StringDetect context="#stay" attribute="Operator" String="*"/>
+        <StringDetect context="#stay" attribute="Operator" String="//"/>
+        <StringDetect context="#stay" attribute="Operator" String="||"/>
+	<StringDetect context="#stay" attribute="Operator" String="\\"/>
+	<StringDetect context="#stay" attribute="Operator" String="\/"/>
+        <StringDetect context="#stay" attribute="Operator" String="^"/>
+	<StringDetect context="#stay" attribute="Operator" String="&amp;"/>
+        <StringDetect context="#stay" attribute="Operator" String=","/>
+        <StringDetect context="#stay" attribute="Operator" String=":"/>
+        <StringDetect context="#stay" attribute="Operator" String="&lt;"/>
+        <StringDetect context="#stay" attribute="Operator" String="&gt;"/>
+        <StringDetect context="#stay" attribute="Operator" String="-&gt;"/>
+        <StringDetect context="#stay" attribute="Operator" String="@-&gt;"/>
+        <StringDetect context="#stay" attribute="Operator" String="=&gt;"/>
+	<StringDetect context="#stay" attribute="Operator" String=".o."/>
+	<StringDetect context="#stay" attribute="Operator" String=".O."/>
+	<StringDetect context="#stay" attribute="Operator" String=".x."/>
+	<StringDetect context="#stay" attribute="Operator" String=".p."/>
+	<StringDetect context="#stay" attribute="Operator" String=".P."/>
+	<StringDetect context="#stay" attribute="Operator" String="$"/>
+	<StringDetect context="#stay" attribute="Operator" String="~"/>
+	<StringDetect context="#stay" attribute="Operator" String="_"/>
+	<StringDetect context="#stay" attribute="Operator" String=";"/>
+
+	<DetectChar attribute="String" context="String" char="&quot;"/>
+	<DetectChar attribute="Comment" context="Comment" char="!"/>
+
+	<StringDetect context="#stay" attribute="Word Boundary" String=".#."/>
+	<DetectChar context="#stay" attribute="Epsilon" char="0"/>
+	<DetectChar context="#stay" attribute="Literal" char="%"/>
+
+<!-- 	<RegExpr context="#stay" attribute="Variable" String="(?:define\s)\w+" /> -->
+</context>
+	<context attribute="Comment" lineEndContext="#pop" name="Comment" />
+	<context attribute="String" lineEndContext="#pop" name="String">
+		<LineContinue attribute="String" context="#stay"/>
+		<DetectChar attribute="String" context="#pop" char="&quot;"/>
+	</context>
+    </contexts>
+
+    <itemDatas>
+      <itemData name="Normal Text" defStyleNum="dsNormal"/>
+      <itemData name="Operator" defStyleNum="dsNormal" color="#005500"/>
+      <itemData name="Number" defStyleNum="dsFloat" color="#2b74c7"/>
+      <itemData name="Delimiter" defStyleNum="dsNormal" bold="1"/>
+      <itemData name="String" defStyleNum="dsString" color="#0000b2"/>
+      <itemData name="XFST Keyword"  defStyleNum="dsKeyword" color="#880000" bold="1"/>
+      <itemData name="XFST Operation" defStyleNum="dsNormal" color="#AC0008" selColor="#00ff00"/>
+      <itemData name="LEXC Keyword" defStyleNum="dsKeyword" color="#b28c00"  bold="1"/>
+      <itemData name="Flag Diacritic" defStyleNum="dsDataType" color="#005522"/>
+      <itemData name="Word Boundary" defStyleNum="dsNormal" color="#880022"/>
+      <itemData name="Epsilon" defStyleNum="dsNormal" color="#000088"/>
+      <itemData name="Literal" defStyleNum="dsNormal" color="#aa0000"/>
+      <itemData name="Comment" defStyleNum="dsComment" color="#550099"/>
+<!--       <itemData name="Variable" defStyleNum="dsNormal" color="#00AC08" /> -->
+    </itemDatas>
+
+  </highlighting>
+
+  <general>
+    <comments>
+      <comment name="singleLine" start="!" />
+    </comments>
+   <keywords casesensitive="1"/>
+  </general>
+
+</language>

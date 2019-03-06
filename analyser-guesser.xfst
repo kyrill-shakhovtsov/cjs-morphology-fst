@@ -1,0 +1,7 @@
+read regex @"fst/cjs-analyser.bin";
+
+read regex @"fst/cjs-guesser.bin";
+
+save stack fst/cjs-analyser-guesser.bin
+
+quit

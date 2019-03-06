@@ -1,0 +1,26 @@
+!!! Разбор формы -> разбор леммы
+
+define RmClitics [ "=ASS" | "=CLT" ] -> 0;
+
+! Местоимения
+define PronominalLemma ?+ @-> NOM // .#. "[" PRO "]" ?+ "-" _ ~NOM .#. ;
+
+! Существительные и прилагательные
+define NominalLemma ~$["[" A "]" | "[" ADV "]" | "[" N "]" | "[" V "]"] @-> "-" SG "-" NOM // ["[" N "]" | "[" PN "]" | "[" A "]"] _ .#. ;
+
+! Числительные
+define NumeralLemma [..] -> "-" NOM || "[" NUM "]" _ .#. ;
+
+! Глаголы включая причастия и конвербы
+define VerbalLemma ~$["[" A "]" | "[" ADV "]" | "[" N "]" | "[" V "]"] @-> "-IMP.2SG" // "[" V "]" _ .#. ;
+
+read regex RmClitics
+	.o. NumeralLemma
+	.o. NominalLemma
+	.o. PronominalLemma
+	.o. VerbalLemma ;
+
+invert net
+
+save stack fst/cjs-normaliser.bin
+echo «Нормализатор» сохранен в fst/cjs-normaliser.bin

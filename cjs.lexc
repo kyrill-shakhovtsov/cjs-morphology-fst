@@ -1,0 +1,2808 @@
+!!! cjs.lexc — Лексикон для шорского морфологического анализатора
+
+!!! © К.Г. Шаховцов, 2011—2019
+!!! Первый вариант разработан для проекта «Корпусы ИЭА РАН» (http://corpora.iea.ras.ru), 2011—2014.
+!!! Разработка продолжается в рамках проекта «Языковое и этнокультурное разнообразие Южной Сибири в синхронии и диахронии: взаимодействие языков и культур» (грант Правительства РФ П 220 №14.Y26.31.0014), 2017—2019.
+
+!!! Источники
+!!! 1. Дыренкова Н.П. Грамматика шорского языка. М.—Л., 1941. (Д)
+!!! 2. Чиспияков Э.Ф. Графика и орфография шорского языка. Кемерово, 1992. (ЧГ)
+!!! 3. Чиспияков Э.Ф. Учебник шорского языка.  Кемерово, 1992. (ЧУ)
+!!! 4. Курпешко-Таннагашева Н.Н., Апонькин Ф.Я. Шорско-русский и русско-шорский словарь. Кемерово, 1993.
+!!! 5. Шорско-русский словарь с сайта Shorica (http://shoriya.ngpi.rdtc.ru/)
+!!! 6. Ойротско-русский словарь / Сост. Н.А. Баскаков, Н.М. Тощакова. М., 1947. (Б)
+!!! 7. Шенцова И.В. Акциональные формы глагола в шорском языке. Кемерово, 1997. (Ш)
+!!! 8. Озонова А.А. Система деепричастных форм алтайского языка // Сибирский филологический журнал, 2017, №4. С. 238—252. (Оз)
+
+!
+Multichar_Symbols [N] [PN] [PRO] [PSTP] [A] [NUM] [ADV] [V] [VNEG] [CVB] [PTCP] [PART] [INTJ]
+	-1SG -1PL -2SG -2PL -3SG -3PL
+	.1SG .1PL .2SG .2PL .3SG .3PL .1DU
+	-SG -PL
+	-NOM -ACC -DAT -GEN -ELA -LOC -INST -PROL -EQT -TERM -DIR
+	-POSS -PRED
+	-DIM -DIM1 -DIM2 -DIM3  -ATTR -ATTR1 -ATTR2 -ATTR3
+	-VR1 -VR2 -VR3 -VR4 -VR5 -VR6 -VR7 -VR8 -VR9 -AG -CMPR -ATTN -ATTN1 -ATTN2 -ATTN3
+	-NR1 -NR2 -NR3 -NR4 -NR5 -NR6 -NR7 -NR8 -NR9 -NR10 -NR11 -NR12 -NR13 -NR14
+	-ADJR1 -ADJR2 -ADJR3 -ADJR4 -ADJR5 -ADJR6 -ADJR7 -ADJR8
+	-ADVR
+	-INT .AN .INAN .CARD .ORD .MAN -PERS .ABS -DEM .PROX .MIDP .DIST -REFL
+	-PASS -RECIP -CAUS1 -CAUS2 -CAUS3 -CAUS4 -CAUS5 -IMP .POL
+	-NEG
+	-RPST -PRS -PST -PST -FUT
+	-HAB -ITER .ITER -ASSUM -CUNC -IMPF -ADM -INEXP -EVID .EVID -COND
+	-SUPN -ANT -SIM -CON -LMF
+	=EMP1 =EMP2 =CLT
+	PNominalStem :Guess ! [NGuess] [AGuess]
+	PVerbalStem ! [VGuess]
+	@P.NEG.baan@ @P.NEG.bas@ @P.NEG.ba@
+	@R.NEG.baan@ @R.NEG.bas@ @R.NEG.ba@
+	@U.NEG.baan@ @U.NEG.bas@ @U.NEG.ba@
+	@D.NEG@
+	@R.NEG@
+	@P.POS.pro@
+	@D.POS.pro@
+LEXICON Root
+	Noun;
+	ProperNoun;
+	Pronoun;
+	Postposition;
+	Adjective;
+	Numeral;
+	Verb;
+	Verb_AUX;
+	Verb_NEG;
+	Adverb;
+	Particle;
+	Iterjection;
+!!! Существительные
+LEXICON Noun
+	аал		Tag_N;
+	аалдаш		Tag_N;
+	аалчы		Tag_N;
+	аары		Tag_N;
+	аас		Tag_N;
+	аба		Tag_N;
+	абақай		Tag_N;
+	абаққай		Tag_N;
+	абалатқы	Tag_N;
+	абанат		Tag_N;
+	абдыра		Tag_N;
+	абий		Tag_N;
+	абиче		Tag_N;
+	абра		Tag_N;
+	абызын		Tag_N;
+	абыл		Tag_N;
+	абыр		Tag_N;
+	абыра		Tag_N;
+	абыртқа		Tag_N;
+	абыс		Tag_N;
+	абытқыш		Tag_N;
+	аг		Tag_N;
+	агӱрсӱм		Tag_N;
+	ағ		Tag_N;
+	ағалы		Tag_N;
+	ағаш		Tag_N;
+	ағрыг		Tag_N;
+	ағы		Tag_N;
+	ағый		Tag_N;
+	ағыл		Tag_N;
+	ағыспа		Tag_N;
+	ада		Tag_N;
+	адай		Tag_N;
+	адалыш		Tag_N;
+	адаш		Tag_N;
+	ада-эне		Tag_N;
+	адыг		Tag_N;
+	адығчы		Tag_N;
+	адылға		Tag_N;
+	адыш		Tag_N;
+	ады-шола	Tag_N;
+	ажыг		Tag_N;
+	ажырба		Tag_N;
+	азай		Tag_N;
+	азайлы		Tag_N;
+	азайлыг		Tag_N;
+	азақ		Tag_N;
+	азыг		Tag_N;
+	азық		Tag_N;
+	азырбаш		Tag_N;
+	ай		Tag_N;
+	айа		Tag_N;
+	айақ		Tag_N;
+	айға-кӱнге	Tag_N;
+	айғыр		Tag_N;
+	ай-кӱн		Tag_N;
+	аймақ		Tag_N;
+	айна		Tag_N;
+	айры		Tag_N;
+	ақ		Tag_N;
+	аққа		Tag_N;
+	ақ-сарат	Tag_N;
+	ақсы		Tag_N;
+	ақ-тек		Tag_N;
+	ақча		Tag_N;
+	алақан		Tag_N;
+	алаққан		Tag_N;
+	алатас		Tag_N;
+	алба		Tag_N;
+	албаа		Tag_N;
+	албан		Tag_N;
+	албанчы		Tag_N;
+	албуға		Tag_N;
+	албырт		Tag_N;
+	алғаны		Tag_N;
+	алғый		Tag_N;
+	алғыш		Tag_N;
+	алма		Tag_N;
+	алтам		Tag_N;
+	алты		Tag_N;
+	алтын		Tag_N;
+	алым		Tag_N;
+	алып		Tag_N;
+	алыш		Tag_N;
+	ам		Tag_N;
+	аманат		Tag_N;
+	амолай		Tag_N;
+	амыр		Tag_N;
+	анмар		Tag_N;
+	аныг		Tag_N;
+	аң		Tag_N;
+	аң-қуш		Tag_N;
+	аңнаачы		Tag_N;
+	аңчы		Tag_N;
+	апостол		Tag_N;
+	апсақ		Tag_N;
+	апче		Tag_N;
+	апшақ		Tag_N;
+	апшый		Tag_N;
+	ара		Tag_N;
+	араға		Tag_N;
+	арал		Tag_N;
+	арба		Tag_N;
+	арға		Tag_N;
+	арғалаачы	Tag_N; ! Deriv ???
+	арғамчы		Tag_N; ! Deriv ???
+	арғас		Tag_N; ! Deriv ???
+	арғулус		Tag_N; ! ???
+	арғыш		Tag_N;
+	арчы		Tag_N;
+	арыг		Tag_N;
+	арық		Tag_N;
+	арыш		Tag_N;
+	ас		Tag_N;
+	асқабычақ	Tag_N; ! Deriv ???
+	асқай		Tag_N;
+	асқыр		Tag_N;
+	аспақ		Tag_N;
+	ат		Tag_N;
+	атқақ		Tag_N;
+	ача		Tag_N;
+	ачаачы		Tag_N;
+	ачыг		Tag_N;
+	ачығ		Tag_N;
+	ачық		Tag_N;
+	ачытқа		Tag_N;
+	аш		Tag_N;
+	ашқым		Tag_N;
+	аш-табақ	Tag_N;
+	аштаг		Tag_N;
+	аштағ		Tag_N;
+	ижениш		Tag_N;
+	изеңе		Tag_N;
+	изеп		Tag_N;
+	изиг		Tag_N;
+	изий		Tag_N;
+	иир		Tag_N;
+	илбик		Tag_N;
+	илчербе		Tag_N;
+	илчирбе		Tag_N;
+	ин		Tag_N;
+	инге		Tag_N;
+	инек		Tag_N;
+	инчек		Tag_N;
+	ирий		Tag_N;
+	ирик		Tag_N;
+	ириң		Tag_N;
+	испешке		Tag_N;
+	ит		Tag_N;
+	ича		Tag_N;
+	иче		Tag_N;
+	ичеге		Tag_N;
+	иш		Tag_N;
+	ишти		Tag_N;
+	карман		Tag_N;
+	картоке		Tag_N;
+	картопке	Tag_N;
+	катинке		Tag_N;
+	кебе		Tag_N;
+	кебеге		Tag_N;
+	кебее		Tag_N;
+	кебер		Tag_N;
+	кеден		Tag_N;
+	кеерген		Tag_N;
+	кежиг		Tag_N;
+	кезек		Tag_N;
+	кезечи		Tag_N;
+	кезиг		Tag_N;
+	кей		Tag_N;
+	кекс		Tag_N;
+	келегей		Tag_N;
+	келин		Tag_N;
+	кемис		Tag_N;
+	кемчиленгени	Tag_N; !
+	кендир		Tag_N;
+	кенем		Tag_N;
+	кеп		Tag_N;
+	керген		Tag_N;
+	кере		Tag_N;
+	керее		Tag_N;
+	кереечи		Tag_N;
+	керек		Tag_N;
+	кереп		Tag_N;
+	керечи		Tag_N;
+	кертик		Tag_N;
+	кестик		Tag_N;
+	кешкит		Tag_N;
+	кижен		Tag_N;
+	кижи		Tag_N;
+	киик		Tag_N;
+	киис		Tag_N;
+	кийик		Tag_N;
+	кин-оды		Tag_N;
+	кирлес		Tag_N;
+	киченгени	Tag_N; !
+	кичиг		Tag_N;
+	кӧбӱк		Tag_N;
+	кӧбӱр		Tag_N;
+	кӧг		Tag_N;
+	кӧгенек		Tag_N;
+	кӧгрек		Tag_N;
+	кӧгӱс		Tag_N;
+	кӧден		Tag_N;
+	кӧдеш		Tag_N;
+	кӧдре		Tag_N;
+	кӧдречек	Tag_N;
+	кӧдре-честеги	Tag_N; !
+	кӧдӱрбе		Tag_N;
+	кӧдӱрге		Tag_N;
+	кӧдӱре		Tag_N;
+	кӧдӱриг		Tag_N;
+	кӧдӱриғ		Tag_N;
+	кӧже		Tag_N;
+	кӧжеге		Tag_N;
+	кӧзедиг		Tag_N;
+	кӧзеш		Tag_N;
+	кӧзӱгӱш		Tag_N;
+	кӧзӱнек		Tag_N;
+	кӧк		Tag_N;
+	кӧкс		Tag_N;
+	кӧксӱ		Tag_N;
+	кӧл		Tag_N;
+	кӧлбе		Tag_N;
+	кӧлек		Tag_N;
+	кӧлетки		Tag_N;
+	кӧнек		Tag_N;
+	кӧнӱ		Tag_N;
+	кӧңме		Tag_N;
+	кӧңни		Tag_N;
+	кӧңнӱ		Tag_N;
+	кӧӧк		Tag_N;
+	кӧӧлчек		Tag_N;
+	кӧӧнӱ		Tag_N;
+	кӧп		Tag_N; ! ???
+	кӧрее		Tag_N;
+	кӧреечи		Tag_N;
+	кӧречи		Tag_N;
+	кӧрим		Tag_N;
+	кӧрӱк		Tag_N;
+	кӧрӱм		Tag_N;
+	кӧрӱп		Tag_N;
+	кӧс		Tag_N;
+	кӧспек		Tag_N;
+	кӧсте		Tag_N;
+	кӧттет		Tag_N;
+	кӧче		Tag_N;
+	кӧчергет	Tag_N;
+	кӧчӱк		Tag_N;
+	кӧш		Tag_N;
+	кӧшке		Tag_N;
+	крабат		Tag_N;
+	креде		Tag_N;
+	крес		Tag_N;
+	крестеечи	Tag_N; ! креститель
+	кӱбе		Tag_N;
+	кӱзеңе		Tag_N;
+	кӱзетчи		Tag_N;
+	кӱзрек		Tag_N;
+	кӱл		Tag_N;
+	кӱлгӱчи		Tag_N;
+	кӱлдӱчи		Tag_N;
+	кӱлегей		Tag_N;
+	кӱлер		Tag_N;
+	кӱлкӱ		Tag_N; ! Ктулху :)
+	кӱлтӱ		Tag_N;
+	кӱлӱк		Tag_N;
+	кӱмӱш		Tag_N;
+	кӱн		Tag_N;
+	кӱнегей		Tag_N;
+	кӱнек		Tag_N;
+	кӱннӱң		Tag_N;
+	кӱнӱк		Tag_N;
+	кӱңни		Tag_N;
+	кӱрек		Tag_N;
+	кӱреш		Tag_N;
+	кӱрчек		Tag_N;
+	кӱскӱ		Tag_N;
+	кӱчин		Tag_N;
+	кӱш		Tag_N;
+	қаан		Tag_N;
+	қаарчаг		Tag_N;
+	қаас		Tag_N;
+	қаат		Tag_N;
+	қабақ		Tag_N;
+	қабар		Tag_N;
+	қабырға		Tag_N;
+	қабыш		Tag_N; ! <<< Deriv : < қап ???
+	қадачы		Tag_N; !
+	қадараачы	Tag_N; !
+	қадыл		Tag_N;
+	қадыраш		Tag_N;
+	қажа		Tag_N;
+	қажаа		Tag_N;
+	қажаан		Tag_N;
+	қажаң		Tag_N;
+	қазақ		Tag_N;
+	қазан		Tag_N;
+	қазене		Tag_N;
+	қазнаға		Tag_N;
+	қазне		Tag_N;
+	қазын		Tag_N;
+	қай		Tag_N;
+	қайа		Tag_N;
+	қайақ		Tag_N;
+	қайбақ		Tag_N;
+	қайғаг		Tag_N;
+	қайғал		Tag_N;
+	қайрал		Tag_N;
+	қайры		Tag_N;
+	қайың		Tag_N;
+	қайыш		Tag_N;
+	қаққуқ		Tag_N;
+	қақпаш		Tag_N;
+	қалабуқ		Tag_N;
+	қалақ		Tag_N;
+	қалат		Tag_N;
+	қалаш		Tag_N;
+	қалба		Tag_N;
+	қалқа		Tag_N;
+	қалпақ		Tag_N;
+	қалық		Tag_N;
+	қам		Tag_N;
+	қам-қуш		Tag_N;
+	қамнық		Tag_N;
+	қамчы		Tag_N;
+	қамыш		Tag_N;
+	қан		Tag_N;
+	қанат		Tag_N;
+	қанығыш		Tag_N;
+	қаңа		Tag_N;
+	қаңақ		Tag_N;
+	қаңза		Tag_N;
+	қап		Tag_N;
+	қапқыш		Tag_N;
+	қапста		Tag_N;
+	қаптыра		Tag_N;
+	қапчақ		Tag_N;
+	қапыста		Tag_N;
+	қар		Tag_N;
+	қара		Tag_N;
+	қараа		Tag_N;
+	қарағай		Tag_N;
+	қарақ		Tag_N;
+	қарақчы		Tag_N;
+	қаралды		Tag_N;
+	қарандаш	Tag_N;
+	қара-нонған	Tag_N;
+	қараңат		Tag_N;
+	қара-суг	Tag_N;
+	қарат		Tag_N;
+	қарашқы		Tag_N;
+	қарбаақ		Tag_N;
+	қарбақ		Tag_N;
+	қарға		Tag_N;
+	қарлаш		Tag_N;
+	қарлық		Tag_N;
+	қарман		Tag_N;
+	қарны		Tag_N;
+	қарслақ		Tag_N;
+	қартӧкпе	Tag_N;
+	қартӧпке	Tag_N;
+	қартус		Tag_N;
+	қартӱс		Tag_N;
+	қартыға		Tag_N;
+	қарчақ		Tag_N;
+	қарыг		Tag_N;
+	қарын		Tag_N;
+	қарындаш	Tag_N;
+	қарыш		Tag_N;
+	қас		Tag_N;
+	қастақ		Tag_N;
+	қастрық		Tag_N;
+	қасты		Tag_N;
+	қастық		Tag_N;
+	қат		Tag_N;
+	қатқы		Tag_N;
+	қатпаш		Tag_N;
+	қатчы		Tag_N;
+	қачы		Tag_N;
+	қаш		Tag_N;
+	қобрақ		Tag_N;
+	қобу		Tag_N;
+	қобуқ		Tag_N;
+	қобы		Tag_N;
+	қобыр		Tag_N;
+	қобыс		Tag_N;
+	қодур		Tag_N;
+	қожақ		Tag_N;
+	қожанчы		Tag_N;
+	қозан		Tag_N;
+	қой		Tag_N;
+	қойн		Tag_N;
+	қойну		Tag_N;
+	қойны		Tag_N;
+	қойун		Tag_N;
+	қойы		Tag_N;
+	қойын		Tag_N;
+	қол		Tag_N;
+	қола		Tag_N;
+	қолтуқ		Tag_N;
+	қолчақ		Tag_N;
+	қом		Tag_N;
+	қомду		Tag_N;
+	қомды		Tag_N;
+	қомус		Tag_N;
+	қомусчы		Tag_N;
+	қомут		Tag_N;
+	қонуқ		Tag_N;
+	қонуш		Tag_N;
+	қоныг		Tag_N;
+	қооқ		Tag_N;
+	қоол		Tag_N;
+	қоора		Tag_N;
+	қоорғуш		Tag_N;
+	қораг		Tag_N;
+	қорам		Tag_N;
+	қорбалчық	Tag_N;
+	қорғачын	Tag_N;
+	қорту		Tag_N;
+	қортуқ		Tag_N;
+	қортық		Tag_N;
+	қорум		Tag_N;
+	қос		Tag_N;
+	қоста		Tag_N;
+	қочайын		Tag_N;
+	қош		Tag_N;
+	қошан		Tag_N;
+	қра		Tag_N;
+	қубанақ		Tag_N;
+	қубу		Tag_N;
+	қуда		Tag_N;
+	қудағай		Tag_N;
+	қудай		Tag_N;
+	қузам		Tag_N;
+	қузруқ		Tag_N;
+	қузуқ		Tag_N;
+	қузуруқ		Tag_N;
+	қуй		Tag_N;
+	қуйақ		Tag_N;
+	қуйун		Tag_N;
+	қул		Tag_N;
+	қулақ		Tag_N;
+	қулат		Tag_N;
+	қулаш		Tag_N;
+	қулун		Tag_N;
+	қум		Tag_N;
+	қумақ		Tag_N;
+	қумыс		Tag_N;
+	қунаныш		Tag_N;
+	қупшын		Tag_N;
+	қур		Tag_N;
+	қураған		Tag_N;
+	қурағын		Tag_N;
+	қурақ		Tag_N;
+	қуран		Tag_N;
+	қурантық	Tag_N;
+	қурғу		Tag_N;
+	қурғун		Tag_N;
+	қурсақ		Tag_N;
+	қуртайақ	Tag_N;
+	қуртйақ		Tag_N;
+	қуртуйақ	Tag_N;
+	қуру		Tag_N;
+	қурун		Tag_N;
+	қурчақ		Tag_N;
+	қурчанчық	Tag_N;
+	қурчу		Tag_N;
+	қусқу		Tag_N;
+	қусқун		Tag_N;
+	қут		Tag_N;
+	қуча		Tag_N;
+	қучақ		Tag_N;
+	қуш		Tag_N;
+	қушқа		Tag_N;
+	қызылғат	Tag_N;
+	қызын		Tag_N;
+	қызырақ		Tag_N;
+	қый		Tag_N;
+	қыйал		Tag_N;
+	қыйғы		Tag_N;
+	қыйғылық	Tag_N;
+	қыйма		Tag_N;
+	қыйын		Tag_N;
+	қыл		Tag_N;
+	қылаг		Tag_N;
+	қылған		Tag_N;
+	қылық		Tag_N;
+	қылыш		Tag_N;
+	қын		Tag_N;
+	қыпты		Tag_N;
+	қыр		Tag_N;
+	қыра		Tag_N;
+	қыраң		Tag_N;
+	қырачы		Tag_N;
+	қырба		Tag_N;
+	қырбан		Tag_N;
+	қырғыш		Tag_N;
+	қырлық		Tag_N;
+	қыртыш		Tag_N;
+	қырчан		Tag_N;
+	қырый		Tag_N;
+	қырыш		Tag_N;
+	қыс		Tag_N;
+	қысйақ		Tag_N;
+	қысқырыш	Tag_N;
+	қычағлары	Tag_N;
+	қыш		Tag_N;
+	қышқы		Tag_N;
+	қыыт		Tag_N;
+	лакпе		Tag_N;
+	лапке		Tag_N;
+	маас		Tag_N;
+	мазар		Tag_N;
+	мақачы		Tag_N;
+	маққыш		Tag_N;
+	мақыш		Tag_N;
+	мал		Tag_N;
+	малта		Tag_N;
+	малчы		Tag_N;
+	маң		Tag_N;
+	маңзрақ		Tag_N;
+	маркӧп		Tag_N;
+	марс		Tag_N;
+	мас		Tag_N;
+	масқа		Tag_N;
+	матур		Tag_N;
+	мекке		Tag_N;
+	мең		Tag_N;
+	мерген		Tag_N;
+	мериг		Tag_N;
+	мерс		Tag_N;
+	метр		Tag_N;
+	мешке		Tag_N;
+	миис		Tag_N;
+	мин		Tag_N;
+	мичик		Tag_N;
+	моғақ		Tag_N;
+	мойун		Tag_N;
+	мӧке		Tag_N;
+	мӧкӧ		Tag_N;
+	молат		Tag_N;
+	молча		Tag_N;
+	мӧңе		Tag_N;
+	мӧңи		Tag_N;
+	моос		Tag_N;
+	мӧт		Tag_N;
+	мӱзрӱк		Tag_N;
+	музруқ		Tag_N;
+	мултуқ		Tag_N;
+	мӱн		Tag_N;
+	мӱндӱр		Tag_N;
+	мунчуқ		Tag_N;
+	мус		Tag_N;
+	мустаг		Tag_N;
+	мӱӱс		Tag_N;
+	мылтық		Tag_N;
+	мырчақ		Tag_N;
+	наақ		Tag_N;
+	набачы		Tag_N;
+	наг		Tag_N;
+	нағбур		Tag_N;
+	нағбӱр		Tag_N;
+	найнағаны	Tag_N;
+	найнек		Tag_N;
+	налыш		Tag_N;
+	нан		Tag_N;
+	нанек		Tag_N;
+	нанчы		Tag_N;
+	нартпақ		Tag_N;
+	небе		Tag_N;
+	нег		Tag_N;
+	негечи		Tag_N;
+	негиш		Tag_N;
+	недле		Tag_N;
+	нек		Tag_N;
+	неме		Tag_N;
+	немиш		Tag_N;
+	ненек		Tag_N;
+	нин		Tag_N;
+	нитке		Tag_N;
+	ном		Tag_N;
+	нонғам		Tag_N;
+	нонған		Tag_N;
+	нотқа		Tag_N;
+	нубуртқа	Tag_N;
+	нуртқа		Tag_N;
+	ныбақ		Tag_N;
+	ныбырт		Tag_N;
+	ныбыртқа	Tag_N;
+	нырслақ		Tag_N;
+	обал		Tag_N;
+	ӧбе		Tag_N;
+	оғлан		Tag_N;
+	оғлу		Tag_N;
+	оғлы		Tag_N;
+	оғул		Tag_N;
+	оғыл		Tag_N;
+	одаг		Tag_N;
+	одаң		Tag_N;
+	ӧдик		Tag_N;
+	ӧдӱк		Tag_N;
+	одуң		Tag_N;
+	одуңчы		Tag_N;
+	одур		Tag_N;
+	ӧдӱрчи		Tag_N;
+	ӧзен		Tag_N;
+	ӧзӱм		Tag_N;
+	ой		Tag_N;
+	ойас		Tag_N;
+	ойнаш		Tag_N;
+	ойнашчы		Tag_N;
+	ойуқ		Tag_N;
+	ойун		Tag_N;
+	ойунчы		Tag_N;
+	ӧкпе		Tag_N;
+	ӧксӱс		Tag_N;
+	оқ		Tag_N;
+	оқсум		Tag_N;
+	оқча		Tag_N;
+	олақ		Tag_N;
+	оларчық		Tag_N;
+	ӧлең		Tag_N;
+	ӧлим		Tag_N;
+	ӧлӱм		Tag_N;
+	олча		Tag_N;
+	омаш		Tag_N;
+	оң		Tag_N;
+	ӧң		Tag_N;
+	оңдай		Tag_N;
+	ӧңде		Tag_N;
+	оо		Tag_N;
+	оол		Tag_N;
+	оолдан		Tag_N;
+	ӧӧр		Tag_N;
+	оортқа		Tag_N;
+	оош		Tag_N;
+	ӧп		Tag_N;
+	ора		Tag_N;
+	ораг		Tag_N;
+	орам		Tag_N;
+	орамаш		Tag_N;
+	ӧрге		Tag_N;
+	ӧрген		Tag_N;
+	орғақ		Tag_N;
+	ӧре		Tag_N;
+	ӧрекен		Tag_N;
+	ӧреккен		Tag_N;
+	ӧрлеш		Tag_N;
+	ороза		Tag_N;
+	ӧрт		Tag_N;
+	орта		Tag_N;
+	ӧртек		Tag_N;
+	ӧрӱк		Tag_N;
+	орум		Tag_N;
+	орун		Tag_N;
+	ӧрӱн		Tag_N;
+	ӧрӱниш		Tag_N;
+	орын		Tag_N;
+	ӧс		Tag_N;
+	осқум		Tag_N;
+	от		Tag_N;
+	ӧт		Tag_N;
+	ӧткӱш		Tag_N;
+	оттаг		Tag_N;
+	оттық		Tag_N;
+	ӧчеш		Tag_N;
+	очу		Tag_N;
+	очы		Tag_N;
+	ӧш		Tag_N;
+	ӧшкӱ		Tag_N;
+	ӧштӱ		Tag_N;
+	ӧштӱг		Tag_N;
+	паа		Tag_N;
+	паар		Tag_N;
+	паат		Tag_N;
+	паг		Tag_N;
+	пағ		Tag_N; ! <<<
+	паға		Tag_N;
+	пағры		Tag_N;
+	пағыр		Tag_N;
+	падат		Tag_N;
+	падырбаш	Tag_N;
+	пажаачы		Tag_N;
+	пажақ		Tag_N;
+	пай		Tag_N;
+	пайрам		Tag_N;
+	пақ		Tag_N;
+	пақпыр		Tag_N;
+	пала		Tag_N;
+	палғаш		Tag_N;
+	палке		Tag_N;
+	палчақ		Tag_N;
+	палыг		Tag_N;
+	палығ		Tag_N;
+	палық		Tag_N;
+	пара		Tag_N;
+	параан		Tag_N;
+	парата		Tag_N;
+	парс		Tag_N;
+	пары		Tag_N;
+	парыш		Tag_N;
+	пас		Tag_N;
+	пастӧӧк		Tag_N;
+	пасха		Tag_N;
+	пасчақ		Tag_N;
+	паш		Tag_N;
+	пашпилечи	Tag_N; ! <<<
+	паштақ		Tag_N;
+	паштық		Tag_N;
+	пашчы		Tag_N;
+	пег		Tag_N;
+	педре		Tag_N;
+	пеедре		Tag_N;
+	пежик		Tag_N;
+	пел		Tag_N;
+	пелтир		Tag_N;
+	перек		Tag_N;
+	периг		Tag_N;
+	перисте		Tag_N;
+	персте		Tag_N;
+	печет		Tag_N;
+	пиик		Tag_N;
+	пий		Tag_N;
+	пийбик		Tag_N;
+	пилеечи		Tag_N;
+	пилек		Tag_N;
+	пилет		Tag_N;
+	пилечи		Tag_N;
+	питик		Tag_N;
+	пичен		Tag_N;
+	пичик		Tag_N;
+	пичиқ		Tag_N;
+	план		Tag_N;
+	плат		Tag_N;
+	плек		Tag_N;
+	плектеш		Tag_N;
+	плет		Tag_N;
+	позаа		Tag_N;
+	позаға		Tag_N;
+	позуг		Tag_N;
+	позыг		Tag_N;
+	пӧле		Tag_N;
+	полке		Tag_N;
+	пӧлӱг		Tag_N;
+	пӧлӱк		Tag_N;
+	полуш		Tag_N;
+	пӧлӱш		Tag_N;
+	полушчы		Tag_N;
+	пом		Tag_N;
+	пораан		Tag_N;
+	поран		Tag_N;
+	порас		Tag_N;
+	порат		Tag_N; ! <<< пор + ат
+	порос		Tag_N;
+	пӧрӱ		Tag_N;
+	престек		Tag_N;
+	пророк		Tag_N;
+	пӱгрек		Tag_N;
+	пуғдай		Tag_N;
+	пӱдӱм		Tag_N;
+	пӱдӱрчи		Tag_N;
+	пӱк		Tag_N;
+	пулан		Tag_N;
+	пулуң		Tag_N;
+	пулут		Tag_N;
+	пӱр		Tag_N;
+	пурун		Tag_N;
+	пус		Tag_N;
+	пут		Tag_N;
+	пуун		Tag_N;
+	пыза		Tag_N;
+	пылан		Tag_N;
+	пырачын		Tag_N;
+	пырғы		Tag_N;
+	пырчын		Tag_N;
+	пырын		Tag_N;
+	пычақ		Tag_N;
+	пышқы		Tag_N;
+	рым		Tag_N;
+	саақ		Tag_N;
+	саас		Tag_N;
+	сабақ		Tag_N;
+	сабан		Tag_N;
+	сабын		Tag_N;
+	сағал		Tag_N;
+	сағры		Tag_N;
+	сағчы		Tag_N;
+	сағыры		Tag_N;
+	сағыс		Tag_N;
+	сағыш		Tag_N;
+	садығчы		Tag_N;
+	сай		Tag_N;
+	сакер		Tag_N;
+	саққыл		Tag_N;
+	сақыл		Tag_N;
+	сал		Tag_N;
+	сала		Tag_N;
+	салаа		Tag_N;
+	салғын		Tag_N;
+	салда		Tag_N;
+	салыг		Tag_N;
+	салық		Tag_N;
+	самовар		Tag_N; ! Tag_Rus
+	сан		Tag_N;
+	санаачы		Tag_N;
+	санабар		Tag_N;
+	санбар		Tag_N;
+	санчы		Tag_N;
+	саңмай		Tag_N;
+	сап		Tag_N;
+	саплот		Tag_N;
+	сапӧк		Tag_N;
+	сарат		Tag_N; ! <<< сарыг + ат
+	сарғай		Tag_N;
+	сарғаш		Tag_N;
+	сарыг		Tag_N;
+	сарығат		Tag_N;
+	сарын		Tag_N;
+	сас		Tag_N;
+	састып		Tag_N;
+	сейбе		Tag_N;
+	селей		Tag_N;
+	селеңе		Tag_N;
+	скабре		Tag_N;
+	слеккей		Tag_N;
+	соған		Tag_N;
+	сойға		Tag_N;
+	сӧк		Tag_N;
+	сом		Tag_N;
+	сооғаш		Tag_N;
+	сӧӧк		Tag_N;
+	соон		Tag_N;
+	соп		Tag_N;
+	сӧс		Tag_N;
+	сӧспек		Tag_N;
+	сӧстӱк		Tag_N;
+	спотке		Tag_N;
+	сра		Tag_N;
+	стол		Tag_N;
+	столба		Tag_N;
+	суг		Tag_N;
+	сӱген		Tag_N;
+	суғ		Tag_N;
+	суғлуқ		Tag_N;
+	сула		Tag_N;
+	сӱме		Tag_N;
+	сӱмей		Tag_N;
+	сумке		Tag_N;
+	сундуқ		Tag_N;
+	суң		Tag_N;
+	сӱң		Tag_N;
+	сур		Tag_N;
+	сӱр		Tag_N;
+	сураг		Tag_N;
+	сӱрне		Tag_N;
+	сӱрткӱш		Tag_N;
+	сӱрӱнде		Tag_N;
+	сӱрӱш		Tag_N;
+	сус		Tag_N;
+	сусқуш		Tag_N;
+	сусқыш		Tag_N;
+	сӱт		Tag_N;
+	сыбраг		Tag_N;
+	сыбрағчы	Tag_N;
+	сыбыраг		Tag_N;
+	сыбырағчы	Tag_N;
+	сығырташ	Tag_N;
+	сызым		Tag_N;
+	сый		Tag_N;
+	сылағай		Tag_N; ! +Deriv <<< ???
+	сын		Tag_N;
+	сынаачы		Tag_N;
+	сынма		Tag_N;
+	сыннық		Tag_N;
+	сыр		Tag_N;
+	сыра		Tag_N;
+	сырай		Tag_N;
+	сырт		Tag_N;
+	сырчы		Tag_N;
+	сырық		Tag_N;
+	сырылчақ	Tag_N;
+	сырын		Tag_N;
+	сырынма		Tag_N;
+	сыт		Tag_N;
+	сыын		Tag_N;
+	сыыт		Tag_N;
+	таам		Tag_N;
+	табақ		Tag_N;
+	табан		Tag_N;
+	табана		Tag_N;
+	табар		Tag_N;
+	табылға		Tag_N;
+	табыш		Tag_N;
+	тавар		Tag_N;
+	таг		Tag_N;
+	тағ		Tag_N;
+	тадар		Tag_N;
+	тадер		Tag_N;
+	тазыл		Tag_N;
+	тайақ		Tag_N;
+	тайан		Tag_N;
+	тайба		Tag_N;
+	тайға		Tag_N;
+	тайдақ		Tag_N;
+	тайчы		Tag_N;
+	тайы		Tag_N;
+	тайыс		Tag_N;
+	таққа		Tag_N;
+	тақпай		Tag_N;
+	тақпақ		Tag_N;
+	тақпу		Tag_N;
+	тақпы		Tag_N;
+	тал		Tag_N;
+	талай		Tag_N;
+	талаш		Tag_N;
+	талбыжы		Tag_N;
+	там		Tag_N;
+	тамаш		Tag_N;
+	тамыл		Tag_N;
+	тамылға		Tag_N;
+	тан		Tag_N;
+	тана		Tag_N;
+	танаа		Tag_N;
+	таң		Tag_N;
+	таңма		Tag_N;
+	тапқы		Tag_N;
+	тапқыш		Tag_N;
+	тар		Tag_N;
+	тарақ		Tag_N;
+	тарам		Tag_N;
+	тарба		Tag_N;
+	тарбаш		Tag_N;
+	тас		Tag_N;
+	тасқыл		Tag_N;
+	тастақ		Tag_N;
+	тат		Tag_N;
+	татқын		Tag_N;
+	татын		Tag_N;
+	таш		Tag_N;
+	таяқ		Tag_N;
+	тебе		Tag_N;
+	тебее		Tag_N;
+	теби		Tag_N;
+	тебиг		Tag_N;
+	тебир		Tag_N;
+	тегей		Tag_N;
+	тегенек		Tag_N;
+	тегрем		Tag_N;
+	тегреп		Tag_N;
+	тегри		Tag_N;
+	тегри-қаан	Tag_N;
+	теербен		Tag_N;
+	тежик		Tag_N;
+	текпер		Tag_N;
+	текпиш		Tag_N;
+	телене		Tag_N;
+	телте		Tag_N;
+	тем		Tag_N;
+	темир		Tag_N;
+	теп		Tag_N;
+	тепчи		Tag_N;
+	тер		Tag_N;
+	тере		Tag_N;
+	терек		Tag_N;
+	тертпек		Tag_N;
+	тескин		Tag_N;
+	теста		Tag_N;
+	тибил		Tag_N;
+	тиген		Tag_N;
+	тизе		Tag_N;
+	тизек		Tag_N;
+	тииң		Tag_N;
+	тил		Tag_N;
+	тилаас		Tag_N; ! Deriv
+	тилас		Tag_N; ! Deriv
+	тиш		Tag_N;
+	тла		Tag_N; ! ~CV
+	тлас		Tag_N; ! ~CV < тилас ???
+	тӧбе		Tag_N;
+	тобрақ		Tag_N;
+	тог		Tag_N;
+	тоғыш		Tag_N;
+	тӧжек		Tag_N;
+	тозун		Tag_N;
+	тозын		Tag_N;
+	той		Tag_N;
+	тойзақ		Tag_N;
+	тӧл		Tag_N;
+	толана		Tag_N;
+	тӧлгӱчи		Tag_N; ! Deriv ?
+	толқуғ		Tag_N;
+	толуқ		Tag_N;
+	том		Tag_N;
+	томазақ		Tag_N; ! Deriv ?
+	томат		Tag_N;
+	тон		Tag_N;
+	тон-азақ	Tag_N;
+	тӧң		Tag_N;
+	тоңақ		Tag_N;
+	тӧңеш		Tag_N;
+	тоо		Tag_N;
+	тӧӧ		Tag_N;
+	тӧӧй		Tag_N;
+	топақ		Tag_N; ! Deriv
+	топчу		Tag_N; ! Deriv
+	тӧр		Tag_N;
+	торбақ		Tag_N;
+	торбас		Tag_N;
+	торғу		Tag_N;
+	торспақ		Tag_N;
+	торум		Tag_N;
+	торчуқ		Tag_N;
+	тос		Tag_N;
+	тӧс		Tag_N;
+	точка		Tag_N;
+	тӧш		Tag_N;
+	тубан		Tag_N;
+	тӱгенек		Tag_N; ! Deriv
+	туған		Tag_N;
+	туғлаға		Tag_N; ! Deriv
+	тудам		Tag_N;
+	тудуғчы		Tag_N; ! Deriv
+	тӱдӱн		Tag_N;
+	туза		Tag_N;
+	туйғақ		Tag_N;
+	тӱк		Tag_N;
+	тӱлгӱ		Tag_N;
+	тулун		Tag_N;
+	тумчуқ		Tag_N;
+	тӱндӱк		Tag_N;
+	тунчуқ		Tag_N;
+	туңма		Tag_N;
+	тӱп		Tag_N;
+	тура		Tag_N;
+	турба		Tag_N;
+	тӱрбе		Tag_N;
+	тӱрме		Tag_N;
+	тӱрсӱн		Tag_N;
+	тус		Tag_N;
+	тутпаш		Tag_N;
+	туш		Tag_N;
+	тыбық		Tag_N;
+	тықпа		Tag_N;
+	тыла		Tag_N;
+	тын		Tag_N;
+	тынам		Tag_N;
+	тыныг		Tag_N;
+	тырбақ		Tag_N;
+	тырғақ		Tag_N;
+	тыт		Tag_N;
+	убу		Tag_N;
+	ӱге		Tag_N;
+	ӱзӱрген		Tag_N;
+	ӱзӱт		Tag_N;
+	уй		Tag_N;
+	ӱй		Tag_N;
+	уйа		Tag_N;
+	уйаң		Tag_N;
+	уйат		Tag_N;
+	уйғу		Tag_N;
+	уйе		Tag_N;
+	ӱйе		Tag_N;
+	улаба		Tag_N;
+	ӱлгер		Tag_N;
+	улда		Tag_N;
+	улуг		Tag_N;
+	улус		Tag_N;
+	ӱлӱш		Tag_N;
+	улчак		Tag_N;
+	ун		Tag_N;
+	ӱн		Tag_N;
+	ӱнегеш		Tag_N; ! Deriv ?
+	ӱп		Tag_N;
+	ураза		Tag_N;
+	ӱрен		Tag_N;
+	ӱртӱн		Tag_N; ! Deriv ?
+	ӱрӱк		Tag_N;
+	урул		Tag_N;
+	ус		Tag_N;
+	устал		Tag_N;
+	устол		Tag_N;
+	ӱс		Tag_N;
+	ӱстӱ		Tag_N;
+	ӱт		Tag_N;
+	ӱӱн		Tag_N;
+	уш		Tag_N;
+	ча		Tag_N;
+	чаа		Tag_N;
+	чаар		Tag_N;
+	чаба		Tag_N;
+	чабаға		Tag_N; ! Deriv ?
+	чабақ		Tag_N;
+	чабыг		Tag_N;
+	чаг		Tag_N;
+	чаға		Tag_N;
+	чадыг		Tag_N;
+	чадық		Tag_N;
+	чажыг		Tag_N;
+	чажын		Tag_N;
+	чажыт		Tag_N;
+	чазық		Tag_N;
+	чайағы		Tag_N; ! Deriv ?
+	чайан		Tag_N; ! Deriv ?
+	чайзаң		Tag_N; ! Deriv ?
+	чайлаг		Tag_N; ! Deriv ?
+	чакий		Tag_N;
+	чаккий		Tag_N;
+	чақшы		Tag_N;
+	чал		Tag_N;
+	чалаң		Tag_N;
+	чалдырық	Tag_N; ! Deriv ?
+	чалчы		Tag_N;
+	чалың		Tag_N;
+	чан		Tag_N;
+	чар		Tag_N;
+	чараш		Tag_N; ! Deriv ?
+	чарба		Tag_N; ! Deriv ?
+	чарғы		Tag_N; ! Deriv ?
+	чарғанат	Tag_N; ! Deriv ?
+	чарғы		Tag_N;
+	чарды		Tag_N;
+	чарлық		Tag_N;
+	чарық		Tag_N;
+	чарын		Tag_N;
+	чарыш		Tag_N;
+	час		Tag_N;
+	часқы		Tag_N;
+	частық		Tag_N;
+	чачақ		Tag_N;
+	чачық		Tag_N;
+	чаш		Tag_N;
+	чедик		Tag_N;
+	чеек		Tag_N;
+	чеени		Tag_N;
+	чек		Tag_N;
+	чел		Tag_N;
+	чени		Tag_N;
+	чер		Tag_N;
+	чергем		Tag_N;
+	чес		Tag_N;
+	честе		Tag_N;
+	честек		Tag_N;
+	чет		Tag_N;
+	четкер		Tag_N;
+	чииш		Tag_N;
+	чик		Tag_N;
+	чип		Tag_N;
+	читке		Tag_N;
+	чичир		Tag_N;
+	чиш		Tag_N;
+	чӧге		Tag_N;
+	чода		Tag_N;
+	чозақ		Tag_N;
+	чол		Tag_N;
+	чӧл		Tag_N;
+	чолтақ		Tag_N;
+	чон		Tag_N;
+	чооғаш		Tag_N;
+	чооқ		Tag_N;
+	чӧп		Tag_N;
+	чӧпчи		Tag_N;
+	чорға		Tag_N;
+	чӧреечи		Tag_N; ! Deriv ?
+	чӧрӱк		Tag_N;
+	чоруқ		Tag_N;
+	чоруқчы		Tag_N; ! Deriv ?
+	чорық		Tag_N;
+	чӱг		Tag_N;
+	чӱген		Tag_N;
+	чӱк		Tag_N;
+	чуқ		Tag_N;
+	чулат		Tag_N;
+	чултыр		Tag_N;
+	чӱрек		Tag_N;
+	чурт		Tag_N;
+	чурчу		Tag_N;
+	чӱс		Tag_N;
+	чӱстӱк		Tag_N;
+	чут		Tag_N;
+	чығачы		Tag_N;
+	чыда		Tag_N;
+	чыл		Tag_N;
+	чылан		Tag_N;
+	чылба		Tag_N;
+	чылтыс		Tag_N;
+	чылыг		Tag_N;
+	чырғал		Tag_N;
+	чырчы		Tag_N;
+	чыс		Tag_N;
+	чыш		Tag_N;
+	чыылығ		Tag_N;
+	чыылыш		Tag_N;
+	шабал		Tag_N;
+	шабур		Tag_N;
+	шабыр		Tag_N;
+	шаг		Tag_N;
+	шағ		Tag_N;
+	шағчы		Tag_N;
+	шағын		Tag_N;
+	шадыр		Tag_N;
+	шай		Tag_N;
+	шайақ		Tag_N;
+	шайғақ		Tag_N;
+	шайтан		Tag_N;
+	шайық		Tag_N;
+	шақ		Tag_N;
+	шақпын		Tag_N;
+	шалған		Tag_N;
+	шалғы		Tag_N;
+	шалчақ		Tag_N;
+	шана		Tag_N;
+	шаңыш		Tag_N;
+	шап		Tag_N;
+	шапа		Tag_N;
+	шапқы		Tag_N;
+	шаппа		Tag_N;
+	шапчақ		Tag_N;
+	шара		Tag_N;
+	шарбаш		Tag_N;
+	шарко		Tag_N;
+	шарчын		Tag_N;
+	шарытқаш	Tag_N; ! Deriv ?
+	шачақ		Tag_N;
+	шаш		Tag_N;
+	шашқы		Tag_N;
+	шейне		Tag_N;
+	шен		Tag_N;
+	шенди		Tag_N;
+	шерге		Tag_N;
+	шереби		Tag_N;
+	шериг		Tag_N;
+	шериғ		Tag_N;
+	шерке		Tag_N;
+	шерпеш		Tag_N;
+	шерт		Tag_N;
+	шертик		Tag_N;
+	шертпеш		Tag_N;
+	шечен		Tag_N;
+	шижик		Tag_N;
+	шийин		Tag_N;
+	шилеккей	Tag_N;
+	шипе		Tag_N;
+	шире		Tag_N;
+	ширеен		Tag_N;
+	шиш		Tag_N;
+	шлеккей		Tag_N;
+	шог		Tag_N;
+	шӧгӱн		Tag_N;
+	шоға		Tag_N;
+	шойун		Tag_N;
+	шӧкпечек	Tag_N;
+	шӧл		Tag_N;
+	шола		Tag_N;
+	шома		Tag_N;
+	шӧп		Tag_N;
+	шорчек		Tag_N;
+	шошқа		Tag_N;
+	шрақ		Tag_N;
+	штан		Tag_N;
+	шӱбе		Tag_N;
+	шӱгде		Tag_N;
+	шуйуқ		Tag_N;
+	шулуқ		Tag_N;
+	шурлақ		Tag_N;
+	шыған		Tag_N;
+	шығанақ		Tag_N; ! ???
+	шығыт		Tag_N;
+	шығыш		Tag_N;
+	шыдаш		Tag_N;
+	шыдық		Tag_N;
+	шық		Tag_N;
+	шылаг		Tag_N;
+	шын		Tag_N;
+	шынық		Tag_N; ! Deriv < шын ?
+	шырай		Tag_N;
+	шырақ		Tag_N;
+	шышқан		Tag_N;
+	ығрақ		Tag_N;
+	ызырға		Tag_N;
+	ыйбан		Tag_N;
+	ылаба		Tag_N;
+	ынаг		Tag_N;
+	ыр		Tag_N;
+	ырайы		Tag_N;
+	ырғақ		Tag_N;
+	ырым		Tag_N;
+	ырыс		Tag_N;
+	ыш		Tag_N;
+	ыы		Tag_N;
+	эби		Tag_N;
+	эгеечи		Tag_N;
+	эгечи		Tag_N;
+	эжик		Tag_N;
+	эзен		Tag_N;
+	эзеңе		Tag_N;
+	эзер		Tag_N;
+	эзре		Tag_N;
+	экси		Tag_N;
+	эл		Tag_N;
+	элек		Tag_N;
+	эм		Tag_N;
+	эмчек		Tag_N;
+	эмчи		Tag_N;
+	эн		Tag_N;
+	эне		Tag_N;
+	эниш		Tag_N;
+	эн-чер		Tag_N;
+	энчи		Tag_N;
+	эпчек		Tag_N;
+	эпчи		Tag_N;
+	эр		Tag_N;
+	эрбек		Tag_N;
+	эргек		Tag_N;
+	эри		Tag_N;
+	эрим		Tag_N;
+	эриш		Tag_N;
+	эрке		Tag_N;
+	эркен		Tag_N;
+	эрлен		Tag_N;
+	эрни		Tag_N;
+	эртен		Tag_N;
+	эс		Tag_N;
+	эт		Tag_N;
+	эчек		Tag_N;
+	эш		Tag_N;
+	эшки		Tag_N;
+	эштек		Tag_N;
+	ээ		Tag_N;
+	ээзи		Tag_N;
+	ээк		Tag_N;
+	ээчек		Tag_N;
+
+
+!!! Имена собственные <<< временно?
+LEXICON ProperNoun
+	ай-арыг		Tag_PN;
+	айас-арыг	Tag_PN;
+	айас-кӧӧк	Tag_PN;
+	айас-қан	Tag_PN;
+	айдаң-арыг	Tag_PN;
+	ай-қан		Tag_PN;
+	ай-қара-қан	Tag_PN;
+	ай-қара-қаң	Tag_PN;
+	ай-маңыс	Tag_PN;
+	ай-мӧгӧ		Tag_PN;
+	ай-толай	Tag_PN;
+	акӧке		Tag_PN;
+	ақ-кӧбӱк	Tag_PN;
+	ақ-кӧжеге	Tag_PN;
+	ақ-қан		Tag_PN;
+	ақ-молат	Tag_PN;
+	ақ-ӧлең		Tag_PN;
+	ақ-пилек	Tag_PN;
+	ақ-пос-тайға	Tag_PN;
+	ақ-сабақ	Tag_PN;
+	ақ-сағал	Tag_PN;
+	ақ-салғын	Tag_PN;
+	ақ-сибечин	Tag_PN;
+	ала-қабырға	Tag_PN;
+	ала-марс	Tag_PN;
+	албыр-қаан	Tag_PN;
+	албыр-қан	Tag_PN;
+	алтын-алып	Tag_PN;
+	алтын-арыг	Tag_PN;
+	алтын-кестик	Tag_PN;
+	алтын-киндик	Tag_PN;
+	алтын-кӧк	Tag_PN;
+	алтын-кӧӧк	Tag_PN;
+	алтын-кӱмӱш	Tag_PN;
+	алтын-қан	Tag_PN;
+	алтын-қас	Tag_PN;
+	алтын-қожуг	Tag_PN;
+	алтын-қоста	Tag_PN;
+	алтын-қурчу	Tag_PN;
+	алтын-қушқа	Tag_PN;
+	алтын-қылыш	Tag_PN;
+	алтын-маңнық	Tag_PN;
+	алтын-мас	Tag_PN;
+	алтын-мӧке	Tag_PN;
+	алтын-мӧкӧ	Tag_PN; ! ???
+	алтын-оолақ	Tag_PN;
+	алтын-перисте	Tag_PN;
+	алтын-перисте-қан	Tag_PN;
+	алтын-пурба	Tag_PN;
+	алтын-сабақ	Tag_PN;
+	алтын-салғын	Tag_PN;
+	алтын-сом	Tag_PN;
+	алтын-сырық	Tag_PN;
+	алтын-тайчы	Tag_PN;
+	алтын-тарақ	Tag_PN;
+	алтын-тас	Tag_PN;
+	алтын-таш	Tag_PN;
+	алтын-топчу	Tag_PN;
+	алтын-торғу	Tag_PN;
+	алтын-тӱлгӱ	Tag_PN;
+	алтын-чӱстӱк	Tag_PN;
+	алтын-шапа	Tag_PN; ! <<<
+	алтын-шаппа	Tag_PN; ! <<<
+	алтын-шачақ	Tag_PN;
+	алтын-шур	Tag_PN;
+	алтын-эргек	Tag_PN;
+	алып-қарачын	Tag_PN;
+	алып-қус	Tag_PN;
+	алып-қусқун	Tag_PN;
+	алып-қырдас	Tag_PN;
+	алып-масқачақ	Tag_PN;
+	алып-чеқатай	Tag_PN;
+	алып-челбеген	Tag_PN;
+	алып-шадай	Tag_PN;
+	аран-тайчы	Tag_PN;
+	аран-шачақ	Tag_PN;
+	ириң-тас	Tag_PN;
+	кемис-кӧӧк	Tag_PN;
+	кемис-қаан	Tag_PN;
+	кижен-мӧке	Tag_PN;
+	кӧгей-алып	Tag_PN;
+	кӧк-қан		Tag_PN;
+	кӧк-ӧлең	Tag_PN;
+	кӧк-оолақ	Tag_PN;
+	кӧк-сабақ	Tag_PN; ! +
+	кӧк-салғын	Tag_PN;
+	кӧк-тайға	Tag_PN; ! +
+	кӧк-таш		Tag_PN;
+	кӧк-таш-мерген	Tag_PN;
+	кӧк-торғу	Tag_PN;
+	кӧк-торчуқ	Tag_PN;
+	кӧк-челбиген	Tag_PN;
+	кӧк-шмелдей	Tag_PN;
+	кӱл-орғу	Tag_PN;
+	кӱмӱш-қылыш	Tag_PN;
+	кӱмӱш-сом	Tag_PN;
+	кӱмӱш-шачақ	Tag_PN;
+	кӱн-арыг	Tag_PN;
+	кӱн-кӧӧк	Tag_PN;
+	кӱн-қан		Tag_PN;
+	кӱн-қаны	Tag_PN;
+	кӱрең-қылыш	Tag_PN;
+	қаан-молат	Tag_PN;
+	қаан-оллақ	Tag_PN;
+	қаан-оолақ	Tag_PN;
+	қаан-тарий-қыс	Tag_PN;
+	қазыр-тек	Tag_PN;
+	қан-алып	Tag_PN;
+	қан-арғо	Tag_PN;
+	қан-кезер	Tag_PN;
+	қан-кес		Tag_PN;
+	қан-кичей	Tag_PN;
+	қан-кӧӧк	Tag_PN;
+	қан-қарачақ	Tag_PN;
+	қан-қоста	Tag_PN;
+	қан-қыйған	Tag_PN;
+	қан-қыйғанақ	Tag_PN;
+	қан-қылыш	Tag_PN;
+	қан-қыс		Tag_PN;
+	қан-мерген	Tag_PN;
+	қан-оолақ	Tag_PN;
+	қан-перген	Tag_PN;
+	қан-сабақ	Tag_PN;
+	қан-сарыг	Tag_PN;
+	қан-сыбазын-оолақ	Tag_PN;
+	қан-тегри	Tag_PN;
+	қан-тек		Tag_PN;
+	қан-чайзаң	Tag_PN;
+	қара-алып	Tag_PN;
+	қаразы-қан	Tag_PN;
+	қара-қазан	Tag_PN;
+	қара-қайа	Tag_PN;
+	қара-қайыш	Tag_PN;
+	қара-қан	Tag_PN;
+	қара-қан-мерген	Tag_PN;
+	қара-қартыға	Tag_PN;
+	қара-қат	Tag_PN;
+	қара-қылыш	Tag_PN;
+	қара-маас	Tag_PN;
+	қара-мӧке	Tag_PN;
+	қара-молат	Tag_PN;
+	қара-моңус	Tag_PN;
+	қара-моос	Tag_PN;
+	қара-оолақ	Tag_PN;
+	қара-ӧреккен	Tag_PN;
+	қара-пурба	Tag_PN;
+	қара-сабақ	Tag_PN;
+	қара-салғын	Tag_PN;
+	қара-торғу	Tag_PN;
+	қаратты-перген	Tag_PN;
+	қара-тӱртӱс	Tag_PN;
+	қара-шмелдей	Tag_PN;
+	қара-шойун	Tag_PN;
+	қара-шӧл	Tag_PN;
+	қатқан-чыла	Tag_PN;
+	қаттан-чула	Tag_PN;
+	қола-қырыш	Tag_PN; ! +
+	қуба-салғын	Tag_PN;
+	қусқун-алып	Tag_PN;
+	қуш		Tag_PN;
+	қыдай-арыг	Tag_PN;
+	қызыл-сибечин	Tag_PN;
+	қырған-қылыш	Tag_PN;
+	қырдас-алып	Tag_PN;
+	қыр-ӧлең	Tag_PN;
+	қыр-ӧрекен	Tag_PN;
+	қыр-ӧреккен	Tag_PN; ! ???
+	қыр-тас		Tag_PN;
+	қыс-алып	Tag_PN;
+	леш-тай		Tag_PN;
+	мерет-оолақ	Tag_PN;
+	поразы-арыг	Tag_PN;
+	порас-арыг	Tag_PN;
+	пос-тайға	Tag_PN;
+	сайатчы-қан	Tag_PN;
+	сайачы-қан	Tag_PN;
+	сай-қан		Tag_PN;
+	сарыг-қан	Tag_PN;
+	сарыг-қартыға	Tag_PN;
+	сарыг-қыс	Tag_PN;
+	сарыг-салғын	Tag_PN;
+	сарыг-шмелдей	Tag_PN;
+	сары-челбеген	Tag_PN;
+	сас-қара	Tag_PN;
+	сыбазын		Tag_PN;
+	сыбазын-оолақ	Tag_PN;
+	сывет-оолақ	Tag_PN;
+	сығыт-қыйғы	Tag_PN;
+	сыны-сайы	Tag_PN;
+	тебир-алып	Tag_PN;
+	тебир-қан	Tag_PN;
+	тебир-қан-мерген	Tag_PN;
+	тебир-қартӱс	Tag_PN;
+	тебир-тек	Tag_PN;
+	тебир-шойун	Tag_PN;
+	тегри-қан	Tag_PN;
+	тоң-кезер	Tag_PN;
+	торғу-арыг	Tag_PN;
+	торғу-кӧӧк	Tag_PN;
+	торғу-қан	Tag_PN;
+	ӱзен-арыг	Tag_PN;
+	ӱлген		Tag_PN;
+	ӱлгер-мӧке	Tag_PN;
+	улуг-қан	Tag_PN;
+	улуғ-қан	Tag_PN;
+	ӱчин-арыг	Tag_PN;
+	чабал-қан-мерген	Tag_PN;
+	чабыс-чапан	Tag_PN;
+	чағыс-тайчы	Tag_PN;
+	чағыс-чайан	Tag_PN;
+	чағыс чайачы	Tag_PN;
+	чағыс-чайачы	Tag_PN;
+	чайан-арыг	Tag_PN;
+	чайачы		Tag_PN;
+	чайзаң-арыг	Tag_PN;
+	чаш-кӧӧк	Tag_PN;
+	чезер-мӱкӱ	Tag_PN;
+	челбеген	Tag_PN;
+	челбен		Tag_PN;
+	челбиген	Tag_PN;
+	челбис		Tag_PN;
+	чеппе-салғын	Tag_PN;
+	чес-алып	Tag_PN;
+	чес-қан		Tag_PN;
+	чес-оолақ	Tag_PN;
+	чес-орғу	Tag_PN;
+	чес-ӧреккен	Tag_PN;
+	чес-пилек	Tag_PN;
+	чол-қара	Tag_PN;
+	чылан-қан	Tag_PN;
+	чылан-қаны	Tag_PN;
+	чылан-моңус	Tag_PN;
+	чылан-моос	Tag_PN;
+	шимелдей	Tag_PN;
+	шмелдей		Tag_PN;
+	эрке-қан	Tag_PN;
+	эр-қулатай	Tag_PN;
+	эрлик		Tag_PN;
+	эрлик-қан	Tag_PN;
+LEXICON Iterjection
+	а		Tag_INTJ;
+	абуг		Tag_INTJ;
+	абуу		Tag_INTJ;
+! 	ма		Tag_INTJ;
+! 	ме		Tag_INTJ;
+	мине		Tag_INTJ;
+	мна		Tag_INTJ;
+	мыно		Tag_INTJ;
+	пай-пай		Tag_INTJ;
+	чее		Tag_INTJ;
+	эзе		Tag_INTJ;
+	эй		Tag_INTJ;
+	ээ		Tag_INTJ;
+
+LEXICON Tag_INTJ
+	[INTJ]:0	#;
+! Глаголы
+LEXICON Verb
+	аақта		Tag_V;
+	аала		Tag_V;
+	аарла		Tag_V;
+	аарсын		Tag_V;
+	аас		Tag_V;
+	аастан		Tag_V;
+	аат		Tag_V;
+	абыт		Tag_V;
+	ағар		Tag_V;
+	ағры		Tag_V;
+	ада		Tag_V;
+	адат		Tag_V;
+	адыш		Tag_V;
+	ажыл		Tag_V;
+	ажын		Tag_V;
+	ажыр		Tag_V;
+	азақтат		Tag_V;
+	азра		Tag_V;
+	азран		Tag_V;
+	азыл		Tag_V;
+	азыра		Tag_V;
+	айа		Tag_V;
+! 	айлан		Tag_V;
+	айт		Tag_V;
+	ақ		Tag_V;
+	акел		Tag_V;
+	акир		Tag_V;
+	ақкел		Tag_V;
+	ақкир		Tag_V;
+	ақса		Tag_V;
+	ақта		Tag_V;
+	ақтан		Tag_V;
+	алақ		Tag_V;
+	алға		Tag_V;
+	ален		Tag_V;
+	алта		Tag_V;
+	алчаза		Tag_V;
+	алыл		Tag_V;
+	алын		Tag_V;
+	алыш		Tag_V;
+	аң		Tag_V;
+	аңдар		Tag_V;
+	аңна		Tag_V;
+	апар		Tag_V;
+	аппар		Tag_V;
+	апчы		Tag_V;
+	арба		Tag_V;
+	арғала		Tag_V;
+	арғалан		Tag_V;
+	арда		Tag_V;
+	арла		Tag_V;
+	арлаш		Tag_V;
+	арта		Tag_V;
+	арты		Tag_V;
+	артыс		Tag_V;
+	арыла		Tag_V;
+	арын		Tag_V;
+	арыт		Tag_V;
+	ас		Tag_V;
+	ат		Tag_V;
+	атты		Tag_V;
+	ачы		Tag_V;
+	ачығлан		Tag_V; !
+	аш		Tag_V;
+	ашта		Tag_V; ! <<< Deriv
+	ашық		Tag_V;
+	идин		Tag_V;
+	ижен		Tag_V;
+	изит		Tag_V;
+	иир		Tag_V;
+	ийгилен		Tag_V; !
+	исте		Tag_V;
+	ит		Tag_V;
+	иш		Tag_V;
+	иште		Tag_V;
+	қаар		Tag_V;
+	қабыш		Tag_V;
+	қағжырат	Tag_V; !
+	қада		Tag_V;
+	қадар		Tag_V;
+	қаза		Tag_V;
+	қайғал		Tag_V; !
+	қайғаш		Tag_V; !
+	қайла		Tag_V; !
+	қайна		Tag_V; !
+	қайра		Tag_V; !
+	қақ		Tag_V;
+	қал		Tag_V; !
+	қап		Tag_V;
+	қарған		Tag_V; !
+	қат		Tag_V;
+	қачыр		Tag_V;
+	кес		Tag_V;
+	кеш		Tag_V;
+	кир		Tag_V; ! + [CVB]-ANT
+	кичен		Tag_V;
+	киште		Tag_V;
+	кӧгле		Tag_V;
+	қодур		Tag_V;
+	кӧдӱр		Tag_V;
+	қодырын		Tag_V;
+	қожул		Tag_V;
+	кӧй		Tag_V;
+	қон		Tag_V;
+	кӧңдӱр		Tag_V;
+	кӧӧлен		Tag_V;
+	кӧп		Tag_V;
+	қӧр		Tag_V;
+	қорат		Tag_V;
+	кӧргӱс		Tag_V;
+	қоруқ		Tag_V;
+! 	кӧрӱн		Tag_V;
+	қош		Tag_V;
+	крестен		Tag_V;
+	қур		Tag_V;
+	кӱре		Tag_V;
+	кӱт		Tag_V;
+	қый		Tag_V;
+	қыйбыран	Tag_V;
+	қыйғылаш	Tag_V;
+	қыйғыр		Tag_V;
+	қыйнал		Tag_V;
+	қылғала		Tag_V;
+	қын		Tag_V;
+	қыр		Tag_V;
+	қысқарт		Tag_V;
+	қыста		Tag_V;
+	қыстат		Tag_V;
+	қычан		Tag_V; ! < Deriv ???
+	қычы		Tag_V;
+	қыыр		Tag_V;
+	моғат		Tag_V;
+	мӧңӱсре		Tag_V;
+	мӱн		Tag_V;
+	найна		Tag_V;
+	нан		Tag_V;
+	нандыр		Tag_V;
+	нанчы		Tag_V;
+	нег		Tag_V;
+	нигил		Tag_V;
+! 	нигилиш		Tag_V;
+	нызыра		Tag_V;
+	одур		Tag_V;
+! 	ӧдӱрӱл		Tag_V;
+	ӧдӱр		Tag_V;
+	ойна		Tag_V;
+	ойуқта		Tag_V;
+	ӧкпелен		Tag_V;
+	ӧл		Tag_V;
+	ооқта		Tag_V;
+	орнаш		Tag_V;
+	ӧртеп		Tag_V;
+	ӧс		Tag_V;
+	отта		Tag_V;
+	пажа		Tag_V;
+	пайла		Tag_V;
+	пас		Tag_V;
+	пат		Tag_V;
+	пашта		Tag_V;
+	пекте		Tag_V;
+	перил		Tag_V;
+	пил		Tag_V;
+! 	пилдир		Tag_V;
+	пилин		Tag_V;
+	пожа		Tag_V;
+	полба		Tag_V;
+	пӧл		Tag_V;
+	пӧле		Tag_V;
+! 	пӧлӱн		Tag_V;
+	пула		Tag_V;
+	пулға		Tag_V;
+	пур		Tag_V;
+	пӱрге		Tag_V;
+	пӱт		Tag_V;
+	пыжыр		Tag_V;
+	пыр		Tag_V;
+	пырлаш		Tag_V;
+	пыш		Tag_V;
+	сағ		Tag_V;
+	сайал		Tag_V;
+	сақта		Tag_V;
+	сана		Tag_V;
+	санан		Tag_V;
+	сарна		Tag_V;
+	сат		Tag_V;
+	серги		Tag_V;
+	сес		Tag_V;
+	сий		Tag_V;
+	силги		Tag_V;
+! 	силгит		Tag_V;
+	сӧрте		Tag_V;
+	суқ		Tag_V;
+	суна		Tag_V;
+	сур		Tag_V;
+	сӱр		Tag_V;
+	сура		Tag_V;
+	сӱрӱш		Tag_V;
+	сус		Tag_V;
+	сӱс		Tag_V;
+	сыбыра		Tag_V;
+	сыйба		Tag_V;
+	сыйла		Tag_V;
+	сын		Tag_V;
+	табы		Tag_V;
+	табыл		Tag_V;
+	тағра		Tag_V;
+	тай		Tag_V;
+	тал		Tag_V; !
+	тала		Tag_V; !
+	талабыс		Tag_V; !
+	талла		Tag_V; !
+	таңзын		Tag_V;
+	тап		Tag_V;
+	тар		Tag_V;
+	тара		Tag_V;
+	тарт		Tag_V;
+	таш		Tag_V;
+	те		Tag_V;
+	тебин		Tag_V;
+	тег		Tag_V;
+	теп		Tag_V;
+	тес		Tag_V;
+	теш		Tag_V;
+	тиле		Tag_V;
+	тирил		Tag_V;
+	тоға		Tag_V;
+	тоғра		Tag_V; ! < тоғ- ???
+	тӧгӱл		Tag_V;
+	тӧже		Tag_V;
+	тӧзе		Tag_V;
+	тӧк		Tag_V;
+	тоқтат		Tag_V;
+	тол		Tag_V; ! ???
+	тола		Tag_V; ! ???
+	тӧле		Tag_V;
+	тон		Tag_V;
+	тоола		Tag_V;
+	тоос		Tag_V;
+	тӱре		Tag_V;
+	тут		Tag_V;
+	тын		Tag_V;
+	тыы		Tag_V;
+	ӱбӱр		Tag_V;
+	уғ		Tag_V;
+	ӱг		Tag_V;
+	уғус		Tag_V;
+	узал		Tag_V; !
+	узан		Tag_V; !
+	узат		Tag_V; !
+	узу		Tag_V;
+	уйадын		Tag_V;
+	уйат		Tag_V;
+	уқ		Tag_V;
+	ула		Tag_V;
+	улға		Tag_V;
+	ӱле		Tag_V;
+	ӱлеш		Tag_V;
+	улуғла		Tag_V;
+	уңна		Tag_V;
+	ур		Tag_V;
+	ӱп		Tag_V;
+	ӱрген		Tag_V; !
+	ӱргет		Tag_V; !
+	ӱргӱн		Tag_V; !
+	ӱренне		Tag_V;
+	ӱрӱгӱш		Tag_V;
+	ӱӱр		Tag_V;
+	урун		Tag_V;
+	ус		Tag_V;
+	ӱс		Tag_V;
+	учуқ		Tag_V;
+	учура		Tag_V;
+	ӱш		Tag_V;
+	чаг		Tag_V; ! <<<
+	чағ		Tag_V;
+	чағда		Tag_V; ! Deriv ?
+	чағын		Tag_V; ! Deriv ?
+	чағына		Tag_V; ! Deriv ?
+	чажын		Tag_V;
+	чаза		Tag_V;
+	чазы		Tag_V;
+	чай		Tag_V;
+	чайа		Tag_V;
+	чайқа		Tag_V;
+	чалға		Tag_V;
+	чап		Tag_V;
+	чапшын		Tag_V; ! Deriv ?
+	чар		Tag_V;
+	чара		Tag_V;
+	чарат		Tag_V; ! Deriv ? < чара
+	чарла		Tag_V;
+	чары		Tag_V;
+	чарылыш		Tag_V;
+	чарыт		Tag_V;
+	час		Tag_V;
+	чат		Tag_V;
+	чепсе		Tag_V; ! ???
+	чет		Tag_V; ! + [CVB]-ANT
+	чии		Tag_V;
+	чиибис		Tag_V; ! ???
+	чип		Tag_V;
+	чит		Tag_V;
+	чокта		Tag_V; ! ?v?
+	чооқта		Tag_V; ! ?^?
+	чӧптеш		Tag_V;
+	чуғ		Tag_V;
+	чӱгӱр		Tag_V;
+	чурта		Tag_V;
+	чӱӱн		Tag_V;
+	чығ		Tag_V;
+	чылыт		Tag_V;
+	чыыл		Tag_V; ! ???
+! 	чыылыш		Tag_V; ! ???
+! 	шағланыш	Tag_V; ! ???
+! 	шағлаш		Tag_V; ! ???
+	шап		Tag_V;
+	шеберлен	Tag_V;
+	шел		Tag_V;
+	шеш		Tag_V;
+	ший		Tag_V;
+	шиш		Tag_V;
+	шӧк		Tag_V;
+	шом		Tag_V;
+	ште		Tag_V;
+	шур		Tag_V;
+	шӱг		Tag_V;
+	шығар		Tag_V;
+	шыда		Tag_V;
+	шық		Tag_V; ! + [CVB]-ANT
+	шыла		Tag_V;
+	шыңна		Tag_V; ! Deriv ???
+	шыыла		Tag_V; ! Как соотносится с ‘шыла’ ?
+	ығыл		Tag_V;
+	ығыра		Tag_V;
+	ызай		Tag_V;
+	ызыр		Tag_V;
+	ық		Tag_V;
+	ылға		Tag_V;
+	ына		Tag_V;
+	ыра		Tag_V;
+	ыс		Tag_V;
+	ышқын		Tag_V;
+	эбир		Tag_V;
+	эг		Tag_V;
+	эге		Tag_V;
+	эген		Tag_V;
+	эгени		Tag_V;
+	эзе		Tag_V;
+	эзил		Tag_V;
+	эле		Tag_V;
+	эм		Tag_V;
+	эмзи		Tag_V;
+	эмне		Tag_V;
+	эн		Tag_V;
+	энчилен		Tag_V;
+	эрт		Tag_V;
+	эс		Tag_V;
+	эсте		Tag_V;
+	эстел		Tag_V;
+	эт		Tag_V;
+	ээл		Tag_V;
+
+! Вспомогательные глаголы
+LEXICON Verb_AUX
+	ал		Tag_V;
+	қал		Tag_V;
+	кел		Tag_V;
+	кӧр		Tag_V;
+	одур		Tag_V; ! одурт	Tag_V; <<< ???
+	пар		Tag_V; ! + [CVB]-ANT
+	пер		Tag_V;
+	пол		Tag_V;
+	сал		Tag_V;
+	тур		Tag_V;
+	тӱш		Tag_V;
+	чӧр		Tag_V;
+	ыс		Tag_V;
+	э		Tag_V; ! @U.NEG.bas@
+	эрт		Tag_V;
+
+! Отрицательный глагол эбес — ???
+LEXICON Verb_NEG
+	эбес		Tag_VNEG; ! Недостаточный глагол э + -NEG[БАс] ???
+	чоғул		Tag_VNEG; ! <<< ???
+!!!!!! Послелоги
+LEXICON Postposition
+	! Собственно послелоги
+	наара	Tag_POST; ! «в эту сторону»
+	саара	Tag_POST; ! «по направлению»
+	<[с а [й [а | ы н] | н ы]]>	Tag_POST; ! …саны / сайын «каждый», «всякий»
+	тебе	Tag_POST; ! «в сторону»
+	тӧӧнче	Tag_POST; ! «до»
+	ӱчӱн	Tag_POST; ! «ради», «из-за»
+	! Послелоги-наречия
+	аара	Tag_POST; ! «по ту сторону», «туда»
+	ажыра	Tag_POST; ! «через»
+	ала	Tag_POST; ! «с тех пор как»
+	аразында	Tag_POST; ! «в», «среди»
+	артын	Tag_POST; ! «в результате»
+	кестинде	Tag_POST; !  «за (чем-то)»
+	<[к е [ч | ж] и р е]>	Tag_POST; ! «через»
+	иштинде	Tag_POST; ! «в», «внутри»
+	кире	Tag_POST; ! «в»
+	кӧзӱбе	Tag_POST; ! «совсем»
+	пажында	Tag_POST; ! «через» (о времени)
+	пеере	Tag_POST; ! «сюда»
+	ӱстӱне	Tag_POST; ! «на (что-то)»
+	четтире	Tag_POST; ! «до»
+	шығара	Tag_POST; ! «в течение»
+	шылтаанда	Tag_POST; ! …шылтанында «по случаю чего», «из-за чего»
+	! Сравнительные слова-послелоги
+	ошкаш	Tag_POST; ! …ушқаш «подобно», «похоже»
+	тоой	Tag_POST; ! …тӱней «пара»
+	чилеп	Tag_POST; ! …чылап «считая за», «как», «словно»
+	чӱӱнӱг	Tag_POST; ! «похожий»
+	<[ш е (н) и]>	Tag_POST; ! «словно», «как»
+!!!!! Прилагательные
+! <<< Выполоть производные прилагательные !!!
+LEXICON Adjective
+	аақ		Tag_A;
+	аар		Tag_A;
+	ағарығ		Tag_A;
+	ағаш		Tag_A;
+	ағрығ		Tag_A;
+	адаңма		Tag_A;
+	ақ		Tag_A;
+	ақтығ		Tag_A;
+	алғыштығ	Tag_A;
+	алты		Tag_A;
+	алтын		Tag_A;
+	алында		Tag_A;
+	ам		Tag_A;
+	арам		Tag_A;
+	арған		Tag_A;
+	артық		Tag_A;
+	арығ		Tag_A;
+	ачығ		Tag_A;
+	қадыг		Tag_A;
+	қазалчық	Tag_A;
+	қазық		Tag_A;
+	қазыр		Tag_A;
+	қайғаллығ	Tag_A;
+	қайдиг		Tag_A;
+	қайдығ		Tag_A;
+	қайран		Tag_A;
+	қал		Tag_A;
+	қалғанчы	Tag_A;
+	қалтар		Tag_A;
+	қалын		Tag_A;
+	қара		Tag_A;
+	қарақтығ	Tag_A;
+	карам		Tag_A;
+	кенчи		Tag_A;
+	кер		Tag_A;
+	керек		Tag_A;
+	керсе		Tag_A;
+	кӧк		Tag_A;
+	кӧп		Tag_A;
+	қор		Tag_A;
+	қошта		Tag_A;
+	қоштағы		Tag_A;
+	қуба		Tag_A;
+	қурсақтығ	Tag_A;
+	қуруг		Tag_A;
+	кӱш		Tag_A;
+	қызыл		Tag_A;
+	қый		Tag_A;
+	қыйға		Tag_A; ! Deriv
+	қынат		Tag_A;
+	қыр		Tag_A;
+	мӧңӱс		Tag_A;
+	мӱӱс		Tag_A;
+	наа		Tag_A;
+	ӧдӱг		Tag_A;
+	ӧске		Tag_A;
+	паштапқы	Tag_A;
+	пек		Tag_A;
+	пор		Tag_A;
+	пош		Tag_A;
+	пуралығ		Tag_A;
+	сарыг		Tag_A;
+	сарығ		Tag_A;
+	сооқ		Tag_A;
+	сол		Tag_A;
+	сылағай		Tag_A; ! +Deriv
+	тайба		Tag_A;
+	тайыс		Tag_A;
+	талай		Tag_A;
+	таштығ		Tag_A;
+	тебир		Tag_A;
+	теген		Tag_A;
+	тек		Tag_A;
+	темир		Tag_A;
+	тере		Tag_A;
+	терең		Tag_A;
+	тириг		Tag_A;
+	тириғ		Tag_A;
+	тӱс		Tag_A;
+	узақ		Tag_A;
+	ӱлгер		Tag_A;
+	улуг		Tag_A;
+	ӱр		Tag_A;
+	ӱскер		Tag_A;
+	ӱӱр		Tag_A;
+	чабал		Tag_A;
+	чағыс		Tag_A;
+	чажыл		Tag_A;
+	чақшылығ	Tag_A;
+	чарабас		Tag_A;
+	чаш		Tag_A;
+	чес		Tag_A;
+	чоон		Tag_A;
+	чоқ		Tag_A; ! .NEG
+	чуға		Tag_A;
+	чымчақ		Tag_A;
+	чылааш		Tag_A;
+	шаптығ		Tag_A;
+	шедик		Tag_A;
+	ызық		Tag_A;
+	ынаг		Tag_A;
+	ырақ		Tag_A;
+	ээн		Tag_A;
+	эрте		Tag_A;
+	эски		Tag_A;
+! Наречия
+LEXICON Adverb
+	аара		Tag_ADV;
+	аара-пеере	Tag_ADV;
+	ажылдыра	Tag_ADV;
+	айбын		Tag_ADV;
+	айтта		Tag_ADV;
+	алды		Tag_ADV;
+	алты		Tag_ADV;
+	алынаң		Tag_ADV;
+	ам		Tag_ADV;
+	амды		Tag_ADV;
+	амоқ		Tag_ADV;
+	аразынаң	Tag_ADV;
+	ара-чара	Tag_ADV;
+	арий		Tag_ADV;
+	арта-перте	Tag_ADV;
+	ачынман		Tag_ADV;
+	иштинги		Tag_ADV; ! < Deriv
+	иштинде		Tag_ADV; ! < Deriv
+	қадығ		Tag_ADV;
+	қайде		Tag_ADV;
+	қалық		Tag_ADV;
+	қаморта		Tag_ADV;
+	қапчығай	Tag_ADV;
+	қарчы		Tag_ADV;
+	қаш		Tag_ADV;
+	кедере		Tag_ADV;
+	кексинге	Tag_ADV;
+	киченип		Tag_ADV;
+	қожа		Tag_ADV;
+	кӧзе-қара	Tag_ADV;
+	кӧргӱзе		Tag_ADV;
+	қуруғ		Tag_ADV;
+	қыпчып		Tag_ADV;
+	мағат		Tag_ADV;
+	май		Tag_ADV; ! маай
+	маттап		Tag_ADV;
+	ӧре		Tag_ADV;
+	пазоқ		Tag_ADV;
+	пееде		Tag_ADV;
+	пеере		Tag_ADV;
+	пилдирбен	Tag_ADV;
+	пилинмен	Tag_ADV;
+	пилиштиғ	Tag_ADV;
+	сооба		Tag_ADV;
+	соонаң		Tag_ADV;
+	сыраңай		Tag_ADV;
+	толдра		Tag_ADV;
+	тӧзинде		Tag_ADV;
+	тың		Tag_ADV;
+	чуққа		Tag_ADV;
+	чӱче		Tag_ADV;
+	ӱдӱре		Tag_ADV;
+	ӱр		Tag_ADV;
+	шым		Tag_ADV;
+	ылтам		Tag_ADV;
+
+! Пока только маркируются
+LEXICON Tag_ADV
+	[ADV]:0		ADV_StemBoundary;
+
+LEXICON ADV_StemBoundary
+			Enclitic_PART_ta;
+			#;
+! Частицы
+LEXICON Particle
+	ба	Tag_PART; ! .INT — вопросительные частицы (ЧГ-48-49)
+	бе	Tag_PART; ! .INT
+	ма	Tag_PART; ! .INT
+	ме	Tag_PART; ! .INT
+	па	Tag_PART; ! .INT
+	пе	Tag_PART; ! .INT
+	не	Tag_PART; ! .INT ? = rus ‘ли’
+	нем	Tag_PART; ! .INT ? = rus ‘ли’
+	но	Tag_PART; ! см. TODO 1.6.1
+	ноо	Tag_PART; ! уточнить
+	оно	Tag_PART; ! = rus ‘вот’
+	бин	Tag_PART; ! .INT ? = rus ‘ли’
+	бинем	Tag_PART; ! .INT ? = rus ‘ли’
+	да	Tag_PART; ! ? = при перечислении + rus ’даже’, ‘хоть [и]’
+	та	Tag_PART; ! = да
+	ла	Tag_PART; ! ? = rus ‘лишь’, ‘только’
+	ле	Tag_PART; ! = ла/ле
+	на	Tag_PART; ! = ла/ле
+	не	Tag_PART; ! = ла/ле
+	дағы	Tag_PART; ! = rus V + -ка (давай-ка)
+	тағы	Tag_PART; ! = дағы
+
+LEXICON Tag_PART
+	[PART]:0	#;
+
+!!!!!! Числительные
+LEXICON Numeral
+	пир	Tag_NUM; ! 1
+	ийги	Tag_NUM; ! 2
+	ӱш	Tag_NUM; ! 3
+	тӧрт	Tag_NUM; ! 4
+	пеш	Tag_NUM; ! 5
+	алты	Tag_NUM; ! 6
+	четти	Tag_NUM; ! 7
+	сегис	Tag_NUM; ! 8
+	тоғус	Tag_NUM; ! 9
+	он	Tag_NUM; ! 10
+	чегирбе	Tag_NUM; ! 20
+	одус	Tag_NUM; ! 30
+	қырық	Tag_NUM; ! 40
+	элиг	Tag_NUM; ! 50
+	алтон	Tag_NUM; ! 60
+	четтон	Tag_NUM; ! 70
+	сегизон	Tag_NUM; ! 80
+	тоғузон	Tag_NUM; ! 90
+	чӱс	Tag_NUM; ! 100
+	муң	Tag_NUM; ! 1000
+	пирси	Tag_NUM; ! «один из многих» <<< Deriv < пир ???
+	ийгеле	Tag_NUM; ! «вдвоем»
+	ӱдӱре	Tag_NUM; ! «втроем»
+
+!!! Описание «порядков» (Slots)
+LEXICON Tag_V
+	[V]:0		V_StemBoundary;
+
+! Отрицательный глагол [э + бес] : V_Slot1 и 3—4 не заполняются, V_Slot2 уже заполнен — ???
+LEXICON Tag_VNEG
+	[VNEG]:0	VNEG_Slot4;
+
+! Граница корня/основы
+LEXICON V_StemBoundary
+	V_Derivation;
+	V_Slot1;
+
+! Словообразование
+LEXICON V_Derivation
+	V_Attenuation;
+	V_CVB;
+	N_Deverbal;
+	A_Deverbal;
+
+LEXICON V_Attenuation
+	-ATTN:^мзЫрА	V_Slot1;
+
+!! Отглагольные существительные
+LEXICON N_Deverbal
+	-NR1:^Уг	Tag_N; ! ғ ???
+	-NR2:^Уш	Tag_N;
+	-NR3:^ҒУ	Tag_N;
+	-NR4:^ҒУш	Tag_N;
+	-NR5:^Уқ	Tag_N;
+	-NR6:^Ут	Tag_N;
+	-NR7:^Ум	Tag_N;
+	-NR8:^Ақ	Tag_N;
+	-NR9:^л		Tag_N;
+	-NR10:^қУн	Tag_N;
+	-NR11:^пАқ	Tag_N;
+	-NR12:^БА	Tag_N;
+	-NR13:^чАқ	Tag_N;
+	-NR14:^чЫқ	Tag_N;
+
+!! Отглагольные прилагательные
+LEXICON A_Deverbal
+	-ADJR1:^қАқ	Tag_A;
+	-ADJR2:^чУ	Tag_A;
+	-ADJR3:^Ғай	Tag_A;
+	-ADJR4:^Ғур	Tag_A;
+	-ADJR5:^Ын	Tag_A;
+	-ADJR6:^бАқ	Tag_A;
+	-ADJR7:^ғы	Tag_A;
+	<"-ADJR8": ["^" А т ч Ы | А А ч ы]>	Tag_A;
+
+!!! Залоги (voice): -PASS, -REFL, -RECIP, -CAUS | -PASS и -REFL исключают друг друга ?
+!! Возможные сочетания см.: Д-151 (§99), ЧУ-310-311
+! Порядок 1 : -CAUS | -PASS | -REFL | -RECIP
+LEXICON V_Slot1		! -CAUS | -PASS | -REFL | -RECIP
+	-CAUS1:^т	V_Slot2_C2;
+	-CAUS2:^ғУс	V_Slot2_C4;
+	-CAUS3:^Ур	V_Slot2_C1;
+	-CAUS4:^ДУр	V_Slot2_C1;
+	-CAUS5:^Ыс	V_Slot3;
+	-PASS:^Ул	V_Slot2_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
+	-REFL:^Ун	V_Slot2_CR; ! <<< Учесть V^н
+	-REFL:^Ун	V_Slot2_C4; ! <<< ---------^
+	-RECIP:^Уш	V_Slot2_C1;
+	-RECIP:^Уш	V_Slot2_C4;
+	-ITER:^ҒУлА	V_Slot3; ! <<< ???
+			V_Slot3;
+
+! Порядок 2 : -CAUS | -PASS | -REFL
+LEXICON V_Slot2_C1
+	-CAUS1:^т	V_Slot3;
+	-PASS:^Ул	V_Slot3;
+	-REFL:^Ун	V_Slot3;
+			V_Slot3;
+
+LEXICON V_Slot2_C2
+	-CAUS2:^ғУс	V_Slot3;
+			V_Slot3;
+
+LEXICON V_Slot2_C4
+	-CAUS4:^ДУр	V_Slot3;
+			V_Slot3;
+
+LEXICON V_Slot2_CR
+	-CAUS5:^Ыс	V_Slot3;
+	-RECIP:^Уш	V_Slot3;
+			V_Slot3;
+
+! Порядок 3 : Отрицательные формы
+LEXICON V_Slot3 ! -NEG
+	-NEG:^БА	V_Slot4_Negative;
+	-NEG:^БА^ҒАн	V_CVB;
+			V_Slot4_Positive;
+			V_Slot3_NonStdNeg;
+			V_CVB;
+
+! Порядок 4 : Время, вид, наклонение
+LEXICON V_Slot4_Positive ! Время, вид, наклонение
+	-PRS:^п^ча		PCTP_Clitic_Branching; ! <<< учесть ^П^чар : ЧУ-303
+	-PRS-EVID:^ҒАн^чат^тыр	PCTP_Clitic_Branching; ! ^чат^тыр (->) ^чадыр
+	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
+	-PST-IMPF:^п^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
+	-PST-ADM:^Ып^ТУр	PCTP_Clitic_Branching; ! Д-200, ЧУ-173
+	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
+	-FUT:^Ар		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : ЧУ-91
+	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching;
+	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82
+	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
+	<"-SUPN":["^" А р ("^" Ғ А)]>		    #; ! ^Ар / ^Ар^ҒА
+					      V_IMPER;
+
+LEXICON V_Slot4_Negative
+	-PRS:^ҒАн^ча		PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн
+! 	-PRS-EVID:^ҒАн^чат^тыр	PCTP_Clitic_Branching;
+	-PST:^ҒАн		PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн -NEG-PST келбеен, парбаан : ЧУ-81 | -PLUP ???
+	-PST-IMPF:^ҒАн^чат^ҒАн	PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн
+	-PST-ADM:^Ып^ТУр	PCTP_Clitic_Branching;
+	-RPST:^ДУ		PCTP_Clitic_Branching;
+	-FUT:^с			PCTP_Clitic_Branching;
+	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! ^БА^ҒА^ДЫг -> ^БАдЫг
+	-HAB:^чАң		PCTP_Clitic_Branching;
+	-COND:^ЗА		PCTP_Clitic_Branching;
+	-SUPN:с^ҒА				    #; ! -NEG-SUPN => -басқа: ЧУ-175 <<< EncliticBranching ???
+					      V_IMPER;
+
+LEXICON V_Slot3_NonStdNeg ! Non-standard Negator
+	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching;
+	-FUT.ITER-EVID:^А^ДЫр	PCTP_Clitic_Branching; ! >>> TODO 1.1.1
+
+! Для отрицательного глагола
+LEXICON VNEG_Slot4
+			Endoclitic_PART;
+
+!! Императивы
+LEXICON V_IMPER
+	-IMP:0		V_IMP;
+
+LEXICON V_IMP
+	<".1SG":["^" [А й (Ы н) | У й У н]]>	#; ! ^УйУн / ^Ай / ^АйЫн : Д-172-173 (§115)
+	.2SG:0					#;
+	.2SG.POL:^ЗАң				#;
+	<".3SG":["^" З [У | Ы] н]>		#; ! ^ЗУн / ^ЗЫн (верх. Мрассу, Кондома : Д-170 (§113))
+	.1DU:^Аң				#; ! «мы вдвоем» : Д-173 (§116)
+	.1PL:^Аң^ЛАр				#; ! «мы многие» : Д-174
+	.2PL:^Лаар				#; ! <<< ^аар после согласных :: Д-169 (§112) + ^ГЫлА (верх. Мрассу : Д-170)
+	<".3PL":["^" З [У | Ы] н "^" Л А р]>	#; ! + ^ЗЫн ?
+
+!!!
+LEXICON PCTP_Clitic_Branching
+			Endoclitic_PART;
+			Tag_PTCP;
+
+!!! Порядок 5
+LEXICON V_Slot5
+			V_Slot5_PERS;
+			V_Slot5_PRED;
+			V_Slot5_POSS;
+
+!! Порядок 5 : Аффиксы лица и числа
+LEXICON V_Slot5_PERS	! Аффиксы лица и числа
+	-1SG:^Ым	EncliticBranching; ! …^БЫ[м|н], …V^Ым => V^м
+	-2SG:^ЗЫң	EncliticBranching; ! <<< …V^ң ; ^Ың в -RPST : ЧУ-52
+	-3SG:0		EncliticBranching;
+	-1PL:^БЫс	EncliticBranching; ! <<< -PST : ЧУ-80
+	-2PL:^Заар	EncliticBranching; ! <<< ^аар в -RPST : ЧУ-52 и -PST : ЧУ-80 | ^саар?
+	-3PL:^ЛАр	EncliticBranching;
+
+!! Порядок 5 : Предикативные аффиксы
+LEXICON V_Slot5_PRED	! Предикативные аффиксы
+	-PRED.1SG:^БЫн	EncliticBranching; ! #; ! … ^БЫм : ЧУ-251 … ^қЫм, ^сЫм
+	-PRED.2SG:^ЗЫң	EncliticBranching; ! #; ! Нет ассимиляции -с + ^ЗЫң ⇒ -сЫң
+	-PRED.3SG:0	EncliticBranching; ! #;
+	-PRED.1PL:^БЫс	EncliticBranching; ! #; ! … ^қЫс, ^сЫс
+	-PRED.2PL:^ЗААр	EncliticBranching; ! #; ! Дополнить описание ассимиляции CVoiceless + ^ЗААр
+	<["-PRED" ".3PL"]:["^" [Л А|Д Ы] р]>	EncliticBranching; #! ; ! … ^ДЫр : ЧУ-252
+
+!! Порядок 5 : Притяжательные аффиксы <<< Рабораться !
+LEXICON V_Slot5_POSS
+	-POSS.1SG:^Ым		N_Slot3;
+	-POSS.2SG:^Ың		N_Slot3; ! <<< Нужен ли ^Уң ???
+	-POSS.3SG:^ЗЫ		N_Slot3;
+	-POSS.1PL:^ЫбЫс		N_Slot3;
+	-POSS.2PL:^ЛАр^Ың	N_Slot3;
+	-POSS.3PL:^ЛАр^Ы	N_Slot3;
+
+!!! Деепричастия / конвербы
+LEXICON V_CVB
+	-CON:^Уп	Tag_CVB; ! Соединительная либо попутно-предварительная форма : Д-155 (§102)
+	-SIM:^А		Tag_CVB; ! Действие, одновременное действию главного глагола : ЧУ-302
+	-ANT:^АлА	Tag_CVB; ! Anterior : Действие, после которого немедленно наступает действие главного глагола : ЧУ-302
+	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем : ЧУ-303, Оз-239 = -LIM.FUT >>> Проверить ^ҒАнчА
+
+LEXICON Tag_CVB
+	[CVB]:0		EncliticBranching;
+
+!!! Причастия
+LEXICON Tag_PTCP
+	[PTCP]:0	N_Slot1;
+!!! Клитики
+
+LEXICON EncliticBranching
+			Enclitic_PART_oq;
+			Enclitic_PART_other;
+			Enclitic_PART_ta;
+			#;
+
+! Emphasis
+LEXICON Enclitic_PART_oq
+	=EMP1:^оқ	Enclitic_PART_ta;
+	=EMP1:^оқ	#;
+			#;
+
+LEXICON Enclitic_PART_ta
+	=CLT:^-Та	#; ! Д-247 (§163)
+
+
+LEXICON Enclitic_PART_other
+	=CLT:^-ЛА	#; ! Д-245 (§163)
+	=EMP2:^-но	#; ! Усилительная частица, сочетается с глаголами, проверить вариант -ро
+
+! <<< При генерации исключить второй ^оқ после личных аффиксов
+LEXICON Endoclitic_PART
+	=EMP1:^оқ	V_Slot5;
+			V_Slot5;
+!!!!!! Существительные :: -NUM > -POSS > -CASE > -PRED
+
+!!! Описание «порядков» (Slots)
+LEXICON Tag_N
+	[N]:0	N_StemBoundary;
+
+LEXICON Tag_PN
+	[PN]:0	N_StemBoundary;
+
+! Граница корня/основы
+LEXICON N_StemBoundary
+	N_Derivation;
+	N_Slot1;
+
+! Словообразование
+LEXICON N_Derivation
+	N_DIM;
+	N_ADJ;
+	N_NDenom;
+	N_VR;
+	N_ADV;
+
+! Число
+LEXICON N_Slot1
+	-SG:0		N_Slot2;
+	-PL:^ЛАр	N_Slot2;
+
+! Притяжательные аффиксы : См. ЧУ-53-54
+LEXICON N_Slot2
+	-POSS.1SG:^Ым		N_Slot3;
+	-POSS.2SG:^Ың		N_Slot3; ! <<< Нужен ли ^Уң ???
+	-POSS.3SG:^ЗЫ		N_Slot3;
+	-POSS.1PL:^ЫбЫс		N_Slot3;
+	-POSS.2PL:^ЛАр^Ың	N_Slot3;
+	-POSS.3PL:^ЛАр^Ы	N_Slot3;
+				N_Slot3;
+
+! Падеж
+LEXICON N_Slot3		! Падеж
+	-NOM:0		EncliticBranching; 	! <<< также -ACC.INDF и -GEN.INDF : ЧУ-61
+	-ACC:^НУ	#; 			! ^НЫ ??? <<< -ACC.DEF : ЧУ-61
+	-GEN:^НЫң	N_Slot3_GEN_LOC_Branching; ! ^НЫң ??? <<< -GEN.DEF : ЧУ-61
+	-DAT:^ҒА	EncliticBranching;
+	-ELA:^ДАң	#; 			! -CMPR : См. Д-63 (§24)
+	-LOC:^ДА	N_Slot3_GEN_LOC_Branching; ! #; ! -TMP
+	-PROL:^ча	#; 			! -DIR : См. Д-64 (§25)
+	-TERM:^че	#; 			! -CMPR : См. Д-64 (§26)
+	-EQT:^ДЫг	#; 			! ⇒ [A] <<<
+	<"-INST" : ["^" Б ([Ы | У] л) А]>	#; ! Альтернативные формы для -INST (-PROL -COM)
+	! <<< См. Д-69 (§29) «Пережитки … -INST, -ABL, -DIR» ЧУ-93
+	-DIR:^ҒАрА	#;
+			N_Slot4; ! Откуда правильнее переходить к -PRED (N_Slot4) ???
+
+LEXICON N_Slot3_GEN_LOC_Branching
+			N_ADJ;
+			N_Slot4;
+			EncliticBranching;
+
+! Предикативные аффиксы имени : ЧУ-251-253
+! >>> Уточнить: -PRED присоединяется к -NOM или основе предыдущего порядка, когда нет -LOC?
+LEXICON N_Slot4
+	@D.POS.pro@		N_Slot4_affixes;
+
+LEXICON N_Slot4_affixes
+	-PRED.1SG:^БЫн	EncliticBranching; ! #; ! … ^БЫм : ЧУ-251 … ^қЫм, ^сЫм
+	-PRED.2SG:^ЗЫң	EncliticBranching; ! #; ! Нет ассимиляции -с + ^ЗЫң ⇒ -сЫң
+	-PRED.3SG:0	EncliticBranching; ! #;
+	-PRED.1PL:^БЫс	EncliticBranching; ! #; ! … ^қЫс, ^сЫс
+	-PRED.2PL:^ЗААр	EncliticBranching; ! #; ! Дополнить описание ассимиляции CVoiceless + ^ЗААр
+	<["-PRED" ".3PL"]:["^" [Л А|Д Ы] р]>	EncliticBranching; #! ; ! … ^ДЫр : ЧУ-252
+
+!!! Словообразование
+
+! Уменьшительные аффиксы
+LEXICON N_DIM
+	-DIM1:^чАқ		N_Slot1;
+	-DIM2:^Ақ		N_Slot1;
+	-DIM3:^Аш		N_Slot1;
+	-DIM2-DIM3:^Ақ^Аш	N_Slot1; ! ‘оолағаш’ : добавить правильную обработку -DIM2-DIM3
+	-DIM1-DIM3:^чАқ^Аш	N_Slot1; ! добавить правильную обработку -DIM1-DIM3
+
+! Образование отыменных прилагательных
+LEXICON N_ADJ
+	-ATTR1:^ЛЫг	Tag_A; ! -ADJR ? (adjectivalizer — cм. Croft) <<< <<< Нужен Flag D.LOC ?
+	-ATTR2:^ҒЫ	Tag_A; ! <<< Нужен Flag -LOC/-GEN ?
+! 	-ATTR3:^НЫңңЫ	Tag_A; ! -ADJR : ЧУ-286 <<< Разбить на ^НЫң^ҒЫ ??? учесть ^НЫйЫ
+
+! Образование отыменных существительных
+LEXICON N_NDenom
+	-AG:^чУ		N_StemBoundary; ! -AG — деятель
+
+! Образование отыменных глаголов : -VR — verbaliser (Croft)
+LEXICON N_VR
+	-VR1:^ЛА	Tag_V;
+	-VR2:^А		Tag_V; ! …Правило для выпадения гласного именной основы :  сарна < сарын, ӧрле «подниматься» < ӧре «верх»
+	-VR3:^Ар	Tag_V;
+	-VR4:^сУн	Tag_V; ! <<< Нет формы ^зУн ???
+	-VR5:^ЗЫрА	Tag_V;
+	-VR6:^Ық	Tag_V;
+	-VR7:^ҒАр	Tag_V;
+	-VR8:^ра	Tag_V; ! <<< Нет формы ^ре ???
+
+! Образование наречий от существительных : древний инструментальный падеж (Д-228 §159)
+LEXICON N_ADV
+	-ADVR:^Ын	Tag_ADV;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Прилагательные :: ([-CMRP | -SUP ]) (-NUM > -CASE > -POSS > -PRED)
+!!!!!! Д-70 (§32)
+
+LEXICON Tag_A
+	[A]:0	A_StemBoundary;
+
+LEXICON A_StemBoundary
+	A_Derivation;
+	A_Slot1;
+
+! Число прилагательных
+LEXICON A_Slot1
+	-SG:0		N_Slot3; ! A_Slot2;
+	-PL:^ЛАр	N_Slot3; ! A_Slot2;
+
+! Падежи прилагательных на ^ДЫ^йЫ (й < НЫң + ҒЫ)
+! LEXICON A_Slot2
+! 	-NOM:0		#;
+! 	-ACC:^Н		#;
+! 	-GEN:^НЫң	#;
+! 	-DAT:^Н^ҒА	#;
+! 	-LOC:^Н^ДА	#;
+! 	-ELA:^НАң	#;
+! 			N_Slot4; ! >>> см. вопрос при N_Slot3 и N_Slot4
+
+! Словообразование
+LEXICON A_Derivation
+	A_VR;
+	A_Comparatives;
+
+LEXICON A_VR
+	-VR3:^Ар	Tag_V; ! …V^р — Сочетается (только?) с названиями цветов : Д-143 (§93)
+	-VR9:^р		Tag_V;
+
+! Степени сравнения <<< Разница между вариантами -DIM ???
+LEXICON A_Comparatives
+	<"-CMPR" : ["^" "-" [(а) а р а | а р ы] қ]>	A_Slot1; ! Сравнительная степень -аарақ, -арақ, -арық
+	<"-DIM" : ["^" "-" [(а) а р а | а р ы] қ]>	A_Slot1; ! -DIM = -CMPR
+	-ATTN1:^УлдУрУм	A_Slot1; ! Слабая степень выраженности
+	-ATTN2:^амдық	A_Slot1;
+	-ATTN3:^зыбан	A_Slot1;
+! эң-не / эң -SUP затем прилагательное
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Местоимения
+
+LEXICON Pronoun ! <<< Довести до ума!
+	@P.POS.pro@	Tag_PRO;
+
+LEXICON Tag_PRO
+	[PRO]:0		Pro_PERS;
+	[PRO]:0		Pro_POSS;
+	[PRO]:0		Pro_POSS_ABS;
+	[PRO]:0		Pro_DEM;
+	[PRO]:0		Pro_INT;
+	[PRO]:0		Pro_REFL;
+
+! Личные местоимения <<< Довести до ума!
+LEXICON Pro_PERS
+	-PERS.1SG:0	Pro_PERS_1SG;
+	-PERS.2SG:0	Pro_PERS_2SG;
+	-PERS.3SG:0	Pro_PERS_3SG;
+	-PERS.1PL:пис	N_Slot3;
+	<["-PERS" ".2PL"] : [с (и) л е р]>		N_Slot3; ! силер, слер
+	<["-PERS" ".3PL"] : [((п) (о | ы) | а) л а р]>	N_Slot3; ! олар, алар, ылар, лар, пылар, плар
+
+LEXICON Pro_PERS_1SG
+	-NOM:мен	EncliticBranching; ! #;
+	-ACC:мени	#;
+	-GEN:меең	#;
+	-DAT:маға	#;
+	-ELA:менең	#;
+	-LOC:менде	#;
+! 	-PROL:	#; ! <<< ???
+! 	-TERM:	#; ! <<< ???
+! 	-CMPR:	#; ! <<< ???
+
+LEXICON Pro_PERS_2SG
+	-NOM:сен	EncliticBranching; ! #;
+	-ACC:сени	#;
+	-GEN:сеең	#;
+	-DAT:саға	#;
+	-ELA:сенең	#;
+	-LOC:сенде	#;
+! 	-PROL:	#; ! <<< ???
+! 	-TERM:	#; ! <<< ???
+! 	-CMPR:	#; ! <<< ???
+
+LEXICON Pro_PERS_3SG
+	-NOM:ол		EncliticBranching; ! #;
+	-ACC:аны	#;
+	-GEN:ааң	#;
+	-DAT:а^ҒА	#;
+	-ELA:анаң	#;
+	-LOC:анда	#;
+	-INST:ааңма	#;
+! 	-PROL:	#; ! <<< ???
+! 	-TERM:	#; ! <<< ???
+! 	-CMPR:	#; ! <<< ???
+
+! Притяжательные местоимения <<< Довести до ума!
+LEXICON Pro_POSS
+	-POSS.1SG:меең		Pro_POSS_NUM;
+	-POSS.2SG:сеең		Pro_POSS_NUM;
+	-POSS.3SG:ааң		Pro_POSS_NUM;
+	-POSS.1PL:пис^ДЫң	Pro_POSS_NUM;
+	-POSS.2PL:силер^ДЫң	Pro_POSS_NUM;
+	-POSS.3PL:ылар^ДЫң	Pro_POSS_NUM; ! … пылардың
+
+LEXICON Pro_POSS_NUM
+	-SG:0		#;
+	-PL:^ЛАр	#;
+
+! Притяжательные местоимения (абсолютные) <<< Довести до ума!
+LEXICON Pro_POSS_ABS
+	-POSS.ABS.1SG:менЫй^Ы		Pro_POSS_ABS_NUM;
+	-POSS.ABS.2SG:сенЫй^Ы		Pro_POSS_ABS_NUM;
+	-POSS.ABS.3SG:анЫй^Ы		Pro_POSS_ABS_NUM;
+	-POSS.ABS.1PL:пистЫй^Ы		Pro_POSS_ABS_NUM;
+	-POSS.ABS.2PL:силердЫй^Ы	Pro_POSS_ABS_NUM;
+	-POSS.ABS.3PL:ылардЫй^Ы		Pro_POSS_ABS_NUM; ! … пылардың
+
+LEXICON Pro_POSS_ABS_NUM
+	-SG:0		Pro_POSS_ABS_SG_CASE;
+	-PL:^ЛАрЫ	N_Slot3;
+
+LEXICON Pro_POSS_ABS_SG_CASE ! <<< см. A_Slot2 ???
+	-NOM:0		#;
+	-ACC:^н		#;
+	-GEN:^нЫң	#;
+	-DAT:^нЫ	#;
+	-ELA:^нАң	#;
+	-LOC:^ндА	#;
+
+! Указательные местоимения <<< Довести до ума!
+LEXICON Pro_DEM
+	-DEM.PROX-SG:0		Pro_DEM_PROX_SG;
+	-DEM.DIST-SG:0		Pro_PERS_3SG;
+	-DEM.PROX-PL:по^нАр	N_Slot3;
+	-DEM.DIST-PL:а^нАр	N_Slot3;
+	-DEM.MIDP:тиги		N_Slot1; ! <<< -GEN тигидиң ⇒ тигиниң ; -DAT +тигии ; -INST -тигибиле?
+
+LEXICON Pro_DEM_PROX_SG
+	-NOM:по		#;
+	-ACC:поны	#;
+	-ACC:пону	#; ! <<< вариант
+	-GEN:пооң	#;
+	-DAT:по^ҒА	#; ! … поо
+	-ELA:мынаң	#;
+	-LOC:мында	#;
+	-INST:пооңма	#;
+! 	-TERM:	#; ! <<< ???
+! 	-CMPR:	#; ! <<< ???
+
+! Вопросительные местоимения
+LEXICON Pro_INT
+	-INT.AN:кем	N_Slot3; ! <<< -DAT +кемге -кеме
+	-INT.INAN:ноо	N_Slot3; ! <<< -GEN +нооның -ноодың
+! 	қайы «который?», «какой?»
+! 	қайзы қайзызы «который?», «который из них?»
+	-INT.ORD:қанченчи	#; ! «который?» (по счету)
+	-INT.CARD:қанче		#; ! «сколько?»
+! 	қайдыг «какой?»
+	-INT.MAN:қайде		#; ! «как, каким образом?» >>> .MAN ???
+
+! Лично-возвратные местоимения :: пос~пой
+LEXICON Pro_REFL
+	-REFL:пос	N_Slot2;
+	-REFL:пой	N_Slot2;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Послелоги
+
+LEXICON Tag_POST
+	[PSTP]:0	#; ! <<< Пока только маркируются. Анализ?
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Числительные
+
+LEXICON Tag_NUM
+	[NUM]:0		N_Slot2; ! Уточнить последствия: все ли можно образовать от числительных, что можно от существительных?
+

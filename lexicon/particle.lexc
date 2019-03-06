@@ -1,0 +1,27 @@
+! Частицы
+LEXICON Particle
+	ба	Tag_PART; ! .INT — вопросительные частицы (ЧГ-48-49)
+	бе	Tag_PART; ! .INT
+	ма	Tag_PART; ! .INT
+	ме	Tag_PART; ! .INT
+	па	Tag_PART; ! .INT
+	пе	Tag_PART; ! .INT
+	не	Tag_PART; ! .INT ? = rus ‘ли’
+	нем	Tag_PART; ! .INT ? = rus ‘ли’
+	но	Tag_PART; ! см. TODO 1.6.1
+	ноо	Tag_PART; ! уточнить
+	оно	Tag_PART; ! = rus ‘вот’
+	бин	Tag_PART; ! .INT ? = rus ‘ли’
+	бинем	Tag_PART; ! .INT ? = rus ‘ли’
+	да	Tag_PART; ! ? = при перечислении + rus ’даже’, ‘хоть [и]’
+	та	Tag_PART; ! = да
+	ла	Tag_PART; ! ? = rus ‘лишь’, ‘только’
+	ле	Tag_PART; ! = ла/ле
+	на	Tag_PART; ! = ла/ле
+	не	Tag_PART; ! = ла/ле
+	дағы	Tag_PART; ! = rus V + -ка (давай-ка)
+	тағы	Tag_PART; ! = дағы
+
+LEXICON Tag_PART
+	[PART]:0	#;
+

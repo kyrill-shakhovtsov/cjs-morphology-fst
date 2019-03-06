@@ -1,0 +1,41 @@
+! Правила
+source phonology/rules.xfst
+
+! Фильтр
+source filter.xfst
+
+! Лексикон и морфосинтаксис
+read lexc cjs.lexc
+
+echo Удаление всех Flag-Diacritics
+eliminate flags
+
+define Lexicon ;
+
+echo Сборка преобразователя
+
+define Grammar Filter
+	.o. Lexicon
+	.o. NegContraction
+! 	.o. Contraction
+! 	.o. RDrop ! Выпадение [р]
+	.o. RemExtraV
+	.o. AlterForms
+	.o. Prostesis
+	.o. YDrop
+	.o. GDrop
+	.o. GJConv
+	.o. PDrop
+	.o. VowelHarmony
+	.o. Assimilation
+	.o. Voicing
+! 	.o. V -> 0 || _ "^" о қ ["^" | .#.]
+	.o. "^" -> "."
+	.o. "." -> 0 // "." _ ;
+! 	.o. е -> ӱ // ӱ _ .#. ;
+
+read regex Grammar.i ;
+
+save stack fst/cjs-segmenter-u.bin
+
+echo «Расчленитель-U» собран в fst/cjs-segmenter-u.bin

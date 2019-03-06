@@ -1,0 +1,6 @@
+!
+source analysis.xfst
+
+save stack fst/cjs-analyser.bin
+
+echo Анализатор собран в fst/cjs-analyser.bin

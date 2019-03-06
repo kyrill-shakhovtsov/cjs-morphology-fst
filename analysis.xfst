@@ -1,0 +1,38 @@
+! ! ! Анализатор
+
+! Лексикон и морфосинтаксис
+read lexc cjs.lexc
+
+eliminate flags
+
+define Lexicon ;
+
+! Правила
+source phonology/rules.xfst
+
+! Орфография
+source orthography/orthography.xfst
+
+! Фильтр
+source filter.xfst
+
+! Сборка преобразователя
+read regex Filter
+	.o. Lexicon
+	.o. NegContraction
+	.o. Contraction
+	.o. RDrop ! Выпадение [р]
+	.o. RemExtraV
+	.o. AlterForms
+	.o. Prostesis
+	.o. Zdrop
+	.o. LDrop
+	.o. YDrop
+	.o. GDrop
+	.o. GJConv
+	.o. PDrop
+	.o. VowelHarmony
+	.o. Assimilation
+	.o. Voicing
+	.o. Orthography.i ! Сильно портит генерацию
+	.o. CleanUp ;

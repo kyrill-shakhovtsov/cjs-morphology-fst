@@ -1,0 +1,6 @@
+!
+source clean-analysis.xfst
+
+save stack fst/cjs-clean-analyser.bin
+
+echo «Чистый» анализатор собран в fst/cjs-clean-analyser.bin

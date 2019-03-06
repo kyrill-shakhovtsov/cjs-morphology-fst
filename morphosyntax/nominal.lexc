@@ -1,0 +1,290 @@
+!!!!!! Существительные :: -NUM > -POSS > -CASE > -PRED
+
+!!! Описание «порядков» (Slots)
+LEXICON Tag_N
+	[N]:0	N_StemBoundary;
+
+LEXICON Tag_PN
+	[PN]:0	N_StemBoundary;
+
+! Граница корня/основы
+LEXICON N_StemBoundary
+	N_Derivation;
+	N_Slot1;
+
+! Словообразование
+LEXICON N_Derivation
+	N_DIM;
+	N_ADJ;
+	N_NDenom;
+	N_VR;
+	N_ADV;
+
+! Число
+LEXICON N_Slot1
+	-SG:0		N_Slot2;
+	-PL:^ЛАр	N_Slot2;
+
+! Притяжательные аффиксы : См. ЧУ-53-54
+LEXICON N_Slot2
+	-POSS.1SG:^Ым		N_Slot3;
+	-POSS.2SG:^Ың		N_Slot3; ! <<< Нужен ли ^Уң ???
+	-POSS.3SG:^ЗЫ		N_Slot3;
+	-POSS.1PL:^ЫбЫс		N_Slot3;
+	-POSS.2PL:^ЛАр^Ың	N_Slot3;
+	-POSS.3PL:^ЛАр^Ы	N_Slot3;
+				N_Slot3;
+
+! Падеж
+LEXICON N_Slot3		! Падеж
+	-NOM:0		EncliticBranching; 	! <<< также -ACC.INDF и -GEN.INDF : ЧУ-61
+	-ACC:^НУ	#; 			! ^НЫ ??? <<< -ACC.DEF : ЧУ-61
+	-GEN:^НЫң	N_Slot3_GEN_LOC_Branching; ! ^НЫң ??? <<< -GEN.DEF : ЧУ-61
+	-DAT:^ҒА	EncliticBranching;
+	-ELA:^ДАң	#; 			! -CMPR : См. Д-63 (§24)
+	-LOC:^ДА	N_Slot3_GEN_LOC_Branching; ! #; ! -TMP
+	-PROL:^ча	#; 			! -DIR : См. Д-64 (§25)
+	-TERM:^че	#; 			! -CMPR : См. Д-64 (§26)
+	-EQT:^ДЫг	#; 			! ⇒ [A] <<<
+	<"-INST" : ["^" Б ([Ы | У] л) А]>	#; ! Альтернативные формы для -INST (-PROL -COM)
+	! <<< См. Д-69 (§29) «Пережитки … -INST, -ABL, -DIR» ЧУ-93
+	-DIR:^ҒАрА	#;
+			N_Slot4; ! Откуда правильнее переходить к -PRED (N_Slot4) ???
+
+LEXICON N_Slot3_GEN_LOC_Branching
+			N_ADJ;
+			N_Slot4;
+			EncliticBranching;
+
+! Предикативные аффиксы имени : ЧУ-251-253
+! >>> Уточнить: -PRED присоединяется к -NOM или основе предыдущего порядка, когда нет -LOC?
+LEXICON N_Slot4
+	@D.POS.pro@		N_Slot4_affixes;
+
+LEXICON N_Slot4_affixes
+	-PRED.1SG:^БЫн	EncliticBranching; ! #; ! … ^БЫм : ЧУ-251 … ^қЫм, ^сЫм
+	-PRED.2SG:^ЗЫң	EncliticBranching; ! #; ! Нет ассимиляции -с + ^ЗЫң ⇒ -сЫң
+	-PRED.3SG:0	EncliticBranching; ! #;
+	-PRED.1PL:^БЫс	EncliticBranching; ! #; ! … ^қЫс, ^сЫс
+	-PRED.2PL:^ЗААр	EncliticBranching; ! #; ! Дополнить описание ассимиляции CVoiceless + ^ЗААр
+	<["-PRED" ".3PL"]:["^" [Л А|Д Ы] р]>	EncliticBranching; #! ; ! … ^ДЫр : ЧУ-252
+
+!!! Словообразование
+
+! Уменьшительные аффиксы
+LEXICON N_DIM
+	-DIM1:^чАқ		N_Slot1;
+	-DIM2:^Ақ		N_Slot1;
+	-DIM3:^Аш		N_Slot1;
+	-DIM2-DIM3:^Ақ^Аш	N_Slot1; ! ‘оолағаш’ : добавить правильную обработку -DIM2-DIM3
+	-DIM1-DIM3:^чАқ^Аш	N_Slot1; ! добавить правильную обработку -DIM1-DIM3
+
+! Образование отыменных прилагательных
+LEXICON N_ADJ
+	-ATTR1:^ЛЫг	Tag_A; ! -ADJR ? (adjectivalizer — cм. Croft) <<< <<< Нужен Flag D.LOC ?
+	-ATTR2:^ҒЫ	Tag_A; ! <<< Нужен Flag -LOC/-GEN ?
+! 	-ATTR3:^НЫңңЫ	Tag_A; ! -ADJR : ЧУ-286 <<< Разбить на ^НЫң^ҒЫ ??? учесть ^НЫйЫ
+
+! Образование отыменных существительных
+LEXICON N_NDenom
+	-AG:^чУ		N_StemBoundary; ! -AG — деятель
+
+! Образование отыменных глаголов : -VR — verbaliser (Croft)
+LEXICON N_VR
+	-VR1:^ЛА	Tag_V;
+	-VR2:^А		Tag_V; ! …Правило для выпадения гласного именной основы :  сарна < сарын, ӧрле «подниматься» < ӧре «верх»
+	-VR3:^Ар	Tag_V;
+	-VR4:^сУн	Tag_V; ! <<< Нет формы ^зУн ???
+	-VR5:^ЗЫрА	Tag_V;
+	-VR6:^Ық	Tag_V;
+	-VR7:^ҒАр	Tag_V;
+	-VR8:^ра	Tag_V; ! <<< Нет формы ^ре ???
+
+! Образование наречий от существительных : древний инструментальный падеж (Д-228 §159)
+LEXICON N_ADV
+	-ADVR:^Ын	Tag_ADV;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Прилагательные :: ([-CMRP | -SUP ]) (-NUM > -CASE > -POSS > -PRED)
+!!!!!! Д-70 (§32)
+
+LEXICON Tag_A
+	[A]:0	A_StemBoundary;
+
+LEXICON A_StemBoundary
+	A_Derivation;
+	A_Slot1;
+
+! Число прилагательных
+LEXICON A_Slot1
+	-SG:0		N_Slot3; ! A_Slot2;
+	-PL:^ЛАр	N_Slot3; ! A_Slot2;
+
+! Падежи прилагательных на ^ДЫ^йЫ (й < НЫң + ҒЫ)
+! LEXICON A_Slot2
+! 	-NOM:0		#;
+! 	-ACC:^Н		#;
+! 	-GEN:^НЫң	#;
+! 	-DAT:^Н^ҒА	#;
+! 	-LOC:^Н^ДА	#;
+! 	-ELA:^НАң	#;
+! 			N_Slot4; ! >>> см. вопрос при N_Slot3 и N_Slot4
+
+! Словообразование
+LEXICON A_Derivation
+	A_VR;
+	A_Comparatives;
+
+LEXICON A_VR
+	-VR3:^Ар	Tag_V; ! …V^р — Сочетается (только?) с названиями цветов : Д-143 (§93)
+	-VR9:^р		Tag_V;
+
+! Степени сравнения <<< Разница между вариантами -DIM ???
+LEXICON A_Comparatives
+	<"-CMPR" : ["^" "-" [(а) а р а | а р ы] қ]>	A_Slot1; ! Сравнительная степень -аарақ, -арақ, -арық
+	<"-DIM" : ["^" "-" [(а) а р а | а р ы] қ]>	A_Slot1; ! -DIM = -CMPR
+	-ATTN1:^УлдУрУм	A_Slot1; ! Слабая степень выраженности
+	-ATTN2:^амдық	A_Slot1;
+	-ATTN3:^зыбан	A_Slot1;
+! эң-не / эң -SUP затем прилагательное
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Местоимения
+
+LEXICON Pronoun ! <<< Довести до ума!
+	@P.POS.pro@	Tag_PRO;
+
+LEXICON Tag_PRO
+	[PRO]:0		Pro_PERS;
+	[PRO]:0		Pro_POSS;
+	[PRO]:0		Pro_POSS_ABS;
+	[PRO]:0		Pro_DEM;
+	[PRO]:0		Pro_INT;
+	[PRO]:0		Pro_REFL;
+
+! Личные местоимения <<< Довести до ума!
+LEXICON Pro_PERS
+	-PERS.1SG:0	Pro_PERS_1SG;
+	-PERS.2SG:0	Pro_PERS_2SG;
+	-PERS.3SG:0	Pro_PERS_3SG;
+	-PERS.1PL:пис	N_Slot3;
+	<["-PERS" ".2PL"] : [с (и) л е р]>		N_Slot3; ! силер, слер
+	<["-PERS" ".3PL"] : [((п) (о | ы) | а) л а р]>	N_Slot3; ! олар, алар, ылар, лар, пылар, плар
+
+LEXICON Pro_PERS_1SG
+	-NOM:мен	EncliticBranching; ! #;
+	-ACC:мени	#;
+	-GEN:меең	#;
+	-DAT:маға	#;
+	-ELA:менең	#;
+	-LOC:менде	#;
+! 	-PROL:	#; ! <<< ???
+! 	-TERM:	#; ! <<< ???
+! 	-CMPR:	#; ! <<< ???
+
+LEXICON Pro_PERS_2SG
+	-NOM:сен	EncliticBranching; ! #;
+	-ACC:сени	#;
+	-GEN:сеең	#;
+	-DAT:саға	#;
+	-ELA:сенең	#;
+	-LOC:сенде	#;
+! 	-PROL:	#; ! <<< ???
+! 	-TERM:	#; ! <<< ???
+! 	-CMPR:	#; ! <<< ???
+
+LEXICON Pro_PERS_3SG
+	-NOM:ол		EncliticBranching; ! #;
+	-ACC:аны	#;
+	-GEN:ааң	#;
+	-DAT:а^ҒА	#;
+	-ELA:анаң	#;
+	-LOC:анда	#;
+	-INST:ааңма	#;
+! 	-PROL:	#; ! <<< ???
+! 	-TERM:	#; ! <<< ???
+! 	-CMPR:	#; ! <<< ???
+
+! Притяжательные местоимения <<< Довести до ума!
+LEXICON Pro_POSS
+	-POSS.1SG:меең		Pro_POSS_NUM;
+	-POSS.2SG:сеең		Pro_POSS_NUM;
+	-POSS.3SG:ааң		Pro_POSS_NUM;
+	-POSS.1PL:пис^ДЫң	Pro_POSS_NUM;
+	-POSS.2PL:силер^ДЫң	Pro_POSS_NUM;
+	-POSS.3PL:ылар^ДЫң	Pro_POSS_NUM; ! … пылардың
+
+LEXICON Pro_POSS_NUM
+	-SG:0		#;
+	-PL:^ЛАр	#;
+
+! Притяжательные местоимения (абсолютные) <<< Довести до ума!
+LEXICON Pro_POSS_ABS
+	-POSS.ABS.1SG:менЫй^Ы		Pro_POSS_ABS_NUM;
+	-POSS.ABS.2SG:сенЫй^Ы		Pro_POSS_ABS_NUM;
+	-POSS.ABS.3SG:анЫй^Ы		Pro_POSS_ABS_NUM;
+	-POSS.ABS.1PL:пистЫй^Ы		Pro_POSS_ABS_NUM;
+	-POSS.ABS.2PL:силердЫй^Ы	Pro_POSS_ABS_NUM;
+	-POSS.ABS.3PL:ылардЫй^Ы		Pro_POSS_ABS_NUM; ! … пылардың
+
+LEXICON Pro_POSS_ABS_NUM
+	-SG:0		Pro_POSS_ABS_SG_CASE;
+	-PL:^ЛАрЫ	N_Slot3;
+
+LEXICON Pro_POSS_ABS_SG_CASE ! <<< см. A_Slot2 ???
+	-NOM:0		#;
+	-ACC:^н		#;
+	-GEN:^нЫң	#;
+	-DAT:^нЫ	#;
+	-ELA:^нАң	#;
+	-LOC:^ндА	#;
+
+! Указательные местоимения <<< Довести до ума!
+LEXICON Pro_DEM
+	-DEM.PROX-SG:0		Pro_DEM_PROX_SG;
+	-DEM.DIST-SG:0		Pro_PERS_3SG;
+	-DEM.PROX-PL:по^нАр	N_Slot3;
+	-DEM.DIST-PL:а^нАр	N_Slot3;
+	-DEM.MIDP:тиги		N_Slot1; ! <<< -GEN тигидиң ⇒ тигиниң ; -DAT +тигии ; -INST -тигибиле?
+
+LEXICON Pro_DEM_PROX_SG
+	-NOM:по		#;
+	-ACC:поны	#;
+	-ACC:пону	#; ! <<< вариант
+	-GEN:пооң	#;
+	-DAT:по^ҒА	#; ! … поо
+	-ELA:мынаң	#;
+	-LOC:мында	#;
+	-INST:пооңма	#;
+! 	-TERM:	#; ! <<< ???
+! 	-CMPR:	#; ! <<< ???
+
+! Вопросительные местоимения
+LEXICON Pro_INT
+	-INT.AN:кем	N_Slot3; ! <<< -DAT +кемге -кеме
+	-INT.INAN:ноо	N_Slot3; ! <<< -GEN +нооның -ноодың
+! 	қайы «который?», «какой?»
+! 	қайзы қайзызы «который?», «который из них?»
+	-INT.ORD:қанченчи	#; ! «который?» (по счету)
+	-INT.CARD:қанче		#; ! «сколько?»
+! 	қайдыг «какой?»
+	-INT.MAN:қайде		#; ! «как, каким образом?» >>> .MAN ???
+
+! Лично-возвратные местоимения :: пос~пой
+LEXICON Pro_REFL
+	-REFL:пос	N_Slot2;
+	-REFL:пой	N_Slot2;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Послелоги
+
+LEXICON Tag_POST
+	[PSTP]:0	#; ! <<< Пока только маркируются. Анализ?
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Числительные
+
+LEXICON Tag_NUM
+	[NUM]:0		N_Slot2; ! Уточнить последствия: все ли можно образовать от числительных, что можно от существительных?
+

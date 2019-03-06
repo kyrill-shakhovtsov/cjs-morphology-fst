@@ -1,0 +1,154 @@
+!!! Правила для шорского морфологического анализатора
+
+!!! Фонетическая система
+
+! Гласные
+define VFront [е | э | и | ӧ | ӱ] ;
+define VBack [а | о | у | ы] ;
+define VLabialised [о | у | ӧ | ӱ] ;
+define VNonLabialised [е | и | а | ы | э] ;
+define VWide [а | о | е | э | ӧ] ;
+define VNarrow [и | ы | у | ӱ] ;
+define V [VFront | VBack | VLabialised | VNonLabialised | VWide | VNarrow] ;
+
+! Согласные
+define CVoiceless [к | қ | п | с | т | х | ч | ш] ;
+define CVoiced [б | г | ғ | д | ж | з | л | м | н | ң | р | й] ;
+define CBack [к | г | ң] ;
+define CFront [т | д | ч | с | з | ш | ж | л | н | р] ;
+define CMiddle [й] ;
+define CLabial [п | б | м | в] ;
+define CUvular [қ] ;
+define CSpirant [с | ш | з | ғ] ;
+define CPlosive [п | б | т | д | к | г] ;
+define CAffricate [ч] ;
+define CSonorant [й | л | м | н | ң | р] ;
+define CNasal [м | н | ң] ;
+define CApproximant [л | р | й | г | ғ] ;
+define C [CVoiceless | CVoiced | CBack | CFront | CMiddle | CLabial | CUvular | CSpirant | CPlosive | CAffricate | CSonorant | CNasal] ;
+
+! Морфонемы
+define VM [А | У | Ы] ;
+define CM [Б | Д | З | Л | Н | П | Т] ;
+
+!!! Слог
+! Типы слогов — за неимением описания шорских взяты хакасские : Б-232
+! [V+ | C V+ | V+ C | C V+ C | V+ C C | C V+ C C]
+define Syllable C^<2 V+ C^<3 ;
+
+!!! Слово
+! define Word Syllable^{1,14} ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! Замены / стяжение в отрицательных формах
+define NegContraction "^" Б А "^" Ғ А н -> "^" Б А А н
+	.o. "^" Б А "^" Ғ А "^" Д Ы г -> "^" Б А "^" Д Ы г ;
+
+!!! Стяженные формы (предварительный вариант)
+define Contraction "^" Ы п -> 0 || V _ "^" Т У р
+	.o. Ы (->) 0 || "^" м з _ р А
+	.o. н "^" Ы (->) 0 || "^" Ғ А _ м 	! ^ҒАн^Ым -> ^ҒА^м в -PRT-1SG
+	.o. т "^" Ғ А (->) 0 || "^" ч ы _ н	! ^чыт^ҒАн -> ^чын
+	;
+
+!!! Удаление лишних гласных на границах морфем
+define RemExtraV [V | VM] -> 0 || V "^" _ [л | н]
+	.o. А -> 0 || л _ "^" [л А | м д ы к], V "^" _ р
+	.o. У -> 0, Ы -> 0 || [V | VM ] "^" _ ;
+
+!!! Альтернативные формы
+define AlterForms "^" Ы п (->) 0 || C _ "^" Т У р ! Выпадение -ып в -PST-ADM после согласного
+	.o. а (->) ы || "^" ч _ т "^" Ғ
+	.o. т (->) 0 || "^" ч ы _ "^" Ғ А н, "^" ч а _ "^" т ы р ! ^чат^қан -> ^чыған, ^чат^тыр -> ^ча^дыр
+	.o. Н Ы (->) А || V "^" _ ң
+	.o. ң "^" Ғ (->) "^" й || "^" Н Ы _ Ы	! ^Ың^ҒЫ -> ^НЫ^йЫ
+	;
+
+!!! Протетические звуки
+define Prostesis [..] -> н || "^" [З Ы | Л А р "^" Ы]  _ "^" [Ғ | Д] А ["^" | .#.] ! -POSS [-3SG | -3PL] н [-DAT | -LOC]
+	.o. [..] -> У || [C ("^") [C | CM]] "^" _ п "^" ч а
+	.o. Д -> Н || "^" [З | Л А р ] Ы "^" _ А ң ! -POSS [-3SG | -3PL] -ELA (Найти более логичное место?)
+	;
+
+!!! Выпадение звуков на границах морфем
+! Выпадение Ғ
+define GDrop г -> 0, ғ -> 0 || V _ "^" Ғ А
+	.o. Ғ (->) 0 || ғ [а | е | А] "^" _ А .#. ! +А
+	.o. Ғ (->) 0 || Syllable^>1 [CNasal | а | е | ғ] "^" _ А ! факультативно: аға -> аа в -DAT, -PRT
+	.o. Ғ (->) 0 || $[Syllable] [CNasal | ӱ] "^" _ А .#. ; ! Выпадение Ғ в -POSS [-1SG | -2SG | -2PL ] -DAT <<< …позымға ???
+
+! Выпадение Л
+define LDrop Л -> 0 || C "^" _ а а р ;
+
+! Выпадение П
+define PDrop п -> 0 || C "^" _ "^" [ч | Д] ; ! П -> п || [V | VM] "^" ([V | VM]) _ "^"
+
+! Выпадение р
+define RDrop р (->) 0 || "^" А _ "^" Ғ А ; ! Перенести в AlterForms ?
+
+! Выпадение Ы : -POSS [-3SG | -3PL] -ACC : ны -> н : алыптарыны -> алыптарын
+define YDrop [Ы | У] -> 0 || Ы "^" Н _ .#. , V "^" _ ;
+
+! Выпадение З
+define ZDrop З -> 0 || C "^" _ Ы [.#. | "^"] ;
+
+! Ғ -> й
+define GJConv г -> й, ғ -> й || V _ "^" Ы .#. ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! Ассимиляция согласных б, ғ, д, з, л, н
+define BA Б -> б || [[CVoiced - CNasal] | V] "^" _
+	.o. Б -> м || CNasal "^" _
+! 	.o. Б (->) Ғ || қ "^" _ [ы | и] [м | с] ! ^БЫм (->) ^қЫм, ^сЫм : ЧУ-251 : перенести в AlterForms ?
+	.o. Б -> п || CVoiceless "^" _ ;
+
+define GA Ғ -> ғ || [CVoiced | VBack] "^" _ VBack
+	.o. Ғ -> г || [CVoiced | VFront] "^" _ VFront
+	.o. Ғ -> қ || CVoiceless "^" _ VBack
+	.o. Ғ -> к || CVoiceless "^" _ VFront ;
+
+define DA Д -> д || [CVoiced | V] "^" _ ! Откуда взялось [[CVoiced - CNasal] | V] "^" _ ???
+	.o. Д -> н || CNasal "^" _ ! [а | е] ң
+	.o. Д -> т || CVoiceless "^" _ ;
+
+define ZA З -> з || [CVoiced | V] "^" _
+	.o. З -> с || CVoiceless "^" _ ;
+
+define KA Қ -> қ || VBack _
+	.o. Қ -> к || VFront _ ;
+
+define LA Л -> л || [[CVoiced - CNasal] | V] "^" _
+	.o. Л -> н || CNasal "^" _
+	.o. Л -> т || CVoiceless "^" _ ;
+
+define NA Н -> н || [V | CNasal] "^" _
+	.o. Н -> т || CVoiceless "^" _
+	.o. Н -> д || CApproximant "^" _ ; ! [л | р | й | г | ғ]
+
+define TA Т -> т || [CSonorant | CVoiceless] "^" _
+	.o. Т -> д || [CVoiced - CSonorant] "^" _ ;
+
+define Assimilation BA .o. DA .o. TA .o. GA .o. KA .o. LA .o. NA .o. ZA ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! Гармония гласных
+
+define VowelHarmony А -> а, Ы -> ы || VBack ~$[V] _
+	.o. А -> е, Ы -> и || VFront ~$[V] _
+	.o. У (->) и || VFront ~$[V] _
+	.o. У (->) ы || VBack ~$[V] _
+	.o. У -> ы || [VBack & VNonLabialised] ~$[V] _
+	.o. У -> и || [VFront & VNonLabialised] ~$[V] _
+	.o. У -> у || [VBack & VLabialised] ~$[V] _
+	.o. У -> ӱ || [VFront & VLabialised] ~$[V] _ ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! Озвончение интервокальных глухих на границах морфем
+define Voicing к -> г, қ -> ғ, с -> з, п -> б, т -> д, ш -> ж || [V | VM] (й) ("^") _ "^" V ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! Удаление символа границы морфем "^", окончательная подчистка
+
+define CleanUp V -> 0 || _ "^" о қ ["^" | .#.]
+	.o. "^" -> 0
+	.o. е -> ӱ || ӱ _ .#. ; ! <<< ad-hoc для слов типа пӧрӱге ~ пӧрӱӱ

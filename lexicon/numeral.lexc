@@ -1,0 +1,26 @@
+!!!!!! Числительные
+LEXICON Numeral
+	пир	Tag_NUM; ! 1
+	ийги	Tag_NUM; ! 2
+	ӱш	Tag_NUM; ! 3
+	тӧрт	Tag_NUM; ! 4
+	пеш	Tag_NUM; ! 5
+	алты	Tag_NUM; ! 6
+	четти	Tag_NUM; ! 7
+	сегис	Tag_NUM; ! 8
+	тоғус	Tag_NUM; ! 9
+	он	Tag_NUM; ! 10
+	чегирбе	Tag_NUM; ! 20
+	одус	Tag_NUM; ! 30
+	қырық	Tag_NUM; ! 40
+	элиг	Tag_NUM; ! 50
+	алтон	Tag_NUM; ! 60
+	четтон	Tag_NUM; ! 70
+	сегизон	Tag_NUM; ! 80
+	тоғузон	Tag_NUM; ! 90
+	чӱс	Tag_NUM; ! 100
+	муң	Tag_NUM; ! 1000
+	пирси	Tag_NUM; ! «один из многих» <<< Deriv < пир ???
+	ийгеле	Tag_NUM; ! «вдвоем»
+	ӱдӱре	Tag_NUM; ! «втроем»
+

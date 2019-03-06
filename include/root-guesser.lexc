@@ -1,0 +1,23 @@
+LEXICON Root
+	Noun;
+	Adjective;
+	Verb;
+
+LEXICON Noun
+	PNominalStem	Tag_N_Guess;
+
+LEXICON Adjective
+	PNominalStem	Tag_A_Guess;
+
+LEXICON Verb
+	PVerbalStem	Tag_V_Guess;
+
+LEXICON Tag_N_Guess
+	[N]%:Guess:0	N_StemBoundary;
+
+
+LEXICON Tag_A_Guess
+	[A]%:Guess:0	A_StemBoundary;
+
+LEXICON Tag_V_Guess
+	[V]%:Guess:0	V_StemBoundary;

@@ -1,0 +1,35 @@
+! ! ! «Чистый» анализатор (без примеси старой орфографии)
+! Правила
+source phonology/rules.xfst
+
+! Фильтр
+source filter.xfst
+
+! Лексикон и морфосинтаксис
+read lexc cjs.lexc
+
+echo Удаление всех Flag-Diacritics
+eliminate flags
+
+define Lexicon ;
+
+echo Сборка преобразователя
+read regex Filter
+	.o. Lexicon
+	.o. NegContraction
+	.o. Contraction
+	.o. RDrop ! Выпадение [р]
+	.o. RemExtraV
+	.o. AlterForms
+	.o. Prostesis
+	.o. ZDrop
+	.o. LDrop
+	.o. YDrop
+	.o. GDrop
+	.o. GJConv
+	.o. PDrop
+	.o. VowelHarmony
+	.o. Assimilation
+	.o. Voicing
+	.o. CleanUp
+	;

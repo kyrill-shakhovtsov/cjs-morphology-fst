@@ -1,0 +1,48 @@
+! ! ! Автомат для морфемной сегментации
+
+! Загрузка готового «чистого» анализатора
+read regex @"fst/cjs-clean-analyser.bin";
+
+define Grammar;
+
+! Правила
+source phonology/rules.xfst
+
+! Фильтр
+source filter.xfst
+
+! Лексикон и морфосинтаксис
+read lexc cjs.lexc
+
+echo Удаление всех Flag-Diacritics
+eliminate flags
+
+define Lexicon ;
+
+echo Сборка преобразователя
+
+define GrammarBM Filter
+	.o. Lexicon
+	.o. NegContraction
+! 	.o. Contraction
+! 	.o. RDrop ! Выпадение [р]
+	.o. RemExtraV
+	.o. AlterForms
+	.o. Prostesis
+	.o. YDrop
+	.o. GDrop
+	.o. GJConv
+	.o. PDrop
+	.o. VowelHarmony
+	.o. Assimilation
+	.o. Voicing
+! 	.o. V -> 0 || _ "^" о қ ["^" | .#.]
+	.o. "^" -> "."
+	.o. "." -> 0 // "." _
+	.o. е -> ӱ // ӱ _ .#. ;
+
+read regex GrammarBM.i .o. Grammar ;
+
+save stack fst/cjs-segmenter.bin
+
+echo «Расчленитель» собран в fst/cjs-segmenter.bin

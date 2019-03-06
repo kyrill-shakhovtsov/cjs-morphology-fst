@@ -1,0 +1,38 @@
+! Правила
+source phonology/rules.xfst
+
+! Фонетическая струтура корня
+source phonology/root.xfst
+
+read lexc cjs-guesser.lexc
+
+echo Удаление всех Flag-Diacritics
+eliminate flags
+
+substitute defined PRoot for "PNominalStem"
+substitute defined PRoot for "PVerbalStem"
+
+define Lexicon ;
+
+echo Сборка преобразователя
+read regex Lexicon
+	.o. AlterForms
+	.o. NegContraction
+	.o. Contraction
+	.o. RDrop
+	.o. Prostesis
+	.o. YDrop
+	.o. GDrop
+	.o. GJConv
+	.o. RemExtraV
+	.o. VowelHarmony
+	.o. PDrop
+	.o. Assimilation
+	.o. Voicing
+	.o. CleanUp ;
+
+save stack fst/cjs-guesser.bin
+
+echo «Гадалка» собрана в fst/cjs-guesser.bin
+
+

@@ -1,0 +1,65 @@
+! Наречия
+LEXICON Adverb
+	аара		Tag_ADV;
+	аара-пеере	Tag_ADV;
+	ажылдыра	Tag_ADV;
+	айбын		Tag_ADV;
+	айтта		Tag_ADV;
+	алды		Tag_ADV;
+	алты		Tag_ADV;
+	алынаң		Tag_ADV;
+	ам		Tag_ADV;
+	амды		Tag_ADV;
+	амоқ		Tag_ADV;
+	аразынаң	Tag_ADV;
+	ара-чара	Tag_ADV;
+	арий		Tag_ADV;
+	арта-перте	Tag_ADV;
+	ачынман		Tag_ADV;
+	иштинги		Tag_ADV; ! < Deriv
+	иштинде		Tag_ADV; ! < Deriv
+	қадығ		Tag_ADV;
+	қайде		Tag_ADV;
+	қалық		Tag_ADV;
+	қаморта		Tag_ADV;
+	қапчығай	Tag_ADV;
+	қарчы		Tag_ADV;
+	қаш		Tag_ADV;
+	кедере		Tag_ADV;
+	кексинге	Tag_ADV;
+	киченип		Tag_ADV;
+	қожа		Tag_ADV;
+	кӧзе-қара	Tag_ADV;
+	кӧргӱзе		Tag_ADV;
+	қуруғ		Tag_ADV;
+	қыпчып		Tag_ADV;
+	мағат		Tag_ADV;
+	май		Tag_ADV; ! маай
+	маттап		Tag_ADV;
+	ӧре		Tag_ADV;
+	пазоқ		Tag_ADV;
+	пееде		Tag_ADV;
+	пеере		Tag_ADV;
+	пилдирбен	Tag_ADV;
+	пилинмен	Tag_ADV;
+	пилиштиғ	Tag_ADV;
+	сооба		Tag_ADV;
+	соонаң		Tag_ADV;
+	сыраңай		Tag_ADV;
+	толдра		Tag_ADV;
+	тӧзинде		Tag_ADV;
+	тың		Tag_ADV;
+	чуққа		Tag_ADV;
+	чӱче		Tag_ADV;
+	ӱдӱре		Tag_ADV;
+	ӱр		Tag_ADV;
+	шым		Tag_ADV;
+	ылтам		Tag_ADV;
+
+! Пока только маркируются
+LEXICON Tag_ADV
+	[ADV]:0		ADV_StemBoundary;
+
+LEXICON ADV_StemBoundary
+			Enclitic_PART_ta;
+			#;

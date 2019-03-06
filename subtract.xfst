@@ -1,0 +1,9 @@
+define CJS ;
+
+read text < wordlists/cjs-normalised.test
+
+define WL ;
+
+read regex WL - CJS.l ;
+
+print words > failures.last

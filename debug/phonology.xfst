@@ -1,0 +1,21 @@
+! ! ! Голая фонология для отладки
+! Правила
+source phonology/rules.xfst
+
+read regex AlterForms
+	.o. NegContraction
+	.o. Contraction
+	.o. RDrop
+	.o. RemExtraV
+	.o. AlterForms
+	.o. Prostesis
+	.o. ZDrop
+	.o. LDrop
+	.o. YDrop
+	.o. GDrop
+	.o. GJConv
+	.o. PDrop
+	.o. VowelHarmony
+	.o. Assimilation
+	.o. Voicing
+	.o. CleanUp ;
