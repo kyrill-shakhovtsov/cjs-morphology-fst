@@ -1645,9 +1645,6 @@ LEXICON Iterjection
 	эзе		Tag_INTJ;
 	эй		Tag_INTJ;
 	ээ		Tag_INTJ;
-
-LEXICON Tag_INTJ
-	[INTJ]:0	#;
 ! Глаголы
 LEXICON Verb
 	аақта		Tag_V;
@@ -2232,13 +2229,6 @@ LEXICON Adverb
 	шым		Tag_ADV;
 	ылтам		Tag_ADV;
 
-! Пока только маркируются
-LEXICON Tag_ADV
-	[ADV]:0		ADV_StemBoundary;
-
-LEXICON ADV_StemBoundary
-			Enclitic_PART_ta;
-			#;
 ! Частицы
 LEXICON Particle
 	ба	Tag_PART; ! .INT — вопросительные частицы (ЧГ-48-49)
@@ -2262,9 +2252,6 @@ LEXICON Particle
 	не	Tag_PART; ! = ла/ле
 	дағы	Tag_PART; ! = rus V + -ка (давай-ка)
 	тағы	Tag_PART; ! = дағы
-
-LEXICON Tag_PART
-	[PART]:0	#;
 
 !!!!!! Числительные
 LEXICON Numeral
@@ -2516,6 +2503,19 @@ LEXICON Enclitic_PART_other
 LEXICON Endoclitic_PART
 	=EMP1:^оқ	V_Slot5;
 			V_Slot5;
+! Междометия
+LEXICON Tag_INTJ
+	[INTJ]:0	#;
+! Пока только маркируются
+LEXICON Tag_ADV
+	[ADV]:0		ADV_StemBoundary;
+
+LEXICON ADV_StemBoundary
+			Enclitic_PART_ta;
+			#;
+! Частицы
+LEXICON Tag_PART
+	[PART]:0	#;
 !!!!!! Существительные :: -NUM > -POSS > -CASE > -PRED
 
 !!! Описание «порядков» (Slots)

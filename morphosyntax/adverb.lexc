@@ -1,0 +1,7 @@
+! Пока только маркируются
+LEXICON Tag_ADV
+	[ADV]:0		ADV_StemBoundary;
+
+LEXICON ADV_StemBoundary
+			Enclitic_PART_ta;
+			#;

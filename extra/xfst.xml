@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE language SYSTEM "language.dtd">
 
-<language name="XFST" version="0.02" kateversion="3.4" section="Scientific" extensions="*.xfst;*.lexc;*.foma" mimetype="text" casesensitive="1" license="GPL" author="Kyrill Shakhovtsov kyrill@iea.ras.ru">
+<language name="XFST" version="0.02" kateversion="3.4" section="Scientific" extensions="*.fst;*.xfst;*.lexc;*.foma" mimetype="text" casesensitive="1" license="GPL" author="Kyrill Shakhovtsov kyrill@iea.ras.ru">
 
   <highlighting>
 

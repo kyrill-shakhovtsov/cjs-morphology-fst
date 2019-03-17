@@ -12,6 +12,3 @@ LEXICON Iterjection
 	эзе		Tag_INTJ;
 	эй		Tag_INTJ;
 	ээ		Tag_INTJ;
-
-LEXICON Tag_INTJ
-	[INTJ]:0	#;

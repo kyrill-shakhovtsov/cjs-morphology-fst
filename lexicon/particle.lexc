@@ -22,6 +22,3 @@ LEXICON Particle
 	дағы	Tag_PART; ! = rus V + -ка (давай-ка)
 	тағы	Tag_PART; ! = дағы
 
-LEXICON Tag_PART
-	[PART]:0	#;
-

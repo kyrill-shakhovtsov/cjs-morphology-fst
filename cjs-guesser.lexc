@@ -273,6 +273,19 @@ LEXICON Enclitic_PART_other
 LEXICON Endoclitic_PART
 	=EMP1:^оқ	V_Slot5;
 			V_Slot5;
+! Междометия
+LEXICON Tag_INTJ
+	[INTJ]:0	#;
+! Пока только маркируются
+LEXICON Tag_ADV
+	[ADV]:0		ADV_StemBoundary;
+
+LEXICON ADV_StemBoundary
+			Enclitic_PART_ta;
+			#;
+! Частицы
+LEXICON Tag_PART
+	[PART]:0	#;
 !!!!!! Существительные :: -NUM > -POSS > -CASE > -PRED
 
 !!! Описание «порядков» (Slots)
