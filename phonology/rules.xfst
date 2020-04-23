@@ -27,17 +27,20 @@ define CNasal [м | н | ң] ;
 define CApproximant [л | р | й | г | ғ] ;
 define C [CVoiceless | CVoiced | CBack | CFront | CMiddle | CLabial | CUvular | CSpirant | CPlosive | CAffricate | CSonorant | CNasal] ;
 
-! Морфонемы
-define VM [А | У | Ы] ;
-define CM [Б | Д | З | Л | Н | П | Т] ;
-
 !!! Слог
 ! Типы слогов — за неимением описания шорских взяты хакасские : Б-232
-! [V+ | C V+ | V+ C | C V+ C | V+ C C | C V+ C C]
 define Syllable C^<2 V+ C^<3 ;
 
 !!! Слово
-! define Word Syllable^{1,14} ;
+! define Word [Syllable & $[а | ы]] ([Syllable & $[а | ы] & ~$[о | у]]+)
+! 	| [Syllable & $[е | э | и]] ([Syllable & $[е | и] & ~$[ӧ | ӱ]]+)
+! 	| [Syllable & $[о | у]] ([Syllable & $[а | у] & ~$[о | ы]]+)
+! 	| [Syllable & $[ӧ | ӱ]] ([Syllable & $[е | ӱ] & ~$[ӧ | и]]+)
+! 	;
+
+!!! Морфонемы
+define VM [А | У | Ы] ;
+define CM [Б | Д | З | Л | Н | П | Т] ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! Замены / стяжение в отрицательных формах
@@ -55,6 +58,9 @@ define Contraction "^" Ы п -> 0 || V _ "^" Т У р
 define RemExtraV [V | VM] -> 0 || V "^" _ [л | н]
 	.o. А -> 0 || л _ "^" [л А | м д ы к], V "^" _ р
 	.o. У -> 0, Ы -> 0 || [V | VM ] "^" _ ;
+
+!!! Выпадение последнего гласного основы перед ^(Л)А: қурға < қуруг, ӧрле < ӧре
+define DropRootV V -> 0 || ~$["^"] V CSonorant _ C "^" А , ~$["^"] V CSonorant _ "^" Л А;
 
 !!! Альтернативные формы
 define AlterForms "^" Ы п (->) 0 || C _ "^" Т У р ! Выпадение -ып в -PST-ADM после согласного

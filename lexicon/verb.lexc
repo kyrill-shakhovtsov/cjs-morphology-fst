@@ -114,6 +114,7 @@ LEXICON Verb
 ! 	кӧрӱн		Tag_V;
 	қош		Tag_V;
 	крестен		Tag_V;
+	қуй		Tag_V;
 	қур		Tag_V;
 	кӱре		Tag_V;
 	кӱт		Tag_V;
@@ -145,7 +146,7 @@ LEXICON Verb
 	одур		Tag_V;
 ! 	ӧдӱрӱл		Tag_V;
 	ӧдӱр		Tag_V;
-	ойна		Tag_V;
+! 	ойна		Tag_V; ! DropRootV
 	ойуқта		Tag_V;
 	ӧкпелен		Tag_V;
 	ӧл		Tag_V;
@@ -183,7 +184,7 @@ LEXICON Verb
 	сақта		Tag_V;
 	сана		Tag_V;
 	санан		Tag_V;
-	сарна		Tag_V;
+! 	сарна		Tag_V; ! DropRootV
 	сат		Tag_V;
 	серги		Tag_V;
 	сес		Tag_V;

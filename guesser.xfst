@@ -25,6 +25,7 @@ read regex Lexicon
 	.o. GDrop
 	.o. GJConv
 	.o. RemExtraV
+	.o. DropRootV
 	.o. VowelHarmony
 	.o. PDrop
 	.o. Assimilation

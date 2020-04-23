@@ -23,8 +23,7 @@ LEXICON Adjective
 	қазалчық	Tag_A;
 	қазық		Tag_A;
 	қазыр		Tag_A;
-	қайғаллығ	Tag_A;
-	қайдиг		Tag_A;
+! 	қайдиг		Tag_A;
 	қайдығ		Tag_A;
 	қайран		Tag_A;
 	қал		Tag_A;
@@ -42,7 +41,7 @@ LEXICON Adjective
 	кӧп		Tag_A;
 	қор		Tag_A;
 	қошта		Tag_A;
-	қоштағы		Tag_A;
+!	қоштағы		Tag_A;
 	қуба		Tag_A;
 	қурсақтығ	Tag_A;
 	қуруг		Tag_A;

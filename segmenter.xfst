@@ -27,6 +27,7 @@ define GrammarBM Filter
 ! 	.o. Contraction
 ! 	.o. RDrop ! Выпадение [р]
 	.o. RemExtraV
+	.o. DropRootV
 	.o. AlterForms
 	.o. Prostesis
 	.o. YDrop
