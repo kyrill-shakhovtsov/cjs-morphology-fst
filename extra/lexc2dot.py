@@ -24,6 +24,8 @@ config = {
 	'color': {
 		'tag': 'firebrick',
 		'lexicon': 'navy',
+		'toSlot': 'navy',
+		'toBoundary': 'firebrick',
 		'formend': 'firebrick'
 		}
 	}
@@ -118,6 +120,10 @@ for node in nodes:
 				e = gv.edge(n, cont['tgt'])
 				gv.setv(e, 'tailport', 't' + str(i) + ':e')
 				gv.setv(e, 'headport', 'l:n')
+				if '_Slot' in cont['tgt'] :
+					gv.setv(e, 'color', config['color']['toSlot'])
+				if '_StemBoundary' in cont['tgt'] :
+					gv.setv(e, 'color', config['color']['toBoundary'])
 				tgt = cont['tgt']
 				tgt_a = 'left'
 			label += '<tr><td align="left">' + cont['rex'] + '</td><td align="' + tgt_a + '" port="t' + str(i) + '">' + tgt + '</td></tr>'

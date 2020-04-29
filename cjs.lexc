@@ -2282,11 +2282,11 @@ LEXICON Tag_VNEG
 LEXICON V_StemBoundary
 	V_Derivation;
 	V_Slot1;
+	V_CVB;
 
 ! Словообразование
 LEXICON V_Derivation
 	V_Attenuation;
-	V_CVB;
 	N_Deverbal;
 	A_Deverbal;
 
@@ -2338,7 +2338,7 @@ LEXICON V_Slot1		! -CAUS | -PASS | -REFL | -RECIP
 	-ITER:^ҒУлА	V_Slot3; ! <<< ???
 			V_Slot3;
 
-! Порядок 2 : -CAUS | -PASS | -REFL
+! Порядок 2 : -CAUS | -PASS | -REFL | -RECIP
 LEXICON V_Slot2_C1
 	-CAUS1:^т	V_Slot3;
 	-PASS:^Ул	V_Slot3;
@@ -2378,7 +2378,7 @@ LEXICON V_Slot4_Positive ! Время, вид, наклонение
 	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching;
 	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82
 	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
-	<"-SUPN":["^" А р ("^" Ғ А)]>		    #; ! ^Ар / ^Ар^ҒА
+	<"-SUPN":["^" А р ("^" Ғ А)]>		    #; ! ^Ар | ^Ар^ҒА
 					      V_IMPER;
 
 LEXICON V_Slot4_Negative
@@ -2444,7 +2444,7 @@ LEXICON V_Slot5_PRED	! Предикативные аффиксы
 	-PRED.3SG:0	EncliticBranching; ! #;
 	-PRED.1PL:^БЫс	EncliticBranching; ! #; ! … ^қЫс, ^сЫс
 	-PRED.2PL:^ЗААр	EncliticBranching; ! #; ! Дополнить описание ассимиляции CVoiceless + ^ЗААр
-	<["-PRED" ".3PL"]:["^" [Л А|Д Ы] р]>	EncliticBranching; #! ; ! … ^ДЫр : ЧУ-252
+	<["-PRED" ".3PL"]:["^" [Л А|Д Ы] р]>	EncliticBranching; ! … ^ДЫр : ЧУ-252
 
 !! Порядок 5 : Притяжательные аффиксы <<< Рабораться !
 LEXICON V_Slot5_POSS
