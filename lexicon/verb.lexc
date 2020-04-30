@@ -1,116 +1,113 @@
 ! Глаголы
 LEXICON Verb
-	аақта		Tag_V;
-	аала		Tag_V;
-	аарла		Tag_V;
-	аарсын		Tag_V;
-	аас		Tag_V;
-	аастан		Tag_V;
-	аат		Tag_V;
-	абыт		Tag_V;
-	ағар		Tag_V;
-	ағры		Tag_V;
-	ада		Tag_V;
-	адат		Tag_V;
-	адыш		Tag_V;
-	ажыл		Tag_V;
-	ажын		Tag_V;
-	ажыр		Tag_V;
-	азақтат		Tag_V;
-	азра		Tag_V;
-	азран		Tag_V;
-	азыл		Tag_V;
-	азыра		Tag_V;
-	айа		Tag_V;
-! 	айлан		Tag_V;
-	айт		Tag_V;
-	ақ		Tag_V;
-	акел		Tag_V;
-	акир		Tag_V;
-	ақкел		Tag_V;
-	ақкир		Tag_V;
-	ақса		Tag_V;
-	ақта		Tag_V;
-	ақтан		Tag_V;
-	алақ		Tag_V;
-	алға		Tag_V;
-	ален		Tag_V;
-	алта		Tag_V;
-	алчаза		Tag_V;
-	алыл		Tag_V;
-	алын		Tag_V;
-	алыш		Tag_V;
+	аақта		Tag_V; ! ‘кричать, измельчать’ < аақ ’мелкий, белок’
+	аала		Tag_V; ! ’гостить’ < аал ’селение’	??
+	аарла		Tag_V; ! ‘чистить’ < аар ‘’	??
+	аарсын		Tag_V; ! ‘тяготиться’ < аар ‘трудный’
+	аас		Tag_V; ! ‘блуждать’
+	аастан		Tag_V; ! ‘изрекать’ < аас ‘уста’ !
+	аат		Tag_V; ! ‘разбить’
+	абыт		Tag_V; ! ’качать (колыбель)’
+! 	ағар		Tag_V; ! ‘белеть’ < ақ ‘белый’
+	ағры		Tag_V; ! ‘болеть’
+! 	ада		Tag_V; ! ‘называть’ < ат ‘имя’
+! 	адат		Tag_V; ! ‘быть названым’ < ат ‘имя’
+	ажыл		Tag_V; ! ‘открываться’
+	ажыла		Tag_V; ! ‘тяжело дышать’
+	ажын		Tag_V; ! ‘шалить’
+	ажыр		Tag_V; ! ’глотать’
+! 	азақта		Tag_V; ! ’идти пешком’ < азақ ’нога’
+	азыл		Tag_V; ! ‘висеть’
+	азыра		Tag_V; ! ’кормить’
+	айа		Tag_V; ! ‘жалеть’
+	айлан		Tag_V; ! ‘вращаться’ < ? айла ‘вращать’
+	айт		Tag_V; ! ‘говорить’
+	ақ		Tag_V; ! ‘течь’
+	акел		Tag_V; ! = ақкел	< ??
+	акир		Tag_V; ! = ақкир	< ??
+	ақкел		Tag_V; ! ‘приносить’	< ??
+	ақкир		Tag_V; ! ‘вносить’	< ??
+	ақса		Tag_V; ! ‘хромать’
+	ақта		Tag_V; ! ‘оправдывать’
+	ал		Tag_V; ! ‘брать’
+	алақ		Tag_V; ! ?
+	алға		Tag_V; ! ‘благодарить’
+	ален		Tag_V; ! ’нести (вниз)’
+	алта		Tag_V; ! ‘шагать’
+	алчаза		Tag_V; ! ‘цвести’ < ??
+! 	алыл		Tag_V; ! ‘быть взятым’ < ал
+! 	алын		Tag_V; ! ‘воспринимать, сходить с ума’ < ал
+! 	алыш		Tag_V; ! ‘обмениваться’ < ал
 	аң		Tag_V;
-	аңдар		Tag_V;
-	аңна		Tag_V;
-	апар		Tag_V;
-	аппар		Tag_V;
-	апчы		Tag_V;
-	арба		Tag_V;
-	арғала		Tag_V;
-	арғалан		Tag_V;
-	арда		Tag_V;
-	арла		Tag_V;
-	арлаш		Tag_V;
-	арта		Tag_V;
-	арты		Tag_V;
-	артыс		Tag_V;
-	арыла		Tag_V;
-	арын		Tag_V;
-	арыт		Tag_V;
-	ас		Tag_V;
-	ат		Tag_V;
-	атты		Tag_V;
-	ачы		Tag_V;
-	ачығлан		Tag_V; !
-	аш		Tag_V;
-	ашта		Tag_V; ! <<< Deriv
-	ашық		Tag_V;
+	аңдар		Tag_V; ! ‘валить’
+! 	аңна		Tag_V; ! ‘охотиться’ < аң ‘зверь’
+	апар		Tag_V; ! ‘нести’
+	аппар		Tag_V; ! = апар	??
+	апчы		Tag_V; ! ‘съежиться’
+	арба		Tag_V; ! ‘ворожить’
+! 	арғала		Tag_V; ! < арға	??
+	арда		Tag_V; ! ’портиться’
+	арла		Tag_V; ! ‘очищать’
+! 	арлаш		Tag_V; ! ‘вмешиваться’ < арла	??
+	арта		Tag_V; ! ‘нагружать’
+	арты		Tag_V; ! ‘висеть’
+	артыс		Tag_V; ! ‘оставлять’ < арты	??
+	арыла		Tag_V; ! ‘защищать’
+	арын		Tag_V; ! ‘худеть’
+	арыт		Tag_V; ! ‘мучить, чистить’
+	ас		Tag_V; ! ‘вешать’
+	ат		Tag_V; ! ‘стрелять’
+	атты		Tag_V; ! ’прыгать, скакать’
+	ачы		Tag_V; ! ’киснуть’
+! 	ачығлан		Tag_V; ! ‘горевать’ < ачы ‘киснуть’	??
+	аш		Tag_V; ! ’открывать’
+	ашта		Tag_V; ! ‘быть голодным’ < аш ‘ячмень, еда’
+	ашық		Tag_V; ! ‘нести (наверх)’
 	идин		Tag_V;
 	ижен		Tag_V;
 	изит		Tag_V;
 	иир		Tag_V;
-	ийгилен		Tag_V; !
+	ийгилен		Tag_V; ! ?
 	исте		Tag_V;
 	ит		Tag_V;
 	иш		Tag_V;
-	иште		Tag_V;
+	иште		Tag_V; ! ?
 	қаар		Tag_V;
-	қабыш		Tag_V;
-	қағжырат	Tag_V; !
+	қабыш		Tag_V; ! ?
+	қағжырат	Tag_V; ! ?
 	қада		Tag_V;
-	қадар		Tag_V;
+	қадар		Tag_V; ! ?
 	қаза		Tag_V;
-	қайғал		Tag_V; !
-	қайғаш		Tag_V; !
-	қайла		Tag_V; !
-	қайна		Tag_V; !
-	қайра		Tag_V; !
-	қақ		Tag_V;
-	қал		Tag_V; !
+	қайғал		Tag_V; ! ?
+	қайғаш		Tag_V; ! ?
+	қайла		Tag_V; ! ?
+	қайна		Tag_V; ! ?
+	қайра		Tag_V; ! ?
+	қақ		Tag_V; ! ?
+	қал		Tag_V;
 	қап		Tag_V;
-	қарған		Tag_V; !
+	қарған		Tag_V; ! ?
 	қат		Tag_V;
-	қачыр		Tag_V;
+	қачыр		Tag_V; ! ?
 	кес		Tag_V;
 	кеш		Tag_V;
 	кир		Tag_V; ! + [CVB]-ANT
-	кичен		Tag_V;
-	киште		Tag_V;
-	кӧгле		Tag_V;
-	қодур		Tag_V;
-	кӧдӱр		Tag_V;
-	қодырын		Tag_V;
-	қожул		Tag_V;
+	кичен		Tag_V; ! ?
+	киште		Tag_V; ! ?
+	кӧгле		Tag_V; ! ?
+	қодур		Tag_V; ! ?
+	кӧдӱр		Tag_V; ! ?
+	қодырын		Tag_V; ! ?
+	қожул		Tag_V; ! ?
 	кӧй		Tag_V;
 	қон		Tag_V;
-	кӧңдӱр		Tag_V;
-	кӧӧлен		Tag_V;
+	кӧңдӱр		Tag_V; ! ?
+	кӧӧлен		Tag_V; ! ?
 	кӧп		Tag_V;
 	қӧр		Tag_V;
-	қорат		Tag_V;
-	кӧргӱс		Tag_V;
-	қоруқ		Tag_V;
+	қорат		Tag_V; ! ?
+	кӧргӱс		Tag_V; ! ?
+	қоруқ		Tag_V; ! ?
 ! 	кӧрӱн		Tag_V;
 	қош		Tag_V;
 	крестен		Tag_V;
@@ -119,205 +116,195 @@ LEXICON Verb
 	кӱре		Tag_V;
 	кӱт		Tag_V;
 	қый		Tag_V;
-	қыйбыран	Tag_V;
-	қыйғылаш	Tag_V;
-	қыйғыр		Tag_V;
-	қыйнал		Tag_V;
-	қылғала		Tag_V;
+	қыйбыран	Tag_V; ! ?
+	қыйғылаш	Tag_V; ! ?
+	қыйғыр		Tag_V; ! ?
+	қыйнал		Tag_V; ! ?
+	қылғала		Tag_V; ! ?
 	қын		Tag_V;
 	қыр		Tag_V;
-	қысқарт		Tag_V;
+	қысқарт		Tag_V; ! ?
 	қыста		Tag_V;
-	қыстат		Tag_V;
-	қычан		Tag_V; ! < Deriv ???
+	қыстат		Tag_V; ! ?
+	қычан		Tag_V; ! ?
 	қычы		Tag_V;
 	қыыр		Tag_V;
 	моғат		Tag_V;
-	мӧңӱсре		Tag_V;
+	мӧңӱсре		Tag_V; ! ?
 	мӱн		Tag_V;
-	найна		Tag_V;
+	найна		Tag_V; ! ?
 	нан		Tag_V;
-	нандыр		Tag_V;
-	нанчы		Tag_V;
+	нандыр		Tag_V; ! ?
+	нанчы		Tag_V; ! ?
 	нег		Tag_V;
 	нигил		Tag_V;
-! 	нигилиш		Tag_V;
-	нызыра		Tag_V;
+	нызыра		Tag_V; ! ?
 	одур		Tag_V;
-! 	ӧдӱрӱл		Tag_V;
 	ӧдӱр		Tag_V;
-! 	ойна		Tag_V; ! DropRootV
-	ойуқта		Tag_V;
-	ӧкпелен		Tag_V;
+	ойуқта		Tag_V; ! ?
+	ӧкпелен		Tag_V; ! ?
 	ӧл		Tag_V;
-	ооқта		Tag_V;
-	орнаш		Tag_V;
-	ӧртеп		Tag_V;
+	ооқта		Tag_V; ! ?
+	орнаш		Tag_V; ! ?
+	ӧртеп		Tag_V; ! ?
 	ӧс		Tag_V;
 	отта		Tag_V;
 	пажа		Tag_V;
-	пайла		Tag_V;
+	пайла		Tag_V; ! ?
 	пас		Tag_V;
 	пат		Tag_V;
-	пашта		Tag_V;
-	пекте		Tag_V;
-	перил		Tag_V;
+	пашта		Tag_V; ! ?
+	пекте		Tag_V; ! ?
+	перил		Tag_V; ! ?
 	пил		Tag_V;
-! 	пилдир		Tag_V;
-	пилин		Tag_V;
+	пилин		Tag_V; ! ?
 	пожа		Tag_V;
 	полба		Tag_V;
 	пӧл		Tag_V;
 	пӧле		Tag_V;
-! 	пӧлӱн		Tag_V;
 	пула		Tag_V;
-	пулға		Tag_V;
+	пулға		Tag_V; ! ?
 	пур		Tag_V;
-	пӱрге		Tag_V;
+	пӱрге		Tag_V; ! ?
 	пӱт		Tag_V;
-	пыжыр		Tag_V;
+	пыжыр		Tag_V; ! ?
 	пыр		Tag_V;
-	пырлаш		Tag_V;
+	пырлаш		Tag_V; ! ?
 	пыш		Tag_V;
 	сағ		Tag_V;
-	сайал		Tag_V;
+	сайал		Tag_V; ! ? ! ?
 	сақта		Tag_V;
 	сана		Tag_V;
-	санан		Tag_V;
-! 	сарна		Tag_V; ! DropRootV
+	санан		Tag_V; ! ?
 	сат		Tag_V;
-	серги		Tag_V;
+	серги		Tag_V; ! ?
 	сес		Tag_V;
 	сий		Tag_V;
-	силги		Tag_V;
-! 	силгит		Tag_V;
+	силги		Tag_V; ! ?
 	сӧрте		Tag_V;
 	суқ		Tag_V;
 	суна		Tag_V;
 	сур		Tag_V;
 	сӱр		Tag_V;
 	сура		Tag_V;
-	сӱрӱш		Tag_V;
+	сӱрӱш		Tag_V; ! ?
 	сус		Tag_V;
 	сӱс		Tag_V;
-	сыбыра		Tag_V;
+	сыбыра		Tag_V; ! ?
 	сыйба		Tag_V;
 	сыйла		Tag_V;
 	сын		Tag_V;
 	табы		Tag_V;
-	табыл		Tag_V;
+	табыл		Tag_V; ! ?
 	тағра		Tag_V;
 	тай		Tag_V;
-	тал		Tag_V; !
-	тала		Tag_V; !
-	талабыс		Tag_V; !
-	талла		Tag_V; !
-	таңзын		Tag_V;
+	тал		Tag_V; ! ?
+	тала		Tag_V; ! ?
+	талабыс		Tag_V; ! ! ?
+	талла		Tag_V; ! ?
+	таңзын		Tag_V; ! ?
 	тап		Tag_V;
 	тар		Tag_V;
 	тара		Tag_V;
-	тарт		Tag_V;
+	тарт		Tag_V; ! ?
 	таш		Tag_V;
 	те		Tag_V;
-	тебин		Tag_V;
+	тебин		Tag_V; ! ?
 	тег		Tag_V;
 	теп		Tag_V;
 	тес		Tag_V;
 	теш		Tag_V;
 	тиле		Tag_V;
-	тирил		Tag_V;
+	тирил		Tag_V; ! ?
 	тоға		Tag_V;
 	тоғра		Tag_V; ! < тоғ- ???
-	тӧгӱл		Tag_V;
+	тӧгӱл		Tag_V; ! ?
 	тӧже		Tag_V;
 	тӧзе		Tag_V;
 	тӧк		Tag_V;
-	тоқтат		Tag_V;
-	тол		Tag_V; ! ???
-	тола		Tag_V; ! ???
+	тоқтат		Tag_V; ! ?
+	тол		Tag_V;
+	тола		Tag_V; ! ?
 	тӧле		Tag_V;
 	тон		Tag_V;
-	тоола		Tag_V;
+	тоола		Tag_V; ! ?
 	тоос		Tag_V;
 	тӱре		Tag_V;
 	тут		Tag_V;
 	тын		Tag_V;
 	тыы		Tag_V;
-	ӱбӱр		Tag_V;
+	ӱбӱр		Tag_V; ! ?
 	уғ		Tag_V;
 	ӱг		Tag_V;
 	уғус		Tag_V;
-	узал		Tag_V; !
-	узан		Tag_V; !
-	узат		Tag_V; !
+	узал		Tag_V; ! ! ?
+	узан		Tag_V; ! ! ?
+	узат		Tag_V; ! ! ?
 	узу		Tag_V;
-	уйадын		Tag_V;
-	уйат		Tag_V;
+	уйадын		Tag_V; ! ?
+	уйат		Tag_V; ! ?
 	уқ		Tag_V;
 	ула		Tag_V;
 	улға		Tag_V;
 	ӱле		Tag_V;
-	ӱлеш		Tag_V;
-	улуғла		Tag_V;
-	уңна		Tag_V;
+	ӱлеш		Tag_V; ! ?
+	улуғла		Tag_V; ! ?
+	уңна		Tag_V; ! ?
 	ур		Tag_V;
 	ӱп		Tag_V;
-	ӱрген		Tag_V; !
-	ӱргет		Tag_V; !
-	ӱргӱн		Tag_V; !
-	ӱренне		Tag_V;
-	ӱрӱгӱш		Tag_V;
+	ӱрген		Tag_V; ! ! ?
+	ӱргет		Tag_V; ! ! ?
+	ӱргӱн		Tag_V; ! ! ?
+	ӱренне		Tag_V; ! ?
+	ӱрӱгӱш		Tag_V; ! ?
 	ӱӱр		Tag_V;
-	урун		Tag_V;
+	урун		Tag_V; ! ?
 	ус		Tag_V;
 	ӱс		Tag_V;
 	учуқ		Tag_V;
-	учура		Tag_V;
+	учура		Tag_V; ! ?
 	ӱш		Tag_V;
 	чаг		Tag_V; ! <<<
 	чағ		Tag_V;
-	чағда		Tag_V; ! Deriv ?
-	чағын		Tag_V; ! Deriv ?
-	чағына		Tag_V; ! Deriv ?
-	чажын		Tag_V;
+	чағда		Tag_V; ! ?
+	чағын		Tag_V; ! ?
+	чағына		Tag_V; ! ?
+	чажын		Tag_V; ! ?
 	чаза		Tag_V;
-	чазы		Tag_V;
+	чазы		Tag_V; ! ?
 	чай		Tag_V;
-	чайа		Tag_V;
-	чайқа		Tag_V;
-	чалға		Tag_V;
+	чайа		Tag_V; ! ?
+	чайқа		Tag_V; ! ?
+	чалға		Tag_V; ! ?
 	чап		Tag_V;
-	чапшын		Tag_V; ! Deriv ?
+	чапшын		Tag_V; ! ?
 	чар		Tag_V;
-	чара		Tag_V;
-	чарат		Tag_V; ! Deriv ? < чара
-	чарла		Tag_V;
-	чары		Tag_V;
-	чарылыш		Tag_V;
-	чарыт		Tag_V;
+	чара		Tag_V; ! ?
+	чарат		Tag_V; ! ?
+	чарла		Tag_V; ! ?
+	чары		Tag_V; ! ?
+	чарылыш		Tag_V; ! ?
+	чарыт		Tag_V; ! ?
 	час		Tag_V;
 	чат		Tag_V;
-	чепсе		Tag_V; ! ???
-	чет		Tag_V; ! + [CVB]-ANT
+	чепсе		Tag_V; ! ?
+	чет		Tag_V;
 	чии		Tag_V;
-	чиибис		Tag_V; ! ???
+	чиибис		Tag_V; ! ?
 	чип		Tag_V;
 	чит		Tag_V;
-	чокта		Tag_V; ! ?v?
-	чооқта		Tag_V; ! ?^?
-	чӧптеш		Tag_V;
+	чокта		Tag_V; ! ?
+	чооқта		Tag_V; ! ?
+	чӧптеш		Tag_V; ! ?
 	чуғ		Tag_V;
-	чӱгӱр		Tag_V;
-	чурта		Tag_V;
+	чӱгӱр		Tag_V; ! ?
+	чурта		Tag_V; ! ?
 	чӱӱн		Tag_V;
 	чығ		Tag_V;
-	чылыт		Tag_V;
-	чыыл		Tag_V; ! ???
-! 	чыылыш		Tag_V; ! ???
-! 	шағланыш	Tag_V; ! ???
-! 	шағлаш		Tag_V; ! ???
+	чылыт		Tag_V; ! ?
+	чыыл		Tag_V;
 	шап		Tag_V;
-	шеберлен	Tag_V;
+	шеберлен	Tag_V; ! ?
 	шел		Tag_V;
 	шеш		Tag_V;
 	ший		Tag_V;
@@ -327,39 +314,39 @@ LEXICON Verb
 	ште		Tag_V;
 	шур		Tag_V;
 	шӱг		Tag_V;
-	шығар		Tag_V;
+	шығар		Tag_V; ! ?
 	шыда		Tag_V;
-	шық		Tag_V; ! + [CVB]-ANT
+	шық		Tag_V; ! ?
 	шыла		Tag_V;
-	шыңна		Tag_V; ! Deriv ???
-	шыыла		Tag_V; ! Как соотносится с ‘шыла’ ?
-	ығыл		Tag_V;
-	ығыра		Tag_V;
+	шыңна		Tag_V; ! ?
+	шыыла		Tag_V; ! ?
+	ығыл		Tag_V; ! ?
+	ығыра		Tag_V; ! ?
 	ызай		Tag_V;
-	ызыр		Tag_V;
+	ызыр		Tag_V; ! ?
 	ық		Tag_V;
 	ылға		Tag_V;
 	ына		Tag_V;
 	ыра		Tag_V;
 	ыс		Tag_V;
-	ышқын		Tag_V;
-	эбир		Tag_V;
+	ышқын		Tag_V; ! ?
+	эбир		Tag_V; ! ?
 	эг		Tag_V;
 	эге		Tag_V;
-	эген		Tag_V;
-	эгени		Tag_V;
+	эген		Tag_V; ! ?
+	эгени		Tag_V; ! ?
 	эзе		Tag_V;
-	эзил		Tag_V;
+	эзил		Tag_V; ! ?
 	эле		Tag_V;
 	эм		Tag_V;
-	эмзи		Tag_V;
-	эмне		Tag_V;
+	эмзи		Tag_V; ! ?
+	эмне		Tag_V; ! ?
 	эн		Tag_V;
-	энчилен		Tag_V;
+	энчилен		Tag_V; ! ?
 	эрт		Tag_V;
 	эс		Tag_V;
-	эсте		Tag_V;
-	эстел		Tag_V;
+	эсте		Tag_V; ! ?
+	эстел		Tag_V; ! ?
 	эт		Tag_V;
 	ээл		Tag_V;
 
@@ -369,7 +356,7 @@ LEXICON Verb_AUX
 	қал		Tag_V;
 	кел		Tag_V;
 	кӧр		Tag_V;
-	одур		Tag_V; ! одурт	Tag_V; <<< ???
+	одур		Tag_V;
 	пар		Tag_V; ! + [CVB]-ANT
 	пер		Tag_V;
 	пол		Tag_V;
@@ -378,7 +365,7 @@ LEXICON Verb_AUX
 	тӱш		Tag_V;
 	чӧр		Tag_V;
 	ыс		Tag_V;
-	э		Tag_V; ! @U.NEG.bas@
+	э		Tag_V; ! Объединить с ‘эбес’
 	эрт		Tag_V;
 
 ! Отрицательный глагол эбес — ???
