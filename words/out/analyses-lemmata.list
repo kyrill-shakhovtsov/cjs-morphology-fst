@@ -317,10 +317,6 @@
 аң[N]-SG-NOM	аң
 аң[N]-VR1[V]-ADJR5[A]-SG-NOM	аңнан
 аң[N]-VR1[V]-IMP.2SG	аңна
-аң[V]-ADJR2[A]-SG-NOM	аңчы
-аң[V]-IMP.2SG	аң
-аң[V]-NR12[N]-SG-NOM	аңма
-аң[V]-NR13[N]-SG-NOM	аңчақ
 аңдар[V]-IMP.2SG	аңдар
 аңчы[N]-SG-NOM	аңчы
 аңчы[N]-VR1[V]-IMP.2SG	аңчыла
@@ -505,6 +501,7 @@
 ийги[NUM]-POSS.3SG-GEN-PRED.3SG	ийгизиниң
 ийги[NUM]-POSS.3SG-GEN	ийгизиниң
 ийги[NUM]-PRED.3SG	ийги
+ийгиле[V]-IMP.2SG	ийгиле
 илчирбе[N]-SG-NOM	илчирбе
 илчирбе[N]-VR1[V]-IMP.2SG	илчирбеле
 ин[N]-SG-NOM	ин
@@ -512,8 +509,8 @@
 ирик[N]-SG-NOM	ирик
 ириң[N]-SG-NOM	ириң
 ириң-тас[PN]-SG-NOM	ириң-тас
-исте[V]-IMP.2SG	исте
-исте[V]-NR12[N]-SG-NOM	истебе
+ис[N]-SG-NOM	ис
+ис[N]-VR1[V]-IMP.2SG	исте
 ит[N]-SG-NOM	ит
 ит[N]-VR2[V]-IMP.2SG	иде
 ит[V]-IMP.2SG	ит
@@ -528,9 +525,6 @@
 иш[V]-IMP.2SG	иш
 иш[V]-NR12[N]-SG-NOM	ишпе
 иш[V]-NR6[N]-SG-NOM	ижит
-иште[V]-ADJR5[A]-SG-NOM	иштен
-иште[V]-IMP.2SG	иште
-иште[V]-NR6[N]-SG-NOM	иштет
 ишти[N]-ADVR[ADV]	иштин
 ишти[N]-SG-NOM	ишти
 ишти[N]-VR1[V]-IMP.2SG	иштиле
