@@ -48,19 +48,24 @@ LEXICON Adjective
 	кӱш		Tag_A;
 	қызыл		Tag_A;
 	қый		Tag_A;
-	қыйға		Tag_A; ! Deriv
+	қыйға		Tag_A; ! ‘скупой’
 	қынат		Tag_A;
 	қыр		Tag_A;
+	қысқа		Tag_A; ! ‘короткий’
 	мӧңӱс		Tag_A;
 	мӱӱс		Tag_A;
 	наа		Tag_A;
+	ныңнақ		Tag_A; ! ‘легкий’
 	ӧдӱг		Tag_A;
+	ӧл		Tag_A; ! ‘мокрый’
 	ӧске		Tag_A;
 	паштапқы	Tag_A;
 	пек		Tag_A;
+	пелен		Tag_A; ! ‘готовый’
 	пор		Tag_A;
-	пош		Tag_A;
+	пош		Tag_A; ! ‘вольный’ (ШС)
 	пуралығ		Tag_A;
+	сақ		Tag_A; ! ‘чуткий’
 	сарыг		Tag_A;
 	сарығ		Tag_A;
 	сооқ		Tag_A;
@@ -69,16 +74,18 @@ LEXICON Adjective
 	тайба		Tag_A;
 	тайыс		Tag_A;
 	талай		Tag_A;
+	тар		Tag_A; ! ‘узкий, тесный’
 	таштығ		Tag_A;
 	тебир		Tag_A;
 	теген		Tag_A;
 	тек		Tag_A;
 	темир		Tag_A;
+	тең		Tag_A; ! ‘ровный’
 	тере		Tag_A;
 	терең		Tag_A;
 	тириг		Tag_A;
 	тириғ		Tag_A;
-	тӱс		Tag_A;
+	тӱс		Tag_A; ! ‘прямой’
 	узақ		Tag_A;
 	ӱлгер		Tag_A;
 	улуг		Tag_A;
@@ -86,22 +93,24 @@ LEXICON Adjective
 	ӱскер		Tag_A;
 	ӱӱр		Tag_A;
 	чабал		Tag_A;
+	чағын		Tag_A; ! ‘близкий’
 	чағыс		Tag_A;
 	чажыл		Tag_A;
 	чақшылығ	Tag_A;
 	чарабас		Tag_A;
-	чаш		Tag_A;
+	чаш		Tag_A; ! ‘сырой’, молодой’
 	чес		Tag_A;
-	чоон		Tag_A;
+	чоон		Tag_A; ! ‘толстый (о чел.)’
 	чоқ		Tag_A; ! .NEG
 	чуға		Tag_A;
 	чымчақ		Tag_A;
 	чылааш		Tag_A;
 	шаптығ		Tag_A;
+	шебер		Tag_A; ! ’осторожный’
 	шедик		Tag_A;
 	ызық		Tag_A;
 	ынаг		Tag_A;
 	ырақ		Tag_A;
 	ээн		Tag_A;
 	эрте		Tag_A;
-	эски		Tag_A;
+	эски		Tag_A; ! ‘старый, ветхий’

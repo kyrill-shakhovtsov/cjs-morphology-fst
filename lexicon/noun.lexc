@@ -196,7 +196,8 @@ LEXICON Noun
 	кин-оды		Tag_N;
 	кирлес		Tag_N;
 	киченгени	Tag_N; !
-	кичиг		Tag_N;
+! 	кичиг		Tag_N;
+	киш		Tag_N; ! ‘ржание’
 	кӧбӱк		Tag_N;
 	кӧбӱр		Tag_N;
 	кӧг		Tag_N;
@@ -418,6 +419,7 @@ LEXICON Noun
 	қораг		Tag_N;
 	қорам		Tag_N;
 	қорбалчық	Tag_N;
+	қорба		Tag_N; ! ‘отросток’
 	қорғачын	Tag_N;
 	қорту		Tag_N;
 	қортуқ		Tag_N;
@@ -480,7 +482,7 @@ LEXICON Noun
 	қызырақ		Tag_N;
 	қый		Tag_N;
 	қыйал		Tag_N;
-	қыйғы		Tag_N;
+	қыйғы		Tag_N; ! ‘крик, возглас’
 	қыйғылық	Tag_N;
 	қыйма		Tag_N;
 	қыйын		Tag_N;
@@ -564,6 +566,7 @@ LEXICON Noun
 	нағбур		Tag_N;
 	нағбӱр		Tag_N;
 	найнағаны	Tag_N;
+	най		Tag_N; ! ‘упрек’
 	найнек		Tag_N;
 	налыш		Tag_N;
 	нан		Tag_N;
@@ -604,7 +607,6 @@ LEXICON Noun
 	ӧдӱк		Tag_N;
 	одуң		Tag_N;
 	одуңчы		Tag_N;
-	одур		Tag_N;
 	ӧдӱрчи		Tag_N;
 	ӧзен		Tag_N;
 	ӧзӱм		Tag_N;
@@ -612,10 +614,10 @@ LEXICON Noun
 	ойас		Tag_N;
 	ойнаш		Tag_N;
 	ойнашчы		Tag_N;
-	ойуқ		Tag_N;
-	ойун		Tag_N;
-	ойунчы		Tag_N;
-	ӧкпе		Tag_N;
+	ойуқ		Tag_N; ! ‘дыра, впадина’
+	ойун		Tag_N; ! ‘игра’
+	ойунчы		Tag_N; ! ?
+	ӧкпе		Tag_N; ! ‘гнев’
 	ӧксӱс		Tag_N;
 	оқ		Tag_N;
 	оқсум		Tag_N;
@@ -642,6 +644,7 @@ LEXICON Noun
 	ораг		Tag_N;
 	орам		Tag_N;
 	орамаш		Tag_N;
+	ордас		Tag_N;
 	ӧрге		Tag_N;
 	ӧрген		Tag_N;
 	орғақ		Tag_N;
@@ -650,9 +653,9 @@ LEXICON Noun
 	ӧреккен		Tag_N;
 	ӧрлеш		Tag_N;
 	ороза		Tag_N;
-	ӧрт		Tag_N;
+	ӧрт		Tag_N; ! ‘пожар’
 	орта		Tag_N;
-	ӧртек		Tag_N;
+	ӧртеқ		Tag_N; ! ‘утка’
 	ӧрӱк		Tag_N;
 	орум		Tag_N;
 	орун		Tag_N;
@@ -755,6 +758,7 @@ LEXICON Noun
 	порас		Tag_N;
 	порат		Tag_N; ! <<< пор + ат
 	порос		Tag_N;
+	пӧлгӱ		Tag_N; ! ‘точка, знак’
 	пӧрӱ		Tag_N;
 	престек		Tag_N;
 	пророк		Tag_N;
@@ -763,6 +767,7 @@ LEXICON Noun
 	пӱдӱм		Tag_N;
 	пӱдӱрчи		Tag_N;
 	пӱк		Tag_N;
+	пуғул		Tag_N; ! ‘копна’
 	пулан		Tag_N;
 	пулуң		Tag_N;
 	пулут		Tag_N;
@@ -788,6 +793,7 @@ LEXICON Noun
 	сағал		Tag_N;
 	сағры		Tag_N;
 	сағчы		Tag_N;
+	сағыл		Tag_N; ! ‘белка’
 	сағыры		Tag_N;
 	сағыс		Tag_N;
 	сағыш		Tag_N;
@@ -804,13 +810,13 @@ LEXICON Noun
 	салыг		Tag_N;
 	салық		Tag_N;
 	самовар		Tag_N; ! Tag_Rus
-	сан		Tag_N;
+	сан		Tag_N; ! ‘число’
 	санаачы		Tag_N;
 	санабар		Tag_N;
 	санбар		Tag_N;
 	санчы		Tag_N;
 	саңмай		Tag_N;
-	сап		Tag_N;
+	сап		Tag_N; ! ‘рукоять’
 	саплот		Tag_N;
 	сапӧк		Tag_N;
 	сарат		Tag_N; ! <<< сарыг + ат
@@ -908,6 +914,8 @@ LEXICON Noun
 	тайчы		Tag_N;
 	тайы		Tag_N;
 	тайыс		Tag_N;
+	тан		Tag_N; ! ’ветерок’ (ШС)
+	таң		Tag_N; ! ’заря, рассвет’
 	таққа		Tag_N;
 	тақпай		Tag_N;
 	тақпақ		Tag_N;
@@ -939,7 +947,7 @@ LEXICON Noun
 	тат		Tag_N;
 	татқын		Tag_N;
 	татын		Tag_N;
-	таш		Tag_N;
+	таш		Tag_N; ! ‘камень’
 	таяқ		Tag_N;
 	тебе		Tag_N;
 	тебее		Tag_N;
@@ -962,7 +970,7 @@ LEXICON Noun
 	темир		Tag_N;
 	теп		Tag_N;
 	тепчи		Tag_N;
-	тер		Tag_N;
+	тер		Tag_N; ! ‘пот’
 	тере		Tag_N;
 	терек		Tag_N;
 	тертпек		Tag_N;
@@ -1001,7 +1009,7 @@ LEXICON Noun
 	тӧң		Tag_N;
 	тоңақ		Tag_N;
 	тӧңеш		Tag_N;
-	тоо		Tag_N;
+	тоо		Tag_N; ! ‘счет, число’
 	тӧӧ		Tag_N;
 	тӧӧй		Tag_N;
 	топақ		Tag_N; ! Deriv
@@ -1021,7 +1029,7 @@ LEXICON Noun
 	тӱгенек		Tag_N; ! Deriv
 	туған		Tag_N;
 	туғлаға		Tag_N; ! Deriv
-	тудам		Tag_N;
+	туда		Tag_N; ! ‘ручка (двери)’ < тут ‘держать’
 	тудуғчы		Tag_N; ! Deriv
 	тӱдӱн		Tag_N;
 	туза		Tag_N;
@@ -1048,8 +1056,8 @@ LEXICON Noun
 	тын		Tag_N;
 	тынам		Tag_N;
 	тыныг		Tag_N;
-	тырбақ		Tag_N;
-	тырғақ		Tag_N;
+	тырбақ		Tag_N; ! ‘ноготь’
+	тырғақ		Tag_N; ! ‘коготь’
 	тыт		Tag_N;
 	убу		Tag_N;
 	ӱге		Tag_N;
@@ -1057,7 +1065,7 @@ LEXICON Noun
 	ӱзӱт		Tag_N;
 	уй		Tag_N;
 	ӱй		Tag_N;
-	уйа		Tag_N;
+	уйа		Tag_N; ! ‘гнездо’
 	уйаң		Tag_N;
 	уйат		Tag_N;
 	уйғу		Tag_N;
@@ -1073,15 +1081,16 @@ LEXICON Noun
 	ун		Tag_N;
 	ӱн		Tag_N;
 	ӱнегеш		Tag_N; ! Deriv ?
-	ӱп		Tag_N;
+	ӱп		Tag_N; ! ‘собственность’, ‘наследство’
 	ураза		Tag_N;
-	ӱрен		Tag_N;
+	ӱрен		Tag_N; ! ‘зерно’, ‘поколение’
 	ӱртӱн		Tag_N; ! Deriv ?
 	ӱрӱк		Tag_N;
 	урул		Tag_N;
 	ус		Tag_N;
 	устал		Tag_N;
 	устол		Tag_N;
+	уч		Tag_N; ! ‘конец (острый)’
 	ӱс		Tag_N;
 	ӱстӱ		Tag_N;
 	ӱт		Tag_N;
@@ -1109,7 +1118,7 @@ LEXICON Noun
 	чакий		Tag_N;
 	чаккий		Tag_N;
 	чақшы		Tag_N;
-	чал		Tag_N;
+	чал		Tag_N; ! ‘грива’, ‘найм’
 	чалаң		Tag_N;
 	чалдырық	Tag_N; ! Deriv ?
 	чалчы		Tag_N;
@@ -1131,7 +1140,7 @@ LEXICON Noun
 	частық		Tag_N;
 	чачақ		Tag_N;
 	чачық		Tag_N;
-	чаш		Tag_N;
+	чаш		Tag_N; ! ’год, возраст’, ’молодость’
 	чедик		Tag_N;
 	чеек		Tag_N;
 	чеени		Tag_N;
@@ -1139,34 +1148,33 @@ LEXICON Noun
 	чел		Tag_N;
 	чени		Tag_N;
 	чер		Tag_N;
-	чергем		Tag_N;
+	чергем		Tag_N; ! ‘очередь’, ‘ряд’
 	чес		Tag_N;
 	честе		Tag_N;
 	честек		Tag_N;
-	чет		Tag_N;
+	чет		Tag_N; ! ‘граница’
 	четкер		Tag_N;
 	чииш		Tag_N;
 	чик		Tag_N;
-	чип		Tag_N;
+	чип		Tag_N; ! ‘нить’
 	читке		Tag_N;
 	чичир		Tag_N;
 	чиш		Tag_N;
 	чӧге		Tag_N;
 	чода		Tag_N;
 	чозақ		Tag_N;
+	чой		Tag_N; ! ‘ложь, сплетня’
 	чол		Tag_N;
 	чӧл		Tag_N;
 	чолтақ		Tag_N;
 	чон		Tag_N;
 	чооғаш		Tag_N;
-	чооқ		Tag_N;
+	чооқ		Tag_N; ! ‘рассказ, речь, беседа’
 	чӧп		Tag_N;
-	чӧпчи		Tag_N;
 	чорға		Tag_N;
 	чӧреечи		Tag_N; ! Deriv ?
 	чӧрӱк		Tag_N;
 	чоруқ		Tag_N;
-	чоруқчы		Tag_N; ! Deriv ?
 	чорық		Tag_N;
 	чӱг		Tag_N;
 	чӱген		Tag_N;
@@ -1175,7 +1183,7 @@ LEXICON Noun
 	чулат		Tag_N;
 	чултыр		Tag_N;
 	чӱрек		Tag_N;
-	чурт		Tag_N;
+	чурт		Tag_N; ! ‘стойбище’
 	чурчу		Tag_N;
 	чӱс		Tag_N;
 	чӱстӱк		Tag_N;
@@ -1189,7 +1197,7 @@ LEXICON Noun
 	чылыг		Tag_N;
 	чырғал		Tag_N;
 	чырчы		Tag_N;
-	чыс		Tag_N;
+	чыс		Tag_N; ! ‘запах’
 	чыш		Tag_N;
 	чыылығ		Tag_N;
 	чыылыш		Tag_N;
@@ -1239,6 +1247,7 @@ LEXICON Noun
 	шертик		Tag_N;
 	шертпеш		Tag_N;
 	шечен		Tag_N;
+	шиик		Tag_N; ! ‘писк’
 	шижик		Tag_N;
 	шийин		Tag_N;
 	шилеккей	Tag_N;
@@ -1254,8 +1263,9 @@ LEXICON Noun
 	шӧкпечек	Tag_N;
 	шӧл		Tag_N;
 	шола		Tag_N;
-	шома		Tag_N;
-	шӧп		Tag_N;
+	шома		Tag_N; ! ‘шалун’
+	шоолақ		Tag_N; ! ‘шум’
+	шӧп		Tag_N; ! ‘сор’
 	шорчек		Tag_N;
 	шошқа		Tag_N;
 	шрақ		Tag_N;
@@ -1279,16 +1289,16 @@ LEXICON Noun
 	шырақ		Tag_N;
 	шышқан		Tag_N;
 	ығрақ		Tag_N;
-	ызырға		Tag_N;
+	ызырға		Tag_N; ! ‘серьга’
 	ыйбан		Tag_N;
 	ылаба		Tag_N;
 	ынаг		Tag_N;
-	ыр		Tag_N;
+	ыр		Tag_N; ! ‘вражда’
 	ырайы		Tag_N;
 	ырғақ		Tag_N;
 	ырым		Tag_N;
 	ырыс		Tag_N;
-	ыш		Tag_N;
+	ыш		Tag_N; ! ‘копоть’
 	ыы		Tag_N;
 	эби		Tag_N;
 	эгеечи		Tag_N;
@@ -1301,14 +1311,14 @@ LEXICON Noun
 	экси		Tag_N;
 	эл		Tag_N;
 	элек		Tag_N;
-	эм		Tag_N;
+	эм		Tag_N; ! ‘дом’, ‘лекарство’
 	эмчек		Tag_N;
 	эмчи		Tag_N;
 	эн		Tag_N;
 	эне		Tag_N;
 	эниш		Tag_N;
 	эн-чер		Tag_N;
-	энчи		Tag_N;
+	энчи		Tag_N; ! ‘приданое’ (КА), ‘наследство’ (ШС)
 	эпчек		Tag_N;
 	эпчи		Tag_N;
 	эр		Tag_N;
@@ -1317,7 +1327,7 @@ LEXICON Noun
 	эри		Tag_N;
 	эрим		Tag_N;
 	эриш		Tag_N;
-	эрке		Tag_N;
+	эрке		Tag_N; ! ‘ласка, нежность’
 	эркен		Tag_N;
 	эрлен		Tag_N;
 	эрни		Tag_N;
@@ -1325,7 +1335,7 @@ LEXICON Noun
 	эс		Tag_N;
 	эт		Tag_N;
 	эчек		Tag_N;
-	эш		Tag_N;
+	эш		Tag_N; ! ‘удобство’
 	эшки		Tag_N;
 	эштек		Tag_N;
 	ээ		Tag_N;
