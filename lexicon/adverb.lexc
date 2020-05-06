@@ -1,14 +1,17 @@
-! Наречия
+!!! Наречия
+!!! Цель: минимальный словарь непроизводных основ
 LEXICON Adverb
 	аара		Tag_ADV;
 	аара-пеере	Tag_ADV;
+	адаңма		Tag_ADV; ! ‘очень, весьма’
 	ажылдыра	Tag_ADV;
 	айбын		Tag_ADV;
 	айтта		Tag_ADV;
 	алды		Tag_ADV;
 	алты		Tag_ADV;
+	алында		Tag_ADV;
 	алынаң		Tag_ADV;
-	ам		Tag_ADV;
+	ам		Tag_ADV; ! ‘сейчас, теперь’
 	амды		Tag_ADV;
 	амоқ		Tag_ADV;
 	аразынаң	Tag_ADV;
@@ -32,12 +35,14 @@ LEXICON Adverb
 	қарчы		Tag_ADV;
 	қаш		Tag_ADV;
 	қожа		Tag_ADV;
+	қошта		Tag_ADV; ! ‘близко, рядом’
 	қуруғ		Tag_ADV;
 	қыпчып		Tag_ADV;
 	мағат		Tag_ADV;
-	май		Tag_ADV; ! маай
+	май		Tag_ADV; ! ‘медленно’ тж. маай
 	маттап		Tag_ADV;
 	ӧре		Tag_ADV;
+	пайа		Tag_ADV; ! ‘недавно’
 	пазоқ		Tag_ADV;
 	пееде		Tag_ADV;
 	пеере		Tag_ADV;
@@ -47,12 +52,13 @@ LEXICON Adverb
 	сооба		Tag_ADV;
 	соонаң		Tag_ADV;
 	сыраңай		Tag_ADV;
+	тек		Tag_ADV; ! ‘напрасно’
 	тӧзинде		Tag_ADV;
 	толдра		Tag_ADV;
 	тың		Tag_ADV;
 	ӱдӱре		Tag_ADV;
-	ӱр		Tag_ADV;
-	чуққа		Tag_ADV;
+	ӱр		Tag_ADV; ! ‘долго’ (КА), ‘давно’ (ШС)
+	чуққа		Tag_ADV; ! ‘тихо’
 	чӱче		Tag_ADV;
 	шедик		Tag_ADV; ! ‘трудно’
 	шым		Tag_ADV;

@@ -1,4 +1,5 @@
 !!! Существительные
+!!! Цель: минимальный словарь непроизводных основ
 LEXICON Noun
 	аал		Tag_N;
 	аалдаш		Tag_N;
@@ -31,7 +32,7 @@ LEXICON Noun
 	ағый		Tag_N;
 	ағыл		Tag_N;
 	ағыспа		Tag_N;
-	ада		Tag_N;
+	ада		Tag_N; ! ‘отец’ (КА), ‘медведь’ (ШС)
 	адай		Tag_N;
 	адалыш		Tag_N;
 	адаш		Tag_N;
@@ -50,12 +51,12 @@ LEXICON Noun
 	азыг		Tag_N;
 	азық		Tag_N;
 	азырбаш		Tag_N;
-	ай		Tag_N;
-	айа		Tag_N;
+	ай		Tag_N; ! ‘луна, месяц’
+	айа		Tag_N; ! ‘ладонь’
 	айақ		Tag_N;
 	айға-кӱнге	Tag_N;
 	айғыр		Tag_N;
-	ай-кӱн		Tag_N;
+	ай-кӱн		Tag_N; ! ‘сутки, время’
 	аймақ		Tag_N;
 	айна		Tag_N;
 	айры		Tag_N;
@@ -84,7 +85,7 @@ LEXICON Noun
 	алым		Tag_N;
 	алып		Tag_N;
 	алыш		Tag_N;
-	ам		Tag_N;
+	ам		Tag_N; ! ‘настоящее время’
 	аманат		Tag_N;
 	амолай		Tag_N;
 	амыр		Tag_N;
@@ -99,11 +100,11 @@ LEXICON Noun
 	апче		Tag_N;
 	апшақ		Tag_N;
 	апшый		Tag_N;
-	ара		Tag_N;
+	ара		Tag_N; ! ‘промежуток’ (ШС)
 	араға		Tag_N;
 	арал		Tag_N;
 	арба		Tag_N;
-	арға		Tag_N;
+	арға		Tag_N; !
 	арғалаачы	Tag_N; ! Deriv ???
 	арғамчы		Tag_N; ! Deriv ???
 	арғас		Tag_N; ! Deriv ???
@@ -175,16 +176,18 @@ LEXICON Noun
 	келин		Tag_N;
 	кемис		Tag_N;
 	кемчиленгени	Tag_N; !
+	кең		Tag_N; ! ‘простор’
 	кендир		Tag_N;
 	кенем		Tag_N;
-	кеп		Tag_N;
-	керген		Tag_N;
+	кеп		Tag_N; ! ‘одежда, обувь’
+	керген		Tag_N; ! ‘кедровка’
 	кере		Tag_N;
 	керее		Tag_N;
 	кереечи		Tag_N;
-	керек		Tag_N;
+	керек		Tag_N; ! ‘дело, нужда’
 	кереп		Tag_N;
 	керечи		Tag_N;
+	керсе		Tag_N; ! ‘молоде́ц’
 	кертик		Tag_N;
 	кестик		Tag_N;
 	кешкит		Tag_N;
@@ -235,7 +238,7 @@ LEXICON Noun
 	кӧӧк		Tag_N;
 	кӧӧлчек		Tag_N;
 	кӧӧнӱ		Tag_N;
-	кӧп		Tag_N; ! ???
+	кӧп		Tag_N; ! ‘много, множество’
 	кӧрее		Tag_N;
 	кӧреечи		Tag_N;
 	кӧречи		Tag_N;
@@ -280,7 +283,7 @@ LEXICON Noun
 	кӱрчек		Tag_N;
 	кӱскӱ		Tag_N;
 	кӱчин		Tag_N;
-	кӱш		Tag_N;
+	кӱш		Tag_N; ! ‘сила, мощь’
 	қаан		Tag_N;
 	қаарчаг		Tag_N;
 	қаас		Tag_N;
@@ -428,7 +431,7 @@ LEXICON Noun
 	қос		Tag_N;
 	қоста		Tag_N;
 	қочайын		Tag_N;
-	қош		Tag_N;
+	қош		Tag_N; ! ‘голенище’
 	қошан		Tag_N;
 	қра		Tag_N;
 	қубанақ		Tag_N;
@@ -491,9 +494,9 @@ LEXICON Noun
 	қылған		Tag_N;
 	қылық		Tag_N;
 	қылыш		Tag_N;
-	қын		Tag_N;
+	қын		Tag_N; ! ‘ножны’
 	қыпты		Tag_N;
-	қыр		Tag_N;
+	қыр		Tag_N; ! ‘седина’
 	қыра		Tag_N;
 	қыраң		Tag_N;
 	қырачы		Tag_N;
@@ -597,14 +600,13 @@ LEXICON Noun
 	обал		Tag_N;
 	ӧбе		Tag_N;
 	оғлан		Tag_N;
-	оғлу		Tag_N;
-	оғлы		Tag_N;
+	оғлу		Tag_N; ! ‘сын’
 	оғул		Tag_N;
 	оғыл		Tag_N;
 	одаг		Tag_N;
 	одаң		Tag_N;
 	ӧдик		Tag_N;
-	ӧдӱк		Tag_N;
+	ӧдӱк		Tag_N; ! ‘чирки, сапоги’
 	одуң		Tag_N;
 	одуңчы		Tag_N;
 	ӧдӱрчи		Tag_N;
@@ -690,7 +692,7 @@ LEXICON Noun
 	пажақ		Tag_N;
 	пай		Tag_N;
 	пайрам		Tag_N;
-	пақ		Tag_N;
+	пақ		Tag_N; ! ‘(по)хвала’
 	пақпыр		Tag_N;
 	пала		Tag_N;
 	палғаш		Tag_N;
@@ -837,6 +839,7 @@ LEXICON Noun
 	сӧк		Tag_N;
 	сом		Tag_N;
 	сооғаш		Tag_N;
+	сооқ		Tag_N; ! ‘холод, мороз’
 	сӧӧк		Tag_N;
 	соон		Tag_N;
 	соп		Tag_N;
@@ -875,8 +878,7 @@ LEXICON Noun
 	сыбырағчы	Tag_N;
 	сығырташ	Tag_N;
 	сызым		Tag_N;
-	сый		Tag_N;
-	сылағай		Tag_N; ! +Deriv <<< ???
+	сый		Tag_N; ! ‘дар, угощение’
 	сын		Tag_N;
 	сынаачы		Tag_N;
 	сынма		Tag_N;
@@ -913,7 +915,7 @@ LEXICON Noun
 	тайдақ		Tag_N;
 	тайчы		Tag_N;
 	тайы		Tag_N;
-	тайыс		Tag_N;
+	талай		Tag_N; ! ‘море’ (ШС)
 	тан		Tag_N; ! ’ветерок’ (ШС)
 	таң		Tag_N; ! ’заря, рассвет’
 	таққа		Tag_N;
@@ -953,7 +955,7 @@ LEXICON Noun
 	тебее		Tag_N;
 	теби		Tag_N;
 	тебиг		Tag_N;
-	тебир		Tag_N;
+	тебир		Tag_N; ! ‘железо’
 	тегей		Tag_N;
 	тегенек		Tag_N;
 	тегрем		Tag_N;
@@ -966,12 +968,12 @@ LEXICON Noun
 	текпиш		Tag_N;
 	телене		Tag_N;
 	телте		Tag_N;
-	тем		Tag_N;
+	тем		Tag_N; ! ‘время’ (КА), ‘мера’ (ШС)
 	темир		Tag_N;
 	теп		Tag_N;
 	тепчи		Tag_N;
 	тер		Tag_N; ! ‘пот’
-	тере		Tag_N;
+	тере		Tag_N; ! ‘кожа, шкура’
 	терек		Tag_N;
 	тертпек		Tag_N;
 	тескин		Tag_N;
@@ -1072,7 +1074,9 @@ LEXICON Noun
 	уйе		Tag_N;
 	ӱйе		Tag_N;
 	улаба		Tag_N;
-	ӱлгер		Tag_N;
+	ӱлге		Tag_N; ! ‘удочка’
+	ӱлгер		Tag_N; ! ‘Плеяды’ (ШС)
+	ӱлгеш		Tag_N; ! ‘сапожная выкройка’
 	улда		Tag_N;
 	улуг		Tag_N;
 	улус		Tag_N;
@@ -1149,8 +1153,8 @@ LEXICON Noun
 	чени		Tag_N;
 	чер		Tag_N;
 	чергем		Tag_N; ! ‘очередь’, ‘ряд’
-	чес		Tag_N;
-	честе		Tag_N;
+	чес		Tag_N; ! ‘медь’
+	честе		Tag_N; ! ‘муж. ст. сестры Z+H’
 	честек		Tag_N;
 	чет		Tag_N; ! ‘граница’
 	четкер		Tag_N;
@@ -1283,6 +1287,7 @@ LEXICON Noun
 	шыдық		Tag_N;
 	шық		Tag_N;
 	шылаг		Tag_N;
+	шым		Tag_N; ! ‘тишина’
 	шын		Tag_N;
 	шынық		Tag_N; ! Deriv < шын ?
 	шырай		Tag_N;
@@ -1300,7 +1305,7 @@ LEXICON Noun
 	ырыс		Tag_N;
 	ыш		Tag_N; ! ‘копоть’
 	ыы		Tag_N;
-	эби		Tag_N;
+	эби		Tag_N; ! ’смысл’
 	эгеечи		Tag_N;
 	эгечи		Tag_N;
 	эжик		Tag_N;
@@ -1331,7 +1336,7 @@ LEXICON Noun
 	эркен		Tag_N;
 	эрлен		Tag_N;
 	эрни		Tag_N;
-	эртен		Tag_N;
+	эртен		Tag_N; ! ‘утро’ < эрт ‘проходить, миновать’ ??
 	эс		Tag_N;
 	эт		Tag_N;
 	эчек		Tag_N;

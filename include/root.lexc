@@ -6,7 +6,7 @@ LEXICON Root
 	Adjective;
 	Numeral;
 	Verb;
-	Verb_AUX;
+! 	Verb_AUX;
 	Verb_NEG;
 	Adverb;
 	Particle;
