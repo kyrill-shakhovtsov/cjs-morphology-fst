@@ -57,8 +57,8 @@ LEXICON Noun
 	айға-кӱнге	Tag_N;
 	айғыр		Tag_N;
 	ай-кӱн		Tag_N; ! ‘сутки, время’
-	аймақ		Tag_N;
-	айна		Tag_N;
+	аймақ		Tag_N; ! ‘деревня’
+	айна		Tag_N; ! ‘черт’
 	айры		Tag_N;
 	ақ		Tag_N;
 	аққа		Tag_N;
@@ -80,7 +80,7 @@ LEXICON Noun
 	алғыш		Tag_N;
 	алма		Tag_N;
 	алтам		Tag_N;
-	алты		Tag_N;
+	алты		Tag_N; ! ‘низ’
 	алтын		Tag_N;
 	алым		Tag_N;
 	алып		Tag_N;
@@ -127,7 +127,7 @@ LEXICON Noun
 	ачығ		Tag_N;
 	ачық		Tag_N;
 	ачытқа		Tag_N;
-	аш		Tag_N;
+	аш		Tag_N; ! ‘ячмень’, ‘пища, питье’ (КА), ’горло’ (ШС)
 	ашқым		Tag_N;
 	аш-табақ	Tag_N;
 	аштаг		Tag_N;
@@ -155,7 +155,7 @@ LEXICON Noun
 	иче		Tag_N;
 	ичеге		Tag_N;
 	иш		Tag_N;
-	ишти		Tag_N;
+	ишти		Tag_N; ! ‘внутренность’
 	карман		Tag_N;
 	картоке		Tag_N;
 	картопке	Tag_N;
@@ -171,7 +171,7 @@ LEXICON Noun
 	кезечи		Tag_N;
 	кезиг		Tag_N;
 	кей		Tag_N;
-	кекс		Tag_N;
+	кекс		Tag_N; ! ‘грудь, грудина’, ‘крона (дерево)’ (ШС)
 	келегей		Tag_N;
 	келин		Tag_N;
 	кемис		Tag_N;
@@ -384,7 +384,7 @@ LEXICON Noun
 	қатпаш		Tag_N;
 	қатчы		Tag_N;
 	қачы		Tag_N;
-	қаш		Tag_N;
+	қаш		Tag_N; ! ‘край’, ‘борт’
 	қобрақ		Tag_N;
 	қобу		Tag_N;
 	қобуқ		Tag_N;
@@ -707,7 +707,7 @@ LEXICON Noun
 	парс		Tag_N;
 	пары		Tag_N;
 	парыш		Tag_N;
-	пас		Tag_N;
+	пас		Tag_N; ! ‘верх’, ‘исток (реки)’ (ШС)
 	пастӧӧк		Tag_N;
 	пасха		Tag_N;
 	пасчақ		Tag_N;
@@ -841,7 +841,7 @@ LEXICON Noun
 	сооғаш		Tag_N;
 	сооқ		Tag_N; ! ‘холод, мороз’
 	сӧӧк		Tag_N;
-	соон		Tag_N;
+	соон		Tag_N; ! ‘задняя часть’
 	соп		Tag_N;
 	сӧс		Tag_N;
 	сӧспек		Tag_N;
@@ -1026,7 +1026,7 @@ LEXICON Noun
 	тос		Tag_N;
 	тӧс		Tag_N;
 	точка		Tag_N;
-	тӧш		Tag_N;
+	тӧш		Tag_N; ! ‘грудь’
 	тубан		Tag_N;
 	тӱгенек		Tag_N; ! Deriv
 	туған		Tag_N;

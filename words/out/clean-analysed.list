@@ -2268,7 +2268,6 @@
 алды	ал[V]-RPST-3SG
 алды	ал[V]-RPST[PTCP]-SG-NOM
 алды	ал[V]-RPST[PTCP]-SG-PRED.3SG
-алды	алды[ADV]
 алдыбыс	ал[V]-RPST-POSS.1PL-NOM
 алдыбыс	ал[V]-RPST-POSS.1PL-PRED.3SG
 алдыбыс	ал[V]-RPST-1PL
@@ -2377,7 +2376,6 @@
 алтонның	алтон[NUM]-GEN-PRED.3SG
 алты	алты[N]-SG-NOM
 алты	алты[N]-SG-PRED.3SG
-алты	алты[ADV]
 алты	алты[NUM]-NOM
 алты	алты[NUM]-PRED.3SG
 алтыба	алты[N]-SG-INST
@@ -2758,7 +2756,6 @@
 алына	ал[V]-REFL-SIM[CVB]
 алына	ал[V]-ADJR5[A]-SG-DAT
 алынаң	ал[V]-REFL-IMP.1DU
-алынаң	алынаң[ADV]
 алынар	ал[V]-REFL-FUT-PRED.3SG
 алынар	ал[V]-REFL-FUT-3SG
 алынар	ал[V]-REFL-FUT[PTCP]-SG-NOM
@@ -2946,7 +2943,6 @@
 амоқ	ам[N]-SG-POSS.3SG-PRED.3SG=EMP1
 амоқ	ам[N]-SG-NOM=EMP1
 амоқ	ам[N]-SG-PRED.3SG=EMP1
-амоқ	амоқ[ADV]
 аң	аң[N]-SG-NOM
 аң	аң[N]-SG-PRED.3SG
 анаң	[PRO]-DEM.DIST-SG-ELA
@@ -3206,7 +3202,6 @@
 аразыба	ара[N]-SG-POSS.3SG-INST
 аразына	ара[N]-SG-POSS.3SG-DAT
 аразынаң	ара[N]-SG-POSS.3SG-ELA
-аразынаң	аразынаң[ADV]
 аразынға	ара[N]-SG-POSS.3SG-DAT
 аразында	ара[N]-SG-POSS.3SG-LOC
 аразында	ара[N]-SG-POSS.3SG-LOC-PRED.3SG
@@ -3334,7 +3329,6 @@
 арлашпаан	арла[V]-RECIP-NEG-PST[PTCP]-SG-PRED.3SG
 арта	арыт[V]-SIM[CVB]
 арта	арта[V]-IMP.2SG
-арта-перте	арта-перте[ADV]
 арты	арты[V]-IMP.2SG
 артыг	арты[V]-NR1[N]-SG-NOM
 артыг	арты[V]-NR1[N]-SG-PRED.3SG
@@ -5383,7 +5377,6 @@
 қадоқ	қат[N]-SG-PRED.3SG=EMP1
 қадыг	қат[V]-NR1[N]-SG-NOM
 қадыг	қат[V]-NR1[N]-SG-PRED.3SG
-қадығ	қадығ[ADV]
 қадыйын	қат[V]-IMP.1SG
 қадыл	қадыл[N]-SG-NOM
 қадыл	қадыл[N]-SG-PRED.3SG
@@ -7000,11 +6993,14 @@
 қарчоқ	қар[V]-ADJR2[A]-SG-PRED.3SG=EMP1
 қарчоқ	қар[N]-AG-SG-NOM=EMP1
 қарчоқ	қар[N]-AG-SG-PRED.3SG=EMP1
+қарчоқ	қарчы[A]-SG-NOM=EMP1
+қарчоқ	қарчы[A]-SG-PRED.3SG=EMP1
 қарчы	қар[V]-ADJR2[A]-SG-NOM
 қарчы	қар[V]-ADJR2[A]-SG-PRED.3SG
 қарчы	қар[N]-AG-SG-NOM
 қарчы	қар[N]-AG-SG-PRED.3SG
-қарчы	қарчы[ADV]
+қарчы	қарчы[A]-SG-NOM
+қарчы	қарчы[A]-SG-PRED.3SG
 қары	қар[N]-SG-POSS.3SG-NOM
 қары	қар[N]-SG-POSS.3SG-PRED.3SG
 қарыг	қар[V]-NR1[N]-SG-NOM
@@ -7521,7 +7517,6 @@
 қачырышчам	қачыр[V]-RECIP-PRS[PTCP]-SG-POSS.1SG-PRED.3SG
 қаш	қаш[N]-SG-NOM
 қаш	қаш[N]-SG-PRED.3SG
-қаш	қаш[ADV]
 қашқа	қаш[N]-SG-DAT
 қашта	қаш[N]-SG-LOC
 қашта	қаш[N]-SG-LOC-PRED.3SG
@@ -7613,7 +7608,6 @@
 кей	кей[N]-SG-PRED.3SG
 кекси	кекс[N]-SG-POSS.3SG-NOM
 кекси	кекс[N]-SG-POSS.3SG-PRED.3SG
-кексинге	кексинге[ADV]
 кексинең	кекс[N]-SG-POSS.3SG-ELA
 кел	кел[V]-IMP.2SG
 келаар	кел[V]-IMP.2PL
@@ -8456,7 +8450,6 @@
 кирчығанда	кир[V]-PST-IMPF[PTCP]-SG-LOC-PRED.3SG
 кичен	кичен[V]-IMP.2SG
 киченип	кичен[V]-CON[CVB]
-киченип	киченип[ADV]
 киштегени	киш[N]-VR1[V]-PST-POSS.3SG-NOM
 киштегени	киш[N]-VR1[V]-PST-POSS.3SG-PRED.3SG
 киштегени	киш[N]-VR1[V]-PST[PTCP]-SG-POSS.3SG-NOM
@@ -8793,7 +8786,6 @@
 қозан	қозан[N]-SG-NOM
 қозан	қозан[N]-SG-PRED.3SG
 кӧзе	кӧс[N]-VR2[V]-IMP.2SG
-кӧзе-қара	кӧзе-қара[ADV]
 кӧзечи	кӧс[N]-VR2[V]-ADJR2[A]-SG-NOM
 кӧзечи	кӧс[N]-VR2[V]-ADJR2[A]-SG-PRED.3SG
 кӧзӱнеги	кӧзӱнек[N]-SG-POSS.3SG-NOM
@@ -10342,7 +10334,6 @@
 қуруг	қур[V]-NR1[N]-SG-PRED.3SG
 қуруг	қуруг[A]-SG-NOM
 қуруг	қуруг[A]-SG-PRED.3SG
-қуруғ	қуруғ[ADV]
 қуруда	қуру[N]-SG-LOC
 қуруда	қуру[N]-SG-LOC-PRED.3SG
 қуруқ	қур[V]-NR5[N]-SG-NOM
@@ -11041,7 +11032,9 @@
 қынаш	қын[N]-DIM3-SG-NOM
 қынаш	қын[N]-DIM3-SG-PRED.3SG
 қынаш	қын[N]-VR2[V]-RECIP-IMP.2SG
-қыпчып	қыпчып[ADV]
+қыпчық	қыпчы[V]-NR5[N]-SG-NOM
+қыпчық	қыпчы[V]-NR5[N]-SG-PRED.3SG
+қыпчып	қыпчы[V]-CON[CVB]
 қыр	қыр[A]-SG-NOM
 қыр	қыр[A]-SG-PRED.3SG
 қыр	қыр[V]-IMP.2SG
@@ -20597,7 +20590,6 @@
 тӧзибе	тӧс[N]-SG-POSS.3SG-INST
 тӧзин	тӧс[N]-SG-POSS.3SG-ACC
 тӧзин	тӧс[N]-ADVR[ADV]
-тӧзинде	тӧзинде[ADV]
 тӧзинең	тӧс[N]-SG-POSS.3SG-ELA
 тозул	тос[V]-PASS-IMP.2SG
 тозулған	тос[V]-PASS-PST-PRED.3SG
@@ -20761,6 +20753,14 @@
 тӧлдиң	тӧл[N]-SG-GEN
 тӧлдиң	тӧл[N]-SG-GEN-PRED.3SG
 тӧлдӱ	тӧл[N]-SG-ACC
+толдыр	толдыр[V]-IMP.2SG
+толдыра	толдыр[V]-SIM[CVB]
+толдырғадыг	толдыр[V]-ASSUM-PRED.3SG
+толдырғадыг	толдыр[V]-ASSUM-3SG
+толдырғадыг	толдыр[V]-ASSUM[PTCP]-SG-NOM
+толдырғадыг	толдыр[V]-ASSUM[PTCP]-SG-PRED.3SG
+толдыроқ	толдыр[V]-SIM[CVB]=EMP1
+толдырып	толдыр[V]-CON[CVB]
 тӧлебеен	тӧл[N]-VR2[V]-NEG-PST-PRED.3SG
 тӧлебеен	тӧл[N]-VR2[V]-NEG-PST-3SG
 тӧлебеен	тӧл[N]-VR2[V]-NEG-PST[PTCP]-SG-NOM

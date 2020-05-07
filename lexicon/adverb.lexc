@@ -1,68 +1,49 @@
 !!! Наречия
-!!! Цель: минимальный словарь непроизводных основ
 LEXICON Adverb
-	аара		Tag_ADV;
-	аара-пеере	Tag_ADV;
+	аара		Tag_ADV; ! ‘туда’
+	аара-пеере	Tag_ADV; ! ‘туда-сюда’
 	адаңма		Tag_ADV; ! ‘очень, весьма’
-	ажылдыра	Tag_ADV;
-	айбын		Tag_ADV;
-	айтта		Tag_ADV;
-	алды		Tag_ADV;
-	алты		Tag_ADV;
-	алында		Tag_ADV;
-	алынаң		Tag_ADV;
+	айбын		Tag_ADV; ! ‘поздно’
+	айтта		Tag_ADV; ! ‘слишком’
+! 	алды		Tag_ADV; ! ?
+	алында		Tag_ADV; ! ‘раньше, прежде’
+! 	алынаң		Tag_ADV; ! ?
 	ам		Tag_ADV; ! ‘сейчас, теперь’
-	амды		Tag_ADV;
-	амоқ		Tag_ADV;
-	аразынаң	Tag_ADV;
-	ара-чара	Tag_ADV;
-	арий		Tag_ADV;
-	арта-перте	Tag_ADV;
-	ачынман		Tag_ADV;
-	иштинги		Tag_ADV; ! < Deriv
-	иштинде		Tag_ADV; ! < Deriv
-	кедере		Tag_ADV;
-	кексинге	Tag_ADV;
-	киченип		Tag_ADV;
-	кӧзе-қара	Tag_ADV;
-	кӧргӱзе		Tag_ADV;
-	қадығ		Tag_ADV;
-	қайде		Tag_ADV;
+	амды		Tag_ADV; ! ‘сейчас’ < ам ‘наст. время’
+	ара-чара	Tag_ADV; ! ?
+	арий		Tag_ADV; ! ‘едва’
+! 	арта-перте	Tag_ADV; ! ‘накрест’
+	иштинги		Tag_ADV; ! >>> см. FAILURES.txt
+	иштинде		Tag_ADV; ! >>> см. FAILURES.txt
+	кедере		Tag_ADV; ! ‘прочь’
+	қайде		Tag_ADV; ! ‘как’
 	қайра		Tag_ADV; ! ‘настежь’
-	қалық		Tag_ADV;
-	қаморта		Tag_ADV;
-	қапчығай	Tag_ADV;
-	қарчы		Tag_ADV;
-	қаш		Tag_ADV;
-	қожа		Tag_ADV;
-	қошта		Tag_ADV; ! ‘близко, рядом’
-	қуруғ		Tag_ADV;
-	қыпчып		Tag_ADV;
-	мағат		Tag_ADV;
+	қалық		Tag_ADV; ! ‘вскачь’
+	қаморта		Tag_ADV; ! ‘точно’
+	қапчығай	Tag_ADV; ! ‘быстро’
+	қожа		Tag_ADV; ! ‘вместе’ < қош ‘добавлять’ ??
+	қошта		Tag_ADV; ! ‘близко, рядом’ < қош ‘добавлять’ ??
+	мағат		Tag_ADV; ! ‘очень’
 	май		Tag_ADV; ! ‘медленно’ тж. маай
-	маттап		Tag_ADV;
-	ӧре		Tag_ADV;
+	маттап		Tag_ADV; ! ‘тщательно’
+	ӧре		Tag_ADV; ! ‘вверх’
 	пайа		Tag_ADV; ! ‘недавно’
-	пазоқ		Tag_ADV;
-	пееде		Tag_ADV;
-	пеере		Tag_ADV;
-	пилдирбен	Tag_ADV;
-	пилинмен	Tag_ADV;
-	пилиштиғ	Tag_ADV;
-	сооба		Tag_ADV;
-	соонаң		Tag_ADV;
-	сыраңай		Tag_ADV;
+	пазоқ		Tag_ADV; ! ‘опять’ < паза ‘еще’ :: пас^а^оқ ??
+	пееде		Tag_ADV; ! ‘так, таким образом’
+	пеере		Tag_ADV; ! ‘сюда’
+	сооба		Tag_ADV; ! ‘следом’
+	соонаң		Tag_ADV; ! ‘позади’
+	сыраңай		Tag_ADV; ! ‘сразу’
 	тек		Tag_ADV; ! ‘напрасно’
-	тӧзинде		Tag_ADV;
-	толдра		Tag_ADV;
-	тың		Tag_ADV;
-	ӱдӱре		Tag_ADV;
+	толдра		Tag_ADV; ! ‘полностью’
+	тың		Tag_ADV; ! ‘очень’
+	ӱдӱре		Tag_ADV; ! ‘напротив’
 	ӱр		Tag_ADV; ! ‘долго’ (КА), ‘давно’ (ШС)
 	чуққа		Tag_ADV; ! ‘тихо’
-	чӱче		Tag_ADV;
+	чӱче		Tag_ADV; ! ‘едва’
 	шедик		Tag_ADV; ! ‘трудно’
-	шым		Tag_ADV;
-	ылтам		Tag_ADV;
+	шым		Tag_ADV; ! ‘тихо’
+	ылтам		Tag_ADV; ! ‘скоро’
 	ыпта		Tag_ADV; ! ‘плотно’
 
 
