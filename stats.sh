@@ -4,7 +4,7 @@ lang="cjs"
 in='words/in'
 out='words/out'
 
-flookup -a fst/${lang}-analyser-guesser.bin < ${in}/${lang}-normalised.test | grep -P -v '^$' > ${out}/processed.list
+flookup -a fst/${lang}-clean-analyser-guesser.bin < ${in}/${lang}-normalised.test | grep -P -v '^$' > ${out}/processed.list
 
 flookup fst/${lang}-clean-analyser.bin < ${in}/${lang}-normalised.test | grep -P -v '^$|\+' > ${out}/clean-analysed.list
 

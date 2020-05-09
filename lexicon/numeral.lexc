@@ -23,4 +23,5 @@ LEXICON Numeral
 	пирси	Tag_NUM; ! «один из многих» <<< Deriv < пир ???
 	ийгеле	Tag_NUM; ! «вдвоем»
 	ӱдӱре	Tag_NUM; ! «втроем»
+	кӧп	Tag_NUM; ! ‘много’
 

@@ -67,7 +67,7 @@ for line in fh:
 # Исходные паметры графа
 g = gv.digraph('LEXC')
 gv.setv(g, 'concentrate', config['graph']['concentrate'])
-gv.setv(g, 'label', 'Настольная игра для младших научных сотрудников «' + sys.argv[1] + '»')
+gv.setv(g, 'label', sys.argv[1] + '\\nнастольная игра для младших научных сотрудников')
 gv.setv(g, 'fontname', config['graph']['fontname'])
 gv.setv(g, 'fontsize', config['graph']['fontsize'])
 gv.setv(g, 'nodesep', config['graph']['nodesep'])
