@@ -50,5 +50,6 @@ LEXICON Adverb
 	шым		Tag_ADV; ! ‘тихо’
 	ылтам		Tag_ADV; ! ‘скоро’
 	ыпта		Tag_ADV; ! ‘плотно’
+	эде		Tag_ADV; ! ‘так, таким образом’
 
 
