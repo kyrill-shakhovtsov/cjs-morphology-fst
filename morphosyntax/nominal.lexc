@@ -73,15 +73,17 @@ LEXICON N_Slot4_affixes
 
 ! Уменьшительные аффиксы
 LEXICON N_DIM
-	-DIM1:^чАқ		N_Slot1;
-	-DIM2:^Ақ		N_Slot1;
+	-DIM1:^чАқ		N_DIM_L2; ! -> -DIM1-DIM3
+	-DIM2:^Ақ		N_DIM_L2; ! -> -DIM2-DIM3
 	-DIM3:^Аш		N_Slot1;
-	-DIM2-DIM3:^Ақ^Аш	N_Slot1; ! ‘оолағаш’ : добавить правильную обработку -DIM2-DIM3
-	-DIM1-DIM3:^чАқ^Аш	N_Slot1; ! добавить правильную обработку -DIM1-DIM3
+
+LEXICON N_DIM_L2
+	-DIM3:^Аш		N_Slot1; ! напр., ‘оолағаш’
+				N_Slot1;
 
 ! Образование отыменных прилагательных
 LEXICON N_ADJ
-	-ATTR1:^ЛЫг	Tag_A; ! -ADJR ? (adjectivalizer — cм. Croft) <<< <<< Нужен Flag D.LOC ?
+	-ATTR1:^ЛУг	Tag_A; ! -ADJR ? (adjectivalizer — cм. Croft) <<< <<< Нужен Flag D.LOC ?
 	-ATTR2:^ҒЫ	Tag_A; ! <<< Нужен Flag -LOC/-GEN ?
 ! 	-ATTR3:^НЫңңЫ	Tag_A; ! -ADJR : ЧУ-286 <<< Разбить на ^НЫң^ҒЫ ??? учесть ^НЫйЫ
 
@@ -92,7 +94,7 @@ LEXICON N_NDenom
 ! Образование отыменных глаголов : -VR — verbaliser (Croft)
 LEXICON N_VR
 	-VR1:^ЛА	Tag_V;
-	-VR2:^А		Tag_V; ! …Правило для выпадения гласного именной основы :  сарна < сарын, ӧрле «подниматься» < ӧре «верх»
+	-VR2:^А		Tag_V;
 	-VR3:^Ар	Tag_V;
 	-VR4:^сУн	Tag_V; ! <<< Нет формы ^зУн ???
 	-VR5:^ЗЫрА	Tag_V;
@@ -140,7 +142,7 @@ LEXICON A_VR
 	-VR3:^Ар	Tag_V; ! …V^р — Сочетается (только?) с названиями цветов : Д-143 (§93)
 	-VR9:^р		Tag_V;
 
-! Степени сравнения <<< Разница между вариантами -DIM ???
+! Степени сравнения <<< Разница между вариантами -DIM ??? Добавить -DIM3 ???
 LEXICON A_Comparatives
 	<"-CMPR" : ["^" "-" [(а) а р а | а р ы] қ]>	A_Slot1; ! Сравнительная степень -аарақ, -арақ, -арық
 	<"-DIM" : ["^" "-" [(а) а р а | а р ы] қ]>	A_Slot1; ! -DIM = -CMPR
@@ -176,23 +178,19 @@ LEXICON Pro_PERS_1SG
 	-NOM:мен	EncliticBranching; ! #;
 	-ACC:мени	#;
 	-GEN:меең	#;
-	-DAT:маға	#;
+	-DAT:ма^ҒА	#;
 	-ELA:менең	#;
-	-LOC:менде	#;
-! 	-PROL:	#; ! <<< ???
-! 	-TERM:	#; ! <<< ???
-! 	-CMPR:	#; ! <<< ???
+	-LOC:мен^ДА	#;
+	-INST:меең^БА	#;
 
 LEXICON Pro_PERS_2SG
 	-NOM:сен	EncliticBranching; ! #;
 	-ACC:сени	#;
 	-GEN:сеең	#;
-	-DAT:саға	#;
+	-DAT:са^ҒА	#;
 	-ELA:сенең	#;
-	-LOC:сенде	#;
-! 	-PROL:	#; ! <<< ???
-! 	-TERM:	#; ! <<< ???
-! 	-CMPR:	#; ! <<< ???
+	-LOC:сен^ДА	#;
+	-INST:сеең^БА	#;
 
 LEXICON Pro_PERS_3SG
 	-NOM:ол		EncliticBranching; ! #;
@@ -200,11 +198,11 @@ LEXICON Pro_PERS_3SG
 	-GEN:ааң	#;
 	-DAT:а^ҒА	#;
 	-ELA:анаң	#;
-	-LOC:анда	#;
-	-INST:ааңма	#;
+	-LOC:ан^ДА	#;
+	-INST:ааң^БА	#;
+	-EQT:андыг	Enclitic_PART_oq;
 ! 	-PROL:	#; ! <<< ???
 ! 	-TERM:	#; ! <<< ???
-! 	-CMPR:	#; ! <<< ???
 
 ! Притяжательные местоимения <<< Довести до ума!
 LEXICON Pro_POSS
@@ -250,26 +248,25 @@ LEXICON Pro_DEM
 
 LEXICON Pro_DEM_PROX_SG
 	-NOM:по		#;
-	-ACC:поны	#;
-	-ACC:пону	#; ! <<< вариант
+	-ACC:по^нУ	#;
 	-GEN:пооң	#;
 	-DAT:по^ҒА	#; ! … поо
 	-ELA:мынаң	#;
 	-LOC:мында	#;
-	-INST:пооңма	#;
+	-INST:пооң^БА	#;
 ! 	-TERM:	#; ! <<< ???
 ! 	-CMPR:	#; ! <<< ???
 
 ! Вопросительные местоимения
 LEXICON Pro_INT
-	-INT.AN:кем	N_Slot3; ! <<< -DAT +кемге -кеме
-	-INT.INAN:ноо	N_Slot3; ! <<< -GEN +нооның -ноодың
+	-INT.AN:кем		N_Slot3; ! <<< -DAT +кемге -кеме
+	-INT.INAN:ноо		N_Slot3; ! <<< -GEN +нооның -ноодың
 ! 	қайы «который?», «какой?»
-! 	қайзы қайзызы «который?», «который из них?»
+	-INT.SEL:қайзы		N_Slot3; ! қайзызы «который?», «который из них?» .SEL (selection)
 	-INT.ORD:қанченчи	#; ! «который?» (по счету)
 	-INT.CARD:қанче		#; ! «сколько?»
-! 	қайдыг «какой?»
-	-INT.MAN:қайде		#; ! «как, каким образом?» >>> .MAN ???
+	-INT.QUAL:қайдыг	#; ! «какой?» .QUAL (quality)
+	-INT.MAN:қайде		#; ! «как, каким образом?» .MAN (manner)
 
 ! Лично-возвратные местоимения :: пос~пой
 LEXICON Pro_REFL

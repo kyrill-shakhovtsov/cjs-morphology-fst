@@ -7,12 +7,12 @@ read regex AlterForms
 	.o. Contraction
 	.o. RDrop
 	.o. RemExtraV
-	.o. DropRootV
+	.o. DropStemV
 	.o. AlterForms
 	.o. Prostesis
 	.o. ZDrop
 	.o. LDrop
-	.o. YDrop
+	.o. UYDrop
 	.o. GDrop
 	.o. GJConv
 	.o. PDrop

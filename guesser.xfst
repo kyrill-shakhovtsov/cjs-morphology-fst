@@ -21,11 +21,11 @@ read regex Lexicon
 	.o. Contraction
 	.o. RDrop
 	.o. Prostesis
-	.o. YDrop
+	.o. UYDrop
 	.o. GDrop
 	.o. GJConv
 	.o. RemExtraV
-	.o. DropRootV
+	.o. DropStemV
 	.o. VowelHarmony
 	.o. PDrop
 	.o. Assimilation

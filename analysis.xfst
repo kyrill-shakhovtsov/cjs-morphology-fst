@@ -23,12 +23,12 @@ read regex Filter
 	.o. Contraction
 	.o. RDrop ! Выпадение [р]
 	.o. RemExtraV
-	.o. DropRootV
+	.o. DropStemV
 	.o. AlterForms
 	.o. Prostesis
 	.o. Zdrop
 	.o. LDrop
-	.o. YDrop
+	.o. UYDrop
 	.o. GDrop
 	.o. GJConv
 	.o. PDrop

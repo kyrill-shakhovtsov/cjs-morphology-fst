@@ -29,9 +29,9 @@ define C [CVoiceless | CVoiced | CBack | CFront | CMiddle | CLabial | CUvular | 
 
 !!! Слог
 ! Типы слогов — за неимением описания шорских взяты хакасские : Б-232
-define Syllable C^<2 V+ C^<3 ;
+define Syllable C^<3 V+ C^<4 ;
 
-!!! Слово
+!!! Слово : Д-15 §12
 ! define Word [Syllable & $[а | ы]] ([Syllable & $[а | ы] & ~$[о | у]]+)
 ! 	| [Syllable & $[е | э | и]] ([Syllable & $[е | и] & ~$[ӧ | ӱ]]+)
 ! 	| [Syllable & $[о | у]] ([Syllable & $[а | у] & ~$[о | ы]]+)
@@ -59,8 +59,8 @@ define RemExtraV [V | VM] -> 0 || V "^" _ [л | н]
 	.o. А -> 0 || л _ "^" [л А | м д ы к], V "^" _ р
 	.o. У -> 0, Ы -> 0 || [V | VM ] "^" _ ;
 
-!!! Выпадение последнего гласного основы перед ^(Л)А: қурға < қуруг, ӧрле < ӧре
-define DropRootV V -> 0 || ~$["^"] V CSonorant _ C "^" А , ~$["^"] V CSonorant _ "^" Л А;
+!!! Выпадение последнего гласного основы перед ^А и ^ЛА: ойна < ойун, қурға < қуруг, ӧрле < ӧре
+define DropStemV V -> 0 || ~$["^"] V CSonorant _ C "^" А , ~$["^"] V CSonorant _ "^" Л А;
 
 !!! Альтернативные формы
 define AlterForms "^" Ы п (->) 0 || C _ "^" Т У р ! Выпадение -ып в -PST-ADM после согласного
@@ -78,7 +78,7 @@ define Prostesis [..] -> н || "^" [З Ы | Л А р "^" Ы]  _ "^" [Ғ | Д] А
 
 !!! Выпадение звуков на границах морфем
 ! Выпадение Ғ
-define GDrop г -> 0, ғ -> 0 || V _ "^" Ғ А
+define GDrop [г | ғ] -> 0 || V _ "^" Ғ А
 	.o. Ғ (->) 0 || ғ [а | е | А] "^" _ А .#.
 	.o. Ғ (->) 0 || Syllable^>1 [CNasal | а | е | ғ] "^" _ А ! факультативно: аға -> аа в -DAT, -PRT
 	.o. Ғ (->) 0 || $[Syllable] [CNasal | ӱ] "^" _ А .#. ; ! Выпадение Ғ в -POSS [-1SG | -2SG | -2PL ] -DAT <<< …позымға ???
@@ -92,8 +92,8 @@ define PDrop п -> 0 || C "^" _ "^" [ч | Д] ; ! П -> п || [V | VM] "^" ([V |
 ! Выпадение р
 define RDrop р (->) 0 || "^" А _ "^" Ғ А ; ! Перенести в AlterForms ?
 
-! Выпадение Ы : -POSS [-3SG | -3PL] -ACC : ны -> н : алыптарыны -> алыптарын
-define YDrop [Ы | У] -> 0 || Ы "^" Н _ .#. , V "^" _ ;
+! Выпадение У и Ы : -POSS [-3SG | -3PL] -ACC : ны -> н : алыптарыны -> алыптарын
+define UYDrop [Ы | У] -> 0 || Ы "^" Н _ .#. , V "^" _ ;
 
 ! Выпадение З
 define ZDrop З -> 0 || C "^" _ Ы [.#. | "^"] ;
@@ -113,9 +113,9 @@ define GA Ғ -> ғ || [CVoiced | VBack] "^" _ VBack
 	.o. Ғ -> қ || CVoiceless "^" _ VBack
 	.o. Ғ -> к || CVoiceless "^" _ VFront ;
 
-define DA Д -> д || [CVoiced | V] "^" _ ! Откуда взялось [[CVoiced - CNasal] | V] "^" _ ???
+define DA Д -> д || [CVoiced | V] "^" ("-") _ ! Откуда взялось [[CVoiced - CNasal] | V] "^" _ ???
 	.o. Д -> н || CNasal "^" _ ! [а | е] ң
-	.o. Д -> т || CVoiceless "^" _ ;
+	.o. Д -> т || CVoiceless "^" ("-") _ ;
 
 define ZA З -> з || [CVoiced | V] "^" _
 	.o. З -> с || CVoiceless "^" _ ;

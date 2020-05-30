@@ -3,21 +3,20 @@
 LEXICON EncliticBranching
 			Enclitic_PART_oq;
 			Enclitic_PART_other;
-			Enclitic_PART_ta;
+			Enclitic_PART_da;
 			#;
 
 ! Emphasis
 LEXICON Enclitic_PART_oq
-	=EMP1:^оқ	Enclitic_PART_ta;
+	=EMP1:^оқ	Enclitic_PART_da;
 	=EMP1:^оқ	#;
-			#;
 
-LEXICON Enclitic_PART_ta
-	=CLT:^-Та	#; ! Д-247 (§163)
+LEXICON Enclitic_PART_da
+	=CLT1:^-Да	#; ! Д-247 (§163)
 
 
 LEXICON Enclitic_PART_other
-	=CLT:^-ЛА	#; ! Д-245 (§163)
+	=CLT2:^-ЛА	#; ! Д-245 (§163)
 	=EMP2:^-но	#; ! Усилительная частица, сочетается с глаголами, проверить вариант -ро
 
 ! <<< При генерации исключить второй ^оқ после личных аффиксов
