@@ -114,7 +114,7 @@ LEXICON V_Slot4_Negative
 ! 	-PRS-EVID:^ҒАн^чат^тыр	PCTP_Clitic_Branching;
 	-PST:^ҒАн		PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн -NEG-PST келбеен, парбаан : ЧУ-81 | -PLUP ???
 	-PST-IMPF:^ҒАн^чат^ҒАн	PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн
-	-PST-ADM:^Ып^ТУр	PCTP_Clitic_Branching;
+	-PST-ADM:^ҒАн^ТУр	PCTP_Clitic_Branching;
 	-RPST:^ДУ		PCTP_Clitic_Branching;
 	-FUT:^с			PCTP_Clitic_Branching;
 	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! ^БА^ҒА^ДЫг -> ^БАдЫг

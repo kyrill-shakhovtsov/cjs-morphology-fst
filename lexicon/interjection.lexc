@@ -1,14 +1,15 @@
 LEXICON Iterjection
-	а		Tag_INTJ;
-	абуг		Tag_INTJ;
-	абуу		Tag_INTJ;
-! 	ма		Tag_INTJ;
-! 	ме		Tag_INTJ;
-	мине		Tag_INTJ;
-	мна		Tag_INTJ;
-	мыно		Tag_INTJ;
-	пай-пай		Tag_INTJ;
-	чее		Tag_INTJ;
-	эзе		Tag_INTJ;
-	эй		Tag_INTJ;
-	ээ		Tag_INTJ;
+	а		Tag_INTJ; ! ‘’
+	абуг		Tag_INTJ; ! ‘’
+	абуу		Tag_INTJ; ! ‘’
+! 	ма		Tag_INTJ; ! ‘’
+! 	ме		Tag_INTJ; ! ‘’
+	мине		Tag_INTJ; ! ‘’
+	мна		Tag_INTJ; ! ‘’
+	мыно		Tag_INTJ; ! ‘’
+	пай-пай		Tag_INTJ; ! ‘’
+	чее		Tag_INTJ; ! ‘’
+	эзе		Tag_INTJ; ! ‘’
+	эй		Tag_INTJ; ! ‘’
+	эккей		Tag_INTJ; ! ‘эй, эгей, послушай, вот’ (Ф)
+	ээ		Tag_INTJ; ! ‘’

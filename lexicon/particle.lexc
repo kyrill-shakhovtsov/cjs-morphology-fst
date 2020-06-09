@@ -6,19 +6,19 @@ LEXICON Particle
 	ме	Tag_PART; ! .INT
 	па	Tag_PART; ! .INT
 	пе	Tag_PART; ! .INT
-	не	Tag_PART; ! .INT ? = rus ‘ли’
-	нем	Tag_PART; ! .INT ? = rus ‘ли’
+	не	Tag_PART; ! .INT ? ‘ли’
+	нем	Tag_PART; ! .INT ? ‘ли’
 	но	Tag_PART; ! см. TODO 1.6.1
-	ноо	Tag_PART; ! уточнить
-	оно	Tag_PART; ! = rus ‘вот’
-	бин	Tag_PART; ! .INT ? = rus ‘ли’
-	бинем	Tag_PART; ! .INT ? = rus ‘ли’
-	да	Tag_PART; ! ? = при перечислении + rus ’даже’, ‘хоть [и]’
+	ноо	Tag_PART; ! уточнить <<<
+	оно	Tag_PART; ! ‘вот’
+	бин	Tag_PART; ! .INT ? ‘ли’
+	бинем	Tag_PART; ! .INT ? ‘ли’
+	да	Tag_PART; ! ? при перечислении + ’даже’, ‘хоть [и]’
 	та	Tag_PART; ! = да
-	ла	Tag_PART; ! ? = rus ‘лишь’, ‘только’
+	ла	Tag_PART; ! ? ‘лишь’, ‘только’
 	ле	Tag_PART; ! = ла/ле
 	на	Tag_PART; ! = ла/ле
 	не	Tag_PART; ! = ла/ле
 	дағы	Tag_PART; ! = rus V + -ка (давай-ка)
 	тағы	Tag_PART; ! = дағы
-
+	че	Tag_PART; ! ‘да’ (Ф)
