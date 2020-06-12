@@ -84,7 +84,7 @@ LEXICON N_Deverbal
 	-NR8:^Ақ	Tag_N;
 	-NR9:^л		Tag_N;
 	-NR10:^қУн	Tag_N;
-	-NR11:^пАқ	Tag_N;
+	-NR11:^БАқ	Tag_N; ! <<< было ^пАқ
 	-NR12:^БА	Tag_N;
 	-NR13:^чАқ	Tag_N;
 	-NR14:^чЫқ	Tag_N;
@@ -96,7 +96,7 @@ LEXICON A_Deverbal
 	-ADJR3:^Ғай	Tag_A;
 	-ADJR4:^Ғур	Tag_A;
 	-ADJR5:^Ын	Tag_A;
-	-ADJR6:^бАқ	Tag_A;
+! 	-ADJR6:^бАқ	Tag_A; <<< образует сущ. типа албақ ‘взятие, взятка’, парбақ ‘езда’
 	-ADJR7:^ғы	Tag_A;
 	<"-ADJR8": ["^" А т ч Ы | А А ч ы]>	Tag_A;
 
@@ -105,16 +105,21 @@ LEXICON A_Deverbal
 ! Порядок 1 : -CAUS | -PASS | -REFL | -RECIP
 LEXICON V_Slot1		! -CAUS | -PASS | -REFL | -RECIP
 	-CAUS1:^т	V_Slot2_C2;
-	-CAUS2:^ғУс	V_Slot2_C4;
+	-CAUS2:^ҒУс	V_Slot2_C4;
 	-CAUS3:^Ур	V_Slot2_C1;
 	-CAUS4:^ДУр	V_Slot2_C1;
+	-CAUS4:^ДУр	V_Slot1_ITER; ! <<< ??? ???
 	-CAUS5:^Ыс	V_Slot3;
 	-PASS:^Ул	V_Slot2_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
 	-REFL:^Ун	V_Slot2_CR; ! <<< Учесть V^н
 	-REFL:^Ун	V_Slot2_C4; ! <<< ---------^
 	-RECIP:^Уш	V_Slot2_C1;
 	-RECIP:^Уш	V_Slot2_C4;
-	-ITER:^ҒУлА	V_Slot3; ! <<< ???
+			V_Slot1_ITER;
+
+! ??? ??? ??? ??? ??? ??? ??? ???
+LEXICON V_Slot1_ITER
+	-ITER:^ҒУлА	V_Slot3;
 			V_Slot3;
 
 ! Порядок 2 : -CAUS | -PASS | -REFL | -RECIP
@@ -125,7 +130,7 @@ LEXICON V_Slot2_C1
 			V_Slot3;
 
 LEXICON V_Slot2_C2
-	-CAUS2:^ғУс	V_Slot3;
+	-CAUS2:^ҒУс	V_Slot3;
 			V_Slot3;
 
 LEXICON V_Slot2_C4
@@ -147,8 +152,8 @@ LEXICON V_Slot3 ! -NEG
 
 ! Порядок 4 : Время, вид, наклонение
 LEXICON V_Slot4_Positive ! Время, вид, наклонение
-	-PRS:^п^ча		PCTP_Clitic_Branching; ! <<< учесть ^П^чар : ЧУ-303
-	-PRS-EVID:^ҒАн^чат^тыр	PCTP_Clitic_Branching; ! ^чат^тыр (->) ^чадыр
+	-PRS:^п^ча		PCTP_Clitic_Branching; ! <<< учесть ^п^чар : ЧУ-303
+	-PRS-EVID:^Ып^чат^ТУр	PCTP_Clitic_Branching; ! ^чат^тыр (->) ^чадыр + доработать «кел.чат.тыр» (выпадение ^Ып)
 	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
 	-PST-IMPF:^п^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
 	-PST-ADM:^Ып^ТУр	PCTP_Clitic_Branching; ! Д-200, ЧУ-173
@@ -162,7 +167,7 @@ LEXICON V_Slot4_Positive ! Время, вид, наклонение
 
 LEXICON V_Slot4_Negative
 	-PRS:^ҒАн^ча		PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн
-! 	-PRS-EVID:^ҒАн^чат^тыр	PCTP_Clitic_Branching;
+	-PRS-EVID:^ҒАн^чат^ТУр	PCTP_Clitic_Branching; ! <<< почему было отключено?
 	-PST:^ҒАн		PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн -NEG-PST келбеен, парбаан : ЧУ-81 | -PLUP ???
 	-PST-IMPF:^ҒАн^чат^ҒАн	PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн
 	-PST-ADM:^ҒАн^ТУр	PCTP_Clitic_Branching;
@@ -190,9 +195,9 @@ LEXICON V_IMP
 	<".1SG":["^" [А й (Ы н) | У й У н]]>	#; ! ^УйУн / ^Ай / ^АйЫн : Д-172-173 (§115)
 	.2SG:0					#;
 	.2SG.POL:^ЗАң				#;
-	<".3SG":["^" З [У | Ы] н]>		#; ! ^ЗУн / ^ЗЫн (верх. Мрассу, Кондома : Д-170 (§113))
-	.1DU:^Аң				#; ! «мы вдвоем» : Д-173 (§116)
-	.1PL:^Аң^ЛАр				#; ! «мы многие» : Д-174
+	.3SG:^ЗУн				#; ! ^ЗУн / ^ЗЫн (верх. Мрассу, Кондома : Д-170 (§113))
+	.1DU:^Аң				#; ! ‘мы вдвоем’ : Д-173 (§116)
+	.1PL:^Аң^ЛАр				#; ! ‘мы многие’ : Д-174
 	.2PL:^Лаар				#; ! <<< ^аар после согласных :: Д-169 (§112) + ^ГЫлА (верх. Мрассу : Д-170)
 	<".3PL":["^" З [У | Ы] н "^" Л А р]>	#; ! + ^ЗЫн ?
 
