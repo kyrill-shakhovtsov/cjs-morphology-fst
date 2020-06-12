@@ -66,9 +66,9 @@ LEXICON V_Slot1		! -CAUS | -PASS | -REFL | -RECIP
 	-RECIP:^Уш	V_Slot2_C4;
 			V_Slot1_ITER;
 
-! ??? ??? ??? ??? ??? ??? ??? ???
+! -ITER может быть как до, так и после -CAUS ??? может ли быть после -CAUS-CAUS ???
 LEXICON V_Slot1_ITER
-	-ITER:^ҒУлА	V_Slot3;
+	-ITER:^ҒУлА	V_Slot3; ! <<< м.б. -DIST или -MULT (см. Телякова:2013) ???
 			V_Slot3;
 
 ! Порядок 2 : -CAUS | -PASS | -REFL | -RECIP
