@@ -16,17 +16,14 @@ echo Сборка преобразователя
 
 define Grammar Filter
 	.o. Lexicon
-	.o. NegContraction
-! 	.o. Contraction
+	.o. Contraction
 ! 	.o. RDrop ! Выпадение [р]
 	.o. RemExtraV
 	.o. DropStemV
-	.o. AlterForms
 	.o. Prostesis
 	.o. UYDrop
 	.o. GDrop
 	.o. GJConv
-	.o. PDrop
 	.o. VowelHarmony
 	.o. Assimilation
 	.o. Voicing

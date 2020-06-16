@@ -2728,9 +2728,9 @@ LEXICON V_Slot1		! -CAUS | -PASS | -REFL | -RECIP
 	-RECIP:^Уш	V_Slot2_C4;
 			V_Slot1_ITER;
 
-! ??? ??? ??? ??? ??? ??? ??? ???
+! -ITER может быть как до, так и после -CAUS ??? может ли быть после -CAUS-CAUS ???
 LEXICON V_Slot1_ITER
-	-ITER:^ҒУлА	V_Slot3;
+	-ITER:^ҒУлА	V_Slot3; ! <<< м.б. -DIST или -MULT (см. Телякова:2013) ???
 			V_Slot3;
 
 ! Порядок 2 : -CAUS | -PASS | -REFL | -RECIP
@@ -2753,46 +2753,84 @@ LEXICON V_Slot2_CR
 	-RECIP:^Уш	V_Slot3;
 			V_Slot3;
 
-! Порядок 3 : Отрицательные формы
-LEXICON V_Slot3 ! -NEG
-	-NEG:^БА	V_Slot4_Negative;
-	-NEG:^БА^ҒАн	V_CVB;
-			V_Slot4_Positive;
-			V_Slot3_NonStdNeg;
+! ! Порядок 3 : Отрицательные формы
+! LEXICON V_Slot3 ! -NEG
+! 	-NEG:^БА	V_Slot4_Negative;
+! 	-NEG:^БА^ҒАн	V_CVB;
+! 			V_Slot4_Positive;
+! 			V_Slot3_NonStdNeg;
+! 			V_CVB;
+
+! >>> Порядок 3 : Отрицательные формы
+LEXICON V_Slot3
+	-CUNC:^ҒАлАҚ	PCTP_Clitic_Branching; ! Кункатив (‘еще не…’)
+	-NEG:^БА	V_Slot3_2NEG;
+			V_Slot3_2POS;
 			V_CVB;
 
-! Порядок 4 : Время, вид, наклонение
-LEXICON V_Slot4_Positive ! Время, вид, наклонение
-	-PRS:^п^ча		PCTP_Clitic_Branching; ! <<< учесть ^п^чар : ЧУ-303
-	-PRS-EVID:^Ып^чат^ТУр	PCTP_Clitic_Branching; ! ^чат^тыр (->) ^чадыр + доработать «кел.чат.тыр» (выпадение ^Ып)
-	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
-	-PST-IMPF:^п^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
-	-PST-ADM:^Ып^ТУр	PCTP_Clitic_Branching; ! Д-200, ЧУ-173
-	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
-	-FUT:^Ар		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : ЧУ-91
+LEXICON V_Slot3_2POS
+	-CON:^Ып		V_Slot3_3; ! конверб
+	-PST:^ҒАн		PCTP_Clitic_Branching;
+	-RPST:^ДУ		PCTP_Clitic_Branching;
+	-FUT:^Ар		PCTP_Clitic_Branching; ! или -AOR (TL-413)
 	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching;
-	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82
+	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
 	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
 	<"-SUPN":["^" А р ("^" Ғ А)]>		    #; ! ^Ар | ^Ар^ҒА
-					      V_IMPER;
+				V_IMPER;
 
-LEXICON V_Slot4_Negative
-	-PRS:^ҒАн^ча		PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн
-	-PRS-EVID:^ҒАн^чат^ТУр	PCTP_Clitic_Branching; ! <<< почему было отключено?
-	-PST:^ҒАн		PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн -NEG-PST келбеен, парбаан : ЧУ-81 | -PLUP ???
-	-PST-IMPF:^ҒАн^чат^ҒАн	PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн
-	-PST-ADM:^ҒАн^ТУр	PCTP_Clitic_Branching;
+LEXICON V_Slot3_2NEG
+	-CON:^ҒАн		V_Slot3_3; ! конверб
+	-PST:^ҒАн		PCTP_Clitic_Branching;
 	-RPST:^ДУ		PCTP_Clitic_Branching;
 	-FUT:^с			PCTP_Clitic_Branching;
-	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! ^БА^ҒА^ДЫг -> ^БАдЫг
-	-HAB:^чАң		PCTP_Clitic_Branching;
-	-COND:^ЗА		PCTP_Clitic_Branching;
-	-SUPN:с^ҒА				    #; ! -NEG-SUPN => -басқа: ЧУ-175 <<< EncliticBranching ???
-					      V_IMPER;
+	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching;
+	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
+	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
+	-SUPN:^ҒА		#;
+	0:^ҒАн			V_CVB;
+				V_IMPER;
 
-LEXICON V_Slot3_NonStdNeg ! Non-standard Negator
-	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching;
-	-FUT.ITER-EVID:^А^ДЫр	PCTP_Clitic_Branching; ! >>> TODO 1.1.1
+LEXICON V_Slot3_3	! см. бумажку 2
+	-PRS:^ча		PCTP_Clitic_Branching; ! <<< учесть ^чар : ЧУ-303
+	-PRS-EVID:^чат^тыр	PCTP_Clitic_Branching;
+	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching;
+	-PST-ADM:^ТУр		PCTP_Clitic_Branching;
+
+! <<<
+
+! ! Порядок 4 : Время, вид, наклонение
+! LEXICON V_Slot4_Positive ! Время, вид, наклонение
+! 	-PRS:^п^ча		PCTP_Clitic_Branching; ! <<< учесть ^п^чар : ЧУ-303
+! 	-PRS-EVID:^Ып^чат^ТУр	PCTP_Clitic_Branching; ! ^чат^тыр (->) ^чадыр + доработать «кел.чат.тыр» (выпадение ^Ып)
+! 	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
+! 	-PST-IMPF:^п^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
+! 	-PST-ADM:^Ып^ТУр	PCTP_Clitic_Branching; ! Д-200, ЧУ-173
+! 	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
+! 	-FUT:^Ар		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : ЧУ-91
+! 	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching;
+! 	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82
+! 	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
+! 	<"-SUPN":["^" А р ("^" Ғ А)]>		    #; ! ^Ар | ^Ар^ҒА
+! 					      V_IMPER;
+!
+! LEXICON V_Slot4_Negative
+! 	-PRS:^ҒАн^ча		PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн
+! 	-PRS-EVID:^ҒАн^чат^ТУр	PCTP_Clitic_Branching; ! <<< почему было отключено?
+! 	-PST:^ҒАн		PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн -NEG-PST келбеен, парбаан : ЧУ-81 | -PLUP ???
+! 	-PST-IMPF:^ҒАн^чат^ҒАн	PCTP_Clitic_Branching; ! ^БА^ҒАн -> ^БААн
+! 	-PST-ADM:^ҒАн^ТУр	PCTP_Clitic_Branching;
+! 	-RPST:^ДУ		PCTP_Clitic_Branching;
+! 	-FUT:^с			PCTP_Clitic_Branching;
+! 	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! ^БА^ҒА^ДЫг -> ^БАдЫг
+! 	-HAB:^чАң		PCTP_Clitic_Branching;
+! 	-COND:^ЗА		PCTP_Clitic_Branching;
+! 	-SUPN:с^ҒА				    #; ! -NEG-SUPN => -басқа: ЧУ-175 <<< EncliticBranching ???
+! 					      V_IMPER;
+!
+! LEXICON V_Slot3_NonStdNeg ! Non-standard Negator
+! 	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching;
+! 	-FUT.ITER-EVID:^А^ДЫр	PCTP_Clitic_Branching; ! <<< где отрицание? >>> TODO 1.1.1
 
 ! Для отрицательного глагола
 LEXICON VNEG_Slot4
@@ -2855,7 +2893,7 @@ LEXICON V_CVB
 	-CON:^Уп	Tag_CVB; ! Соединительная либо попутно-предварительная форма : Д-155 (§102)
 	-SIM:^А		Tag_CVB; ! Действие, одновременное действию главного глагола : ЧУ-302
 	-ANT:^АлА	Tag_CVB; ! Anterior : Действие, после которого немедленно наступает действие главного глагола : ЧУ-302
-	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем : ЧУ-303, Оз-239 = -LIM.FUT >>> Проверить ^ҒАнчА
+	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107) ? ^ҒАн^чА
 
 LEXICON Tag_CVB
 	[CVB]:0		EncliticBranching;

@@ -19,19 +19,16 @@ source filter.xfst
 ! Сборка преобразователя
 read regex Filter
 	.o. Lexicon
-	.o. NegContraction
 	.o. Contraction
 	.o. RDrop ! Выпадение [р]
 	.o. RemExtraV
 	.o. DropStemV
-	.o. AlterForms
 	.o. Prostesis
 	.o. Zdrop
 	.o. LDrop
 	.o. UYDrop
 	.o. GDrop
 	.o. GJConv
-	.o. PDrop
 	.o. VowelHarmony
 	.o. Assimilation
 	.o. Voicing

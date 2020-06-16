@@ -16,8 +16,6 @@ define Lexicon ;
 
 echo Сборка преобразователя
 read regex Lexicon
-	.o. AlterForms
-	.o. NegContraction
 	.o. Contraction
 	.o. RDrop
 	.o. Prostesis
@@ -27,7 +25,6 @@ read regex Lexicon
 	.o. RemExtraV
 	.o. DropStemV
 	.o. VowelHarmony
-	.o. PDrop
 	.o. Assimilation
 	.o. Voicing
 	.o. CleanUp ;
