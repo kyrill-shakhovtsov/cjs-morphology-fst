@@ -98,7 +98,7 @@ define GJConv г -> й, ғ -> й || V _ "^" Ы .#. ;
 !!! Ассимиляция согласных б, ғ, д, з, л, н
 define BA Б -> б || [[CVoiced - CNasal] | V] "^" _
 	.o. Б -> м || CNasal "^" _
-! 	.o. Б (->) Ғ || қ "^" _ [ы | и] [м | с] ! ^БЫм (->) ^қЫм, ^сЫм : ЧУ-251 : перенести в AlterForms ?
+! 	.o. Б (->) Ғ || қ "^" _ [ы | и] [м | с] ! ^БЫм (->) ^қЫм, ^сЫм : ЧУ-251
 	.o. Б -> п || CVoiceless "^" _ ;
 
 define GA Ғ -> ғ || [CVoiced | VBack] "^" _ VBack
@@ -106,7 +106,7 @@ define GA Ғ -> ғ || [CVoiced | VBack] "^" _ VBack
 	.o. Ғ -> қ || CVoiceless "^" _ VBack
 	.o. Ғ -> к || CVoiceless "^" _ VFront ;
 
-define DA Д -> д || [CVoiced | V] "^" ("-") _ ! Откуда взялось [[CVoiced - CNasal] | V] "^" _ ???
+define DA Д -> д || [CVoiced | V] "^" ("-") _
 	.o. Д -> н || CNasal "^" _ ! [а | е] ң
 	.o. Д -> т || CVoiceless "^" ("-") _ ;
 
@@ -122,7 +122,7 @@ define LA Л -> л || [[CVoiced - CNasal] | V] "^" _
 
 define NA Н -> н || [V | CNasal] "^" _
 	.o. Н -> т || CVoiceless "^" _
-	.o. Н -> д || CApproximant "^" _ ; ! [л | р | й | г | ғ]
+	.o. Н -> д || CApproximant "^" _ ;
 
 define TA Т -> т || [CSonorant | CVoiceless] "^" _
 	.o. Т -> д || [CVoiced - CSonorant] "^" _ ;

@@ -2788,11 +2788,11 @@ LEXICON V_Slot3_2NEG
 	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
 	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
 	-SUPN:^ҒА		#;
-	0:^ҒАн			V_CVB;
+	0:^ҒАн			V_CVB; ! <<< Нужна помета!
 				V_IMPER;
 
 LEXICON V_Slot3_3	! см. бумажку 2
-	-PRS:^ча		PCTP_Clitic_Branching; ! <<< учесть ^чар : ЧУ-303
+	<"-PRS":["^" ч а (р)]>	PCTP_Clitic_Branching; ! ^ча / ^чар : ЧУ-303
 	-PRS-EVID:^чат^тыр	PCTP_Clitic_Branching;
 	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching;
 	-PST-ADM:^ТУр		PCTP_Clitic_Branching;
@@ -2848,7 +2848,7 @@ LEXICON V_IMP
 	.1DU:^Аң				#; ! ‘мы вдвоем’ : Д-173 (§116)
 	.1PL:^Аң^ЛАр				#; ! ‘мы многие’ : Д-174
 	.2PL:^Лаар				#; ! <<< ^аар после согласных :: Д-169 (§112) + ^ГЫлА (верх. Мрассу : Д-170)
-	<".3PL":["^" З [У | Ы] н "^" Л А р]>	#; ! + ^ЗЫн ?
+	.3PL:^ЗУн^ЛАр				#; ! + ^ЗЫн ?
 
 !!!
 LEXICON PCTP_Clitic_Branching
