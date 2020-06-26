@@ -111,7 +111,7 @@ digraph LEXC {
 		label=V_Derivation];
 	V_StemBoundary -> V_Derivation;
 	V_Slot1	 [fontcolor=darkgreen,
-		label="V_Slot1\n-CAUS | -PASS | -REFL | -RECIP"];
+		label=V_Slot1];
 	V_StemBoundary -> V_Slot1;
 	V_CVB	 [fontcolor=darkgreen,
 		label=V_CVB];
@@ -127,72 +127,78 @@ digraph LEXC {
 	A_Deverbal	 [fontcolor=orange4,
 		label=A_Deverbal];
 	V_Derivation -> A_Deverbal;
-	V_Slot2_C2	 [fontcolor=darkgreen,
-		label=V_Slot2_C2];
-	V_Slot1 -> V_Slot2_C2;
-	V_Slot2_C4	 [fontcolor=darkgreen,
-		label=V_Slot2_C4];
-	V_Slot1 -> V_Slot2_C4;
-	V_Slot2_C1	 [fontcolor=darkgreen,
-		label=V_Slot2_C1];
-	V_Slot1 -> V_Slot2_C1;
-	V_Slot1_ITER	 [fontcolor=darkgreen,
-		label=V_Slot1_ITER];
-	V_Slot1 -> V_Slot1_ITER;
-	V_Slot3	 [fontcolor=darkgreen,
-		label=V_Slot3];
-	V_Slot1 -> V_Slot3;
-	V_Slot2_CR	 [fontcolor=darkgreen,
-		label=V_Slot2_CR];
-	V_Slot1 -> V_Slot2_CR;
+	V_Slot2_2	 [fontcolor=darkgreen,
+		label=V_Slot2_2];
+	V_Slot1 -> V_Slot2_2;
+	V_Slot2_1	 [fontcolor=darkgreen,
+		label="V_Slot2_1\n-CAUS | -PASS | -REFL | -RECIP"];
+	V_Slot1 -> V_Slot2_1;
 	Tag_CVB	 [fontcolor=tomato4,
 		label="Tag [CVB]"];
 	V_CVB -> Tag_CVB;
 	V_Attenuation -> V_Slot1;
 	N_Deverbal -> Tag_N;
 	A_Deverbal -> Tag_A;
-	V_Slot2_C2 -> V_Slot3;
-	V_Slot2_C4 -> V_Slot3;
-	V_Slot2_C1 -> V_Slot3;
-	V_Slot1_ITER -> V_Slot3;
-	V_Slot3 -> V_CVB;
+	V_Slot4	 [fontcolor=darkgreen,
+		label=V_Slot4];
+	V_Slot2_2 -> V_Slot4;
+	V_Slot3_C2	 [fontcolor=darkgreen,
+		label=V_Slot3_C2];
+	V_Slot2_1 -> V_Slot3_C2;
+	V_Slot3_C4	 [fontcolor=darkgreen,
+		label=V_Slot3_C4];
+	V_Slot2_1 -> V_Slot3_C4;
+	V_Slot3_C1	 [fontcolor=darkgreen,
+		label=V_Slot3_C1];
+	V_Slot2_1 -> V_Slot3_C1;
+	V_Slot3_ITER	 [fontcolor=darkgreen,
+		label=V_Slot3_ITER];
+	V_Slot2_1 -> V_Slot3_ITER;
+	V_Slot2_1 -> V_Slot4;
+	V_Slot3_CR	 [fontcolor=darkgreen,
+		label=V_Slot3_CR];
+	V_Slot2_1 -> V_Slot3_CR;
+	V_Slot3_C2 -> V_Slot4;
+	V_Slot3_C4 -> V_Slot4;
+	V_Slot3_C1 -> V_Slot4;
+	V_Slot3_ITER -> V_Slot4;
+	V_Slot4 -> V_CVB;
+	V_Slot4_2NEG	 [fontcolor=darkgreen,
+		label=V_Slot4_2NEG];
+	V_Slot4 -> V_Slot4_2NEG;
+	V_Slot4_2POS	 [fontcolor=darkgreen,
+		label=V_Slot4_2POS];
+	V_Slot4 -> V_Slot4_2POS;
+	V_Slot3_CR -> V_Slot4;
+	V_Slot4_2NEG -> V_CVB;
+	V_Slot4_3	 [fontcolor=darkgreen,
+		label="V_Slot4_3\nсм. бумажку 2"];
+	V_Slot4_2NEG -> V_Slot4_3;
 	PCTP_Clitic_Branching	 [label=PCTP_Clitic_Branching];
-	V_Slot3 -> PCTP_Clitic_Branching;
-	V_Slot3_2NEG	 [fontcolor=darkgreen,
-		label=V_Slot3_2NEG];
-	V_Slot3 -> V_Slot3_2NEG;
-	V_Slot3_2POS	 [fontcolor=darkgreen,
-		label=V_Slot3_2POS];
-	V_Slot3 -> V_Slot3_2POS;
-	V_Slot2_CR -> V_Slot3;
+	V_Slot4_2NEG -> PCTP_Clitic_Branching;
+	V_IMPER	 [fontcolor=darkgreen,
+		label=V_IMPER];
+	V_Slot4_2NEG -> V_IMPER;
+	"V_Slot4_2NEG_#"	 [color=firebrick,
+		label="#",
+		shape=doublecircle];
+	V_Slot4_2NEG -> "V_Slot4_2NEG_#";
+	V_Slot4_2POS -> V_Slot4_3;
+	V_Slot4_4	 [fontcolor=darkgreen,
+		label=V_Slot4_4];
+	V_Slot4_2POS -> V_Slot4_4;
+	V_Slot4_2POS -> PCTP_Clitic_Branching;
+	"V_Slot4_2POS_#"	 [color=firebrick,
+		label="#",
+		shape=doublecircle];
+	V_Slot4_2POS -> "V_Slot4_2POS_#";
+	V_Slot4_2POS -> V_IMPER;
+	V_Slot4_3 -> PCTP_Clitic_Branching;
+	V_Slot4_4 -> PCTP_Clitic_Branching;
 	PCTP_Clitic_Branching -> Endoclitic_PART;
 	Tag_PTCP	 [fontcolor=tomato4,
 		label="Tag [PTCP]"];
 	PCTP_Clitic_Branching -> Tag_PTCP;
-	V_Slot3_2NEG -> V_CVB;
-	V_Slot3_2NEG -> PCTP_Clitic_Branching;
-	V_Slot3_3	 [fontcolor=darkgreen,
-		label="V_Slot3_3\nсм. бумажку 2"];
-	V_Slot3_2NEG -> V_Slot3_3;
-	V_IMPER	 [fontcolor=darkgreen,
-		label=V_IMPER];
-	V_Slot3_2NEG -> V_IMPER;
-	"V_Slot3_2NEG_#"	 [color=firebrick,
-		label="#",
-		shape=doublecircle];
-	V_Slot3_2NEG -> "V_Slot3_2NEG_#";
-	V_Slot3_2POS -> PCTP_Clitic_Branching;
-	V_Slot3_2POS -> V_Slot3_3;
-	V_Slot3_4	 [fontcolor=darkgreen,
-		label=V_Slot3_4];
-	V_Slot3_2POS -> V_Slot3_4;
-	"V_Slot3_2POS_#"	 [color=firebrick,
-		label="#",
-		shape=doublecircle];
-	V_Slot3_2POS -> "V_Slot3_2POS_#";
-	V_Slot3_2POS -> V_IMPER;
-	V_Slot3_3 -> PCTP_Clitic_Branching;
-	V_Slot3_4 -> PCTP_Clitic_Branching;
 	V_IMP	 [fontcolor=darkgreen,
 		label=V_IMP];
 	V_IMPER -> V_IMP;

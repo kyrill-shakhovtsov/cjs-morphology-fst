@@ -2711,77 +2711,80 @@ LEXICON A_Deverbal
 ! 	-ADJR7:^ғы	Tag_A; ! <<< образует сущ. типа суғалғы < суг алғы ‘место, где берут воду’, ташалғы ‘место, где берут камень’
 	<"-ADJR8": ["^" А т ч Ы | А А ч ы]>	Tag_A;
 
+! Порядок 1 : Итератив 1
+LEXICON V_Slot1
+	-ITER:^ҒУлА	V_Slot2_2;
+			V_Slot2_1;
+
 !!! Залоги (voice): -PASS, -REFL, -RECIP, -CAUS | -PASS и -REFL исключают друг друга ?
 !! Возможные сочетания см.: Д-151 (§99), ЧУ-310-311
-! Порядок 1 : -CAUS | -PASS | -REFL | -RECIP
-LEXICON V_Slot1		! -CAUS | -PASS | -REFL | -RECIP
-	-CAUS1:^т	V_Slot2_C2;
-	-CAUS2:^ҒУс	V_Slot2_C4;
-	-CAUS3:^Ур	V_Slot2_C1;
-	-CAUS4:^ДУр	V_Slot2_C1;
-	-CAUS4:^ДУр	V_Slot1_ITER; ! <<< ??? ???
-	-CAUS5:^Ыс	V_Slot3;
-	-PASS:^Ул	V_Slot2_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
-	-REFL:^Ун	V_Slot2_CR; ! <<< Учесть V^н
-	-REFL:^Ун	V_Slot2_C4; ! <<< ---------^
-	-RECIP:^Уш	V_Slot2_C1;
-	-RECIP:^Уш	V_Slot2_C4;
-			V_Slot1_ITER;
+! Порядок 2 (non-ITER): -CAUS | -PASS | -REFL | -RECIP
+LEXICON V_Slot2_1	! -CAUS | -PASS | -REFL | -RECIP
+	-CAUS1:^т	V_Slot3_C2;
+	-CAUS2:^ҒУс	V_Slot3_C4;
+	-CAUS3:^Ур	V_Slot3_C1;
+	-CAUS4:^ДУр	V_Slot3_C1;
+	-CAUS4:^ДУр	V_Slot3_ITER;
+	-CAUS5:^Ыс	V_Slot4;
+	-PASS:^Ул	V_Slot3_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
+	-REFL:^Ун	V_Slot3_CR; ! <<< Учесть V^н
+	-RECIP:^Уш	V_Slot3_C1;
+	-RECIP:^Уш	V_Slot3_C4;
+	-RECIP:^Уш	V_Slot3_ITER;
 
-! -ITER может быть как до, так и после -CAUS ??? может ли быть после -CAUS-CAUS ???
-LEXICON V_Slot1_ITER
-	-ITER:^ҒУлА	V_Slot3; ! <<< м.б. -DIST или -MULT (см. Телякова:2013) ???
-			V_Slot3;
+LEXICON V_Slot2_2
+	-CAUS1:^т	V_Slot4;
+	-CAUS3:^Ур	V_Slot4;
+	-REFL:^Ун	V_Slot4;
+	-RECIP:^Уш	V_Slot4;
+
+! -ITER может быть как до, так и после одиночного -CAUS, может ли быть -ITER-CAUS-CAUS, -CAUS-ITER-CAUS или -CAUS-CAUS-ITER ???
+! Какой -CAUS может предшествовать -ITER ???
+LEXICON V_Slot3_ITER
+	-ITER:^ҒУлА	V_Slot4; ! <<< м.б. -DIST или -MULT (см. Телякова:2013) ???
+			V_Slot4;
 
 ! Порядок 2 : -CAUS | -PASS | -REFL | -RECIP
-LEXICON V_Slot2_C1
-	-CAUS1:^т	V_Slot3;
-	-PASS:^Ул	V_Slot3;
-	-REFL:^Ун	V_Slot3;
-			V_Slot3;
+LEXICON V_Slot3_C1
+	-CAUS1:^т	V_Slot4;
+	-PASS:^Ул	V_Slot4;
+	-REFL:^Ун	V_Slot4;
+			V_Slot4;
 
-LEXICON V_Slot2_C2
-	-CAUS2:^ҒУс	V_Slot3;
-			V_Slot3;
+LEXICON V_Slot3_C2
+	-CAUS2:^ҒУс	V_Slot4;
+			V_Slot4;
 
-LEXICON V_Slot2_C4
-	-CAUS4:^ДУр	V_Slot3;
-			V_Slot3;
+LEXICON V_Slot3_C4
+	-CAUS4:^ДУр	V_Slot4;
+			V_Slot4;
 
-LEXICON V_Slot2_CR
-	-CAUS5:^Ыс	V_Slot3;
-	-RECIP:^Уш	V_Slot3;
-			V_Slot3;
+LEXICON V_Slot3_CR
+	-CAUS5:^Ыс	V_Slot4;
+	-RECIP:^Уш	V_Slot4;
+			V_Slot4;
 
-! ! Порядок 3 : Отрицательные формы
-! LEXICON V_Slot3 ! -NEG
-! 	-NEG:^БА	V_Slot4_Negative;
-! 	-NEG:^БА^ҒАн	V_CVB;
-! 			V_Slot4_Positive;
-! 			V_Slot3_NonStdNeg;
-! 			V_CVB;
-
-! >>> Порядок 3 : Отрицательные формы
-LEXICON V_Slot3
-	-CUNC:^ҒАлАҚ	PCTP_Clitic_Branching; ! Кункатив (‘еще не…’)
-	-NEG:^БА	V_Slot3_2NEG;
-			V_Slot3_2POS;
+! Порядок 3 : Отрицательные формы
+LEXICON V_Slot4
+	-NEG:^БА	V_Slot4_2NEG;
+			V_Slot4_2POS;
 			V_CVB;
 
-LEXICON V_Slot3_2POS
-	-CON:^Ып		V_Slot3_3; ! -CON[CVB]
-	-SIM:^А			V_Slot3_4; ! -SIM[CVB]
+LEXICON V_Slot4_2POS
+	-CON:^Ып		V_Slot4_3; ! -CON[CVB]
+	-SIM:^А			V_Slot4_4; ! -SIM[CVB]
 	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
 	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
 	-FUT:^Ар		PCTP_Clitic_Branching; ! или -AOR (TL-413)
 	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : ЧУ-91
 	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
 	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
+	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching; ! Кункатив (‘еще не…’)
 	<"-SUPN":["^" А р ("^" Ғ А)]>		    #; ! -SUPN : ^Ар | ^Ар^ҒА
 				V_IMPER;
 
-LEXICON V_Slot3_2NEG
-	-CON:^ҒАн		V_Slot3_3; ! конверб
+LEXICON V_Slot4_2NEG
+	-CON:^ҒАн		V_Slot4_3; ! конверб
 	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
 	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
 	-FUT:^с			PCTP_Clitic_Branching;
@@ -2792,14 +2795,14 @@ LEXICON V_Slot3_2NEG
 	0:^ҒАн				V_CVB; ! <<< Нужна помета!
 					V_IMPER;
 
-LEXICON V_Slot3_3	! см. бумажку 2
+LEXICON V_Slot4_3	! см. бумажку 2
 	<"-PRS":["^" ч а (р)]>	PCTP_Clitic_Branching; ! ^ча / ^чар : ЧУ-303
-	-PRS-EVID:^чат^ТУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат+тур : ^чат^тыр (->) ^чадыр
+	-PRS-EVID:^чат^ТУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
 	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
-	-PST-ADM:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173
+	-PST-ADM:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -EVID ?
 
-LEXICON V_Slot3_4
-	-FUT.ITER:^ТУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул < Д-205 §134 ! -NFUT.MULT-EVID ???
+LEXICON V_Slot4_4
+	-FUT.ITER:^ТУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул < Д-205 §134 ! -NFUT.MULT-EVID ??? -FUT.HAB ???
 
 ! Для отрицательного глагола
 LEXICON VNEG_Slot4
