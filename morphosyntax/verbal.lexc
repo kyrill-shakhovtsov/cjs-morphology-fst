@@ -113,9 +113,10 @@ LEXICON V_Slot4_2POS
 	-SIM:^А			V_Slot4_4; ! -SIM[CVB]
 	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
 	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
-	-FUT:^Ар		PCTP_Clitic_Branching; ! или -AOR (TL-413)
-	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : ЧУ-91
+	-FUT:^Ар		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : ЧУ-91 или -AOR : TL-413
+	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! (ассумтив)
 	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
+	-OPT:^ҒАй		V_Slot5_PRED; ! Д-174 (§117) Форма желания (оптатив)
 	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
 	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching; ! Кункатив (‘еще не…’)
 	<"-SUPN":["^" А р ("^" Ғ А)]>		    #; ! -SUPN : ^Ар | ^Ар^ҒА
@@ -128,6 +129,7 @@ LEXICON V_Slot4_2NEG
 	-FUT:^с			PCTP_Clitic_Branching;
 	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! -NEG : ^БА^ҒА^ДЫг -> ^БАдЫг
 	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
+	-OPT:^й			V_Slot5_PRED;
 	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
 	-SUPN:^ҒА			#; ! -NEG-SUPN => -басқа: ЧУ-175 <<< EncliticBranching ???
 	0:^ҒАн				V_CVB; ! <<< Нужна помета!
@@ -204,6 +206,7 @@ LEXICON V_CVB
 	-SIM:^А		Tag_CVB; ! Действие, одновременное действию главного глагола : ЧУ-302
 	-ANT:^АлА	Tag_CVB; ! Anterior : Действие, после которого немедленно наступает действие главного глагола : ЧУ-302
 	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107) ? ^ҒАн^чА
+	-CVB:^чат^Ып	Tag_CVB; ! Действие, продолжающееся, пока совершается действие главного глагола : Д-158 (§103)
 
 LEXICON Tag_CVB
 	[CVB]:0		EncliticBranching;

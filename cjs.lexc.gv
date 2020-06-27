@@ -127,12 +127,12 @@ digraph LEXC {
 	A_Deverbal	 [fontcolor=orange4,
 		label=A_Deverbal];
 	V_Derivation -> A_Deverbal;
-	V_Slot2_2	 [fontcolor=darkgreen,
-		label=V_Slot2_2];
-	V_Slot1 -> V_Slot2_2;
 	V_Slot2_1	 [fontcolor=darkgreen,
-		label="V_Slot2_1\n-CAUS | -PASS | -REFL | -RECIP"];
+		label=V_Slot2_1];
 	V_Slot1 -> V_Slot2_1;
+	V_Slot2_2	 [fontcolor=darkgreen,
+		label="V_Slot2_2\n-CAUS | -PASS | -REFL | -RECIP"];
+	V_Slot1 -> V_Slot2_2;
 	Tag_CVB	 [fontcolor=tomato4,
 		label="Tag [CVB]"];
 	V_CVB -> Tag_CVB;
@@ -141,27 +141,23 @@ digraph LEXC {
 	A_Deverbal -> Tag_A;
 	V_Slot4	 [fontcolor=darkgreen,
 		label=V_Slot4];
+	V_Slot2_1 -> V_Slot4;
 	V_Slot2_2 -> V_Slot4;
 	V_Slot3_C2	 [fontcolor=darkgreen,
 		label=V_Slot3_C2];
-	V_Slot2_1 -> V_Slot3_C2;
+	V_Slot2_2 -> V_Slot3_C2;
 	V_Slot3_C4	 [fontcolor=darkgreen,
 		label=V_Slot3_C4];
-	V_Slot2_1 -> V_Slot3_C4;
+	V_Slot2_2 -> V_Slot3_C4;
 	V_Slot3_C1	 [fontcolor=darkgreen,
 		label=V_Slot3_C1];
-	V_Slot2_1 -> V_Slot3_C1;
+	V_Slot2_2 -> V_Slot3_C1;
 	V_Slot3_ITER	 [fontcolor=darkgreen,
 		label=V_Slot3_ITER];
-	V_Slot2_1 -> V_Slot3_ITER;
-	V_Slot2_1 -> V_Slot4;
+	V_Slot2_2 -> V_Slot3_ITER;
 	V_Slot3_CR	 [fontcolor=darkgreen,
 		label=V_Slot3_CR];
-	V_Slot2_1 -> V_Slot3_CR;
-	V_Slot3_C2 -> V_Slot4;
-	V_Slot3_C4 -> V_Slot4;
-	V_Slot3_C1 -> V_Slot4;
-	V_Slot3_ITER -> V_Slot4;
+	V_Slot2_2 -> V_Slot3_CR;
 	V_Slot4 -> V_CVB;
 	V_Slot4_2NEG	 [fontcolor=darkgreen,
 		label=V_Slot4_2NEG];
@@ -169,6 +165,10 @@ digraph LEXC {
 	V_Slot4_2POS	 [fontcolor=darkgreen,
 		label=V_Slot4_2POS];
 	V_Slot4 -> V_Slot4_2POS;
+	V_Slot3_C2 -> V_Slot4;
+	V_Slot3_C4 -> V_Slot4;
+	V_Slot3_C1 -> V_Slot4;
+	V_Slot3_ITER -> V_Slot4;
 	V_Slot3_CR -> V_Slot4;
 	V_Slot4_2NEG -> V_CVB;
 	V_Slot4_3	 [fontcolor=darkgreen,
@@ -176,6 +176,9 @@ digraph LEXC {
 	V_Slot4_2NEG -> V_Slot4_3;
 	PCTP_Clitic_Branching	 [label=PCTP_Clitic_Branching];
 	V_Slot4_2NEG -> PCTP_Clitic_Branching;
+	V_Slot5_PRED	 [fontcolor=darkgreen,
+		label="V_Slot5_PRED\nПредикативные аффиксы"];
+	V_Slot4_2NEG -> V_Slot5_PRED;
 	V_IMPER	 [fontcolor=darkgreen,
 		label=V_IMPER];
 	V_Slot4_2NEG -> V_IMPER;
@@ -188,6 +191,7 @@ digraph LEXC {
 		label=V_Slot4_4];
 	V_Slot4_2POS -> V_Slot4_4;
 	V_Slot4_2POS -> PCTP_Clitic_Branching;
+	V_Slot4_2POS -> V_Slot5_PRED;
 	"V_Slot4_2POS_#"	 [color=firebrick,
 		label="#",
 		shape=doublecircle];
@@ -199,6 +203,8 @@ digraph LEXC {
 	Tag_PTCP	 [fontcolor=tomato4,
 		label="Tag [PTCP]"];
 	PCTP_Clitic_Branching -> Tag_PTCP;
+	EncliticBranching	 [label=EncliticBranching];
+	V_Slot5_PRED -> EncliticBranching;
 	V_IMP	 [fontcolor=darkgreen,
 		label=V_IMP];
 	V_IMPER -> V_IMP;
@@ -212,18 +218,14 @@ digraph LEXC {
 	N_Slot1	 [fontcolor=navy,
 		label=N_Slot1];
 	Tag_PTCP -> N_Slot1;
+	V_Slot5 -> V_Slot5_PRED;
 	V_Slot5_PERS	 [fontcolor=darkgreen,
 		label="V_Slot5_PERS\nАффиксы лица и числа"];
 	V_Slot5 -> V_Slot5_PERS;
-	V_Slot5_PRED	 [fontcolor=darkgreen,
-		label="V_Slot5_PRED\nПредикативные аффиксы"];
-	V_Slot5 -> V_Slot5_PRED;
 	V_Slot5_POSS	 [fontcolor=darkgreen,
 		label=V_Slot5_POSS];
 	V_Slot5 -> V_Slot5_POSS;
-	EncliticBranching	 [label=EncliticBranching];
 	V_Slot5_PERS -> EncliticBranching;
-	V_Slot5_PRED -> EncliticBranching;
 	N_Slot3	 [fontcolor=navy,
 		label="N_Slot3\nПадеж"];
 	V_Slot5_POSS -> N_Slot3;
