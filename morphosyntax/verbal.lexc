@@ -135,7 +135,7 @@ LEXICON V_Slot5_2NEG
 	0:^ҒАн				V_CVB; ! <<< Нужна помета!
 					V_IMPER;
 
-LEXICON V_Slot5_3	! см. бумажку 2
+LEXICON V_Slot5_3
 	<"-PRS":["^" ч а (р)]>	PCTP_Clitic_Branching; ! ^ча / ^чар : ЧУ-303
 	-PRS-EVID:^чат^ТУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
 	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304

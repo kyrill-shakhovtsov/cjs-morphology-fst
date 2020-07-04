@@ -15,6 +15,8 @@ all: $(main_lexc) $(guesser_lexc) $(analyser_fst) $(clean_analyser_fst) $(guesse
 
 $(main_lexc): include/description.txt include/multichar_symbols.lexc include/root.lexc lexicon/*.lexc morphosyntax/*.lexc
 	@cat $^ > $(main_lexc)
+	@extra/lexc2dot.pl $(main_lexc) doc/$(main_lexc).gv
+	@dot -Tpdf -O doc/$(main_lexc).gv
 
 analyser: $(analyser_fst)
 

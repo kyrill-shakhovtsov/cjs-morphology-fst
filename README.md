@@ -53,9 +53,10 @@ GNU GPL is assumed for everything except the contents of the folders _lexicon_ a
 * `debug/`
 	* `phonology.xfst` — грамматика для отладки _фонологии_
 	* `morphosyntax.xfst` — грамматика для отладки _морфосинтаксиса_
+* `doc/` — дополнительная документация, см. README.md
 * `fst/` — скомпилированные преобразователи
-* `extra/` — дополнительные мелочи
-* `lexicon/` — словарь, разбитый на файлы по частям речи, в формате LEXC
+* `extra/` — дополнительные мелочи, см. README.md
+* `lexicon/` — словарь, разбитый на файлы по частям речи, в формате LEXC, см. README.md
 * `morphosyntax/` — модель морфосинтаксиса в формате LEXC
 * `orthography/` — примитивный преобразователь из «старой» шорской орфографии в новую
 * `phonology/`
@@ -85,6 +86,3 @@ GNU GPL is assumed for everything except the contents of the folders _lexicon_ a
 * синтез: `flookup -i fst/<анализатор> < <список_разборов> > <результаты>`
 * `stats.sh` — обрабатывает списки форм из `words/in/` всеми имеющимися автоматами (результаты помещаются в `words/out/`) с выводом краткой статистики
 * `lemmatise.sh` — сопоставляет разбору формы разбор потенциальной леммы, затем порождает леммы по разборам
-
-### Дополнительные мелочи
-См. extra/README.md
