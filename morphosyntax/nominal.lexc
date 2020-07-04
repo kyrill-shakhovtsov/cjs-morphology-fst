@@ -64,10 +64,10 @@ LEXICON N_Slot4
 LEXICON N_Slot4_affixes
 	-PRED.1SG:^БЫн	EncliticBranching; ! #; ! … ^БЫм : ЧУ-251 … ^қЫм, ^сЫм
 	-PRED.2SG:^ЗЫң	EncliticBranching; ! #; ! Нет ассимиляции -с + ^ЗЫң ⇒ -сЫң
-	-PRED.3SG:0	EncliticBranching; ! #;
+	-PRED.3SG:0	EncliticBranching; ! #; ! Вариант: ^ДЫр < тур : Д-141 (§90)
 	-PRED.1PL:^БЫс	EncliticBranching; ! #; ! … ^қЫс, ^сЫс
 	-PRED.2PL:^ЗААр	EncliticBranching; ! #; ! Дополнить описание ассимиляции CVoiceless + ^ЗААр
-	<["-PRED" ".3PL"]:["^" [Л А|Д Ы] р]>	EncliticBranching; #! ; ! … ^ДЫр : ЧУ-252
+	-PRED.3PL:^ЛАр	EncliticBranching;
 
 !!! Словообразование
 

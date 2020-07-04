@@ -22,8 +22,7 @@ read regex Lexicon
 	.o. UYDrop
 	.o. GDrop
 	.o. GJConv
-	.o. RemExtraV
-	.o. DropStemV
+	.o. Elision
 	.o. VowelHarmony
 	.o. Assimilation
 	.o. Voicing

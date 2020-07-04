@@ -127,12 +127,12 @@ digraph LEXC {
 	A_Deverbal	 [fontcolor=orange4,
 		label=A_Deverbal];
 	V_Derivation -> A_Deverbal;
-	V_Slot2_1	 [fontcolor=darkgreen,
-		label=V_Slot2_1];
-	V_Slot1 -> V_Slot2_1;
 	V_Slot2_2	 [fontcolor=darkgreen,
-		label="V_Slot2_2\n-CAUS | -PASS | -REFL | -RECIP"];
+		label=V_Slot2_2];
 	V_Slot1 -> V_Slot2_2;
+	V_Slot2_1	 [fontcolor=darkgreen,
+		label="V_Slot2_1\n-CAUS | -PASS | -REFL | -RECIP"];
+	V_Slot1 -> V_Slot2_1;
 	Tag_CVB	 [fontcolor=tomato4,
 		label="Tag [CVB]"];
 	V_CVB -> Tag_CVB;
@@ -141,76 +141,70 @@ digraph LEXC {
 	A_Deverbal -> Tag_A;
 	V_Slot4	 [fontcolor=darkgreen,
 		label=V_Slot4];
-	V_Slot2_1 -> V_Slot4;
 	V_Slot2_2 -> V_Slot4;
 	V_Slot3_C2	 [fontcolor=darkgreen,
 		label=V_Slot3_C2];
-	V_Slot2_2 -> V_Slot3_C2;
+	V_Slot2_1 -> V_Slot3_C2;
 	V_Slot3_C4	 [fontcolor=darkgreen,
 		label=V_Slot3_C4];
-	V_Slot2_2 -> V_Slot3_C4;
+	V_Slot2_1 -> V_Slot3_C4;
 	V_Slot3_C1	 [fontcolor=darkgreen,
 		label=V_Slot3_C1];
-	V_Slot2_2 -> V_Slot3_C1;
+	V_Slot2_1 -> V_Slot3_C1;
 	V_Slot3_ITER	 [fontcolor=darkgreen,
 		label=V_Slot3_ITER];
-	V_Slot2_2 -> V_Slot3_ITER;
+	V_Slot2_1 -> V_Slot3_ITER;
+	V_Slot2_1 -> V_Slot4;
 	V_Slot3_CR	 [fontcolor=darkgreen,
 		label=V_Slot3_CR];
-	V_Slot2_2 -> V_Slot3_CR;
-	V_Slot4 -> V_CVB;
-	V_Slot4_2NEG	 [fontcolor=darkgreen,
-		label=V_Slot4_2NEG];
-	V_Slot4 -> V_Slot4_2NEG;
-	V_Slot4_2POS	 [fontcolor=darkgreen,
-		label=V_Slot4_2POS];
-	V_Slot4 -> V_Slot4_2POS;
+	V_Slot2_1 -> V_Slot3_CR;
 	V_Slot3_C2 -> V_Slot4;
 	V_Slot3_C4 -> V_Slot4;
 	V_Slot3_C1 -> V_Slot4;
 	V_Slot3_ITER -> V_Slot4;
+	V_Slot4 -> V_CVB;
+	V_Slot5_2NEG	 [fontcolor=darkgreen,
+		label=V_Slot5_2NEG];
+	V_Slot4 -> V_Slot5_2NEG;
+	V_Slot5_2POS	 [fontcolor=darkgreen,
+		label=V_Slot5_2POS];
+	V_Slot4 -> V_Slot5_2POS;
 	V_Slot3_CR -> V_Slot4;
-	V_Slot4_2NEG -> V_CVB;
-	V_Slot4_3	 [fontcolor=darkgreen,
-		label="V_Slot4_3\nсм. бумажку 2"];
-	V_Slot4_2NEG -> V_Slot4_3;
+	V_Slot5_2NEG -> V_CVB;
+	V_Slot5_3	 [fontcolor=darkgreen,
+		label="V_Slot5_3\nсм. бумажку 2"];
+	V_Slot5_2NEG -> V_Slot5_3;
 	PCTP_Clitic_Branching	 [label=PCTP_Clitic_Branching];
-	V_Slot4_2NEG -> PCTP_Clitic_Branching;
-	V_Slot5_PRED	 [fontcolor=darkgreen,
-		label="V_Slot5_PRED\nПредикативные аффиксы"];
-	V_Slot4_2NEG -> V_Slot5_PRED;
+	V_Slot5_2NEG -> PCTP_Clitic_Branching;
 	V_IMPER	 [fontcolor=darkgreen,
 		label=V_IMPER];
-	V_Slot4_2NEG -> V_IMPER;
-	"V_Slot4_2NEG_#"	 [color=firebrick,
+	V_Slot5_2NEG -> V_IMPER;
+	"V_Slot5_2NEG_#"	 [color=firebrick,
 		label="#",
 		shape=doublecircle];
-	V_Slot4_2NEG -> "V_Slot4_2NEG_#";
-	V_Slot4_2POS -> V_Slot4_3;
-	V_Slot4_4	 [fontcolor=darkgreen,
-		label=V_Slot4_4];
-	V_Slot4_2POS -> V_Slot4_4;
-	V_Slot4_2POS -> PCTP_Clitic_Branching;
-	V_Slot4_2POS -> V_Slot5_PRED;
-	"V_Slot4_2POS_#"	 [color=firebrick,
+	V_Slot5_2NEG -> "V_Slot5_2NEG_#";
+	V_Slot5_2POS -> V_Slot5_3;
+	V_Slot5_4	 [fontcolor=darkgreen,
+		label=V_Slot5_4];
+	V_Slot5_2POS -> V_Slot5_4;
+	V_Slot5_2POS -> PCTP_Clitic_Branching;
+	"V_Slot5_2POS_#"	 [color=firebrick,
 		label="#",
 		shape=doublecircle];
-	V_Slot4_2POS -> "V_Slot4_2POS_#";
-	V_Slot4_2POS -> V_IMPER;
-	V_Slot4_3 -> PCTP_Clitic_Branching;
-	V_Slot4_4 -> PCTP_Clitic_Branching;
+	V_Slot5_2POS -> "V_Slot5_2POS_#";
+	V_Slot5_2POS -> V_IMPER;
+	V_Slot5_3 -> PCTP_Clitic_Branching;
+	V_Slot5_4 -> PCTP_Clitic_Branching;
 	PCTP_Clitic_Branching -> Endoclitic_PART;
 	Tag_PTCP	 [fontcolor=tomato4,
 		label="Tag [PTCP]"];
 	PCTP_Clitic_Branching -> Tag_PTCP;
-	EncliticBranching	 [label=EncliticBranching];
-	V_Slot5_PRED -> EncliticBranching;
 	V_IMP	 [fontcolor=darkgreen,
 		label=V_IMP];
 	V_IMPER -> V_IMP;
-	V_Slot5	 [fontcolor=darkgreen,
-		label=V_Slot5];
-	Endoclitic_PART -> V_Slot5;
+	V_Slot6	 [fontcolor=darkgreen,
+		label=V_Slot6];
+	Endoclitic_PART -> V_Slot6;
 	"V_IMP_#"	 [color=firebrick,
 		label="#",
 		shape=doublecircle];
@@ -218,17 +212,8 @@ digraph LEXC {
 	N_Slot1	 [fontcolor=navy,
 		label=N_Slot1];
 	Tag_PTCP -> N_Slot1;
-	V_Slot5 -> V_Slot5_PRED;
-	V_Slot5_PERS	 [fontcolor=darkgreen,
-		label="V_Slot5_PERS\nАффиксы лица и числа"];
-	V_Slot5 -> V_Slot5_PERS;
-	V_Slot5_POSS	 [fontcolor=darkgreen,
-		label=V_Slot5_POSS];
-	V_Slot5 -> V_Slot5_POSS;
-	V_Slot5_PERS -> EncliticBranching;
-	N_Slot3	 [fontcolor=navy,
-		label="N_Slot3\nПадеж"];
-	V_Slot5_POSS -> N_Slot3;
+	EncliticBranching	 [label=EncliticBranching];
+	V_Slot6 -> EncliticBranching;
 	Enclitic_PART_oq	 [label=Enclitic_PART_oq];
 	EncliticBranching -> Enclitic_PART_oq;
 	Enclitic_PART_other	 [label=Enclitic_PART_other];
@@ -239,17 +224,6 @@ digraph LEXC {
 		label="#",
 		shape=doublecircle];
 	EncliticBranching -> "EncliticBranching_#";
-	N_Slot3 -> EncliticBranching;
-	"N_Slot3_#"	 [color=firebrick,
-		label="#",
-		shape=doublecircle];
-	N_Slot3 -> "N_Slot3_#";
-	N_Slot3_GEN_LOC_Branching	 [fontcolor=navy,
-		label=N_Slot3_GEN_LOC_Branching];
-	N_Slot3 -> N_Slot3_GEN_LOC_Branching;
-	N_Slot4	 [fontcolor=navy,
-		label=N_Slot4];
-	N_Slot3 -> N_Slot4;
 	Tag_CVB -> EncliticBranching;
 	N_Slot1 -> N_Slot2;
 	Enclitic_PART_oq -> Enclitic_PART_da;
@@ -297,7 +271,20 @@ digraph LEXC {
 	N_NDenom -> N_StemBoundary;
 	N_VR -> Tag_V;
 	N_ADV -> Tag_ADV;
+	N_Slot3	 [fontcolor=navy,
+		label="N_Slot3\nПадеж"];
 	N_Slot2 -> N_Slot3;
+	N_Slot3 -> EncliticBranching;
+	"N_Slot3_#"	 [color=firebrick,
+		label="#",
+		shape=doublecircle];
+	N_Slot3 -> "N_Slot3_#";
+	N_Slot3_GEN_LOC_Branching	 [fontcolor=navy,
+		label=N_Slot3_GEN_LOC_Branching];
+	N_Slot3 -> N_Slot3_GEN_LOC_Branching;
+	N_Slot4	 [fontcolor=navy,
+		label=N_Slot4];
+	N_Slot3 -> N_Slot4;
 	N_Slot3_GEN_LOC_Branching -> EncliticBranching;
 	N_Slot3_GEN_LOC_Branching -> N_ADJ;
 	N_Slot3_GEN_LOC_Branching -> N_Slot4;
@@ -344,8 +331,8 @@ digraph LEXC {
 	Pro_POSS -> Pro_POSS_NUM;
 	Pro_POSS_ABS_NUM	 [label=Pro_POSS_ABS_NUM];
 	Pro_POSS_ABS -> Pro_POSS_ABS_NUM;
-	Pro_DEM -> N_Slot3;
 	Pro_DEM -> N_Slot1;
+	Pro_DEM -> N_Slot3;
 	Pro_DEM -> Pro_PERS_3SG;
 	Pro_DEM_PROX_SG	 [label=Pro_DEM_PROX_SG];
 	Pro_DEM -> Pro_DEM_PROX_SG;

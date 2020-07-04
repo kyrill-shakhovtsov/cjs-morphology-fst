@@ -2,21 +2,18 @@
 ! Правила
 source phonology/rules.xfst
 
-read regex AlterForms
-	.o. NegContraction
-	.o. Contraction
+read regex Contraction
+	.o. VerbPersNum
 	.o. RDrop
-	.o. RemExtraV
-	.o. DropStemV
-	.o. AlterForms
+	.o. Elision
 	.o. Prostesis
 	.o. ZDrop
 	.o. LDrop
 	.o. UYDrop
 	.o. GDrop
 	.o. GJConv
-	.o. PDrop
 	.o. VowelHarmony
 	.o. Assimilation
 	.o. Voicing
-	.o. CleanUp ;
+	.o. CleanUp
+	;

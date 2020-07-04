@@ -18,8 +18,7 @@ define Grammar Filter
 	.o. Lexicon
 	.o. Contraction
 ! 	.o. RDrop ! Выпадение [р]
-	.o. RemExtraV
-	.o. DropStemV
+	.o. Elision
 	.o. Prostesis
 	.o. UYDrop
 	.o. GDrop
