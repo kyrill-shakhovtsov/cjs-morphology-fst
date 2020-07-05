@@ -21,7 +21,7 @@ Multichar_Symbols [N] [PN] [PRO] [PSTP] [A] [NUM] [ADV] [V] [VNEG] [CVB] [PTCP] 
 	-PASS -RECIP -CAUS1 -CAUS2 -CAUS3 -CAUS4 -CAUS5 -IMP .POL
 	-NEG
 	-RPST -PRS -PST -FUT
-	-HAB -ITER .ITER -ASSUM -CUNC -IMPF -ADM -INEXP -EVID .EVID -COND -OPT
+	-HAB -ITER .ITER -ASSUM -CUNC -IMPF -ADM -INEXP -EVID .EVID -COND -COND2 -OPT -MAN
 	-SUPN -ANT -SIM -CON -LMF -CVB
 	=EMP1 =EMP2 =CLT1 =CLT2
 	PNominalStem :Guess ! [NGuess] [AGuess]
@@ -2788,7 +2788,7 @@ LEXICON V_Slot5_1
 ! При отсутствии отприцания
 LEXICON V_Slot5_2
 	-CON:^Ып		V_Slot5_3; ! -CON[CVB]
-	-SIM:^А			V_Slot5_4; ! -SIM[CVB]
+	-SIM:^А			V_Slot5_5; ! -SIM[CVB]
 	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
 	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
 	-FUT:^Ар		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : Д-187 (§124), ЧУ-91
@@ -2806,9 +2806,18 @@ LEXICON V_Slot5_3
 	-PRS-EVID:^чат^ТУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
 	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
 	-PST-ADM:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -EVID ?
+	-COND2:^чат^ЗА		PCTP_Clitic_Branching; ! Д-179 (§119) Условная форма сложная
+	-MAN:^Ыс		V_Slot5_4; ! Д-216 (§144) Форма решительности действия
+
+! Форма решительности действия
+LEXICON V_Slot5_4
+	<"-PRS":["^" ч а (р)]>	PCTP_Clitic_Branching;
+	-PST:^ҒАн		PCTP_Clitic_Branching;
+	-RPST:^ДУ		PCTP_Clitic_Branching;
+	-FUT:^Ар		PCTP_Clitic_Branching;
 
 ! Формы, образуемые от конверба -SIM:^А
-LEXICON V_Slot5_4
+LEXICON V_Slot5_5
 	-FUT.ITER:^ТУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
 
 !!! Для отрицательного глагола
