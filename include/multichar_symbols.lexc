@@ -15,14 +15,9 @@ Multichar_Symbols [N] [PN] [PRO] [PSTP] [A] [NUM] [ADV] [V] [VNEG] [CVB] [PTCP] 
 	-NEG
 	-RPST -PRS -PST -FUT
 	-HAB -ITER .ITER -ASSUM -CUNC -IMPF -ADM -INEXP -EVID .EVID -COND -OPT
-	-SUPN -ANT -SIM -CON -LMF
+	-SUPN -ANT -SIM -CON -LMF -CVB
 	=EMP1 =EMP2 =CLT1 =CLT2
 	PNominalStem :Guess ! [NGuess] [AGuess]
 	PVerbalStem ! [VGuess]
-	@P.NEG.baan@ @P.NEG.bas@ @P.NEG.ba@
-	@R.NEG.baan@ @R.NEG.bas@ @R.NEG.ba@
-	@U.NEG.baan@ @U.NEG.bas@ @U.NEG.ba@
-	@D.NEG@
-	@R.NEG@
 	@P.POS.pro@
 	@D.POS.pro@
