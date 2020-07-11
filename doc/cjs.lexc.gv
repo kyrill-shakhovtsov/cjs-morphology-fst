@@ -11,6 +11,15 @@ digraph LEXC {
 		shape=none
 	];
 	edge [color=gray40];
+	subgraph Tags {
+		graph [rank=same];
+		Tag_N	[fontcolor=tomato4,
+			label="Tag [N]"];
+		Tag_V	[fontcolor=tomato4,
+			label="Tag [V]"];
+		Tag_A	[fontcolor=tomato4,
+			label="Tag [A]"];
+	}
 	subgraph POS {
 		graph [rank=same];
 		Noun	[label=Noun];
@@ -24,15 +33,6 @@ digraph LEXC {
 		Adverb	[label=Adverb];
 		Particle	[label=Particle];
 		Iterjection	[label=Iterjection];
-	}
-	subgraph Tags {
-		graph [rank=same];
-		Tag_N	[fontcolor=tomato4,
-			label="Tag [N]"];
-		Tag_V	[fontcolor=tomato4,
-			label="Tag [V]"];
-		Tag_A	[fontcolor=tomato4,
-			label="Tag [A]"];
 	}
 	Root	[color=firebrick,
 		fillcolor=blanchedalmond,
@@ -255,26 +255,31 @@ digraph LEXC {
 	N_DIM	[fontcolor=navy,
 		label=N_DIM];
 	N_Derivation -> N_DIM;
-	N_ADJ	[fontcolor=navy,
-		label=N_ADJ];
-	N_Derivation -> N_ADJ;
-	N_NDenom	[fontcolor=navy,
-		label=N_NDenom];
-	N_Derivation -> N_NDenom;
-	N_VR	[fontcolor=navy,
-		label=N_VR];
-	N_Derivation -> N_VR;
-	N_ADV	[fontcolor=navy,
-		label=N_ADV];
-	N_Derivation -> N_ADV;
+	A_Denom_1	[fontcolor=orange4,
+		label=A_Denom_1];
+	N_Derivation -> A_Denom_1;
+	N_Denom	[fontcolor=navy,
+		label=N_Denom];
+	N_Derivation -> N_Denom;
+	V_Denom	[fontcolor=darkgreen,
+		label=V_Denom];
+	N_Derivation -> V_Denom;
+	ADV_Denom	[fontcolor=darkgreen,
+		label=ADV_Denom];
+	N_Derivation -> ADV_Denom;
 	N_DIM -> N_Slot1;
-	N_DIM_L2	[fontcolor=navy,
-		label=N_DIM_L2];
-	N_DIM -> N_DIM_L2;
-	N_ADJ -> Tag_A;
-	N_NDenom -> N_StemBoundary;
-	N_VR -> Tag_V;
-	N_ADV -> Tag_ADV;
+	N_DIM_2	[fontcolor=navy,
+		label=N_DIM_2];
+	N_DIM -> N_DIM_2;
+	Tag_A_ATTR1	[fontcolor=orange4,
+		label="Tag [A_ATTR1]"];
+	A_Denom_1 -> Tag_A_ATTR1;
+	Tag_A_ATTR2	[fontcolor=orange4,
+		label="Tag [A_ATTR2]"];
+	A_Denom_1 -> Tag_A_ATTR2;
+	N_Denom -> N_StemBoundary;
+	V_Denom -> Tag_V;
+	ADV_Denom -> Tag_ADV;
 	N_Slot3	[fontcolor=navy,
 		label="N_Slot3\nПадеж"];
 	N_Slot2 -> N_Slot3;
@@ -290,13 +295,22 @@ digraph LEXC {
 		label=N_Slot4];
 	N_Slot3 -> N_Slot4;
 	N_Slot3_GEN_LOC_Branching -> EncliticBranching;
-	N_Slot3_GEN_LOC_Branching -> N_ADJ;
 	N_Slot3_GEN_LOC_Branching -> N_Slot4;
+	A_Denom_2	[fontcolor=orange4,
+		label=A_Denom_2];
+	N_Slot3_GEN_LOC_Branching -> A_Denom_2;
 	N_Slot4_affixes	[fontcolor=navy,
 		label=N_Slot4_affixes];
 	N_Slot4 -> N_Slot4_affixes;
+	A_Denom_2 -> Tag_A_ATTR2;
 	N_Slot4_affixes -> EncliticBranching;
-	N_DIM_L2 -> N_Slot1;
+	N_DIM_2 -> N_Slot1;
+	A_ATTR1_NUM	[fontcolor=orange4,
+		label=A_ATTR1_NUM];
+	Tag_A_ATTR1 -> A_ATTR1_NUM;
+	A_ATTR2_NUM	[fontcolor=orange4,
+		label=A_ATTR2_NUM];
+	Tag_A_ATTR2 -> A_ATTR2_NUM;
 	A_Derivation	[fontcolor=orange4,
 		label=A_Derivation];
 	A_StemBoundary -> A_Derivation;
@@ -310,6 +324,23 @@ digraph LEXC {
 		label=A_Comparatives];
 	A_Derivation -> A_Comparatives;
 	A_Slot1 -> N_Slot3;
+	A_ATTR_CASE	[fontcolor=orange4,
+		label=A_ATTR_CASE];
+	A_ATTR1_NUM -> A_ATTR_CASE;
+	"A_ATTR_CASE_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	A_ATTR_CASE -> "A_ATTR_CASE_#";
+	A_ATTR2_PRED	[fontcolor=orange4,
+		label=A_ATTR2_PRED];
+	A_ATTR2_NUM -> A_ATTR2_PRED;
+	A_ATTR2_PRED -> A_ATTR_CASE;
+	A_GEN_ATTR2_CASE	[fontcolor=orange4,
+		label=A_GEN_ATTR2_CASE];
+	"A_GEN_ATTR2_CASE_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	A_GEN_ATTR2_CASE -> "A_GEN_ATTR2_CASE_#";
 	A_VR -> Tag_V;
 	A_Comparatives -> A_Slot1;
 	Pro_PERS	[label=Pro_PERS];

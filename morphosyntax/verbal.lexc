@@ -143,7 +143,7 @@ LEXICON V_Slot5_2
 
 ! Формы, образуемые от конверба -CON:^Ып
 LEXICON V_Slot5_3
-	<"-PRS":["^" ч а (р)]>	PCTP_Clitic_Branching; ! ^ча / ^чар : ЧУ-303
+	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча / ^чар : ЧУ-303
 	-PRS-EVID:^чат^ТУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
 	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
 	-PST-ADM:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -EVID ?
