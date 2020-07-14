@@ -244,10 +244,16 @@ digraph LEXC {
 		shape=doublecircle];
 	Enclitic_PART_da -> "Enclitic_PART_da_#";
 	ADV_StemBoundary -> Enclitic_PART_da;
+	Tag_A_ATTR2	[fontcolor=orange4,
+		label="Tag [A_ATTR2]"];
+	ADV_StemBoundary -> Tag_A_ATTR2;
 	"ADV_StemBoundary_#"	[color=firebrick,
 		label="#",
 		shape=doublecircle];
 	ADV_StemBoundary -> "ADV_StemBoundary_#";
+	A_ATTR2_NUM	[fontcolor=orange4,
+		label=A_ATTR2_NUM];
+	Tag_A_ATTR2 -> A_ATTR2_NUM;
 	N_StemBoundary -> N_Slot1;
 	N_Derivation	[fontcolor=navy,
 		label=N_Derivation];
@@ -271,78 +277,90 @@ digraph LEXC {
 	N_DIM_2	[fontcolor=navy,
 		label=N_DIM_2];
 	N_DIM -> N_DIM_2;
+	A_Denom_1 -> Tag_A_ATTR2;
 	Tag_A_ATTR1	[fontcolor=orange4,
 		label="Tag [A_ATTR1]"];
 	A_Denom_1 -> Tag_A_ATTR1;
-	Tag_A_ATTR2	[fontcolor=orange4,
-		label="Tag [A_ATTR2]"];
-	A_Denom_1 -> Tag_A_ATTR2;
 	N_Denom -> N_StemBoundary;
 	V_Denom -> Tag_V;
 	ADV_Denom -> Tag_ADV;
 	N_Slot3	[fontcolor=navy,
 		label="N_Slot3\nПадеж"];
 	N_Slot2 -> N_Slot3;
-	N_Slot3 -> EncliticBranching;
-	"N_Slot3_#"	[color=firebrick,
-		label="#",
-		shape=doublecircle];
-	N_Slot3 -> "N_Slot3_#";
-	N_Slot3_GEN_LOC_Branching	[fontcolor=navy,
-		label=N_Slot3_GEN_LOC_Branching];
-	N_Slot3 -> N_Slot3_GEN_LOC_Branching;
-	N_Slot4	[fontcolor=navy,
-		label=N_Slot4];
-	N_Slot3 -> N_Slot4;
-	N_Slot3_GEN_LOC_Branching -> EncliticBranching;
-	N_Slot3_GEN_LOC_Branching -> N_Slot4;
+	N_Slot4_Enclitic_Branching	[fontcolor=navy,
+		label=N_Slot4_Enclitic_Branching];
+	N_Slot3 -> N_Slot4_Enclitic_Branching;
 	A_Denom_2	[fontcolor=orange4,
 		label=A_Denom_2];
-	N_Slot3_GEN_LOC_Branching -> A_Denom_2;
+	N_Slot3 -> A_Denom_2;
+	A_Denom_3	[fontcolor=orange4,
+		label=A_Denom_3];
+	N_Slot3 -> A_Denom_3;
+	N_Slot4_Enclitic_Branching -> EncliticBranching;
+	N_Slot4	[fontcolor=navy,
+		label=N_Slot4];
+	N_Slot4_Enclitic_Branching -> N_Slot4;
+	A_Denom_2 -> N_Slot4;
+	Tag_A_ATTR3	[fontcolor=orange4,
+		label="Tag [A_ATTR3]"];
+	A_Denom_2 -> Tag_A_ATTR3;
+	"A_Denom_2_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	A_Denom_2 -> "A_Denom_2_#";
+	A_Denom_3 -> N_Slot4;
+	Tag_A_ATTR4	[fontcolor=orange4,
+		label="Tag [A_ATTR4]"];
+	A_Denom_3 -> Tag_A_ATTR4;
+	"A_Denom_3_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	A_Denom_3 -> "A_Denom_3_#";
 	N_Slot4_affixes	[fontcolor=navy,
 		label=N_Slot4_affixes];
 	N_Slot4 -> N_Slot4_affixes;
-	A_Denom_2 -> Tag_A_ATTR2;
 	N_Slot4_affixes -> EncliticBranching;
 	N_DIM_2 -> N_Slot1;
 	A_ATTR1_NUM	[fontcolor=orange4,
 		label=A_ATTR1_NUM];
 	Tag_A_ATTR1 -> A_ATTR1_NUM;
-	A_ATTR2_NUM	[fontcolor=orange4,
-		label=A_ATTR2_NUM];
-	Tag_A_ATTR2 -> A_ATTR2_NUM;
+	A_GEN_ATTR3_CASE	[fontcolor=orange4,
+		label=A_GEN_ATTR3_CASE];
+	Tag_A_ATTR3 -> A_GEN_ATTR3_CASE;
+	A_LOC_ATTR4_NUM	[fontcolor=orange4,
+		label=A_LOC_ATTR4_NUM];
+	Tag_A_ATTR4 -> A_LOC_ATTR4_NUM;
 	A_Derivation	[fontcolor=orange4,
 		label=A_Derivation];
 	A_StemBoundary -> A_Derivation;
 	A_Slot1	[fontcolor=orange4,
 		label=A_Slot1];
 	A_StemBoundary -> A_Slot1;
-	A_VR	[fontcolor=orange4,
-		label=A_VR];
-	A_Derivation -> A_VR;
 	A_Comparatives	[fontcolor=orange4,
 		label=A_Comparatives];
 	A_Derivation -> A_Comparatives;
+	A_VR	[fontcolor=orange4,
+		label=A_VR];
+	A_Derivation -> A_VR;
 	A_Slot1 -> N_Slot3;
-	A_ATTR_CASE	[fontcolor=orange4,
-		label=A_ATTR_CASE];
-	A_ATTR1_NUM -> A_ATTR_CASE;
-	"A_ATTR_CASE_#"	[color=firebrick,
+	A_ATTR1_CASE	[fontcolor=orange4,
+		label=A_ATTR1_CASE];
+	A_ATTR1_NUM -> A_ATTR1_CASE;
+	"A_ATTR1_CASE_#"	[color=firebrick,
 		label="#",
 		shape=doublecircle];
-	A_ATTR_CASE -> "A_ATTR_CASE_#";
+	A_ATTR1_CASE -> "A_ATTR1_CASE_#";
+	A_ATTR2_NUM -> A_ATTR1_CASE;
 	A_ATTR2_PRED	[fontcolor=orange4,
 		label=A_ATTR2_PRED];
-	A_ATTR2_NUM -> A_ATTR2_PRED;
-	A_ATTR2_PRED -> A_ATTR_CASE;
-	A_GEN_ATTR2_CASE	[fontcolor=orange4,
-		label=A_GEN_ATTR2_CASE];
-	"A_GEN_ATTR2_CASE_#"	[color=firebrick,
+	A_ATTR2_PRED -> EncliticBranching;
+	"A_GEN_ATTR3_CASE_#"	[color=firebrick,
 		label="#",
 		shape=doublecircle];
-	A_GEN_ATTR2_CASE -> "A_GEN_ATTR2_CASE_#";
-	A_VR -> Tag_V;
+	A_GEN_ATTR3_CASE -> "A_GEN_ATTR3_CASE_#";
+	A_LOC_ATTR4_NUM -> A_ATTR1_CASE;
 	A_Comparatives -> A_Slot1;
+	A_VR -> Tag_V;
 	Pro_PERS	[label=Pro_PERS];
 	Tag_PRO -> Pro_PERS;
 	Pro_POSS	[label=Pro_POSS];

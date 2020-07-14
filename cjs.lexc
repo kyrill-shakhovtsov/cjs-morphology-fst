@@ -11,8 +11,8 @@ Multichar_Symbols [N] [PN] [PRO] [PSTP] [A] [NUM] [ADV] [V] [VNEG] [CVB] [PTCP] 
 	.1SG .1PL .2SG .2PL .3SG .3PL .1DU
 	-SG -PL
 	-NOM -ACC -DAT -GEN -ELA -LOC -INST -PROL -EQT -TERM -DIR
-	-POSS -PRED
-	-DIM -DIM1 -DIM2 -DIM3  -ATTR -ATTR1 -ATTR2 -ATTR3
+	-POSS -EZF -PRED
+	-DIM -DIM1 -DIM2 -DIM3  -ATTR -ATTR1 -ATTR2 -ATTR3 -ATTR4
 	-VR1 -VR2 -VR3 -VR4 -VR5 -VR6 -VR7 -VR8 -VR9 -AG -CMPR -ATTN -ATTN1 -ATTN2 -ATTN3
 	-NR1 -NR2 -NR3 -NR4 -NR5 -NR6 -NR7 -NR8 -NR9 -NR10 -NR11 -NR12 -NR13 -NR14
 	-ADJR1 -ADJR2 -ADJR3 -ADJR4 -ADJR5 -ADJR6 -ADJR7 -ADJR8
@@ -2901,6 +2901,7 @@ LEXICON Tag_ADV
 	[ADV]:0		ADV_StemBoundary;
 
 LEXICON ADV_StemBoundary
+	-ATTR2:^ҒЫ	Tag_A_ATTR2;
 			Enclitic_PART_da;
 			#;
 ! Частицы
@@ -2948,22 +2949,21 @@ LEXICON N_Slot2
 
 !!! Порядок 3 : Падежи
 LEXICON N_Slot3		! Падеж
-	-NOM:0		EncliticBranching; 	! <<< также -ACC.INDF и -GEN.INDF : ЧУ-61
-	-ACC:^НУ	#; 			! ^НЫ ??? <<< -ACC.DEF : ЧУ-61
-	-GEN:^НЫң	N_Slot3_GEN_LOC_Branching; ! ^НЫң ??? <<< -GEN.DEF : ЧУ-61
-	-DAT:^ҒА	EncliticBranching;
-	-ELA:^ДАң	#; 			! -CMPR : Д-63 (§24)
-	-LOC:^ДА	N_Slot3_GEN_LOC_Branching;
-	-PROL:^ча	#; 			! -DIR : Д-64 (§25)
-	-TERM:^че	#; 			! -CMPR : Д-64 (§26)
-	-EQT:^ДЫг	#; 			! ⇒ [A] <<<
-	<"-INST" : ["^" Б ([Ы | У] л) А]>	#; ! Альтернативные формы для -INST (-PROL -COM)
+	-NOM:0		N_Slot4_Enclitic_Branching; ! EncliticBranching; 	! <<< также -ACC.INDF и -GEN.INDF : ЧУ-61
+	-ACC:^НУ	N_Slot4_Enclitic_Branching; ! #; 			! ^НЫ ??? <<< -ACC.DEF : ЧУ-61
+	-GEN:^НЫң	A_Denom_2; ! ^НЫң ??? <<< -GEN.DEF : ЧУ-61
+	-DAT:^ҒА	N_Slot4_Enclitic_Branching; ! EncliticBranching;
+	-ELA:^ДАң	N_Slot4_Enclitic_Branching; ! #; 			! -CMPR : Д-63 (§24)
+	-LOC:^ДА	A_Denom_3;
+	-PROL:^ча	N_Slot4_Enclitic_Branching; ! #; 			! -DIR : Д-64 (§25)
+	-TERM:^че	N_Slot4_Enclitic_Branching; ! #; 			! -CMPR : Д-64 (§26)
+	-EQT:^ДЫг	N_Slot4_Enclitic_Branching; ! #; 			! ⇒ [A] <<<
+	<"-INST" : ["^" Б ([Ы | У] л) А]>	N_Slot4_Enclitic_Branching; ! #; ! Альтернативные формы для -INST (-PROL -COM)
 	! <<< См. Д-69 (§29) «Пережитки … -INST, -ABL, -DIR» ЧУ-93
-	-DIR:^ҒАрА	#;
-			N_Slot4; ! Откуда правильнее переходить к -PRED (N_Slot4) ???
+	-DIR:^ҒАрА	N_Slot4_Enclitic_Branching; ! #;
+! 			N_Slot4; ! Откуда правильнее переходить к -PRED (N_Slot4) ???
 
-LEXICON N_Slot3_GEN_LOC_Branching
-			A_Denom_2;
+LEXICON N_Slot4_Enclitic_Branching
 			N_Slot4;
 			EncliticBranching;
 
@@ -2992,6 +2992,11 @@ LEXICON N_DIM_2
 	-DIM3:^Аш		N_Slot1; ! оолағаш < оол^Ақ^Аш
 				N_Slot1;
 
+!! Образование отыменных существительных
+LEXICON N_Denom
+	-AG:^чУ		N_StemBoundary; ! -AG — деятель
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! Образование отыменных прилагательных — 1
 LEXICON A_Denom_1
 	-ATTR1:^ЛЫг	Tag_A_ATTR1; ! Д-73 §33.1
@@ -3000,15 +3005,17 @@ LEXICON A_Denom_1
 !! Образование отыменных прилагательных — 2 (^ДА^ҒЫ и ^ДЫ^ЙЫ)
 !! Прилагательное на ^ДА^ҒЫ может принимать -PRED аффиксы
 LEXICON A_Denom_2
-	-ATTR2:^ҒЫ	Tag_A_ATTR2;
+	-ATTR2:^ҒЫ	Tag_A_ATTR3;
+			N_Slot4;
+			#;
 
-!!
+LEXICON A_Denom_3
+	-ATTR4:^ҒЫ	Tag_A_ATTR4;
+			N_Slot4;
+			#;
 
-!! Образование отыменных существительных
-LEXICON N_Denom
-	-AG:^чУ		N_StemBoundary; ! -AG — деятель
-
-!! Образование отыменных глаголов : -VR — verbaliser (Croft)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! Образование отыменных глаголов : -VR — verbaliser (Croft)
 LEXICON V_Denom
 	-VR1:^ЛА	Tag_V;
 	-VR2:^А		Tag_V;
@@ -3019,9 +3026,9 @@ LEXICON V_Denom
 	-VR7:^ҒАр	Tag_V;
 	-VR8:^ра	Tag_V; ! <<< Нет варианта ^ре ???
 
-! Образование наречий от существительных : древний инструментальный падеж (Д-228 §159)
+!!! Образование наречий от существительных : древний инструментальный падеж (Д-228 §159)
 LEXICON ADV_Denom
-	-ADVR:^Ын	Tag_ADV;
+	-ADVR:^Ын	Tag_ADV; ! Лучше ^Ун ???
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -3046,11 +3053,11 @@ LEXICON Tag_A_ATTR1
 
 ! Число
 LEXICON A_ATTR1_NUM
-	-SG:0		A_ATTR_CASE;
-	-PL:^ЛАр	A_ATTR_CASE;
+	-SG:0		A_ATTR1_CASE;
+	-PL:^ЛАр	A_ATTR1_CASE;
 
-! Падеж (общая парадигма для ^ЛЫг и ^ҒЫ)
-LEXICON A_ATTR_CASE
+! Падеж
+LEXICON A_ATTR1_CASE
 	-NOM:0		#;
 	-ACC:^НУ	#;
 	-GEN:^НЫң	#;
@@ -3069,47 +3076,61 @@ LEXICON Tag_A_ATTR2
 
 ! Число
 LEXICON A_ATTR2_NUM
-	-SG:0		A_ATTR2_PRED;
-	-PL:^ДАр	A_ATTR2_PRED;
+	-SG:0		A_ATTR1_CASE;
+	-PL:^ДАр	A_ATTR1_CASE;
 
 ! Предикативные аффиксы
 LEXICON A_ATTR2_PRED
-	-PRED.1SG:^БЫн	A_ATTR_CASE;
-	-PRED.2SG:^ЗЫң	A_ATTR_CASE;
-	-PRED.3SG:0	A_ATTR_CASE;
-	-PRED.1PL:^БЫс	A_ATTR_CASE;
-	-PRED.2PL:^ЗААр	A_ATTR_CASE;
-	-PRED.3PL:^ЛАр	A_ATTR_CASE;
-			A_ATTR_CASE;
+	-PRED.1SG:^БЫн	EncliticBranching;
+	-PRED.2SG:^ЗЫң	EncliticBranching;
+	-PRED.3SG:0	EncliticBranching;
+	-PRED.1PL:^БЫс	EncliticBranching;
+	-PRED.2PL:^ЗААр	EncliticBranching;
+	-PRED.3PL:^ЛАр	EncliticBranching;
 
-!!! Притяжательные прилагательные на ^ДЫ^йЫ
+!!! Притяжательные прилагательные на ^НЫ^йЫ : Д-75 §34
+LEXICON Tag_A_ATTR3
+	[A]:0		A_GEN_ATTR3_CASE;
+
+! Число выражено в N_Slot1
 ! Падежи
-LEXICON A_GEN_ATTR2_CASE
+LEXICON A_GEN_ATTR3_CASE
 	-NOM:0		#;
 	-ACC:^Н		#;
 	-GEN:^НЫң	#;
-	-DAT:^Н^ҒА	#;
-	-LOC:^Н^ДА	#;
+	-DAT:^н^ҒА	#;
+	-LOC:^н^ДА	#;
 	-ELA:^НАң	#;
 
+!!! Прилагательные на ^ДА^ҒЫ
+LEXICON Tag_A_ATTR4
+	[A]:0		A_LOC_ATTR4_NUM;
+
+! Число
+LEXICON A_LOC_ATTR4_NUM
+	-SG:0		A_ATTR1_CASE; ! A_LOC_ATTR4_CASE;
+	-PL:^ДАр	A_ATTR1_CASE; ! A_LOC_ATTR4_CASE;
+
+! Падежи
+! LEXICON A_LOC_ATTR4_CASE
 
 !!! Словообразование
 LEXICON A_Derivation
-	A_VR;
 	A_Comparatives;
+	A_VR;
 
+!!! Образование глаголов от прилагательных
 LEXICON A_VR
 	-VR3:^Ар	Tag_V; ! …V^р — Сочетается (только?) с названиями цветов : Д-143 (§93)
 	-VR9:^р		Tag_V;
 
-! Степени сравнения <<< Разница между вариантами -DIM ??? Добавить -DIM3 ???
+! Степени сравнения
 LEXICON A_Comparatives
 	<"-CMPR" : ["^" "-" [(а) а р а | а р ы] қ]>	A_Slot1; ! Сравнительная степень -аарақ, -арақ, -арық
 	<"-DIM" : ["^" "-" [(а) а р а | а р ы] қ]>	A_Slot1; ! -DIM = -CMPR
 	-ATTN1:^УлдУрУм	A_Slot1; ! Слабая степень выраженности
 	-ATTN2:^амдық	A_Slot1;
 	-ATTN3:^зыбан	A_Slot1;
-! эң-не / эң -SUP затем прилагательное
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!! Местоимения

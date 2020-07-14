@@ -3,5 +3,6 @@ LEXICON Tag_ADV
 	[ADV]:0		ADV_StemBoundary;
 
 LEXICON ADV_StemBoundary
+	-ATTR2:^ҒЫ	Tag_A_ATTR2;
 			Enclitic_PART_da;
 			#;

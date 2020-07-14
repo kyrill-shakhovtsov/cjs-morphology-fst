@@ -72,10 +72,10 @@ GNU GPL is assumed for everything except the contents of the folders _lexicon_ a
 * `analyser.xfst` — анализатор, использующий как новую, так и старую орфографию (`fst/cjs-analyser.bin`)
 * `clean-analyser-guesser.xfst` — комбинация «чистого» анализатора и «гадалки» (`fst/cjs-clean-analyser-guesser.bin`)
 * `clean-analyser.xfst` — «чистый» (без учета старой орфографии) анализатор (`fst/cjs-clean-analyser.bin`)
-* `filter.xfst` — правила фильтрации наиболее безумных вариантов морфологического разбора (включаются в анализатора и т. п.)
-* `guesser.xfst` — бессловарная «гадалка» (`fst/cjs-guesser.bin`)
+* `filter.xfst` — правила фильтрации наиболее безумных вариантов морфологического разбора
+* `guesser.xfst` — бессловарная «гадалка», порождающая все возможные варианты разбора (`fst/cjs-guesser.bin`)
 * `normaliser.xfst` — вспомогательный автомат (`fst/cjs-normaliser.bin`) для превращения разбора формы в разбор леммы
-* `segmenter.xfst` — автомат морфемной сегментации
+* `segmenter.xfst` — автомат морфемной сегментации (`fst/cjs-segmenter.bin`)
 * `stats.sh` — см. _Использование_
 * `lemmatise.sh` — см. _Использование_
 * `TODO`
@@ -85,4 +85,4 @@ GNU GPL is assumed for everything except the contents of the folders _lexicon_ a
 * анализ: `flookup fst/<анализатор> < <список_слов> > <результаты>`
 * синтез: `flookup -i fst/<анализатор> < <список_разборов> > <результаты>`
 * `stats.sh` — обрабатывает списки форм из `words/in/` всеми имеющимися автоматами (результаты помещаются в `words/out/`) с выводом краткой статистики
-* `lemmatise.sh` — сопоставляет разбору формы разбор потенциальной леммы, затем порождает леммы по разборам
+* `lemmatise.sh` — сопоставляет разбору формы разбор потенциальной леммы, затем порождает леммы по разборам (следует использовать после `stats.sh`)
