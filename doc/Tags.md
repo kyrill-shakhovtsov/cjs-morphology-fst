@@ -45,17 +45,20 @@
 * .AN .INAN .CARD .ORD .MAN -PERS .ABS -DEM .PROX .MIDP .DIST -REFL
 
 ## Глаголы
-* -PASS — пассив
-* -RECIP —
-* -CAUS1 — каузатив-1
-* -CAUS2 — каузатив-2
-* -CAUS3 — каузатив-3
-* -CAUS4 — каузатив-4
-* -CAUS5 — каузатив-5
+# Залоги
+* -PASS — пассив ^Ул
+* -RECIP — взаимный ^Ун
+* -REFL — возвратный ^Уш
+* каузатив:
+	* -CAUS1 ^т
+	* -CAUS2 ^ҒУс
+	* -CAUS3 ^Ур
+	* -CAUS4 ^ДУр
+	* -CAUS5 ^Ыс
 
 * -IMP .POL
 
-* -NEG — отрицание
+* -NEG — отрицание ^БА
 
 * -RPST — недавнопрошедшее
 * -PST — прошедшее
@@ -77,7 +80,7 @@
 ### Конвербы (деепричастия)
 * -ANT — предшествования (попутно-предварительная форма Д- )
 * -SIM — одновременности
-* -CON —
+* -CON — соединительный (Д- )
 * -LMF — предела в будущем
 
 ### Клитики
@@ -86,11 +89,177 @@
 * =CLT — прочие клитики
 
 ## Словообразовательные аффиксы
--DIM -DIM1 -DIM2 -DIM3  -ATTR -ATTR1 -ATTR2 -ATTR3
+-DIM
+-DIM1
+-DIM2
+-DIM3
+-ATTR
+-ATTR1
+-ATTR2
+-ATTR3
 
--VR1 -VR2 -VR3 -VR4 -VR5 -VR6 -VR7 -VR8 -VR9 -AG -CMPR -ATTN -ATTN1 -ATTN2 -ATTN3
+-VR1
+-VR2
+-VR3
+-VR4
+-VR5
+-VR6
+-VR7
+-VR8
+-VR9
+-AG
+-CMPR
+-ATTN
+-ATTN1
+-ATTN2
+-ATTN3
 
--NR1 -NR2 -NR3 -NR4 -NR5 -NR6 -NR7 -NR8 -NR9 -NR10 -NR11 -NR12 -NR13 -NR14
+-NR1
+-NR2
+-NR3
+-NR4
+-NR5
+-NR6
+-NR7
+-NR8
+-NR9
+-NR10
+-NR11
+-NR12
+-NR13
+-NR14
 
--ADJR1 -ADJR2 -ADJR3 -ADJR4 -ADJR5 -ADJR6 -ADJR7 -ADJR8
+-ADJR1
+-ADJR2
+-ADJR3
+-ADJR4
+-ADJR5
+-ADJR6
+-ADJR7
+-ADJR8
 -ADVR
+
+==================================
+
+0:^ҒАн
+.1DU:^Аң
+.1PL:^Аң^ЛАр
+-1PL:^БЫс
+-1SG:^БЫм
+-2PL:^Заар
+.2PL:^Лаар
+.2SG.POL:^ЗАң
+-2SG:^ЗЫң
+.3PL:^ЗУн^ЛАр
+-3PL:^ЛАр
+.3SG:^ЗУн
+-ACC:^н
+-ACC:^Н
+-ACC:^НУ
+-ADJR1:^қАқ
+-ADJR2:^чУ
+-ADJR3:^Ғай
+-ADJR4:^Ғур
+-ADJR5:^Ын
+-ADVR:^Ын
+-AG:^чУ
+-ANT:^АлА
+-ASSUM:^ҒА^ДЫг
+-ATTN1:^УлдУрУм
+-ATTN2:^амдық
+-ATTN3:^зыбан
+-ATTN:^мзЫрА
+-ATTR1:^ЛЫг
+-ATTR2:^ҒЫ
+-ATTR4:^ҒЫ
+-CAUS1:^т
+-CAUS2:^ҒУс
+-CAUS3:^Ур
+-CAUS4:^ДУр
+-CAUS5:^Ыс
+=CLT1:^-Да
+=CLT2:^-ЛА
+-COND2:^чат^ЗА
+-COND:^ЗА
+-CON:^ҒАн
+-CON:^Уп
+-CON:^Ып
+-CUNC:^ҒАлАҚ
+-CVB:^чат^Ып
+-DAT:^ҒА
+-DAT:^н^ҒА
+-DAT:^нЫ
+-DIM1:^чАқ
+-DIM2:^Ақ
+-DIM3:^Аш
+-DIR:^ҒАрА
+-ELA:^ДАң
+-ELA:^нАң
+-ELA:^НАң
+=EMP1:^оқ
+=EMP2:^-но
+-EQT:^ДЫг
+-FUT.ITER:^ТУр
+-FUT:^Ар
+-FUT:^с
+-GEN:^нЫң
+-GEN:^НЫң
+-HAB:^чАң
+-ITER:^ҒУлА
+-LMF:^ҒАнче
+-LOC:^ДА
+-LOC:^ндА
+-LOC:^н^ДА
+-MAN:^Ыс
+-NEG:^БА
+-NR10:^қУн
+-NR11:^БАқ
+-NR12:^БА
+-NR13:^чАқ
+-NR14:^чЫқ
+-NR1:^Уг
+-NR2:^Уш
+-NR3:^ҒУ
+-NR4:^ҒУш
+-NR5:^Уқ
+-NR6:^Ут
+-NR7:^Ум
+-NR8:^Ақ
+-NR9:^л
+-OPT:^ҒАй
+-OPT:^й
+-PASS:^Ул
+-PL:^ДАр
+-PL:^ЛАр
+-PL:^ЛАрЫ
+-POSS.1PL:^ЫбЫс
+-POSS.1SG:^Ым
+-POSS.2PL:^ЛАр^Ың
+-POSS.2SG:^Ың
+-POSS.3PL:^ЛАр^Ы
+-POSS.3SG:^ЗЫ
+-PRED.1PL:^БЫс
+-PRED.1SG:^БЫн
+-PRED.2PL:^ЗААр
+-PRED.2SG:^ЗЫң
+-PRED.3PL:^ЛАр
+-PROL:^ча
+-PRS-EVID:^чат^ТУр
+-PST-ADM:^ТУр
+-PST-IMPF:^чат^ҒАн
+-PST:^ҒАн
+-RECIP:^Уш
+-REFL:^Ун
+-RPST:^ДУ
+-SIM:^А
+-SUPN:^ҒА
+-TERM:^че
+-VR1:^ЛА
+-VR2:^А
+-VR3:^Ар
+-VR4:^сУн
+-VR5:^ЗЫрА
+-VR6:^Ық
+-VR7:^ҒАр
+-VR8:^ра
+-VR9:^р

@@ -1,4 +1,4 @@
-!!!!!! Существительные :: -NUM > -POSS > -CASE > -PRED
+! !!!!!! Существительные :: -NUM > -POSS > -CASE > -PRED
 !!! Частеречная помета
 ! Имя нарицательное
 LEXICON Tag_N
@@ -75,8 +75,8 @@ LEXICON N_Slot4_affixes
 
 ! Уменьшительные аффиксы
 LEXICON N_DIM
-	-DIM1:^чАқ		N_DIM_2;
-	-DIM2:^Ақ		N_DIM_2;
+	-DIM1:^чАҚ		N_DIM_2; ! ◊
+	-DIM2:^АҚ		N_DIM_2; ! ◊
 	-DIM3:^Аш		N_Slot1;
 
 LEXICON N_DIM_2
@@ -85,12 +85,15 @@ LEXICON N_DIM_2
 
 !! Образование отыменных существительных
 LEXICON N_Denom
-	-AG:^чУ		N_StemBoundary; ! -AG — деятель
+	-AG:^чУ		N_StemBoundary; ! -AG — деятель : Д-33 §6
+	-NDRV1:^ЛЫҚ	N_StemBoundary; ! -NDRV — производное сущ. : Д-32-33 §6
+	-NDRV2:^ТАш	N_StemBoundary; ! Д-33 §6
+	-NDRV3:^чЫл	N_StemBoundary; ! Д-33 §6
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! Образование отыменных прилагательных — 1
 LEXICON A_Denom_1
-	-ATTR1:^ЛЫг	Tag_A_ATTR1; ! Д-73 §33.1
+	-ATTR1:^ЛЫг	Tag_A_ATTR1; ! Д-73 §33.1 <<< м.б. лучше ^ЛУг ?
 	-ATTR2:^ҒЫ	Tag_A_ATTR2; ! Д-73 §33.2
 
 !! Образование отыменных прилагательных — 2 (^ДА^ҒЫ и ^ДЫ^ЙЫ)
@@ -101,7 +104,7 @@ LEXICON A_Denom_2
 			#;
 
 LEXICON A_Denom_3
-	-ATTR4:^ҒЫ	Tag_A_ATTR4;
+	-ATTR2:^ҒЫ	Tag_A_ATTR4;
 			N_Slot4;
 			#;
 
@@ -113,7 +116,7 @@ LEXICON V_Denom
 	-VR3:^Ар	Tag_V;
 	-VR4:^сУн	Tag_V; ! <<< Нет варианта ^зУн ???
 	-VR5:^ЗЫрА	Tag_V;
-	-VR6:^Ық	Tag_V;
+	-VR6:^ЫҚ	Tag_V;
 	-VR7:^ҒАр	Tag_V;
 	-VR8:^ра	Tag_V; ! <<< Нет варианта ^ре ???
 
@@ -208,10 +211,11 @@ LEXICON A_LOC_ATTR4_NUM
 !!! Словообразование
 LEXICON A_Derivation
 	A_Comparatives;
-	A_VR;
+	V_Denom; ! <<< Проверить!
+	V_Deadj;
 
 !!! Образование глаголов от прилагательных
-LEXICON A_VR
+LEXICON V_Deadj
 	-VR3:^Ар	Tag_V; ! …V^р — Сочетается (только?) с названиями цветов : Д-143 (§93)
 	-VR9:^р		Tag_V;
 
