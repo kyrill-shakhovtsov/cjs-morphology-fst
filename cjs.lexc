@@ -2707,7 +2707,7 @@ LEXICON N_Deverbal
 LEXICON A_Deverbal
 	-ADJR1:^чУ	Tag_A;
 	-ADJR2:^Ғай	Tag_A;
-	-ADJR3:^Ғур	Tag_A;
+	-ADJR3:^ҒУр	Tag_A;
 	-ADJR4:^Ын	Tag_A;
 
 !!! Порядок 1 : Итератив (1)
@@ -2805,9 +2805,9 @@ LEXICON V_Slot5_2
 ! Формы, образуемые от конверба -CON:^Ып
 LEXICON V_Slot5_3
 	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча / ^чар : ЧУ-303
-	-PRS-EVID:^чат^ТУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
+	-PRS-EVID:^чат^тУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
 	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
-	-PST-ADM:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -EVID ?
+	-PST-ADM:^тУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -EVID ?
 	-COND2:^чат^ЗА		PCTP_Clitic_Branching; ! Д-179 (§119) Условная форма сложная
 	-MAN:^Ыс		V_Slot5_4; ! Д-216 (§144) Форма решительности действия
 
@@ -2820,7 +2820,7 @@ LEXICON V_Slot5_4
 
 ! Формы, образуемые от конверба -SIM:^А
 LEXICON V_Slot5_5
-	-FUT.ITER:^ТУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
+	-FUT.ITER:^тУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
 
 !!! Для отрицательного глагола
 LEXICON VNEG_Slot4
@@ -2942,7 +2942,7 @@ LEXICON N_Slot1
 LEXICON N_Slot2
 	-POSS.1SG:^Ым		N_Slot3;
 	-POSS.2SG:^Ың		N_Slot3; ! <<< Нужен ли ^Уң ???
-	-POSS.3SG:^ЗЫ		N_Slot3; ! <<< Нужен ли ^ЗУ ???
+	-POSS.3SG:^ЗУ		N_Slot3; ! <<< Нужен ли ^ЗУ ???
 	-POSS.1PL:^ЫбЫс		N_Slot3;
 	-POSS.2PL:^ЛАр^Ың	N_Slot3;
 	-POSS.3PL:^ЛАр^Ы	N_Slot3;
@@ -2962,7 +2962,6 @@ LEXICON N_Slot3		! Падеж
 	<"-INST" : ["^" Б ([Ы | У] л) А]>	N_Slot4_Enclitic_Branching; ! #; ! Альтернативные формы для -INST (-PROL -COM)
 	! <<< См. Д-69 (§29) «Пережитки … -INST, -ABL, -DIR» ЧУ-93
 	-DIR:^ҒАрА	N_Slot4_Enclitic_Branching; ! #;
-! 			N_Slot4; ! Откуда правильнее переходить к -PRED (N_Slot4) ???
 
 LEXICON N_Slot4_Enclitic_Branching
 			N_Slot4;
@@ -2985,8 +2984,8 @@ LEXICON N_Slot4_affixes
 
 ! Уменьшительные аффиксы
 LEXICON N_DIM
-	-DIM1:^чАҚ		N_DIM_2; ! ◊
-	-DIM2:^АҚ		N_DIM_2; ! ◊
+	-DIM1:^чАҚ		N_DIM_2;
+	-DIM2:^АҚ		N_DIM_2;
 	-DIM3:^Аш		N_Slot1;
 
 LEXICON N_DIM_2
