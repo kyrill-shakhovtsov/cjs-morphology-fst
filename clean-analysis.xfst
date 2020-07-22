@@ -6,6 +6,7 @@ source phonology/rules.xfst
 source filter.xfst
 
 ! Лексикон и морфосинтаксис
+echo Лексикон и морфосинтаксис
 read lexc cjs.lexc
 
 echo Удаление всех «флагов»
@@ -13,6 +14,7 @@ eliminate flags
 
 define Lexicon ;
 
+! Сборка преобразователя
 echo Сборка преобразователя
 read regex Filter
 	.o. Lexicon
