@@ -18,8 +18,7 @@ echo Сборка преобразователя
 read regex Lexicon
 	.o. Contraction
 	.o. RDrop
-	.o. Prostesis
-	.o. UYDrop
+	.o. Augmentation
 	.o. GDrop
 	.o. GJConv
 	.o. Elision

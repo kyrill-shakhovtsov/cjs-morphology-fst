@@ -19,8 +19,7 @@ define Grammar Filter
 	.o. Contraction
 ! 	.o. RDrop ! Выпадение [р]
 	.o. Elision
-	.o. Prostesis
-	.o. UYDrop
+	.o. Augmentation
 	.o. GDrop
 	.o. GJConv
 	.o. VowelHarmony

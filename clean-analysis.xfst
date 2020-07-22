@@ -20,10 +20,9 @@ read regex Filter
 	.o. VerbPersNum
 	.o. RDrop
 	.o. Elision
-	.o. Prostesis
+	.o. Augmentation
 	.o. ZDrop
 	.o. LDrop
-	.o. UYDrop
 	.o. GDrop
 	.o. GJConv
 	.o. VowelHarmony
