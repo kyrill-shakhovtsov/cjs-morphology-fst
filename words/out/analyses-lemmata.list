@@ -40,7 +40,6 @@
 ағаш[N]-VR1[V]-IMP.2SG	ағашта
 ағры[V]-IMP.2SG	ағры
 ағры[V]-NR1[N]-ATTR1[A]-SG-NOM	ағрығлыг
-ағры[V]-NR1[N]-ATTR1[A]-SG-NOM	ағрықынныг
 ағый[N]-VR2[V]-IMP.2SG	ағыйа
 ада[N]-ADVR[ADV]	адан
 ада[N]-ATTR1[A]-SG-NOM	адалыг
@@ -85,9 +84,7 @@
 ай[A]-VR2[V]-NR12[N]-ADVR[ADV]	айабан
 ай[A]-VR2[V]-NR12[N]-SG-NOM	айаба
 ай[A]-VR2[V]-NR1[N]-ADVR[ADV]	айағын
-ай[A]-VR2[V]-NR1[N]-ADVR[ADV]	айақынын
 ай[A]-VR2[V]-NR1[N]-SG-NOM	айаг
-ай[A]-VR2[V]-NR1[N]-SG-NOM	айақын
 ай[A]-VR2[V]-NR3[N]-ADVR[ADV]	айағын
 ай[A]-VR2[V]-NR3[N]-SG-NOM	айағы
 ай[N]-ATTR1[A]-SG-NOM	айлыг
@@ -103,9 +100,7 @@
 айа[V]-NR12[N]-ADVR[ADV]	айабан
 айа[V]-NR12[N]-SG-NOM	айаба
 айа[V]-NR1[N]-ADVR[ADV]	айағын
-айа[V]-NR1[N]-ADVR[ADV]	айақынын
 айа[V]-NR1[N]-SG-NOM	айаг
-айа[V]-NR1[N]-SG-NOM	айақын
 айа[V]-NR3[N]-ADVR[ADV]	айағын
 айа[V]-NR3[N]-SG-NOM	айағы
 айақ[N]-ADVR[ADV]	айағын
@@ -138,7 +133,6 @@
 айт[V]-IMP.2SG	айт
 айт[V]-NR12[N]-SG-NOM	айтпа
 айт[V]-NR1[N]-SG-NOM	айдыг
-айт[V]-NR1[N]-SG-NOM	айтқын
 айт[V]-NR2[N]-SG-NOM	айдыш
 айт[V]-NR8[N]-SG-NOM	айдақ
 ай-толай[PN]-SG-NOM	ай-толай
@@ -185,7 +179,6 @@
 ал[V]-IMP.2SG	ал
 ал[V]-NR12[N]-ADVR[ADV]	албан
 ал[V]-NR12[N]-SG-NOM	алба
-ал[V]-NR1[N]-SG-NOM	алқын
 ал[V]-NR1[N]-SG-NOM	алыг
 ал[V]-NR2[N]-SG-NOM	алыш
 ал[V]-NR3[N]-ADVR[ADV]	алғын
@@ -362,9 +355,7 @@
 арты[V]-ADJR4[A]-SG-NOM	артын
 арты[V]-IMP.2SG	арты
 арты[V]-NR1[N]-ADVR[ADV]	артығын
-арты[V]-NR1[N]-ADVR[ADV]	артықынын
 арты[V]-NR1[N]-SG-NOM	артыг
-арты[V]-NR1[N]-SG-NOM	артықын
 арты[V]-NR3[N]-ADVR[ADV]	артығын
 арты[V]-NR3[N]-SG-NOM	артығы
 арты[V]-NR9[N]-SG-NOM	артыл
@@ -387,7 +378,6 @@
 ас[V]-IMP.2SG	ас
 ас[V]-NR12[N]-SG-NOM	аспа
 ас[V]-NR1[N]-SG-NOM	азыг
-ас[V]-NR1[N]-SG-NOM	асқын
 ас[V]-NR5[N]-SG-NOM	азық
 ас[V]-NR8[N]-ADVR[ADV]	азағын
 ас[V]-NR8[N]-ATTR1[A]-SG-NOM	азақтыг
@@ -414,7 +404,6 @@
 ат[V]-NR7[N]-SG-NOM	адым
 атты[V]-IMP.2SG	атты
 атты[V]-NR1[N]-SG-NOM	аттыг
-атты[V]-NR1[N]-SG-NOM	аттықын
 атты[V]-NR2[N]-SG-NOM	аттыш
 атты[V]-NR6[N]-SG-NOM	аттыт
 атты[V]-NR7[N]-SG-NOM	аттым
@@ -424,9 +413,7 @@
 ачы[V]-ADJR4[A]-SG-NOM	ачын
 ачы[V]-IMP.2SG	ачы
 ачы[V]-NR1[N]-ADVR[ADV]	ачығын
-ачы[V]-NR1[N]-ADVR[ADV]	ачықынын
 ачы[V]-NR1[N]-SG-NOM	ачыг
-ачы[V]-NR1[N]-SG-NOM	ачықын
 ачы[V]-NR3[N]-ADVR[ADV]	ачығын
 ачы[V]-NR3[N]-SG-NOM	ачығы
 ачы[V]-NR6[N]-SG-NOM	ачыт
@@ -461,7 +448,6 @@
 аш[V]-NR11[N]-SG-NOM	ашпақ
 аш[V]-NR12[N]-SG-NOM	ашпа
 аш[V]-NR1[N]-SG-NOM	ажыг
-аш[V]-NR1[N]-SG-NOM	ашқын
 аш[V]-NR2[N]-SG-NOM	ажыш
 аш[V]-NR3[N]-SG-NOM	ашқы
 аш[V]-NR7[N]-SG-NOM	ажым
@@ -590,7 +576,6 @@
 кеш[V]-NR11[N]-SG-NOM	кешпек
 кеш[V]-NR12[N]-SG-NOM	кешпе
 кеш[V]-NR1[N]-SG-NOM	кежиг
-кеш[V]-NR1[N]-SG-NOM	кешкин
 кижен-мӧке[PN]-SG-NOM	кижен-мӧке
 кижи[N]-ADVR[ADV]	кижин
 кижи[N]-SG-NOM	кижи
@@ -938,7 +923,6 @@
 қар[V]-NR12[N]-ADVR[ADV]	қарбан
 қар[V]-NR12[N]-SG-NOM	қарба
 қар[V]-NR13[N]-SG-NOM	қарчақ
-қар[V]-NR1[N]-SG-NOM	қарқын
 қар[V]-NR1[N]-SG-NOM	қарыг
 қар[V]-NR2[N]-SG-NOM	қарыш
 қар[V]-NR4[N]-SG-NOM	қарғыш
@@ -967,9 +951,7 @@
 қара[V]-NR12[N]-SG-NOM	қараба
 қара[V]-NR13[N]-SG-NOM	қарачақ
 қара[V]-NR1[N]-ADVR[ADV]	қарағын
-қара[V]-NR1[N]-ADVR[ADV]	қарақынын
 қара[V]-NR1[N]-SG-NOM	қараг
-қара[V]-NR1[N]-SG-NOM	қарақын
 қара[V]-NR2[N]-ATTR2[A]-SG-NOM	қарашқы
 қара[V]-NR3[N]-ADVR[ADV]	қарағын
 қара[V]-NR3[N]-SG-NOM	қарағы
@@ -1066,7 +1048,6 @@
 қат[V]-IMP.2SG	қат
 қат[V]-NR12[N]-SG-NOM	қатпа
 қат[V]-NR1[N]-SG-NOM	қадыг
-қат[V]-NR1[N]-SG-NOM	қатқын
 қат[V]-NR2[N]-SG-NOM	қадыш
 қат[V]-NR3[N]-SG-NOM	қатқы
 қатқан-чыла[PN]-SG-NOM	қатқан-чыла
@@ -1083,6 +1064,10 @@
 қаш[N]-SG-NOM	қаш
 қаш[N]-VR1[V]-IMP.2SG	қашта
 қаш[N]-VR6[V]-IMP.2SG	қажық
+қаш[V]-ADJR4[A]-SG-NOM	қажын
+қаш[V]-IMP.2SG	қаш
+қаш[V]-NR15[N]-VR2[V]-IMP.2SG	қашқаға
+қаш[V]-NR5[N]-SG-NOM	қажық
 қашқа[N]-SG-NOM	қашқа
 қашқа[N]-VR1[V]-IMP.2SG	қашқала
 қобрақ[N]-SG-NOM	қобрақ
@@ -1167,8 +1152,6 @@
 қош[V]-IMP.2SG	қош
 қош[V]-NR1[N]-SG-NOM	қожуг
 қош[V]-NR1[N]-SG-NOM	қожыг
-қош[V]-NR1[N]-SG-NOM	қошқун
-қош[V]-NR1[N]-SG-NOM	қошқын
 қошта[ADV]	қошта
 қуба[A]-SG-NOM	қуба
 қуба[A]-VR3[V]-IMP.2SG	қубар
@@ -1225,8 +1208,6 @@
 қуру[V]-ADJR4[A]-SG-NOM	қурун
 қуру[V]-IMP.2SG	қуру
 қуру[V]-NR1[N]-SG-NOM	қуруг
-қуру[V]-NR1[N]-SG-NOM	қуруқун
-қуру[V]-NR1[N]-SG-NOM	қуруқын
 қуру[V]-NR2[N]-SG-NOM	қуруш
 қуру[V]-NR9[N]-SG-NOM	қурул
 қуруг[A]-SG-NOM	қуруг
@@ -1236,14 +1217,10 @@
 қурчан[V]-NR14[N]-SG-NOM	қурчанчық
 қурчу[N]-SG-NOM	қурчу
 қус[V]-IMP.2SG	қус
-қус[V]-NR1[N]-ATTR1[A]-SG-NOM	қузуғлыг
-қус[V]-NR1[N]-ATTR1[A]-SG-NOM	қузығлыг
-қус[V]-NR1[N]-ATTR1[A]-SG-NOM	қусқунныг
-қус[V]-NR1[N]-ATTR1[A]-SG-NOM	қусқынныг
-қус[V]-NR1[N]-SG-NOM	қузуг
-қус[V]-NR1[N]-SG-NOM	қузыг
-қус[V]-NR1[N]-SG-NOM	қусқун
-қус[V]-NR1[N]-SG-NOM	қусқын
+қус[V]-NR10[N]-ATTR1[A]-SG-NOM	қусқунныг
+қус[V]-NR10[N]-ATTR1[A]-SG-NOM	қусқынныг
+қус[V]-NR10[N]-SG-NOM	қусқун
+қус[V]-NR10[N]-SG-NOM	қусқын
 қус[V]-NR3[N]-ADVR[ADV]	қусқун
 қус[V]-NR3[N]-ADVR[ADV]	қусқын
 қусқу[N]-ADVR[ADV]	қусқун
@@ -1318,7 +1295,6 @@
 қыр[A]-VR1[V]-IMP.2SG	қырла
 қыр[A]-VR2[V]-IMP.2SG	қыра
 қыр[A]-VR2[V]-NR1[N]-SG-NOM	қыраг
-қыр[A]-VR2[V]-NR1[N]-SG-NOM	қырақын
 қыр[A]-VR2[V]-NR6[N]-ATTR1[A]-SG-NOM	қыраттыг
 қыр[A]-VR2[V]-NR6[N]-SG-NOM	қырат
 қыр[A]-VR3[V]-IMP.2SG	қырар
@@ -1336,7 +1312,6 @@
 қыр[V]-IMP.2SG	қыр
 қыр[V]-NR12[N]-ADVR[ADV]	қырбан
 қыр[V]-NR12[N]-SG-NOM	қырба
-қыр[V]-NR1[N]-SG-NOM	қырқын
 қыр[V]-NR1[N]-SG-NOM	қырыг
 қыр[V]-NR2[N]-SG-NOM	қырыш
 қыр[V]-NR5[N]-SG-NOM	қырық
@@ -1410,7 +1385,6 @@
 маң[N]-VR8[V]-IMP.2SG	маңра
 маңзыра[V]-IMP.2SG	маңзыра
 маңзыра[V]-NR1[N]-ATTR1[A]-SG-NOM	маңзырағлыг
-маңзыра[V]-NR1[N]-ATTR1[A]-SG-NOM	маңзырақынныг
 маңнан[V]-IMP.2SG	маңнан
 марс[N]-SG-NOM	марс
 марс[N]-VR1[V]-IMP.2SG	марста
@@ -1508,8 +1482,6 @@
 нег[N]-SG-NOM	нег
 нег[N]-VR7[V]-IMP.2SG	негер
 нег[V]-IMP.2SG	нег
-нег[V]-NR16[N]-SG-NOM	негеечи
-нег[V]-NR16[N]-SG-NOM	неғетчи
 негеечи[N]-SG-NOM	негеечи
 негечи[N]-SG-NOM	негечи
 недле[N]-SG-NOM	недле
@@ -1543,9 +1515,7 @@
 ода[V]-ADJR4[A]-SG-NOM	одан
 ода[V]-IMP.2SG	ода
 ода[V]-NR1[N]-ATTR1[A]-SG-NOM	одағлыг
-ода[V]-NR1[N]-ATTR1[A]-SG-NOM	одақынныг
 ода[V]-NR1[N]-SG-NOM	одаг
-ода[V]-NR1[N]-SG-NOM	одақын
 одаг[N]-ATTR1[A]-SG-NOM	одағлыг
 одаг[N]-SG-NOM	одаг
 одаг[N]-VR2[V]-IMP.2SG	одаға
@@ -1593,8 +1563,6 @@
 ӧл[A]-VR3[V]-NR7[N]-SG-NOM	ӧлерим
 ӧл[V]-IMP.2SG	ӧл
 ӧл[V]-NR1[N]-SG-NOM	ӧлиг
-ӧл[V]-NR1[N]-SG-NOM	ӧлкин
-ӧл[V]-NR1[N]-SG-NOM	ӧлкӱн
 ӧл[V]-NR1[N]-SG-NOM	ӧлӱг
 ӧл[V]-NR2[N]-SG-NOM	ӧлиш
 ӧл[V]-NR2[N]-SG-NOM	ӧлӱш
@@ -1625,13 +1593,11 @@
 оол[N]-VR2[V]-IMP.2SG	оола
 оола[V]-IMP.2SG	оола
 оола[V]-NR1[N]-SG-NOM	оолаг
-оола[V]-NR1[N]-SG-NOM	оолақын
 оола[V]-NR2[N]-SG-NOM	оолаш
 оола[V]-NR3[N]-SG-NOM	оолағы
 ӧӧр[N]-SG-NOM	ӧӧр
 оорла[V]-IMP.2SG	оорла
 оорла[V]-NR1[N]-SG-NOM	оорлаг
-оорла[V]-NR1[N]-SG-NOM	оорлақын
 оорла[V]-NR2[N]-SG-NOM	оорлаш
 оорта[V]-IMP.2SG	оорта
 оорта[V]-NR6[N]-SG-NOM	оортат
@@ -1741,7 +1707,6 @@
 пай[A]-VR1[V]-IMP.2SG	пайла
 пай[A]-VR2[V]-IMP.2SG	пайа
 пай[A]-VR2[V]-NR1[N]-SG-NOM	пайаг
-пай[A]-VR2[V]-NR1[N]-SG-NOM	пайақын
 пай[A]-VR2[V]-NR3[N]-SG-NOM	пайағы
 пай[A]-VR2[V]-NR9[N]-SG-NOM	пайал
 пай[N]-SG-NOM	пай
@@ -1800,7 +1765,6 @@
 пас[V]-NR6[N]-SG-NOM	пазыт
 пат[V]-IMP.2SG	пат
 пат[V]-NR1[N]-SG-NOM	падыг
-пат[V]-NR1[N]-SG-NOM	патқын
 паш[N]-ADVR[ADV]	пажын
 паш[N]-ATTR1[A]-SG-NOM	паштыг
 паш[N]-ATTR2[A]-SG-NOM	пашқы
@@ -1914,7 +1878,6 @@
 пош[A]-SG-NOM	пош
 пош[A]-VR2[V]-IMP.2SG	пожа
 пош[A]-VR2[V]-NR1[N]-SG-NOM	пожаг
-пош[A]-VR2[V]-NR1[N]-SG-NOM	пожақын
 пош[A]-VR2[V]-NR6[N]-SG-NOM	пожат
 пош[A]-VR3[V]-IMP.2SG	пожар
 пош[N]-ATTR1[A]-SG-NOM	поштыг
@@ -1956,7 +1919,6 @@
 пурлуқ[V]-IMP.2SG	пурлуқ
 пурна[V]-IMP.2SG	пурна
 пурна[V]-NR1[N]-SG-NOM	пурнаг
-пурна[V]-NR1[N]-SG-NOM	пурнақын
 пурну[N]-ADVR[ADV]	пурнун
 пурну[N]-SG-NOM	пурну
 пурну[N]-VR1[V]-IMP.2SG	пурнула
@@ -1987,9 +1949,7 @@
 пыш[V]-NR15[N]-SG-NOM	пышқақ
 пыш[V]-NR15[N]-VR1[V]-IMP.2SG	пышқақта
 пыш[V]-NR1[N]-ADVR[ADV]	пыжығын
-пыш[V]-NR1[N]-ADVR[ADV]	пышқынын
 пыш[V]-NR1[N]-SG-NOM	пыжыг
-пыш[V]-NR1[N]-SG-NOM	пышқын
 пыш[V]-NR5[N]-ADVR[ADV]	пыжығын
 пышқы[N]-VR3[V]-IMP.2SG	пышқыр
 пышқыр[V]-IMP.2SG	пышқыр
@@ -2185,8 +2145,6 @@
 соот[V]-IMP.2SG	соот
 сор[V]-IMP.2SG	сор
 сорсу[V]-NR1[N]-SG-NOM	сорсуг
-сорсу[V]-NR1[N]-SG-NOM	сорсуқун
-сорсу[V]-NR1[N]-SG-NOM	сорсуқын
 сорсу[V]-NR3[N]-SG-NOM	сорсуғу
 сорсу[V]-NR3[N]-SG-NOM	сорсуғы
 сӧрте[V]-IMP.2SG	сӧрте
@@ -2235,7 +2193,6 @@
 сӱр[V]-NR7[N]-SG-NOM	сӱрӱм
 сура[V]-IMP.2SG	сура
 сура[V]-NR1[N]-SG-NOM	сураг
-сура[V]-NR1[N]-SG-NOM	сурақын
 сура[V]-NR2[N]-SG-NOM	сураш
 сура[V]-NR6[N]-SG-NOM	сурат
 сӱрт[V]-IMP.2SG	сӱрт
@@ -2270,7 +2227,6 @@
 сыйба[V]-NR2[N]-SG-NOM	сыйбаш
 сыйла[V]-IMP.2SG	сыйла
 сыйла[V]-NR1[N]-SG-NOM	сыйлаг
-сыйла[V]-NR1[N]-SG-NOM	сыйлақын
 сыйла[V]-NR6[N]-SG-NOM	сыйлат
 сық[V]-IMP.2SG	сық
 сық[V]-NR2[N]-SG-NOM	сығыш
@@ -2286,7 +2242,6 @@
 сын[N]-VR2[V]-IMP.2SG	сына
 сын[V]-ADJR4[A]-SG-NOM	сынын
 сын[V]-IMP.2SG	сын
-сын[V]-NR1[N]-SG-NOM	сынқын
 сын[V]-NR1[N]-SG-NOM	сыныг
 сын[V]-NR2[N]-SG-NOM	сыныш
 сын[V]-NR5[N]-SG-NOM	сынық
@@ -2362,7 +2317,6 @@
 тал[N]-VR6[V]-IMP.2SG	талық
 тал[V]-IMP.2SG	тал
 тал[V]-NR12[N]-SG-NOM	талба
-тал[V]-NR1[N]-SG-NOM	талқын
 тал[V]-NR1[N]-SG-NOM	талыг
 тал[V]-NR5[N]-SG-NOM	талық
 тала[V]-IMP.2SG	тала
@@ -2392,7 +2346,6 @@
 тана[N]-VR1[V]-IMP.2SG	танна
 тана[V]-IMP.2SG	тана
 тана[V]-NR1[N]-SG-NOM	танаг
-тана[V]-NR1[N]-SG-NOM	танақын
 танақ[N]-VR2[V]-IMP.2SG	танаға
 таны[V]-IMP.2SG	таны
 таны[V]-NR2[N]-SG-NOM	таныш
@@ -2445,7 +2398,6 @@
 те[V]-IMP.2SG	те
 те[V]-NR12[N]-SG-NOM	тебе
 те[V]-NR1[N]-SG-NOM	тег
-те[V]-NR1[N]-SG-NOM	текин
 те[V]-NR2[N]-SG-NOM	теш
 те[V]-NR3[N]-ADVR[ADV]	тегин
 те[V]-NR3[N]-SG-NOM	теги
@@ -2503,9 +2455,8 @@
 терең[A]-SG-NOM	терең
 тес[V]-ADJR4[A]-SG-NOM	тезин
 тес[V]-IMP.2SG	тес
+тес[V]-NR10[N]-ADVR[ADV]	тескинин
 тес[V]-NR12[N]-SG-NOM	теспе
-тес[V]-NR1[N]-ADVR[ADV]	тезиғин
-тес[V]-NR1[N]-ADVR[ADV]	тескинин
 тес[V]-NR8[N]-SG-NOM	тезек
 теста[N]-SG-NOM	теста
 теш[N]-SG-NOM	теш
@@ -2647,10 +2598,8 @@
 тос[N]-VR2[V]-IMP.2SG	тоза
 тӧс[N]-VR2[V]-IMP.2SG	тӧзе
 тос[V]-IMP.2SG	тос
-тос[V]-NR1[N]-SG-NOM	тозуг
-тос[V]-NR1[N]-SG-NOM	тозыг
-тос[V]-NR1[N]-SG-NOM	тосқун
-тос[V]-NR1[N]-SG-NOM	тосқын
+тос[V]-NR10[N]-SG-NOM	тосқун
+тос[V]-NR10[N]-SG-NOM	тосқын
 тос[V]-NR3[N]-ADVR[ADV]	тосқун
 тос[V]-NR3[N]-ADVR[ADV]	тосқын
 тӧш[N]-ADVR[ADV]	тӧжин
@@ -2703,8 +2652,6 @@
 тӱплет[V]-IMP.2SG	тӱплет
 тур[V]-IMP.2SG	тур
 тур[V]-NR12[N]-SG-NOM	турба
-тур[V]-NR1[N]-SG-NOM	турқун
-тур[V]-NR1[N]-SG-NOM	турқын
 тур[V]-NR1[N]-SG-NOM	туруг
 тур[V]-NR1[N]-SG-NOM	турыг
 тур[V]-NR2[N]-SG-NOM	туруш
@@ -2823,11 +2770,7 @@
 ӱле[V]-NR2[N]-SG-NOM	ӱлеш
 улу[V]-IMP.2SG	улу
 улу[V]-NR1[N]-ADVR[ADV]	улуғын
-улу[V]-NR1[N]-ADVR[ADV]	улуқунын
-улу[V]-NR1[N]-ADVR[ADV]	улуқынын
 улу[V]-NR1[N]-SG-NOM	улуг
-улу[V]-NR1[N]-SG-NOM	улуқун
-улу[V]-NR1[N]-SG-NOM	улуқын
 улу[V]-NR2[N]-SG-NOM	улуш
 улу[V]-NR3[N]-ADVR[ADV]	улуғун
 улу[V]-NR3[N]-ADVR[ADV]	улуғын
@@ -2856,7 +2799,6 @@
 ундут[V]-NR2[N]-SG-NOM	ундудыш
 уңна[V]-IMP.2SG	уңна
 уңна[V]-NR1[N]-SG-NOM	уңнаг
-уңна[V]-NR1[N]-SG-NOM	уңнақын
 ӱп[N]-SG-NOM	ӱп
 ӱр[ADV]	ӱр
 ӱр[A]-SG-NOM	ӱр
@@ -2992,7 +2934,6 @@
 чаза[V]-ADJR4[A]-SG-NOM	чазан
 чаза[V]-IMP.2SG	чаза
 чаза[V]-NR1[N]-SG-NOM	чазаг
-чаза[V]-NR1[N]-SG-NOM	чазақын
 чаза[V]-NR6[N]-SG-NOM	чазат
 чаза[V]-NR9[N]-SG-NOM	чазал
 чазы[N]-ADVR[ADV]	чазын
@@ -3058,7 +2999,6 @@
 чан[N]-VR2[V]-IMP.2SG	чана
 чап[V]-IMP.2SG	чап
 чап[V]-NR1[N]-SG-NOM	чабыг
-чап[V]-NR1[N]-SG-NOM	чапқын
 чап[V]-NR2[N]-SG-NOM	чабыш
 чап[V]-NR6[N]-SG-NOM	чабыт
 чап[V]-NR8[N]-SG-NOM	чабақ
@@ -3073,9 +3013,7 @@
 чар[V]-ADJR4[A]-SG-NOM	чарын
 чар[V]-IMP.2SG	чар
 чар[V]-NR12[N]-ADVR[ADV]	чарбан
-чар[V]-NR1[N]-ADVR[ADV]	чарқынын
 чар[V]-NR1[N]-ADVR[ADV]	чарығын
-чар[V]-NR1[N]-SG-NOM	чарқын
 чар[V]-NR1[N]-SG-NOM	чарыг
 чар[V]-NR2[N]-ADVR[ADV]	чарыжын
 чар[V]-NR2[N]-SG-NOM	чарыш
@@ -3107,9 +3045,7 @@
 чары[V]-ADJR4[A]-SG-NOM	чарын
 чары[V]-IMP.2SG	чары
 чары[V]-NR1[N]-ADVR[ADV]	чарығын
-чары[V]-NR1[N]-ADVR[ADV]	чарықынын
 чары[V]-NR1[N]-SG-NOM	чарыг
-чары[V]-NR1[N]-SG-NOM	чарықын
 чары[V]-NR2[N]-ADVR[ADV]	чарыжын
 чары[V]-NR2[N]-SG-NOM	чарыш
 чары[V]-NR3[N]-ADVR[ADV]	чарығын
@@ -3138,7 +3074,6 @@
 час[V]-ADJR4[A]-SG-NOM	чазын
 час[V]-IMP.2SG	час
 час[V]-NR1[N]-SG-NOM	чазыг
-час[V]-NR1[N]-SG-NOM	часқын
 час[V]-NR2[N]-SG-NOM	чазыш
 час[V]-NR3[N]-SG-NOM	часқы
 часқы[N]-SG-NOM	часқы
@@ -3148,7 +3083,6 @@
 чат[V]-ADJR4[A]-SG-NOM	чадын
 чат[V]-IMP.2SG	чат
 чат[V]-NR1[N]-SG-NOM	чадыг
-чат[V]-NR1[N]-SG-NOM	чатқын
 чат[V]-NR5[N]-SG-NOM	чадық
 чачақ[N]-ADVR[ADV]	чачағын
 чачақ[N]-SG-NOM	чачақ
@@ -3346,7 +3280,6 @@
 чыл[N]-VR2[V]-IMP.2SG	чыла
 чыл[V]-ADJR4[A]-SG-NOM	чылын
 чыл[V]-IMP.2SG	чыл
-чыл[V]-NR1[N]-SG-NOM	чылқын
 чыл[V]-NR1[N]-SG-NOM	чылыг
 чыл[V]-NR2[N]-SG-NOM	чылыш
 чыл[V]-NR3[N]-SG-NOM	чылғы
@@ -3360,7 +3293,6 @@
 чылы[V]-ADJR4[A]-SG-NOM	чылын
 чылы[V]-IMP.2SG	чылы
 чылы[V]-NR1[N]-SG-NOM	чылыг
-чылы[V]-NR1[N]-SG-NOM	чылықын
 чылы[V]-NR2[N]-SG-NOM	чылыш
 чымчақ[A]-SG-NOM	чымчақ
 чырғал[N]-SG-NOM	чырғал
@@ -3491,8 +3423,6 @@
 шот[N]-ADVR[ADV]	шодын
 шот[N]-SG-NOM	шот
 шочу[V]-NR1[N]-SG-NOM	шочуг
-шочу[V]-NR1[N]-SG-NOM	шочуқун
-шочу[V]-NR1[N]-SG-NOM	шочуқын
 шубал[N]-SG-NOM	шубал
 шӱбе[N]-SG-NOM	шӱбе
 шӱбе[N]-VR1[V]-IMP.2SG	шӱбеле
@@ -3512,7 +3442,6 @@
 шық[V]-NR2[N]-SG-NOM	шығыш
 шыла[V]-IMP.2SG	шыла
 шыла[V]-NR1[N]-SG-NOM	шылаг
-шыла[V]-NR1[N]-SG-NOM	шылақын
 шыла[V]-NR3[N]-SG-NOM	шылағы
 шым[ADV]	шым
 шым[A]-SG-NOM	шым
@@ -3531,13 +3460,11 @@
 шырақ[N]-SG-NOM	шырақ
 шыыла[V]-IMP.2SG	шыыла
 шыыла[V]-NR1[N]-SG-NOM	шыылаг
-шыыла[V]-NR1[N]-SG-NOM	шыылақын
 шыыла[V]-NR3[N]-SG-NOM	шыылағы
 ығыл[V]-IMP.2SG	ығыл
 ығыл[V]-NR2[N]-SG-NOM	ығылыш
 ығыра[V]-IMP.2SG	ығыра
 ығыра[V]-NR1[N]-SG-NOM	ығыраг
-ығыра[V]-NR1[N]-SG-NOM	ығырақын
 ығыра[V]-NR2[N]-SG-NOM	ығыраш
 ығыра[V]-NR3[N]-SG-NOM	ығырағы
 ызай[V]-IMP.2SG	ызай
@@ -3556,7 +3483,6 @@
 ыр[V]-NR8[N]-SG-NOM	ырақ
 ыра[V]-IMP.2SG	ыра
 ыра[V]-NR1[N]-SG-NOM	ыраг
-ыра[V]-NR1[N]-SG-NOM	ырақын
 ыра[V]-NR3[N]-SG-NOM	ырағы
 ырыс[N]-SG-NOM	ырыс
 ыс[V]-IMP.2SG	ыс

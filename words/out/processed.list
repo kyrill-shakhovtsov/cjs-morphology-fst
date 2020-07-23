@@ -2745,7 +2745,7 @@
 албатқының	алб[A]:Guess-VR2[V]-NR6[N]-ATTR2[A]-SG-GEN
 албатқының	алба[V]:Guess-NR6[N]-ATTR2[A]-SG-GEN
 албатқының	албат[N]:Guess-ATTR2[A]-SG-GEN
-албатқының	албат[V]:Guess-NR1[N]-SG-POSS.2SG-NOM
+албатқының	албат[V]:Guess-NR10[N]-SG-POSS.2SG-NOM
 албатқының	албат[V]:Guess-NR3[N]-SG-GEN
 албатты	алеб[N]:Guess-VR2[V]-CAUS1-RPST-3SG
 албатты	алеб[N]:Guess-VR2[V]-CAUS1-RPST[PTCP]-SG-NOM
@@ -16023,7 +16023,7 @@
 қус	қус[V]-IMP.2SG
 кӱскӱ	кӱскӱ[N]-SG-NOM
 қускун	+?
-қусқун	қус[V]-NR1[N]-SG-NOM
+қусқун	қус[V]-NR10[N]-SG-NOM
 қусқун	қус[V]-NR3[N]-ADVR[ADV]
 қусқун	қусқу[N]-ADVR[ADV]
 қусқун	қусқун[N]-SG-NOM
@@ -16038,14 +16038,14 @@
 қусқун-алыптың	қусқун-алып[PN]-SG-ACC-PRED.2SG
 қусқун-алыптың	қусқун-алып[PN]-SG-GEN
 қусқун-қарат	+?
-қусқунма	қус[V]-NR1[N]-SG-INST
+қусқунма	қус[V]-NR10[N]-SG-INST
 қусқунма	қусқун[N]-SG-INST
-қусқунны	қус[V]-NR1[N]-SG-ACC
+қусқунны	қус[V]-NR10[N]-SG-ACC
 қусқунны	қусқун[N]-SG-ACC
-қусқунныг	қус[V]-NR1[N]-ATTR1[A]-SG-NOM
+қусқунныг	қус[V]-NR10[N]-ATTR1[A]-SG-NOM
 қусқунныг	қусқун[N]-ATTR1[A]-SG-NOM
-қусқунның	қус[V]-NR1[N]-SG-ACC-PRED.2SG
-қусқунның	қус[V]-NR1[N]-SG-GEN
+қусқунның	қус[V]-NR10[N]-SG-ACC-PRED.2SG
+қусқунның	қус[V]-NR10[N]-SG-GEN
 қусқунның	қусқун[N]-SG-ACC-PRED.2SG
 қусқунның	қусқун[N]-SG-GEN
 қустап	қус[N]:Guess-VR1[V]-CON[CVB]
@@ -20058,8 +20058,6 @@
 нег	нег[N]-SG-NOM
 негдирбеенчир	+?
 негеече	+?
-негеечиңниң	нег[V]-NR16[N]-SG-POSS.2SG-ACC-PRED.2SG
-негеечиңниң	нег[V]-NR16[N]-SG-POSS.2SG-GEN
 негеечиңниң	негеечи[N]-SG-POSS.2SG-ACC-PRED.2SG
 негеечиңниң	негеечи[N]-SG-POSS.2SG-GEN
 негер	нег[N]-VR7[V]-IMP.2SG
@@ -36475,7 +36473,7 @@
 тескере	тес[A]:Guess-SG-DIR
 тескере	тес[A]:Guess-VR7[V]-SIM[CVB]
 тескери	+?
-тескинин	тес[V]-NR1[N]-ADVR[ADV]
+тескинин	тес[V]-NR10[N]-ADVR[ADV]
 теспе	те[V]-CAUS5-NEG-IMP.2SG
 теспе	тес[V]-NEG-IMP.2SG
 теспе	тес[V]-NR12[N]-SG-NOM
@@ -39280,7 +39278,7 @@
 торчуқтуң	торчуқ[N]-SG-ACC-PRED.2SG
 тос	тос[V]-IMP.2SG
 тос	тос[N]-SG-NOM
-тосқун	тос[V]-NR1[N]-SG-NOM
+тосқун	тос[V]-NR10[N]-SG-NOM
 тосқун	тос[V]-NR3[N]-ADVR[ADV]
 тосқундурып	+?
 тосқунды	+?
@@ -47142,7 +47140,7 @@
 чибискеним	чи[V]-CON-MAN-PST[PTCP]-SG-POSS.1SG-NOM
 чибискеним	чи[V]-CON-MAN-PST-1SG
 чибискин	чибис[N]:Guess-ATTR2[A]-SG-ACC
-чибискин	чибис[V]:Guess-NR1[N]-SG-NOM
+чибискин	чибис[V]:Guess-NR10[N]-SG-NOM
 чибискин	чибис[V]:Guess-NR3[N]-ADVR[ADV]
 чибиссе	чиб[V]:Guess-CAUS5-COND-3SG
 чибиссе	чиб[V]:Guess-CAUS5-COND[PTCP]-SG-NOM

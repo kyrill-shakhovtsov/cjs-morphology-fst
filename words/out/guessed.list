@@ -1119,7 +1119,7 @@
 албатқының	алб[A]:Guess-VR2[V]-NR6[N]-ATTR2[A]-SG-GEN
 албатқының	алба[V]:Guess-NR6[N]-ATTR2[A]-SG-GEN
 албатқының	албат[N]:Guess-ATTR2[A]-SG-GEN
-албатқының	албат[V]:Guess-NR1[N]-SG-POSS.2SG-NOM
+албатқының	албат[V]:Guess-NR10[N]-SG-POSS.2SG-NOM
 албатқының	албат[V]:Guess-NR3[N]-SG-GEN
 албатты	алеб[N]:Guess-VR2[V]-CAUS1-RPST-3SG
 албатты	алеб[N]:Guess-VR2[V]-CAUS1-RPST[PTCP]-SG-NOM
@@ -25764,7 +25764,7 @@
 четон	четон[V]:Guess-IMP.2SG
 четпеемче	чет[V]:Guess-NR12[N]-VR2[V]-NR7[N]-SG-TERM
 чибискин	чибис[N]:Guess-ATTR2[A]-SG-ACC
-чибискин	чибис[V]:Guess-NR1[N]-SG-NOM
+чибискин	чибис[V]:Guess-NR10[N]-SG-NOM
 чибискин	чибис[V]:Guess-NR3[N]-ADVR[ADV]
 чибиссе	чиб[V]:Guess-CAUS5-COND-3SG
 чибиссе	чиб[V]:Guess-CAUS5-COND[PTCP]-SG-NOM

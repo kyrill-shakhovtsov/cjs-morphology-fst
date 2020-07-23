@@ -7433,7 +7433,7 @@
 қурчы	қур[N]-AG-SG-NOM
 қус	қус[V]-IMP.2SG
 кӱскӱ	кӱскӱ[N]-SG-NOM
-қусқун	қус[V]-NR1[N]-SG-NOM
+қусқун	қус[V]-NR10[N]-SG-NOM
 қусқун	қус[V]-NR3[N]-ADVR[ADV]
 қусқун	қусқу[N]-ADVR[ADV]
 қусқун	қусқун[N]-SG-NOM
@@ -7447,14 +7447,14 @@
 қусқун-алыпты	қусқун-алып[PN]-SG-ACC
 қусқун-алыптың	қусқун-алып[PN]-SG-ACC-PRED.2SG
 қусқун-алыптың	қусқун-алып[PN]-SG-GEN
-қусқунма	қус[V]-NR1[N]-SG-INST
+қусқунма	қус[V]-NR10[N]-SG-INST
 қусқунма	қусқун[N]-SG-INST
-қусқунны	қус[V]-NR1[N]-SG-ACC
+қусқунны	қус[V]-NR10[N]-SG-ACC
 қусқунны	қусқун[N]-SG-ACC
-қусқунныг	қус[V]-NR1[N]-ATTR1[A]-SG-NOM
+қусқунныг	қус[V]-NR10[N]-ATTR1[A]-SG-NOM
 қусқунныг	қусқун[N]-ATTR1[A]-SG-NOM
-қусқунның	қус[V]-NR1[N]-SG-ACC-PRED.2SG
-қусқунның	қус[V]-NR1[N]-SG-GEN
+қусқунның	қус[V]-NR10[N]-SG-ACC-PRED.2SG
+қусқунның	қус[V]-NR10[N]-SG-GEN
 қусқунның	қусқун[N]-SG-ACC-PRED.2SG
 қусқунның	қусқун[N]-SG-GEN
 қуу	қуу[N]-SG-NOM
@@ -8843,8 +8843,6 @@
 небечектериңни	небе[N]-DIM1-PL-POSS.2SG-ACC
 нег	нег[V]-IMP.2SG
 нег	нег[N]-SG-NOM
-негеечиңниң	нег[V]-NR16[N]-SG-POSS.2SG-ACC-PRED.2SG
-негеечиңниң	нег[V]-NR16[N]-SG-POSS.2SG-GEN
 негеечиңниң	негеечи[N]-SG-POSS.2SG-ACC-PRED.2SG
 негеечиңниң	негеечи[N]-SG-POSS.2SG-GEN
 негер	нег[N]-VR7[V]-IMP.2SG
@@ -14963,7 +14961,7 @@
 тес	тес[V]-IMP.2SG
 тескеннерин	те[V]-CAUS5-PST[PTCP]-SG-POSS.3PL-ACC
 тескеннерин	тес[V]-PST[PTCP]-SG-POSS.3PL-ACC
-тескинин	тес[V]-NR1[N]-ADVR[ADV]
+тескинин	тес[V]-NR10[N]-ADVR[ADV]
 теспе	те[V]-CAUS5-NEG-IMP.2SG
 теспе	тес[V]-NEG-IMP.2SG
 теспе	тес[V]-NR12[N]-SG-NOM
@@ -15706,7 +15704,7 @@
 торчуқтуң	торчуқ[N]-SG-ACC-PRED.2SG
 тос	тос[V]-IMP.2SG
 тос	тос[N]-SG-NOM
-тосқун	тос[V]-NR1[N]-SG-NOM
+тосқун	тос[V]-NR10[N]-SG-NOM
 тосқун	тос[V]-NR3[N]-ADVR[ADV]
 тоспаан	тос[V]-NEG-PST[PTCP]-SG-NOM
 тоспаан	тос[V]-NEG-PST-3SG
