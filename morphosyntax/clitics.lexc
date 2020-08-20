@@ -22,4 +22,5 @@ LEXICON Enclitic_PART_other
 ! <<< При генерации исключить второй ^оқ после личных аффиксов
 LEXICON Endoclitic_PART
 	=EMP1:^оқ	V_Slot6;
+	=ASS:^ЛА	V_Slot6; ! ЧГ-51 §98
 			V_Slot6;

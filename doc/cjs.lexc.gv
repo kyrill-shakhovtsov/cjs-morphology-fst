@@ -11,6 +11,15 @@ digraph LEXC {
 		shape=none
 	];
 	edge [color=gray40];
+	subgraph Tags {
+		graph [rank=same];
+		Tag_N	[fontcolor=tomato4,
+			label="Tag [N]"];
+		Tag_V	[fontcolor=tomato4,
+			label="Tag [V]"];
+		Tag_A	[fontcolor=tomato4,
+			label="Tag [A]"];
+	}
 	subgraph POS {
 		graph [rank=same];
 		Noun	[label=Noun];
@@ -20,19 +29,11 @@ digraph LEXC {
 		Adjective	[label=Adjective];
 		Numeral	[label=Numeral];
 		Verb	[label=Verb];
+		Verb_Al	[label=Verb_Al];
 		Verb_NEG	[label=Verb_NEG];
 		Adverb	[label=Adverb];
 		Particle	[label=Particle];
 		Iterjection	[label=Iterjection];
-	}
-	subgraph Tags {
-		graph [rank=same];
-		Tag_N	[fontcolor=tomato4,
-			label="Tag [N]"];
-		Tag_V	[fontcolor=tomato4,
-			label="Tag [V]"];
-		Tag_A	[fontcolor=tomato4,
-			label="Tag [A]"];
 	}
 	Root	[color=firebrick,
 		fillcolor=blanchedalmond,
@@ -46,6 +47,7 @@ digraph LEXC {
 	Root -> Adjective;
 	Root -> Numeral;
 	Root -> Verb;
+	Root -> Verb_Al;
 	Root -> Verb_NEG;
 	Root -> Adverb;
 	Root -> Particle;
@@ -65,6 +67,8 @@ digraph LEXC {
 		label="Tag [NUM]"];
 	Numeral -> Tag_NUM;
 	Verb -> Tag_V;
+	Verb_MOV	[label=Verb_MOV];
+	Verb_Al -> Verb_MOV;
 	Tag_VNEG	[fontcolor=tomato4,
 		label="Tag [VNEG]"];
 	Verb_NEG -> Tag_VNEG;
@@ -88,6 +92,7 @@ digraph LEXC {
 	V_StemBoundary	[fontcolor=darkgreen,
 		label=V_StemBoundary];
 	Tag_V -> V_StemBoundary;
+	Verb_MOV -> Tag_V;
 	VNEG_Slot4	[label=VNEG_Slot4];
 	Tag_VNEG -> VNEG_Slot4;
 	"Tag_POST_#"	[color=firebrick,
@@ -205,6 +210,7 @@ digraph LEXC {
 		label=V_IMP];
 	V_IMPER -> V_IMP;
 	V_Slot5_5 -> PCTP_Clitic_Branching;
+	V_Slot5_4 -> V_CVB;
 	V_Slot5_4 -> PCTP_Clitic_Branching;
 	V_Slot6	[fontcolor=darkgreen,
 		label=V_Slot6];
@@ -218,6 +224,9 @@ digraph LEXC {
 	Tag_PTCP -> N_Slot1;
 	EncliticBranching	[label=EncliticBranching];
 	V_Slot6 -> EncliticBranching;
+	V_Slot6_1PL	[fontcolor=darkgreen,
+		label=V_Slot6_1PL];
+	V_Slot6 -> V_Slot6_1PL;
 	Enclitic_PART_oq	[label=Enclitic_PART_oq];
 	EncliticBranching -> Enclitic_PART_oq;
 	Enclitic_PART_other	[label=Enclitic_PART_other];
@@ -228,6 +237,11 @@ digraph LEXC {
 		label="#",
 		shape=doublecircle];
 	EncliticBranching -> "EncliticBranching_#";
+	V_Slot6_1PL -> EncliticBranching;
+	"V_Slot6_1PL_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	V_Slot6_1PL -> "V_Slot6_1PL_#";
 	Tag_CVB -> EncliticBranching;
 	N_Slot1 -> N_Slot2;
 	Enclitic_PART_oq -> Enclitic_PART_da;
@@ -287,6 +301,7 @@ digraph LEXC {
 	N_Slot3	[fontcolor=navy,
 		label="N_Slot3\nПадеж"];
 	N_Slot2 -> N_Slot3;
+	N_Slot3 -> EncliticBranching;
 	N_Slot4_Enclitic_Branching	[fontcolor=navy,
 		label=N_Slot4_Enclitic_Branching];
 	N_Slot3 -> N_Slot4_Enclitic_Branching;

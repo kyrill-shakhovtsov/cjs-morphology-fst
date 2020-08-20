@@ -124,7 +124,8 @@ LEXICON V_Slot5_1
 	-SUPN:^ҒА			#; ! ЧУ-175 <<< EncliticBranching ???
 	0:^ҒАн				V_CVB; ! <<< Нужна помета!
 					V_IMPER;
-! При отсутствии отприцания
+
+! При отсутствии отрицания
 LEXICON V_Slot5_2
 	-CON:^Ып		V_Slot5_3; ! -CON[CVB]
 	-SIM:^А			V_Slot5_5; ! -SIM[CVB]
@@ -139,12 +140,12 @@ LEXICON V_Slot5_2
 	<"-SUPN":["^" А р ("^" Ғ А)]>	    #; ! -SUPN : ^Ар | ^Ар^ҒА
 				V_IMPER;
 
-! Формы, образуемые от конверба -CON:^Ып
+! Формы, образуемые от конверба -CON:^Ып либо -NEG-CON:^ҒАн
 LEXICON V_Slot5_3
-	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча / ^чар : ЧУ-303
-	-PRS-EVID:^чат^тУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
+	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча(т) / ^чар : ЧУ-303
+	-PRS-INDR:^чат^тУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
 	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
-	-PST-ADM:^тУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -EVID ?
+	-PST-INDR:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -INDR ?
 	-COND2:^чат^ЗА		PCTP_Clitic_Branching; ! Д-179 (§119) Условная форма сложная
 	-MAN:^Ыс		V_Slot5_4; ! Д-216 (§144) Форма решительности действия
 
@@ -154,6 +155,7 @@ LEXICON V_Slot5_4
 	-PST:^ҒАн		PCTP_Clitic_Branching;
 	-RPST:^ДУ		PCTP_Clitic_Branching;
 	-FUT:^Ар		PCTP_Clitic_Branching;
+				V_CVB; ! навеяно тарбағлабыза:тарбаг[N]-VR1[V]-CON-MAN-SIM[CVB] ^Ып^Ыс^А
 
 ! Формы, образуемые от конверба -SIM:^А
 LEXICON V_Slot5_5
@@ -183,21 +185,25 @@ LEXICON PCTP_Clitic_Branching
 			Tag_PTCP;
 
 !!! Порядок 6 : Аффиксы лица и числа
-!!! Варианты для различных видовременных форм моделируются в phonology/rules.xfst:VerbPersNum
+!!! Варианты для различных видовременных форм моделируются в phonology/rules.xfst:VerbPersNum и phonology/rules.xfst:Elision
 LEXICON V_Slot6
-	-1SG:^БЫм		EncliticBranching; ! Варианты: ^қЫм, ^сЫм : ЧУ-251
+	-1SG:^БЫм		EncliticBranching;
 	-2SG:^ЗЫң		EncliticBranching;
-	-3SG:0			EncliticBranching; ! Вариант: ^ДЫр < тур : Д-141 (§90)
-	-1PL:^БЫс		EncliticBranching; ! … ^қЫс, ^сЫс
+	-3SG:0			EncliticBranching; ! +Вариант: ^ДЫр < тур : Д-141 (§90)
+	-1PL:^БЫс		V_Slot6_1PL; ! +Вариант: -FUT:^Ар ^БЫс^ЛАр : ЧУ-93, Д-188 (§124) <<< Глосса ???
 	-2PL:^Заар		EncliticBranching;
 	-3PL:^ЛАр		EncliticBranching; ! ЧУ-252
+
+LEXICON V_Slot6_1PL
+	-PL:^ЛАр		#; ! -1PL-PL ‘мы многие’ : Д-188 (§124)
+				EncliticBranching;
 
 !!! Деепричастия / конвербы
 LEXICON V_CVB
 	-CON:^Уп	Tag_CVB; ! Соединительная либо попутно-предварительная форма : Д-155 (§102)
 	-SIM:^А		Tag_CVB; ! Действие, одновременное действию главного глагола : ЧУ-302
 	-ANT:^АлА	Tag_CVB; ! Anterior : Действие, после которого немедленно наступает действие главного глагола : ЧУ-302
-	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107) ? ^ҒАн^чА
+	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107)
 	-CVB:^чат^Ып	Tag_CVB; ! Действие, продолжающееся, пока совершается действие главного глагола : Д-158 (§103)
 
 LEXICON Tag_CVB

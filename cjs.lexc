@@ -10,7 +10,7 @@ Multichar_Symbols [N] [PN] [PRO] [PSTP] [A] [NUM] [ADV] [V] [VNEG] [CVB] [PTCP] 
 	-1SG -1PL -2SG -2PL -3SG -3PL
 	.1SG .1PL .2SG .2PL .3SG .3PL .1DU
 	-SG -PL
-	-NOM -ACC -DAT -GEN -ELA -LOC -INST -PROL -EQT -TERM -DIR
+	-NOM -ACC -DAT -GEN -ELA -LOC -INST -PROL -EQT -TERM -DIR -INSO -ABL
 	-POSS -EZF -PRED
 	-DIM -DIM1 -DIM2 -DIM3  -ATTR -ATTR1 -ATTR2 -ATTR3 -ATTR4
 	-VR1 -VR2 -VR3 -VR4 -VR5 -VR6 -VR7 -VR8 -VR9 -AG -CMPR -ATTN -ATTN1 -ATTN2 -ATTN3
@@ -22,9 +22,9 @@ Multichar_Symbols [N] [PN] [PRO] [PSTP] [A] [NUM] [ADV] [V] [VNEG] [CVB] [PTCP] 
 	-PASS -RECIP -CAUS1 -CAUS2 -CAUS3 -CAUS4 -CAUS5 -IMP .POL
 	-NEG
 	-RPST -PRS -PST -FUT
-	-HAB -ITER .ITER -ASSUM -CUNC -IMPF -ADM -INEXP -EVID .EVID -COND -COND2 -OPT -MAN
+	-HAB -ITER .ITER -ASSUM -CUNC -IMPF -INDR -COND -COND2 -OPT -MAN
 	-SUPN -ANT -SIM -CON -LMF -CVB
-	=EMP1 =EMP2 =CLT1 =CLT2
+	=ASS =EMP1 =EMP2 =CLT1 =CLT2
 	PNominalStem :Guess ! [NGuess] [AGuess]
 	PVerbalStem ! [VGuess]
 	@P.POS.pro@
@@ -37,6 +37,7 @@ LEXICON Root
 	Adjective;
 	Numeral;
 	Verb;
+	Verb_Al;
 ! 	Verb_AUX;
 	Verb_NEG;
 	Adverb;
@@ -82,7 +83,8 @@ LEXICON Noun
 	адыг		Tag_N; ! ‘выстрел’ (ШС)
 	адылға		Tag_N; ! ‘тесло’
 ! 	адыш		Tag_N; ! ‘стрельба’ < ат ‘стрелять’
-	ады-шолан	Tag_N; ! ‘имя, прозвище’
+	ады-шола	Tag_N; ! ‘имя-прозвище’ (КА+ШС)
+! 	ады-шолан	Tag_N; ! ‘имя, прозвище’
 	ажыг		Tag_N; ! ‘перевал’
 	ажырба		Tag_N; ! ‘чресседельник’
 	азай		Tag_N; ! ‘слизь’ (ШС)
@@ -101,7 +103,7 @@ LEXICON Noun
 	айры		Tag_N; ! ‘протока’ (ШС)
 ! 	ақ		Tag_N; ! ‘белок’
 	аққа		Tag_N; ! ‘FF дед по отцу’
-	ақ-сарат	Tag_N;
+	ақ-сарат	Tag_N; ! ‘ақ + сарыг + ат’ ?
 	ақсы		Tag_N; ! ‘рот, пасть’, ‘вход’
 	ақ-тек		Tag_N; ! ‘удивление’ (ШС)
 	ақча		Tag_N; ! ‘деньги’
@@ -272,6 +274,7 @@ LEXICON Noun
 ! 	қарақчы		Tag_N; ! ‘красавец, красавица’ (ШС)
 	қаралды		Tag_N; ! ‘засада’ (ШС)
 	қаралчы		Tag_N; ! ‘полынья’
+	қарат		Tag_N; ! ‘черный + конь’ (Ф)
 	қарын		Tag_N; ! ‘живот, желудок’ (ШС)
 	қараңат		Tag_N; ! ‘смородина’ < қара ‘черный’ ??
 	қарашқы		Tag_N; ! ‘темнота, мрак’ (ШС)
@@ -682,8 +685,9 @@ LEXICON Noun
 	одаг		Tag_N; ! ‘шалаш’ < ода ‘ломать’ ??
 	одаң		Tag_N; ! ‘шалаш, домик’ (ШС) < ода ‘ломать’ ??
 	одуң		Tag_N; ! ‘дрова’ < ода ‘ломать’ ??
-	ой		Tag_N; ! ‘яма’
+	ой		Tag_N; ! ‘яма’ (ШС)
 	ойас		Tag_N; ! ‘опушка леса‘ < ой ‘яма’ ??
+	оймақ		Tag_N; ! ‘яма’
 	ойуқ		Tag_N; ! ‘дыра, выемка
 	ойун		Tag_N; ! ‘игра’
 	оқ		Tag_N; ! ‘пуля’ (КА), +‘стрела’ (ШС)
@@ -1063,6 +1067,8 @@ LEXICON Noun
 ! 	тарақ		Tag_N; ! ‘расческа, гребень’
 	тарам		Tag_N; ! ‘сухожилие’
 	тарбазан	Tag_N; ! ‘пушка’
+	тарба		Tag_N; ! ‘колдовство’ (ШС), ‘уловка, хитрость’ (Ф)
+	тарбаг		Tag_N; ! ‘колдовство’, ‘уловка, хитрость’ (Ф)
 	тарбақ		Tag_N; ! ‘перчатки (замшевые)’
 	тарбаш		Tag_N; ! ‘грабли, борона’
 	тас		Tag_N; ! ‘пастух’ (ШС)
@@ -1291,6 +1297,7 @@ LEXICON Noun
 	чаг		Tag_N; ! ‘сало, жир’
 	чаға		Tag_N; ! ‘воротник’
 	чағаа		Tag_N; ! ‘конверт, письмо’
+	чағын		Tag_N; ! ‘близкий, родственник’
 	чадық		Tag_N; ! ‘колода, улей’
 	чажыг		Tag_N; ! ‘напасть, беда’ (ШС)
 	чажылбар	Tag_N; ! ‘синица’
@@ -2145,6 +2152,7 @@ LEXICON Verb
 	сықта		Tag_V; ! ‘плакать’ < сық ??
 	сын		Tag_V; ! ‘ломаться’
 	сына		Tag_V; ! ‘проверять, узнавать’ (ШС)
+	сынғара		Tag_V; ! ‘подняться на хребет’ (ШС) < сын ‘хребет’
 	сың		Tag_V; ! ‘вмещать’
 	сыңра		Tag_V; ! ‘звонить’ < ??
 	сырла		Tag_V; ! ‘красить’ (ШС)
@@ -2216,8 +2224,9 @@ LEXICON Verb
 	тырсла		Tag_V; ! ‘трещать, лопаться с треском’ < тыр…? ??
 	тыт		Tag_V; ! ‘теребить (шерсть)’
 	тыы		Tag_V; ! ‘усиливаться’ (ШС), ‘укрепляться’ (ЧУ)
-	уг		Tag_V; ! ‘вянуть’
-	уғжал		Tag_V; ! ‘разбиваться’ < ? ??
+	уг		Tag_V; ! ‘вянуть’ (КА), ‘лущить, очищать (от чего-л.)’ (ШС)
+	уғжа		Tag_V; ! ‘разрушать, разбивать’ (ШС)
+! 	уғжал		Tag_V; ! ‘разбиваться’ < ? ??
 	ужур		Tag_V; ! ‘валить’ < уш…? ??
 	узал		Tag_V; ! ‘удлинняться (о звуке)’ ~ см. узақ ‘долгий’, узун ‘длинный’
 	узан		Tag_V; ! ‘мастерить’
@@ -2291,7 +2300,8 @@ LEXICON Verb
 	чос		Tag_V; ! ‘вытирать’
 	чора		Tag_V; ! ‘месить’
 	чӧр		Tag_V; ! ‘ходить’
-	чуг		Tag_V; ! ‘прилипать (о болезни)’
+	чуг		Tag_V; ! ‘прилипать (о болезни)’, ‘приставать, прилипать’ (ШС)
+	чуқ		Tag_V; ! ??? = чуг ???
 	чул		Tag_V; ! ‘щипать, выдергивать’
 	чун		Tag_V; ! ‘мыть’
 	чӱс		Tag_V; ! ‘нырять’, ’плавать’
@@ -2402,6 +2412,16 @@ LEXICON Verb
 ! 	ыс		Tag_V; ! ‘отправлять’, ‘рассказывать’
 ! 	э		Tag_V; ! — Объединить с ‘эбес’
 ! 	эрт		Tag_V; ! ‘проходить’, ‘протекать (время)’
+
+!!! Конструкции ал + гл. движения
+LEXICON Verb_Al
+	ал+:ал		Verb_MOV;
+
+LEXICON Verb_MOV
+	кел		Tag_V;
+	пар		Tag_V;
+	шық		Tag_V;
+	эн		Tag_V;
 
 ! Отрицательный глагол эбес — ???
 LEXICON Verb_NEG
@@ -2529,7 +2549,6 @@ LEXICON Adjective
 	ӱскер		Tag_A; ! ‘глухой’
 	ӱӱр		Tag_A; ! ‘долгий, длительный’ (ШС)
 	чабал		Tag_A; ! ‘плохой, злой’
-	чағын		Tag_A; ! ‘близкий’
 	чағыс		Tag_A; ! ‘одинокий’
 	чажыл		Tag_A; ! ‘зеленый (цвет)’, ‘молодой (возр.)’
 	чайзаң		Tag_A; ! ‘красивый’
@@ -2590,7 +2609,7 @@ LEXICON Adverb
 	пазоқ		Tag_ADV; ! ‘опять’ < паза ‘еще’ :: пас^а^оқ ??
 	пееде		Tag_ADV; ! ‘так, таким образом’
 	пеере		Tag_ADV; ! ‘сюда’
-	сооба		Tag_ADV; ! ‘следом’
+	сооба		Tag_ADV; ! ‘следом’ < соо ‘зад’ + ба -INST ?
 	соонаң		Tag_ADV; ! ‘позади’
 	сыраңай		Tag_ADV; ! ‘сразу’
 	тек		Tag_ADV; ! ‘напрасно’
@@ -2788,7 +2807,8 @@ LEXICON V_Slot5_1
 	-SUPN:^ҒА			#; ! ЧУ-175 <<< EncliticBranching ???
 	0:^ҒАн				V_CVB; ! <<< Нужна помета!
 					V_IMPER;
-! При отсутствии отприцания
+
+! При отсутствии отрицания
 LEXICON V_Slot5_2
 	-CON:^Ып		V_Slot5_3; ! -CON[CVB]
 	-SIM:^А			V_Slot5_5; ! -SIM[CVB]
@@ -2803,12 +2823,12 @@ LEXICON V_Slot5_2
 	<"-SUPN":["^" А р ("^" Ғ А)]>	    #; ! -SUPN : ^Ар | ^Ар^ҒА
 				V_IMPER;
 
-! Формы, образуемые от конверба -CON:^Ып
+! Формы, образуемые от конверба -CON:^Ып либо -NEG-CON:^ҒАн
 LEXICON V_Slot5_3
-	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча / ^чар : ЧУ-303
-	-PRS-EVID:^чат^тУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
+	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча(т) / ^чар : ЧУ-303
+	-PRS-INDR:^чат^тУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
 	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
-	-PST-ADM:^тУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -EVID ?
+	-PST-INDR:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -INDR ?
 	-COND2:^чат^ЗА		PCTP_Clitic_Branching; ! Д-179 (§119) Условная форма сложная
 	-MAN:^Ыс		V_Slot5_4; ! Д-216 (§144) Форма решительности действия
 
@@ -2818,6 +2838,7 @@ LEXICON V_Slot5_4
 	-PST:^ҒАн		PCTP_Clitic_Branching;
 	-RPST:^ДУ		PCTP_Clitic_Branching;
 	-FUT:^Ар		PCTP_Clitic_Branching;
+				V_CVB; ! навеяно тарбағлабыза:тарбаг[N]-VR1[V]-CON-MAN-SIM[CVB] ^Ып^Ыс^А
 
 ! Формы, образуемые от конверба -SIM:^А
 LEXICON V_Slot5_5
@@ -2847,21 +2868,25 @@ LEXICON PCTP_Clitic_Branching
 			Tag_PTCP;
 
 !!! Порядок 6 : Аффиксы лица и числа
-!!! Варианты для различных видовременных форм моделируются в phonology/rules.xfst:VerbPersNum
+!!! Варианты для различных видовременных форм моделируются в phonology/rules.xfst:VerbPersNum и phonology/rules.xfst:Elision
 LEXICON V_Slot6
-	-1SG:^БЫм		EncliticBranching; ! Варианты: ^қЫм, ^сЫм : ЧУ-251
+	-1SG:^БЫм		EncliticBranching;
 	-2SG:^ЗЫң		EncliticBranching;
-	-3SG:0			EncliticBranching; ! Вариант: ^ДЫр < тур : Д-141 (§90)
-	-1PL:^БЫс		EncliticBranching; ! … ^қЫс, ^сЫс
+	-3SG:0			EncliticBranching; ! +Вариант: ^ДЫр < тур : Д-141 (§90)
+	-1PL:^БЫс		V_Slot6_1PL; ! +Вариант: -FUT:^Ар ^БЫс^ЛАр : ЧУ-93, Д-188 (§124) <<< Глосса ???
 	-2PL:^Заар		EncliticBranching;
 	-3PL:^ЛАр		EncliticBranching; ! ЧУ-252
+
+LEXICON V_Slot6_1PL
+	-PL:^ЛАр		#; ! -1PL-PL ‘мы многие’ : Д-188 (§124)
+				EncliticBranching;
 
 !!! Деепричастия / конвербы
 LEXICON V_CVB
 	-CON:^Уп	Tag_CVB; ! Соединительная либо попутно-предварительная форма : Д-155 (§102)
 	-SIM:^А		Tag_CVB; ! Действие, одновременное действию главного глагола : ЧУ-302
 	-ANT:^АлА	Tag_CVB; ! Anterior : Действие, после которого немедленно наступает действие главного глагола : ЧУ-302
-	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107) ? ^ҒАн^чА
+	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107)
 	-CVB:^чат^Ып	Tag_CVB; ! Действие, продолжающееся, пока совершается действие главного глагола : Д-158 (§103)
 
 LEXICON Tag_CVB
@@ -2894,6 +2919,7 @@ LEXICON Enclitic_PART_other
 ! <<< При генерации исключить второй ^оқ после личных аффиксов
 LEXICON Endoclitic_PART
 	=EMP1:^оқ	V_Slot6;
+	=ASS:^ЛА	V_Slot6; ! ЧГ-51 §98
 			V_Slot6;
 ! Междометия
 LEXICON Tag_INTJ
@@ -2939,7 +2965,7 @@ LEXICON N_Slot1
 	-SG:0		N_Slot2;
 	-PL:^ЛАр	N_Slot2;
 
-!!! Порядок 2 : Притяжательные аффиксы : См. ЧУ-53-54
+!!! Порядок 2 : Притяжательные аффиксы : ЧУ-53-54, Д-50 (§15)
 LEXICON N_Slot2
 	-POSS.1SG:^Ым		N_Slot3;
 	-POSS.2SG:^Ың		N_Slot3; ! <<< Нужен ли ^Уң ???
@@ -2951,18 +2977,19 @@ LEXICON N_Slot2
 
 !!! Порядок 3 : Падежи
 LEXICON N_Slot3		! Падеж
-	-NOM:0		N_Slot4_Enclitic_Branching; ! EncliticBranching; 	! <<< также -ACC.INDF и -GEN.INDF : ЧУ-61
-	-ACC:^НУ	N_Slot4_Enclitic_Branching; ! #; 			! ^НЫ ??? <<< -ACC.DEF : ЧУ-61
-	-GEN:^НЫң	A_Denom_2; ! ^НЫң ??? <<< -GEN.DEF : ЧУ-61
-	-DAT:^ҒА	N_Slot4_Enclitic_Branching; ! EncliticBranching;
-	-ELA:^ДАң	N_Slot4_Enclitic_Branching; ! #; 			! -CMPR : Д-63 (§24)
-	-LOC:^ДА	A_Denom_3;
-	-PROL:^ча	N_Slot4_Enclitic_Branching; ! #; 			! -DIR : Д-64 (§25)
-	-TERM:^че	N_Slot4_Enclitic_Branching; ! #; 			! -CMPR : Д-64 (§26)
-	-EQT:^ДЫг	N_Slot4_Enclitic_Branching; ! #; 			! ⇒ [A] <<<
-	<"-INST" : ["^" Б ([Ы | У] л) А]>	N_Slot4_Enclitic_Branching; ! #; ! Альтернативные формы для -INST (-PROL -COM)
-	! <<< См. Д-69 (§29) «Пережитки … -INST, -ABL, -DIR» ЧУ-93
-	-DIR:^ҒАрА	N_Slot4_Enclitic_Branching; ! #;
+	-NOM:0		N_Slot4_Enclitic_Branching;	! также -ACC.INDF и -GEN.INDF : ЧУ-61
+	-ACC:^НУ	EncliticBranching;		! ^НЫ ??? -ACC.DEF : ЧУ-61, Д-54 (§19)
+	-GEN:^НЫң	A_Denom_2;			! ^НУң ??? -GEN.DEF : ЧУ-61, Д-53 (§18)
+	-DAT:^ҒА	EncliticBranching;		! Д-55 (§20)
+	-ELA:^НАң	N_Slot4_Enclitic_Branching;	! <^ДАң> также -CMPR : Д-63 (§24)
+	-LOC:^ДА	A_Denom_3;			! Д-59 (§22)
+	-PROL:^ча	EncliticBranching;		! также -DIR : Д-64 (§25)
+	-TERM:^че	EncliticBranching;		! также -CMPR : Д-64 (§26)
+	-EQT:^ДЫг	N_Slot4_Enclitic_Branching;	! может рассматриваться как [A] ???
+	<"-INST" : ["^" Б (У л) А]>	N_Slot4_Enclitic_Branching; ! Альтернативные формы для -INST (-PROL -COM)
+	-INSO:^Ун	EncliticBranching;		! старый -INST : Д-69 (§29), ЧУ-93
+	-ABL:^ТЫн	EncliticBranching;		! старый -ABL : Д-69 (§30), ЧУ-93
+	-DIR:^ҒАрА	EncliticBranching;		! старый -DIR : Д-69 (§31), ЧУ-93
 
 LEXICON N_Slot4_Enclitic_Branching
 			N_Slot4;

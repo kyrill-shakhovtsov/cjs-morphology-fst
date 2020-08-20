@@ -28,7 +28,7 @@ LEXICON N_Slot1
 	-SG:0		N_Slot2;
 	-PL:^ЛАр	N_Slot2;
 
-!!! Порядок 2 : Притяжательные аффиксы : См. ЧУ-53-54
+!!! Порядок 2 : Притяжательные аффиксы : ЧУ-53-54, Д-50 (§15)
 LEXICON N_Slot2
 	-POSS.1SG:^Ым		N_Slot3;
 	-POSS.2SG:^Ың		N_Slot3; ! <<< Нужен ли ^Уң ???
@@ -40,18 +40,19 @@ LEXICON N_Slot2
 
 !!! Порядок 3 : Падежи
 LEXICON N_Slot3		! Падеж
-	-NOM:0		N_Slot4_Enclitic_Branching; ! EncliticBranching; 	! <<< также -ACC.INDF и -GEN.INDF : ЧУ-61
-	-ACC:^НУ	N_Slot4_Enclitic_Branching; ! #; 			! ^НЫ ??? <<< -ACC.DEF : ЧУ-61
-	-GEN:^НЫң	A_Denom_2; ! ^НЫң ??? <<< -GEN.DEF : ЧУ-61
-	-DAT:^ҒА	N_Slot4_Enclitic_Branching; ! EncliticBranching;
-	-ELA:^ДАң	N_Slot4_Enclitic_Branching; ! #; 			! -CMPR : Д-63 (§24)
-	-LOC:^ДА	A_Denom_3;
-	-PROL:^ча	N_Slot4_Enclitic_Branching; ! #; 			! -DIR : Д-64 (§25)
-	-TERM:^че	N_Slot4_Enclitic_Branching; ! #; 			! -CMPR : Д-64 (§26)
-	-EQT:^ДЫг	N_Slot4_Enclitic_Branching; ! #; 			! ⇒ [A] <<<
-	<"-INST" : ["^" Б ([Ы | У] л) А]>	N_Slot4_Enclitic_Branching; ! #; ! Альтернативные формы для -INST (-PROL -COM)
-	! <<< См. Д-69 (§29) «Пережитки … -INST, -ABL, -DIR» ЧУ-93
-	-DIR:^ҒАрА	N_Slot4_Enclitic_Branching; ! #;
+	-NOM:0		N_Slot4_Enclitic_Branching;	! также -ACC.INDF и -GEN.INDF : ЧУ-61
+	-ACC:^НУ	EncliticBranching;		! ^НЫ ??? -ACC.DEF : ЧУ-61, Д-54 (§19)
+	-GEN:^НЫң	A_Denom_2;			! ^НУң ??? -GEN.DEF : ЧУ-61, Д-53 (§18)
+	-DAT:^ҒА	EncliticBranching;		! Д-55 (§20)
+	-ELA:^НАң	N_Slot4_Enclitic_Branching;	! <^ДАң> также -CMPR : Д-63 (§24)
+	-LOC:^ДА	A_Denom_3;			! Д-59 (§22)
+	-PROL:^ча	EncliticBranching;		! также -DIR : Д-64 (§25)
+	-TERM:^че	EncliticBranching;		! также -CMPR : Д-64 (§26)
+	-EQT:^ДЫг	N_Slot4_Enclitic_Branching;	! может рассматриваться как [A] ???
+	<"-INST" : ["^" Б (У л) А]>	N_Slot4_Enclitic_Branching; ! Альтернативные формы для -INST (-PROL -COM)
+	-INSO:^Ун	EncliticBranching;		! старый -INST : Д-69 (§29), ЧУ-93
+	-ABL:^ТЫн	EncliticBranching;		! старый -ABL : Д-69 (§30), ЧУ-93
+	-DIR:^ҒАрА	EncliticBranching;		! старый -DIR : Д-69 (§31), ЧУ-93
 
 LEXICON N_Slot4_Enclitic_Branching
 			N_Slot4;

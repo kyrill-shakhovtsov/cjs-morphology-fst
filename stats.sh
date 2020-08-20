@@ -8,11 +8,11 @@ flookup -a fst/${lang}-clean-analyser-guesser.bin < ${in}/${lang}-normalised.tes
 
 flookup fst/${lang}-clean-analyser.bin < ${in}/${lang}-normalised.test | grep -P -v '^$|\+' > ${out}/clean-analysed.list
 
-flookup fst/${lang}-clean-analyser.bin < ${in}/${lang}-normalised.test | grep -P '\+\?' > ${out}/clean-failures.list
+flookup fst/${lang}-clean-analyser.bin < ${in}/${lang}-normalised.test | grep -P '\+\?' | cut -f 1 > ${out}/clean-failures.list
 
 grep 'Guess' ${out}/processed.list > ${out}/guessed.list
 
-grep -P '\+\?' ${out}/processed.list > ${out}/failures.list
+grep -P '\+\?' ${out}/processed.list | cut -f 1 > ${out}/failures.list
 
 
 echo "Обработаны $(wc -l ${in}/${lang}-normalised.test | cut -f 1 -d ' ') форм из ${in}/${lang}-normalised.test"
