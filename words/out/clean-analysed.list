@@ -370,6 +370,7 @@
 аданмас	ат[N]-VR2[V]-REFL-NEG-FUT[PTCP]-SG-NOM
 аданмас	ат[N]-VR2[V]-REFL-NEG-FUT-3SG
 адаңмоқ	ада[N]-SG-POSS.2SG-INST=EMP1
+адаңмоқ	адаңма[ADV]=EMP1
 адаңның	ада[N]-SG-POSS.2SG-GEN
 аданча	ат[N]-VR2[V]-REFL-CON-PRS[PTCP]-SG-NOM
 аданча	ат[N]-VR2[V]-REFL-CON-PRS-3SG
@@ -1913,8 +1914,10 @@
 алтыноқ	алт[N]-SG-POSS.3SG-ACC=EMP1
 алтыноқ	алт[N]-SG-POSS.3SG-INSO=EMP1
 алтыноқ	алт[N]-SG-INSO=EMP1
+алтыноқ	алт[N]-ADVR[ADV]=EMP1
 алтыноқ	алты[N]-SG-ACC=EMP1
 алтыноқ	алты[N]-SG-INSO=EMP1
+алтыноқ	алты[N]-ADVR[ADV]=EMP1
 алтыноқ	алты[NUM]-ACC=EMP1
 алтыноқ	алты[NUM]-INSO=EMP1
 алтыноқ	алтын[A]-SG-DAT=EMP1
@@ -2231,11 +2234,11 @@
 амды	амды[ADV]
 амдығы	амды[ADV]-ATTR2[A]-SG-NOM
 амдығының	амды[ADV]-ATTR2[A]-SG-GEN
-амды-да	амды[ADV]=CLT1
 амны	ам[N]-SG-ACC
 амоқ	ам[N]-SG-DAT=EMP1
 амоқ	ам[N]-SG-POSS.3SG-NOM=EMP1
 амоқ	ам[N]-SG-NOM=EMP1
+амоқ	ам[ADV]=EMP1
 аң	аң[N]-SG-NOM
 анаң	[PRO]-DEM.DIST-SG-ELA
 анаң	[PRO]-PERS.3SG-ELA
@@ -3360,7 +3363,10 @@
 ийгиге	ийги[NUM]-DAT
 ийгизин	ийги[NUM]-POSS.3SG-INSO
 ийгизиниң	ийги[NUM]-POSS.3SG-GEN
+ийгиле	ийги[NUM]-COLL-NOM
 ийгиле	ийгиле[V]-IMP.2SG
+ийгилези	ийги[NUM]-COLL-POSS.3SG-NOM
+ийгилезин	ийги[NUM]-COLL-POSS.3SG-INSO
 ийгилезин	ийгиле[V]-IMP.3SG
 ийгини	ийги[NUM]-ACC
 илчирбе	илчирбе[N]-SG-NOM
@@ -4384,7 +4390,6 @@
 қайдаң	қай[N]-SG-LOC-PRED.2SG
 қайде	[PRO]-INT.MAN
 қайде	қайде[ADV]
-қайде-да	қайде[ADV]=CLT1
 қайды	қай[N]-SG-ACC
 қайдыг	[PRO]-INT.QUAL
 қайдыг	қай[N]-SG-EQT
@@ -4454,6 +4459,7 @@
 қайрандағы	қай[N]-VR8[V]-ADJR4[A]-SG-LOC-ATTR2[A]-SG-NOM
 қайрандағы	қайра[V]-ADJR4[A]-SG-LOC-ATTR2[A]-SG-NOM
 қайрандағы	қайран[A]-SG-LOC-ATTR2[A]-SG-NOM
+қайроқ	қайра[ADV]=EMP1
 қайроқ	қайры[N]-SG-NOM=EMP1
 қайры	қайры[N]-SG-NOM
 қайчы	қай[N]-AG-SG-NOM
@@ -5948,6 +5954,7 @@
 кексиноқ	кекс[N]-SG-POSS.3SG-ACC=EMP1
 кексиноқ	кекс[N]-SG-POSS.3SG-INSO=EMP1
 кексиноқ	кекс[N]-SG-INSO=EMP1
+кексиноқ	кекс[N]-ADVR[ADV]=EMP1
 кел	кел[V]-IMP.2SG
 келаар	кел[V]-IMP.2PL
 келбе	кел[V]-NEG-IMP.2SG
@@ -11110,6 +11117,7 @@
 пайоқ	пай[A]-SG-NOM=EMP1
 пайоқ	пай[N]-SG-POSS.3SG-NOM=EMP1
 пайоқ	пай[N]-SG-NOM=EMP1
+пайоқ	пайа[ADV]=EMP1
 пай-пай	пай-пай[INTJ]
 пақ	пақ[V]-IMP.2SG
 пақ	пақ[N]-SG-NOM
@@ -12312,6 +12320,7 @@
 по	[PRO]-DEM.PROX-SG-NOM
 пӧбейекти	пӧбей[N]-DIM2-SG-ACC
 поға	[PRO]-DEM.PROX-SG-DAT
+поғоқ	[PRO]-DEM.PROX-SG-DAT=EMP1
 пӧгӱн	пӧгӱн[V]-IMP.2SG
 пӧгӱнгени	пӧгӱн[V]-PST[PTCP]-SG-POSS.3SG-NOM
 пӧгӱнди	пӧгӱн[V]-RPST[PTCP]-SG-NOM
@@ -13170,6 +13179,7 @@
 сағалың	сағал[N]-SG-POSS.2SG-NOM
 сағбайына	саг[V]-NEG-OPT[PTCP]-SG-POSS.3SG-DAT
 сағбайынға	саг[V]-NEG-OPT[PTCP]-SG-POSS.3SG-DAT
+сағоқ	[PRO]-PERS.2SG-DAT=EMP1
 сағоқ	саг[V]-SIM[CVB]=EMP1
 сағоқ	сақ[A]-SG-NOM=EMP1
 сағоқ	сақ[N]-SG-POSS.3SG-NOM=EMP1
@@ -13480,6 +13490,7 @@
 салғынның	салғын[N]-SG-GEN
 салғыноқ	сал[V]-NR3[N]-SG-ACC=EMP1
 салғыноқ	сал[V]-NR3[N]-SG-INSO=EMP1
+салғыноқ	сал[V]-NR3[N]-ADVR[ADV]=EMP1
 салғыноқ	салғын[N]-SG-DAT=EMP1
 салғыноқ	салғын[N]-SG-POSS.3SG-NOM=EMP1
 салғыноқ	салғын[N]-SG-NOM=EMP1
@@ -14111,6 +14122,7 @@
 сооба	сооба[ADV]
 сооба	сооп[V]-SIM[CVB]
 сообоқ	соо[N]-SG-INST=EMP1
+сообоқ	сооба[ADV]=EMP1
 сообоқ	сооп[V]-SIM[CVB]=EMP1
 сооған	сооқ[A]-VR2[V]-REFL-IMP.2SG
 сооған	сооқ[N]-VR2[V]-REFL-IMP.2SG
@@ -17204,6 +17216,7 @@
 торспаққа	торспақ[N]-SG-DAT
 торспақча	торспақ[N]-SG-PROL
 тӧрт	тӧрт[NUM]-NOM
+тӧртеле	тӧрт[NUM]-COLL-NOM
 тӧрттин	тӧрт[NUM]-ABL
 торул	тор[V]-PASS-IMP.2SG
 торумаштарыба	тор[V]-NR7[N]-DIM3-SG-POSS.3PL-INST
@@ -18074,7 +18087,6 @@
 тынғоқ	тын[N]-SG-DAT=EMP1
 тынғыжы	тын[V]-NR4[N]-SG-POSS.3SG-NOM
 тынғыжынға	тын[V]-NR4[N]-SG-POSS.3SG-DAT
-тың-да	тың[ADV]=CLT1
 тынды	тын[V]-RPST[PTCP]-SG-NOM
 тынды	тын[V]-RPST-3SG
 тынма	тын[V]-NEG-IMP.2SG
@@ -18312,7 +18324,9 @@
 ужар	уш[N]-VR2[V]-SUPN
 ужар	уш[N]-VR3[V]-IMP.2SG
 ӱжеле	ӱш[V]-ANT[CVB]
+ӱжеле	ӱш[NUM]-COLL-NOM
 ӱжеле	ӱжеле[NUM]-NOM
+ӱжелези	ӱш[NUM]-COLL-POSS.3SG-NOM
 ӱжелези	ӱжеле[NUM]-POSS.3SG-NOM
 ӱжип	ӱш[V]-CON[CVB]
 ужу	уш[N]-SG-POSS.3SG-NOM
@@ -21053,6 +21067,7 @@
 четтибис	чет[V]-RPST-1PL
 четтибис	четти[NUM]-POSS.1PL-NOM
 четтибис	четти[NUM]-NOM-PRED.1PL
+четтилезиниң	четти[NUM]-COLL-POSS.3SG-GEN
 четтилер	чет[V]-RPST[PTCP]-SG-NOM-PRED.3PL
 четтилер	чет[V]-RPST[PTCP]-PL-NOM
 четтилер	чет[V]-RPST-3PL
@@ -23521,6 +23536,7 @@
 эдоқ	э[V]-RPST-3SG=EMP1
 эдоқ	э[V]-NR6[N]-SG-POSS.3SG-NOM=EMP1
 эдоқ	э[V]-NR6[N]-SG-NOM=EMP1
+эдоқ	эде[ADV]=EMP1
 эдоқ	эт[V]-SIM[CVB]=EMP1
 эдоқ	эт[N]-SG-POSS.3SG-NOM=EMP1
 эдоқ	эт[N]-SG-NOM=EMP1

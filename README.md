@@ -53,12 +53,12 @@ GNU GPL is assumed for everything except the contents of the folders _lexicon_ a
 * `include/` — вспомогательные файлы LEXC: корневые лексиконы и декларация символов
 * `debug/`
 	* `phonology.xfst` — грамматика для отладки _фонологии_
-	* `morphosyntax.xfst` — грамматика для отладки _морфосинтаксиса_
+	* `morphotactics.xfst` — грамматика для отладки _морфотактики_
 * `doc/` — дополнительная документация, см. README.md
 * `fst/` — скомпилированные преобразователи
 * `extra/` — дополнительные мелочи, см. README.md
 * `lexicon/` — словарь, разбитый на файлы по частям речи, в формате LEXC, см. README.md
-* `morphosyntax/` — модель морфосинтаксиса в формате LEXC
+* `morphotactics/` — модель морфотактики в формате LEXC
 * `orthography/` — примитивный преобразователь из «старой» шорской орфографии в новую
 * `phonology/`
 	* `rules.xfst` — фонологические правила
@@ -67,8 +67,8 @@ GNU GPL is assumed for everything except the contents of the folders _lexicon_ a
 	* `in/` — списки слов из шорского корпуса ИЭА РАН для тестирования анализатора
 	* `out/` — результаты обработки списков из каталога in/
 * `Makefile`
-* `cjs.lexc` — словарь + морфосинтаксис (создается автоматически)
-* `cjs-guesser.lexc` — морфосинтаксис для бессловарной «гадалки» (создается автоматически)
+* `cjs.lexc` — словарь + морфотактика (создается автоматически)
+* `cjs-guesser.lexc` — морфотактика для бессловарной «гадалки» (создается автоматически)
 * `analyser-guesser.xfst` — создает комбинацию анализатора и «гадалки» в `fst/cjs-analyser-guesser.bin` (неразобранное анализатором отдается на разбор «гадалке»)
 * `analyser.xfst` — анализатор, использующий как новую, так и старую орфографию (`fst/cjs-analyser.bin`)
 * `clean-analyser-guesser.xfst` — комбинация «чистого» анализатора и «гадалки» (`fst/cjs-clean-analyser-guesser.bin`)

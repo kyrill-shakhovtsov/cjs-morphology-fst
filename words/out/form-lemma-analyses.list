@@ -10,6 +10,7 @@
 [PRO]-DEM.DIST-SG-NOM	[PRO]-DEM.DIST-NOM
 [PRO]-DEM.MIDP-SG-NOM	[PRO]-DEM.MIDP-NOM
 [PRO]-DEM.PROX-SG-ACC	[PRO]-DEM.PROX-NOM
+[PRO]-DEM.PROX-SG-DAT=EMP1	[PRO]-DEM.PROX-NOM
 [PRO]-DEM.PROX-SG-DAT	[PRO]-DEM.PROX-NOM
 [PRO]-DEM.PROX-SG-ELA	[PRO]-DEM.PROX-NOM
 [PRO]-DEM.PROX-SG-GEN	[PRO]-DEM.PROX-NOM
@@ -55,6 +56,7 @@
 [PRO]-PERS.2PL-NOM=EMP1	[PRO]-PERS.2PL-NOM
 [PRO]-PERS.2PL-NOM	[PRO]-PERS.2PL-NOM
 [PRO]-PERS.2SG-ACC	[PRO]-PERS.2SG-NOM
+[PRO]-PERS.2SG-DAT=EMP1	[PRO]-PERS.2SG-NOM
 [PRO]-PERS.2SG-DAT	[PRO]-PERS.2SG-NOM
 [PRO]-PERS.2SG-ELA	[PRO]-PERS.2SG-NOM
 [PRO]-PERS.2SG-GEN	[PRO]-PERS.2SG-NOM
@@ -354,6 +356,7 @@
 адай[N]-SG-INSO	адай[N]-SG-NOM
 адай[N]-SG-NOM	адай[N]-SG-NOM
 адай[N]-SG-POSS.3SG-INSO	адай[N]-SG-NOM
+адаңма[ADV]=EMP1	адаңма[ADV]=EMP1
 адаңма[ADV]	адаңма[ADV]
 ада-эне[N]-SG-NOM	ада-эне[N]-SG-NOM
 адыг[N]-AG-SG-NOM	адыг[N]-SG-NOM
@@ -1575,6 +1578,7 @@
 ален[V]-RPST[PTCP]-SG-NOM-PRED.3PL	ален[V]-IMP.2SG
 ален[V]-RPST[PTCP]-SG-POSS.1SG-NOM	ален[V]-IMP.2SG
 алт[N]-ADVR[ADV]-ATTR2[A]-SG-NOM	алт[N]-ADVR[ADV]-ATTR2[A]-SG-NOM
+алт[N]-ADVR[ADV]=EMP1	алт[N]-ADVR[ADV]=EMP1
 алт[N]-ADVR[ADV]	алт[N]-ADVR[ADV]
 алт[N]-SG-INSO=EMP1	алт[N]-SG-NOM
 алт[N]-SG-INSO	алт[N]-SG-NOM
@@ -1611,6 +1615,7 @@
 алтон[NUM]-GEN	алтон[NUM]-GEN
 алтон[NUM]-NOM	алтон[NUM]-NOM
 алты[N]-ADVR[ADV]-ATTR2[A]-SG-NOM	алты[N]-ADVR[ADV]-ATTR2[A]-SG-NOM
+алты[N]-ADVR[ADV]=EMP1	алты[N]-ADVR[ADV]=EMP1
 алты[N]-ADVR[ADV]	алты[N]-ADVR[ADV]
 алты[N]-ATTR2[A]-SG-NOM	алты[N]-ATTR2[A]-SG-NOM
 алты[N]-PL-POSS.1SG-NOM	алты[N]-SG-NOM
@@ -1935,6 +1940,7 @@
 алып-челбеген[PN]-SG-NOM	алып-челбеген[PN]-SG-NOM
 алып-шадай[PN]-SG-GEN	алып-шадай[PN]-SG-NOM
 алып-шадай[PN]-SG-NOM	алып-шадай[PN]-SG-NOM
+ам[ADV]=EMP1	ам[ADV]=EMP1
 ам[ADV]	ам[ADV]
 ам[N]-SG-ACC	ам[N]-SG-NOM
 ам[N]-SG-DAT=EMP1	ам[N]-SG-NOM
@@ -1944,7 +1950,6 @@
 ам[N]-SG-POSS.3SG-NOM=EMP1	ам[N]-SG-NOM
 амды[ADV]-ATTR2[A]-SG-GEN	амды[ADV]-ATTR2[A]-SG-NOM
 амды[ADV]-ATTR2[A]-SG-NOM	амды[ADV]-ATTR2[A]-SG-NOM
-амды[ADV]=CLT1	амды[ADV]1
 амды[ADV]	амды[ADV]
 анмар[N]-SG-DAT	анмар[N]-SG-NOM
 аң[N]-AG-PL-ACC	аң[N]-SG-NOM
@@ -3296,6 +3301,9 @@
 ийгеле[NUM]-POSS.3SG-INSO	ийгеле[NUM]-POSS.3SG-INSO
 ийгеле[NUM]-POSS.3SG-NOM	ийгеле[NUM]-POSS.3SG-NOM
 ийги[NUM]-ACC	ийги[NUM]-ACC
+ийги[NUM]-COLL-NOM	ийги[NUM]-COLL-NOM
+ийги[NUM]-COLL-POSS.3SG-INSO	ийги[NUM]-COLL-POSS.3SG-INSO
+ийги[NUM]-COLL-POSS.3SG-NOM	ийги[NUM]-COLL-POSS.3SG-NOM
 ийги[NUM]-DAT	ийги[NUM]-DAT
 ийги[NUM]-INST	ийги[NUM]-INST
 ийги[NUM]-NOM	ийги[NUM]-NOM
@@ -3641,6 +3649,7 @@
 кезек[N]-VR2[V]-IMP.2SG	кезек[N]-VR2[V]-IMP.2SG
 кезик[N]-SG-POSS.3SG-NOM	кезик[N]-SG-NOM
 кей[N]-SG-NOM	кей[N]-SG-NOM
+кекс[N]-ADVR[ADV]=EMP1	кекс[N]-ADVR[ADV]=EMP1
 кекс[N]-SG-INSO=EMP1	кекс[N]-SG-NOM
 кекс[N]-SG-POSS.3SG-ACC=EMP1	кекс[N]-SG-NOM
 кекс[N]-SG-POSS.3SG-DAT	кекс[N]-SG-NOM
@@ -5553,7 +5562,6 @@
 қайа[N]-VR3[V]-IMP.2SG	қайа[N]-VR3[V]-IMP.2SG
 қайақ[N]-SG-NOM	қайақ[N]-SG-NOM
 қайақ[N]-VR2[V]-IMP.2SG	қайақ[N]-VR2[V]-IMP.2SG
-қайде[ADV]=CLT1	қайде[ADV]1
 қайде[ADV]	қайде[ADV]
 қайна[V]-CAUS1-CON[CVB]	қайна[V]-IMP.2SG
 қайна[V]-CAUS1-CON-PST-IMPF-3SG	қайна[V]-IMP.2SG
@@ -5565,6 +5573,7 @@
 қайна[V]-CON-PST-IMPF[PTCP]-SG-NOM	қайна[V]-IMP.2SG
 қайна[V]-IMP.2SG	қайна[V]-IMP.2SG
 қайна[V]-PST[PTCP]-SG-POSS.3SG-NOM	қайна[V]-IMP.2SG
+қайра[ADV]=EMP1	қайра[ADV]=EMP1
 қайра[ADV]	қайра[ADV]
 қайра[V]-ADJR4[A]-SG-LOC-ATTR2[A]-SG-NOM	қайра[V]-ADJR4[A]-SG-LOC-ATTR2[A]-SG-NOM
 қайра[V]-ADJR4[A]-SG-NOM=CLT1	қайра[V]-ADJR4[A]-SG-NOM
@@ -10663,6 +10672,7 @@
 пай[N]-VR2[V]-PASS-IMP.2SG	пай[N]-VR2[V]-IMP.2SG
 пай[N]-VR2[V]-REFL-IMP.2SG	пай[N]-VR2[V]-IMP.2SG
 пайа[ADV]-ATTR2[A]-SG-NOM	пайа[ADV]-ATTR2[A]-SG-NOM
+пайа[ADV]=EMP1	пайа[ADV]=EMP1
 пайа[ADV]	пайа[ADV]
 пайба[N]-SG-NOM	пайба[N]-SG-NOM
 пай-пай[INTJ]	пай-пай[INTJ]
@@ -12936,6 +12946,7 @@
 сал[V]-NEG-PST[PTCP]-SG-PROL	сал[V]-IMP.2SG
 сал[V]-NR12[N]-SG-NOM	сал[V]-NR12[N]-SG-NOM
 сал[V]-NR12[N]-SG-POSS.3SG-NOM	сал[V]-NR12[N]-SG-NOM
+сал[V]-NR3[N]-ADVR[ADV]=EMP1	сал[V]-NR3[N]-ADVR[ADV]=EMP1
 сал[V]-NR3[N]-ADVR[ADV]	сал[V]-NR3[N]-ADVR[ADV]
 сал[V]-NR3[N]-SG-ACC=EMP1	сал[V]-NR3[N]-SG-NOM
 сал[V]-NR3[N]-SG-ACC	сал[V]-NR3[N]-SG-NOM
@@ -13570,6 +13581,7 @@
 соо[N]-VR1[V]-FUT[PTCP]-SG-POSS.3SG-INST	соо[N]-VR1[V]-IMP.2SG
 соо[N]-VR3[V]-SIM[CVB]	соо[N]-VR3[V]-IMP.2SG
 соо[N]-VR8[V]-IMP.2SG	соо[N]-VR8[V]-IMP.2SG
+сооба[ADV]=EMP1	сооба[ADV]=EMP1
 сооба[ADV]	сооба[ADV]
 сӧӧк[N]-ADVR[ADV]	сӧӧк[N]-ADVR[ADV]
 сӧӧк[N]-DIM3-PL-POSS.3SG-NOM	сӧӧк[N]-SG-NOM
@@ -16499,6 +16511,7 @@
 торспақ[N]-SG-NOM	торспақ[N]-SG-NOM
 торспақ[N]-SG-PROL	торспақ[N]-SG-NOM
 тӧрт[NUM]-ABL	тӧрт[NUM]-ABL
+тӧрт[NUM]-COLL-NOM	тӧрт[NUM]-COLL-NOM
 тӧрт[NUM]-NOM	тӧрт[NUM]-NOM
 торчуқ[N]-PL-NOM	торчуқ[N]-SG-NOM
 торчуқ[N]-SG-ACC	торчуқ[N]-SG-NOM
@@ -17383,7 +17396,6 @@
 тынам[N]-VR2[V]-PST[PTCP]-SG-NOM	тынам[N]-VR2[V]-IMP.2SG
 тынам[N]-VR3[V]-PST-3SG	тынам[N]-VR3[V]-IMP.2SG
 тынам[N]-VR3[V]-PST[PTCP]-SG-NOM	тынам[N]-VR3[V]-IMP.2SG
-тың[ADV]=CLT1	тың[ADV]1
 тың[ADV]	тың[ADV]
 тыт[N]-SG-ACC	тыт[N]-SG-NOM
 тыт[N]-SG-DAT	тыт[N]-SG-NOM
@@ -18211,6 +18223,8 @@
 уш[N]-SG-POSS.3SG-LOC	уш[N]-SG-NOM
 уш[N]-SG-POSS.3SG-NOM	уш[N]-SG-NOM
 уш[N]-SG-PROL	уш[N]-SG-NOM
+ӱш[NUM]-COLL-NOM	ӱш[NUM]-COLL-NOM
+ӱш[NUM]-COLL-POSS.3SG-NOM	ӱш[NUM]-COLL-POSS.3SG-NOM
 ӱш[NUM]-ELA	ӱш[NUM]-ELA
 ӱш[NUM]-LOC-PRED.2SG	ӱш[NUM]-LOC-PRED.2SG
 ӱш[NUM]-NOM	ӱш[NUM]-NOM
@@ -20204,6 +20218,7 @@
 чет[V]-SIM[CVB]=EMP1	чет[V]-IMP.2SG
 чет[V]-SIM[CVB]	чет[V]-IMP.2SG
 чет[V]-SUPN	чет[V]-IMP.2SG
+четти[NUM]-COLL-POSS.3SG-GEN	четти[NUM]-COLL-POSS.3SG-GEN
 четти[NUM]-NOM-PRED.1PL	четти[NUM]-NOM-PRED.1PL
 четти[NUM]-NOM-PRED.2SG	четти[NUM]-NOM-PRED.2SG
 четти[NUM]-NOM-PRED.3PL	четти[NUM]-NOM-PRED.3PL
@@ -22699,6 +22714,7 @@
 эген[V]-RPST[PTCP]-SG-NOM	эген[V]-IMP.2SG
 эген[V]-SUPN	эген[V]-IMP.2SG
 эде[ADV]-ATTR2[A]-SG-ACC	эде[ADV]-ATTR2[A]-SG-NOM
+эде[ADV]=EMP1	эде[ADV]=EMP1
 эде[ADV]	эде[ADV]
 эдек[N]-ADVR[ADV]	эдек[N]-ADVR[ADV]
 эдек[N]-SG-DAT	эдек[N]-SG-NOM

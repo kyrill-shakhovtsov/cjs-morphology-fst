@@ -1,16 +1,17 @@
-!!! cjs.lexc — Словарь и морфосинтаксис для шорского морфологического анализатора
+!!! cjs.lexc — Словарь и морфотактика для шорского морфологического анализатора
 
 !!! © К.Г. Шаховцов, 2011—2019
 !!! Описание см. в README.md либо https://github.com/kyrill-shakhovtsov/cjs-morphology-fst
 
 !!! Этот файл создан автоматически из содержимого каталогов
-!!! include/, lexicon/ и morphosyntax/.
+!!! include/, lexicon/ и morphotactics/.
 !
 Multichar_Symbols [N] [PN] [PRO] [PSTP] [A] [NUM] [ADV] [V] [VNEG] [CVB] [PTCP] [PART] [INTJ]
 	-1SG -1PL -2SG -2PL -3SG -3PL
 	.1SG .1PL .2SG .2PL .3SG .3PL .1DU
 	-SG -PL
 	-NOM -ACC -DAT -GEN -ELA -LOC -INST -PROL -EQT -TERM -DIR -INSO -ABL
+	-COLL
 	-POSS -EZF -PRED
 	-DIM -DIM1 -DIM2 -DIM3  -ATTR -ATTR1 -ATTR2 -ATTR3 -ATTR4
 	-VR1 -VR2 -VR3 -VR4 -VR5 -VR6 -VR7 -VR8 -VR9 -AG -CMPR -ATTN -ATTN1 -ATTN2 -ATTN3
@@ -1889,7 +1890,6 @@ LEXICON Verb
 	ален		Tag_V; ! ’нести (вниз)’
 	алта		Tag_V; ! ‘шагать’
 	алчаза		Tag_V; ! ‘цвести’ < ??
-! 	алыл		Tag_V; ! ‘быть взятым’ < ал
 ! 	алын		Tag_V; ! ‘воспринимать, сходить с ума’ < ал
 ! 	алыш		Tag_V; ! ‘обмениваться’ < ал
 	аңдар		Tag_V; ! ‘валить’
@@ -2415,7 +2415,8 @@ LEXICON Verb
 
 !!! Конструкции ал + гл. движения
 LEXICON Verb_Al
-	ал+:ал		Verb_MOV;
+! 	ал+		Verb_MOV;
+	ал		Tag_V_Al;
 
 LEXICON Verb_MOV
 	кел		Tag_V;
@@ -2665,22 +2666,29 @@ LEXICON Numeral
 	четти	Tag_NUM; ! ’7’
 	сегис	Tag_NUM; ! ’8’
 	тоғус	Tag_NUM; ! ’9’
+	ийги	Tag_NUM_Tens; ! ’2’ -> ‘20’
+	ӱш	Tag_NUM_Tens; ! ’3’ -> ‘30’
+	тӧрт	Tag_NUM_Tens; ! ’4’ -> ‘40’
+	пеш	Tag_NUM_Tens; ! ’5’ -> ‘50’
+	алты	Tag_NUM_Tens; ! ’6’ -> ‘60’
+	четти	Tag_NUM_Tens; ! ’7’ -> ‘70’
+	сегис	Tag_NUM_Tens; ! ’8’ -> ‘80’
+	тоғус	Tag_NUM_Tens; ! ’9’ -> ‘90’
 	он	Tag_NUM; ! ’10’
 	чегирбе	Tag_NUM; ! ’20’
 	одус	Tag_NUM; ! ’30’
 	қырық	Tag_NUM; ! ’40’
 	элиг	Tag_NUM; ! ’50’
-	алтон	Tag_NUM; ! ’60’
-	четтон	Tag_NUM; ! ’70’
-	сегизон	Tag_NUM; ! ’80’
-	тоғузон	Tag_NUM; ! ’90’
+	алтон	Tag_NUM; ! ’60’ < алты + он	: Д-102 §66
+	четтон	Tag_NUM; ! ’70’ < четти + он	: Д-102 §66
+	сегизон	Tag_NUM; ! ’80’ < сегис + он	: Д-102 §66
+	тоғузон	Tag_NUM; ! ’90’ < тоғус + он	: Д-102 §66
 	чӱс	Tag_NUM; ! ’100’
 	муң	Tag_NUM; ! ’1000’
-	пирси	Tag_NUM; ! ’один из многих’ <<< Deriv < пир ???
+	пирси	Tag_NUM; ! ’один из многих’ < пир ???
 	ийгеле	Tag_NUM; ! ’вдвоем’
 	ӱжеле	Tag_NUM; ! ‘втроем’ (Ф)
 	кӧп	Tag_NUM; ! ‘много’
-
 !!! Описание «порядков» (Slots)
 LEXICON Tag_V
 	[V]:0		V_StemBoundary;
@@ -2820,8 +2828,8 @@ LEXICON V_Slot5_2
 	-OPT:^ҒАй		PCTP_Clitic_Branching; ! Д-174 (§117) Форма желания (оптатив)
 	-COND:^ЗА		PCTP_Clitic_Branching; ! Д-177 (§118), ЧУ-311
 	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching; ! Д-191 (§126) Несовершенное действие — «еще не делал» (кункатив)
-	<"-SUPN":["^" А р ("^" Ғ А)]>	    #; ! -SUPN : ^Ар | ^Ар^ҒА
-				V_IMPER;
+	<"-SUPN":["^" А р ("^" Ғ А)]>		#;     ! ЧУ-175 -SUPN : ^Ар | ^Ар^ҒА
+						V_IMPER;
 
 ! Формы, образуемые от конверба -CON:^Ып либо -NEG-CON:^ҒАн
 LEXICON V_Slot5_3
@@ -2859,7 +2867,7 @@ LEXICON V_IMP
 	.3SG:^ЗУн				#; ! ^ЗУн / ^ЗЫн (верх. Мрассу, Кондома : Д-170 (§113))
 	.1DU:^Аң				#; ! ‘мы вдвоем’ : Д-173 (§116)
 	.1PL:^Аң^ЛАр				#; ! ‘мы многие’ : Д-174
-	.2PL:^Лаар				#; ! ^аар после согласных :: Д-169 (§112) + ^ГЫлА (верх. Мрассу : Д-170)
+	.2PL:^Лаар				#; ! ^аар после согласных :: Д-169 (§112) + ^ҒЫлА (верх. Мрассу : Д-170)
 	.3PL:^ЗУн^ЛАр				#; ! + ^ЗЫн ?
 
 !!!
@@ -2895,6 +2903,17 @@ LEXICON Tag_CVB
 !!! Причастия
 LEXICON Tag_PTCP
 	[PTCP]:0	N_Slot1;
+
+
+!!! <<<<<<<<<<<<<<<<<<<<<<<<<<
+LEXICON Tag_V_Al
+	[V]:0		V_AddPlus;
+
+LEXICON V_AddPlus
+	+		Verb_MOV;
+
+
+
 !!! Клитики
 
 LEXICON EncliticBranching
@@ -2930,7 +2949,7 @@ LEXICON Tag_ADV
 
 LEXICON ADV_StemBoundary
 	-ATTR2:^ҒЫ	Tag_A_ATTR2;
-			Enclitic_PART_da;
+			Enclitic_PART_oq;
 			#;
 ! Частицы
 LEXICON Tag_PART
@@ -3002,7 +3021,7 @@ LEXICON N_Slot4
 
 LEXICON N_Slot4_affixes
 	-PRED.1SG:^БЫн	EncliticBranching; ! … ^БЫм : ЧУ-251 … ^қЫм, ^сЫм
-	-PRED.2SG:^ЗЫң	EncliticBranching; ! Нет ассимиляции -с + ^ЗЫң ⇒ -сЫң
+	-PRED.2SG:^ЗЫң	EncliticBranching; ! Нет ассимиляции -с + ^ЗЫң >> -сЫң
 	<"-PRED" ".3SG": [0 | "^" Д Ы р]>	EncliticBranching; ! Вариант: ^ДЫр < тур : Д-141 (§90)
 	-PRED.1PL:^БЫс	EncliticBranching; ! … ^қЫс, ^сЫс
 	-PRED.2PL:^ЗААр	EncliticBranching; ! Дополнить описание ассимиляции CVoiceless + ^ЗААр
@@ -3017,7 +3036,7 @@ LEXICON N_DIM
 	-DIM3:^Аш		N_Slot1;
 
 LEXICON N_DIM_2
-	-DIM3:^Аш		N_Slot1; ! оолағаш < оол^Ақ^Аш
+	-DIM3:^Аш		N_Slot1; ! оолағаш << оол^Ақ^Аш
 				N_Slot1;
 
 !! Образование отыменных существительных
@@ -3191,7 +3210,7 @@ LEXICON Pro_PERS_1SG
 	-NOM:мен	EncliticBranching; ! #;
 	-ACC:мени	#;
 	-GEN:меең	#;
-	-DAT:ма^ҒА	#;
+	-DAT:ма^ҒА	EncliticBranching; ! #;
 	-ELA:менең	#;
 	-LOC:мен^ДА	#;
 	-INST:меең^БА	#;
@@ -3200,7 +3219,7 @@ LEXICON Pro_PERS_2SG
 	-NOM:сен	EncliticBranching; ! #;
 	-ACC:сени	#;
 	-GEN:сеең	#;
-	-DAT:са^ҒА	#;
+	-DAT:са^ҒА	EncliticBranching; ! #;
 	-ELA:сенең	#;
 	-LOC:сен^ДА	#;
 	-INST:сеең^БА	#;
@@ -3209,7 +3228,7 @@ LEXICON Pro_PERS_3SG
 	-NOM:ол		EncliticBranching; ! #;
 	-ACC:аны	#;
 	-GEN:ааң	#;
-	-DAT:а^ҒА	#;
+	-DAT:а^ҒА	EncliticBranching; ! #;
 	-ELA:анаң	#;
 	-LOC:ан^ДА	#;
 	-INST:ааң^БА	#;
@@ -3263,7 +3282,7 @@ LEXICON Pro_DEM_PROX_SG
 	-NOM:по		#;
 	-ACC:по^нУ	#;
 	-GEN:пооң	#;
-	-DAT:по^ҒА	#; ! … поо
+	-DAT:по^ҒА	EncliticBranching; ! #; ! … поо
 	-ELA:мынаң	#;
 	-LOC:мында	#;
 	-INST:пооң^БА	#;
@@ -3274,12 +3293,12 @@ LEXICON Pro_DEM_PROX_SG
 LEXICON Pro_INT
 	-INT.AN:кем		N_Slot3; ! <<< -DAT +кемге -кеме
 	-INT.INAN:ноо		N_Slot3; ! <<< -GEN +нооның -ноодың
-! 	қайы «который?», «какой?»
-	-INT.SEL:қайзы		N_Slot3; ! қайзызы «который?», «который из них?» .SEL (selection)
-	-INT.ORD:қанченчи	#; ! «который?» (по счету)
-	-INT.CARD:қанче		#; ! «сколько?»
-	-INT.QUAL:қайдыг	#; ! «какой?» .QUAL (quality)
-	-INT.MAN:қайде		#; ! «как, каким образом?» .MAN (manner)
+! 	-INT.:қайы		N_Slot3; ! ‘который, какой?’
+	-INT.SEL:қайзы		N_Slot3; ! қайзызы ‘который?’, ‘который из них?’ .SEL (selection)
+	-INT.ORD:қанченчи	#; ! ‘который?’ (по счету)
+	-INT.CARD:қанче		#; ! ‘сколько?’
+	-INT.QUAL:қайдыг	#; ! ‘какой?’ .QUAL (quality)
+	-INT.MAN:қайде		#; ! ‘как, каким образом?’ .MAN (manner)
 
 ! Лично-возвратные местоимения :: пос~пой
 LEXICON Pro_REFL
@@ -3287,14 +3306,25 @@ LEXICON Pro_REFL
 	-REFL:пой	N_Slot2;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Числительные
+
+LEXICON Tag_NUM
+	[NUM]:0		NUM_Collective;
+
+!!! 60…90
+LEXICON Tag_NUM_Tens
+	[NUM]:0		NUM_Tens;
+
+LEXICON NUM_Tens
+	+он		Tag_NUM;
+
+!!! Образование собирательных числительных
+LEXICON NUM_Collective
+	-COLL:^АлА	N_Slot2; ! Уточнить последствия: все ли можно образовать от числительных, что можно от существительных?
+			N_Slot2;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!! Послелоги
 
 LEXICON Tag_POST
 	[PSTP]:0	#; ! <<< Пока только маркируются. Анализ?
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!! Числительные
-
-LEXICON Tag_NUM
-	[NUM]:0		N_Slot2; ! Уточнить последствия: все ли можно образовать от числительных, что можно от существительных?
-

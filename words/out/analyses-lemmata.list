@@ -49,6 +49,7 @@
 ада[N]-VR3[V]-IMP.2SG	адар
 адай[N]-ADVR[ADV]	адайын
 адай[N]-SG-NOM	адай
+адаңма[ADV]=EMP1	адаңмоқ
 адаңма[ADV]	адаңма
 ада-эне[N]-SG-NOM	ада-эне
 адыг[N]-SG-NOM	адыг
@@ -203,6 +204,7 @@
 алғый[N]-VR1[V]-IMP.2SG	алғыйла
 ален[V]-IMP.2SG	ален
 алт[N]-ADVR[ADV]-ATTR2[A]-SG-NOM	алтынғы
+алт[N]-ADVR[ADV]=EMP1	алтыноқ
 алт[N]-ADVR[ADV]	алтын
 алт[N]-SG-NOM	алт
 алт[N]-SG-POSS.3SG-GEN-ATTR2[A]-SG-NOM	+?
@@ -214,6 +216,7 @@
 алтон[NUM]-GEN	алтонның
 алтон[NUM]-NOM	алтон
 алты[N]-ADVR[ADV]-ATTR2[A]-SG-NOM	алтынғы
+алты[N]-ADVR[ADV]=EMP1	алтыноқ
 алты[N]-ADVR[ADV]	алтын
 алты[N]-ATTR2[A]-SG-NOM	алтығы
 алты[N]-SG-GEN-ATTR2[A]-SG-NOM	+?
@@ -303,9 +306,9 @@
 алып-чеқатай[PN]-SG-NOM	алып-чеқатай
 алып-челбеген[PN]-SG-NOM	алып-челбеген
 алып-шадай[PN]-SG-NOM	алып-шадай
+ам[ADV]=EMP1	амоқ
 ам[ADV]	ам
 ам[N]-SG-NOM	ам
-амды[ADV]1	+?
 амды[ADV]-ATTR2[A]-SG-NOM	амдығы
 амды[ADV]	амды
 анмар[N]-SG-NOM	анмар
@@ -481,6 +484,9 @@
 ийгеле[NUM]-POSS.3SG-INSO	ийгелезин
 ийгеле[NUM]-POSS.3SG-NOM	ийгелези
 ийги[NUM]-ACC	ийгини
+ийги[NUM]-COLL-NOM	ийгиле
+ийги[NUM]-COLL-POSS.3SG-INSO	ийгилезин
+ийги[NUM]-COLL-POSS.3SG-NOM	ийгилези
 ийги[NUM]-DAT	ийгиге
 ийги[NUM]-INST	ийгибе
 ийги[NUM]-INST	ийгибиле
@@ -540,6 +546,7 @@
 кезек[N]-VR2[V]-IMP.2SG	кезеге
 кезик[N]-SG-NOM	кезик
 кей[N]-SG-NOM	кей
+кекс[N]-ADVR[ADV]=EMP1	кексиноқ
 кекс[N]-SG-NOM	кекс
 кел[V]-ADJR4[A]-SG-NOM	келин
 кел[V]-IMP.2SG	кел
@@ -836,9 +843,9 @@
 қайа[N]-VR3[V]-IMP.2SG	қайар
 қайақ[N]-SG-NOM	қайақ
 қайақ[N]-VR2[V]-IMP.2SG	қайаға
-қайде[ADV]1	+?
 қайде[ADV]	қайде
 қайна[V]-IMP.2SG	қайна
+қайра[ADV]=EMP1	қайроқ
 қайра[ADV]	қайра
 қайра[V]-ADJR4[A]-SG-LOC-ATTR2[A]-SG-NOM	қайрандағы
 қайра[V]-ADJR4[A]-SG-NOM	қайран
@@ -1783,6 +1790,7 @@
 пай[N]-VR2[V]-ADJR4[A]-SG-NOM	пайан
 пай[N]-VR2[V]-IMP.2SG	пайа
 пайа[ADV]-ATTR2[A]-SG-NOM	пайағы
+пайа[ADV]=EMP1	пайоқ
 пайа[ADV]	пайа
 пайба[N]-SG-NOM	пайба
 пай-пай[INTJ]	пай-пай
@@ -2102,6 +2110,7 @@
 сал[V]-ADJR4[A]-SG-NOM	салын
 сал[V]-IMP.2SG	сал
 сал[V]-NR12[N]-SG-NOM	салба
+сал[V]-NR3[N]-ADVR[ADV]=EMP1	салғыноқ
 сал[V]-NR3[N]-ADVR[ADV]	салғын
 сал[V]-NR3[N]-SG-NOM	салғы
 сала[N]-SG-NOM	сала
@@ -2212,6 +2221,7 @@
 соо[N]-VR1[V]-IMP.2SG	соола
 соо[N]-VR3[V]-IMP.2SG	соор
 соо[N]-VR8[V]-IMP.2SG	соора
+сооба[ADV]=EMP1	сообоқ
 сооба[ADV]	сооба
 сӧӧк[N]-ADVR[ADV]	сӧӧгин
 сӧӧк[N]-SG-NOM	сӧӧк
@@ -2706,6 +2716,7 @@
 тӧре[V]-NR9[N]-SG-NOM	тӧрел
 торспақ[N]-SG-NOM	торспақ
 тӧрт[NUM]-ABL	тӧрттин
+тӧрт[NUM]-COLL-NOM	тӧртеле
 тӧрт[NUM]-NOM	тӧрт
 торчуқ[N]-SG-NOM	торчуқ
 торчуқ[N]-VR1[V]-IMP.2SG	торчуқта
@@ -2833,7 +2844,6 @@
 тынам[N]-SG-NOM	тынам
 тынам[N]-VR2[V]-IMP.2SG	тынама
 тынам[N]-VR3[V]-IMP.2SG	тынмар
-тың[ADV]1	+?
 тың[ADV]	тың
 тыт[N]-SG-NOM	тыт
 тыт[V]-IMP.2SG	тыт
@@ -2992,6 +3002,8 @@
 ӱчӱн[PSTP]	ӱчӱн
 уш[N]-ATTR1[A]-SG-NOM	уштыг
 уш[N]-SG-NOM	уш
+ӱш[NUM]-COLL-NOM	ӱжеле
+ӱш[NUM]-COLL-POSS.3SG-NOM	ӱжелези
 ӱш[NUM]-ELA	ӱштең
 ӱш[NUM]-LOC-PRED.2SG	ӱштең
 ӱш[NUM]-NOM	ӱш
@@ -3304,6 +3316,7 @@
 чет[V]-NR3[N]-SG-NOM	четки
 чет[V]-NR7[N]-SG-NOM	чедим
 чет[V]-NR8[N]-SG-NOM	чедек
+четти[NUM]-COLL-POSS.3SG-GEN	четтилезиниң
 четти[NUM]-NOM-PRED.1PL	четтибис
 четти[NUM]-NOM-PRED.2SG	четтиң
 четти[NUM]-NOM-PRED.3PL	четтилер
@@ -3684,6 +3697,7 @@
 эген[V]-NR2[N]-ATTR1[A]-SG-NOM	эгеништиг
 эген[V]-NR2[N]-SG-NOM	эгениш
 эде[ADV]-ATTR2[A]-SG-NOM	эдеги
+эде[ADV]=EMP1	эдоқ
 эде[ADV]	эде
 эдек[N]-ADVR[ADV]	эдегин
 эдек[N]-SG-NOM	эдек

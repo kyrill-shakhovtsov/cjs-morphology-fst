@@ -65,7 +65,7 @@ LEXICON N_Slot4
 
 LEXICON N_Slot4_affixes
 	-PRED.1SG:^БЫн	EncliticBranching; ! … ^БЫм : ЧУ-251 … ^қЫм, ^сЫм
-	-PRED.2SG:^ЗЫң	EncliticBranching; ! Нет ассимиляции -с + ^ЗЫң ⇒ -сЫң
+	-PRED.2SG:^ЗЫң	EncliticBranching; ! Нет ассимиляции -с + ^ЗЫң >> -сЫң
 	<"-PRED" ".3SG": [0 | "^" Д Ы р]>	EncliticBranching; ! Вариант: ^ДЫр < тур : Д-141 (§90)
 	-PRED.1PL:^БЫс	EncliticBranching; ! … ^қЫс, ^сЫс
 	-PRED.2PL:^ЗААр	EncliticBranching; ! Дополнить описание ассимиляции CVoiceless + ^ЗААр
@@ -80,7 +80,7 @@ LEXICON N_DIM
 	-DIM3:^Аш		N_Slot1;
 
 LEXICON N_DIM_2
-	-DIM3:^Аш		N_Slot1; ! оолағаш < оол^Ақ^Аш
+	-DIM3:^Аш		N_Slot1; ! оолағаш << оол^Ақ^Аш
 				N_Slot1;
 
 !! Образование отыменных существительных
@@ -254,7 +254,7 @@ LEXICON Pro_PERS_1SG
 	-NOM:мен	EncliticBranching; ! #;
 	-ACC:мени	#;
 	-GEN:меең	#;
-	-DAT:ма^ҒА	#;
+	-DAT:ма^ҒА	EncliticBranching; ! #;
 	-ELA:менең	#;
 	-LOC:мен^ДА	#;
 	-INST:меең^БА	#;
@@ -263,7 +263,7 @@ LEXICON Pro_PERS_2SG
 	-NOM:сен	EncliticBranching; ! #;
 	-ACC:сени	#;
 	-GEN:сеең	#;
-	-DAT:са^ҒА	#;
+	-DAT:са^ҒА	EncliticBranching; ! #;
 	-ELA:сенең	#;
 	-LOC:сен^ДА	#;
 	-INST:сеең^БА	#;
@@ -272,7 +272,7 @@ LEXICON Pro_PERS_3SG
 	-NOM:ол		EncliticBranching; ! #;
 	-ACC:аны	#;
 	-GEN:ааң	#;
-	-DAT:а^ҒА	#;
+	-DAT:а^ҒА	EncliticBranching; ! #;
 	-ELA:анаң	#;
 	-LOC:ан^ДА	#;
 	-INST:ааң^БА	#;
@@ -326,7 +326,7 @@ LEXICON Pro_DEM_PROX_SG
 	-NOM:по		#;
 	-ACC:по^нУ	#;
 	-GEN:пооң	#;
-	-DAT:по^ҒА	#; ! … поо
+	-DAT:по^ҒА	EncliticBranching; ! #; ! … поо
 	-ELA:мынаң	#;
 	-LOC:мында	#;
 	-INST:пооң^БА	#;
@@ -337,12 +337,12 @@ LEXICON Pro_DEM_PROX_SG
 LEXICON Pro_INT
 	-INT.AN:кем		N_Slot3; ! <<< -DAT +кемге -кеме
 	-INT.INAN:ноо		N_Slot3; ! <<< -GEN +нооның -ноодың
-! 	қайы «который?», «какой?»
-	-INT.SEL:қайзы		N_Slot3; ! қайзызы «который?», «который из них?» .SEL (selection)
-	-INT.ORD:қанченчи	#; ! «который?» (по счету)
-	-INT.CARD:қанче		#; ! «сколько?»
-	-INT.QUAL:қайдыг	#; ! «какой?» .QUAL (quality)
-	-INT.MAN:қайде		#; ! «как, каким образом?» .MAN (manner)
+! 	-INT.:қайы		N_Slot3; ! ‘который, какой?’
+	-INT.SEL:қайзы		N_Slot3; ! қайзызы ‘который?’, ‘который из них?’ .SEL (selection)
+	-INT.ORD:қанченчи	#; ! ‘который?’ (по счету)
+	-INT.CARD:қанче		#; ! ‘сколько?’
+	-INT.QUAL:қайдыг	#; ! ‘какой?’ .QUAL (quality)
+	-INT.MAN:қайде		#; ! ‘как, каким образом?’ .MAN (manner)
 
 ! Лично-возвратные местоимения :: пос~пой
 LEXICON Pro_REFL
@@ -350,14 +350,25 @@ LEXICON Pro_REFL
 	-REFL:пой	N_Slot2;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Числительные
+
+LEXICON Tag_NUM
+	[NUM]:0		NUM_Collective;
+
+!!! 60…90
+LEXICON Tag_NUM_Tens
+	[NUM]:0		NUM_Tens;
+
+LEXICON NUM_Tens
+	+он		Tag_NUM;
+
+!!! Образование собирательных числительных
+LEXICON NUM_Collective
+	-COLL:^АлА	N_Slot2; ! Уточнить последствия: все ли можно образовать от числительных, что можно от существительных?
+			N_Slot2;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!! Послелоги
 
 LEXICON Tag_POST
 	[PSTP]:0	#; ! <<< Пока только маркируются. Анализ?
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!! Числительные
-
-LEXICON Tag_NUM
-	[NUM]:0		N_Slot2; ! Уточнить последствия: все ли можно образовать от числительных, что можно от существительных?
-

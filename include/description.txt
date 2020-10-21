@@ -1,7 +1,7 @@
-!!! cjs.lexc — Словарь и морфосинтаксис для шорского морфологического анализатора
+!!! cjs.lexc — Словарь и морфотактика для шорского морфологического анализатора
 
 !!! © К.Г. Шаховцов, 2011—2019
 !!! Описание см. в README.md либо https://github.com/kyrill-shakhovtsov/cjs-morphology-fst
 
 !!! Этот файл создан автоматически из содержимого каталогов
-!!! include/, lexicon/ и morphosyntax/.
+!!! include/, lexicon/ и morphotactics/.

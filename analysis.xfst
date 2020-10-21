@@ -8,8 +8,8 @@ source filter.xfst
 ! Орфография
 source orthography/orthography.xfst
 
-! Лексикон и морфосинтаксис
-echo Лексикон и морфосинтаксис
+! Лексикон и морфотактика
+echo Лексикон и морфотактика
 read lexc cjs.lexc
 
 echo Удаление всех «флагов»

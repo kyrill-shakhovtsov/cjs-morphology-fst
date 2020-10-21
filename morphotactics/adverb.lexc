@@ -4,5 +4,5 @@ LEXICON Tag_ADV
 
 LEXICON ADV_StemBoundary
 	-ATTR2:^ҒЫ	Tag_A_ATTR2;
-			Enclitic_PART_da;
+			Enclitic_PART_oq;
 			#;

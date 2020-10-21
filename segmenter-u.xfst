@@ -4,7 +4,7 @@ source phonology/rules.xfst
 ! Фильтр
 source filter.xfst
 
-! Лексикон и морфосинтаксис
+! Лексикон и морфотактика
 read lexc cjs.lexc
 
 echo Удаление всех Flag-Diacritics

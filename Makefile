@@ -13,7 +13,7 @@ normaliser_fst = fst/$(LANGUAGE)-normaliser.bin
 
 all: $(main_lexc) $(guesser_lexc) $(analyser_fst) $(clean_analyser_fst) $(guesser_fst) $(combined_fst) $(clean_combined_fst) $(segmenter_fst) $(normaliser_fst)
 
-$(main_lexc): include/description.txt include/multichar_symbols.lexc include/root.lexc lexicon/*.lexc morphosyntax/*.lexc
+$(main_lexc): include/description.txt include/multichar_symbols.lexc include/root.lexc lexicon/*.lexc morphotactics/*.lexc
 	@cat $^ > $(main_lexc)
 	@extra/lexc2dot.pl $(main_lexc) doc/$(main_lexc).gv
 	@dot -Tpdf -O doc/$(main_lexc).gv
@@ -33,7 +33,7 @@ segmenter: $(segmenter_fst)
 normaliser: $(normaliser_fst)
 
 
-$(guesser_lexc): include/multichar_symbols.lexc include/root-guesser.lexc morphosyntax/*.lexc
+$(guesser_lexc): include/multichar_symbols.lexc include/root-guesser.lexc morphotactics/*.lexc
 	@cat $^ > $(guesser_lexc)
 
 $(analyser_fst): $(main_lexc) analyser.xfst analysis.xfst phonology/rules.xfst

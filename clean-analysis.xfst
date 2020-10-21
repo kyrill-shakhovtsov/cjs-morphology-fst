@@ -5,8 +5,8 @@ source phonology/rules.xfst
 ! Фильтр
 source filter.xfst
 
-! Лексикон и морфосинтаксис
-echo Лексикон и морфосинтаксис
+! Лексикон и морфотактика
+echo Лексикон и морфотактика
 read lexc cjs.lexc
 
 echo Удаление всех «флагов»
@@ -27,8 +27,10 @@ read regex Filter
 	.o. LDrop
 	.o. GDrop
 	.o. GJConv
+	.o. DropPlus
 	.o. VowelHarmony
 	.o. Assimilation
 	.o. Voicing
 	.o. CleanUp
+	.o. VFilter	! Временное решение для борьбы с аданааа и т.п.
 	;
