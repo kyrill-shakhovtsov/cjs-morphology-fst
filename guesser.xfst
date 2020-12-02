@@ -17,15 +17,20 @@ define Lexicon ;
 echo Сборка преобразователя
 read regex Lexicon
 	.o. Contraction
+	.o. VerbPersNum
 	.o. RDrop
+	.o. Elision
 	.o. Augmentation
+	.o. ZDrop
+	.o. LDrop
 	.o. GDrop
 	.o. GJConv
-	.o. Elision
 	.o. VowelHarmony
 	.o. Assimilation
+	.o. DropPlus
 	.o. Voicing
-	.o. CleanUp ;
+	.o. CleanUp
+	;
 
 save stack fst/cjs-guesser.bin
 

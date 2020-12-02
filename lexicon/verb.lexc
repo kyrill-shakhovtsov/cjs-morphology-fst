@@ -566,6 +566,7 @@ LEXICON Verb_Al
 
 LEXICON Verb_MOV
 	кел		Tag_V;
+	кир		Tag_V; ! <<<
 	пар		Tag_V;
 	шық		Tag_V;
 	эн		Tag_V;

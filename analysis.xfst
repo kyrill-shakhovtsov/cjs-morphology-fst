@@ -32,6 +32,7 @@ read regex Filter
 	.o. GJConv
 	.o. VowelHarmony
 	.o. Assimilation
+	.o. DropPlus
 	.o. Voicing
 	.o. Orthography.i ! Сильно портит генерацию
 	.o. CleanUp

@@ -13,6 +13,7 @@ read regex Contraction
 	.o. GJConv
 	.o. VowelHarmony
 	.o. Assimilation
+	.o. DropPlus
 	.o. Voicing
 	.o. CleanUp
 	;
