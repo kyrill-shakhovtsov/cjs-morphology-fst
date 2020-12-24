@@ -69,16 +69,18 @@ LEXICON V_Slot2_2
 	-CAUS4:^ДУр	V_Slot3_C1;
 	-CAUS4:^ДУр	V_Slot3_ITER;
 	-CAUS5:^Ыс	V_Slot4;
+	-PASS:^Ул	V_Slot3_C4;
 	-PASS:^Ул	V_Slot3_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
+	-REFL:^Ун	V_Slot3_C4; ! ???
 	-REFL:^Ун	V_Slot3_CR; ! <<< Учесть V^н
 	-RECIP:^Уш	V_Slot3_C1;
-	-RECIP:^Уш	V_Slot3_C4;
+	-RECIP:^Уш	V_Slot3_C4; ! ???
 	-RECIP:^Уш	V_Slot3_ITER;
 			V_Slot4;
 
 !!! Порядок 3 : -ITER (после -CAUS4 или -RECIP)
 LEXICON V_Slot3_ITER
-	-ITER:^ҒУлА	V_Slot4; ! <<< м.б. -DIST или -MULT (см. Телякова:2013) ???
+	-ITER:^ҒУлА	V_Slot4; ! <<< м.б. -DIST или -MULT (см. Телякова 2013) ???
 			V_Slot4;
 
 !!! Порядок 3 : -CAUS1, -PASS, -REFL (после -CAUS4 или -RECIP)
@@ -159,7 +161,7 @@ LEXICON V_Slot5_4
 
 ! Формы, образуемые от конверба -SIM:^А
 LEXICON V_Slot5_5
-	-FUT.ITER:^тУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
+	-NPST.HAB:^тУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
 
 !!! Для отрицательного глагола
 LEXICON VNEG_Slot4

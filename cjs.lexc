@@ -23,7 +23,7 @@ Multichar_Symbols [N] [PN] [PRO] [PSTP] [A] [NUM] [ADV] [V] [VNEG] [CVB] [PTCP] 
 	-PASS -RECIP -CAUS1 -CAUS2 -CAUS3 -CAUS4 -CAUS5 -IMP .POL
 	-NEG
 	-RPST -PRS -PST -FUT
-	-HAB -ITER .ITER -ASSUM -CUNC -IMPF -INDR -COND -COND2 -OPT -MAN
+	-HAB .HAB -ITER -ASSUM -CUNC -IMPF -INDR -COND -COND2 -OPT -MAN
 	-SUPN -ANT -SIM -CON -LMF -CVB
 	=ASS =EMP1 =EMP2 =CLT1 =CLT2
 	PNominalStem :Guess ! [NGuess] [AGuess]
@@ -2761,7 +2761,9 @@ LEXICON V_Slot2_2
 	-CAUS4:^ДУр	V_Slot3_C1;
 	-CAUS4:^ДУр	V_Slot3_ITER;
 	-CAUS5:^Ыс	V_Slot4;
+	-PASS:^Ул	V_Slot3_C4;
 	-PASS:^Ул	V_Slot3_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
+	-REFL:^Ун	V_Slot3_C4; ! <<< Учесть V^н
 	-REFL:^Ун	V_Slot3_CR; ! <<< Учесть V^н
 	-RECIP:^Уш	V_Slot3_C1;
 	-RECIP:^Уш	V_Slot3_C4;
@@ -2770,7 +2772,7 @@ LEXICON V_Slot2_2
 
 !!! Порядок 3 : -ITER (после -CAUS4 или -RECIP)
 LEXICON V_Slot3_ITER
-	-ITER:^ҒУлА	V_Slot4; ! <<< м.б. -DIST или -MULT (см. Телякова:2013) ???
+	-ITER:^ҒУлА	V_Slot4; ! <<< м.б. -DIST или -MULT (см. Телякова 2013) ???
 			V_Slot4;
 
 !!! Порядок 3 : -CAUS1, -PASS, -REFL (после -CAUS4 или -RECIP)
@@ -2851,7 +2853,7 @@ LEXICON V_Slot5_4
 
 ! Формы, образуемые от конверба -SIM:^А
 LEXICON V_Slot5_5
-	-FUT.ITER:^тУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
+	-NPST.HAB:^тУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
 
 !!! Для отрицательного глагола
 LEXICON VNEG_Slot4
@@ -3265,8 +3267,8 @@ LEXICON Pro_POSS_ABS_NUM
 
 LEXICON Pro_POSS_ABS_SG_CASE ! <<< см. A_Slot2 ???
 	-NOM:0		#;
-	-ACC:^н		#;
-	-GEN:^нЫң	#;
+	-ACC:^Н		#;
+	-GEN:^НЫң	#;
 	-DAT:^нЫ	#;
 	-ELA:^нАң	#;
 	-LOC:^ндА	#;

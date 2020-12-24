@@ -308,8 +308,8 @@ LEXICON Pro_POSS_ABS_NUM
 
 LEXICON Pro_POSS_ABS_SG_CASE ! <<< см. A_Slot2 ???
 	-NOM:0		#;
-	-ACC:^н		#;
-	-GEN:^нЫң	#;
+	-ACC:^Н		#;
+	-GEN:^НЫң	#;
 	-DAT:^нЫ	#;
 	-ELA:^нАң	#;
 	-LOC:^ндА	#;

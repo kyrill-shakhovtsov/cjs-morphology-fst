@@ -6,6 +6,8 @@ define Filter ~$["[N]" DerivTag "[V]" DerivTag "[N]"]
 	  .o. ~$["[V]" DerivTag "[N]" DerivTag "[V]"]
 	  .o. ~$["[A]" DerivTag "[V]" DerivTag "[A]"]
 	  .o. ~$["[V]" DerivTag "[A]" DerivTag "[V]"]
-	  .o. ~$["[PN]" DerivTag] ;
+	  .o. ~$["[PN]" DerivTag]
+	  .o. ~$["-VR1" "[V]" "-CAUS3"]
+	  ;
 
 define VFilter ~$[V^>2] ;
