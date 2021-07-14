@@ -20,3 +20,6 @@
 
 <Multi_key> <Cyrillic_EN> <Cyrillic_GHE>	: "Ҥ" U04A4 # CYRILLIC CAPITAL LIGATURE EN GHE
 <Multi_key> <Cyrillic_en> <Cyrillic_ghe>	: "ҥ" U04A5 # CYRILLIC SMALL LIGATURE EN GHE
+
+<Multi_key> <Cyrillic_ZHE> <Cyrillic_HARDSIGN>	: "Җ" U0496 # CYRILLIC CAPITAL LETTER ZHE WITH DESCENDER
+<Multi_key> <Cyrillic_zhe> <Cyrillic_hardsign>	: "җ" U0497 # CYRILLIC SMALL LETTER ZHE WITH DESCENDER

@@ -46,233 +46,14 @@ LEXICON Tag_A_Guess
 
 LEXICON Tag_V_Guess
 	[V]%:Guess:0	V_StemBoundary;
-!!! Описание «порядков» (Slots)
-LEXICON Tag_V
-	[V]:0		V_StemBoundary;
+! Пока только маркируются
+LEXICON Tag_ADV
+	[ADV]:0		ADV_StemBoundary;
 
-! Отрицательный глагол [э + бес] : V_Slot1 и 3—4 не заполняются, V_Slot2 уже заполнен — ???
-LEXICON Tag_VNEG
-	[VNEG]:0	VNEG_Slot4;
-
-! Граница корня/основы
-LEXICON V_StemBoundary
-	V_Derivation;
-	V_Slot1;
-	V_CVB;
-
-! Словообразование
-LEXICON V_Derivation
-	V_Attenuation;
-	N_Deverbal;
-	A_Deverbal;
-
-LEXICON V_Attenuation
-	-ATTN:^мзЫрА	V_Slot1;
-
-!! Отглагольные существительные
-LEXICON N_Deverbal
-	-NR1:^Уг	Tag_N;
-	-NR2:^Уш	Tag_N;
-	-NR3:^ҒУ	Tag_N;
-	-NR4:^ҒУш	Tag_N;
-	-NR5:^УҚ	Tag_N;
-	-NR6:^Ут	Tag_N;
-	-NR7:^Ум	Tag_N;
-	-NR8:^АҚ	Tag_N;
-	-NR9:^л		Tag_N;
-	<"-NR10" : ["^" Қ У н]>	Tag_N;
-	-NR11:^БАҚ	Tag_N; ! <<< слито из ^пАқ и ^бАқ; образует сущ. типа албақ ‘взятие, взятка’, парбақ ‘езда’
-	-NR12:^БА	Tag_N;
-	-NR13:^чАҚ	Tag_N;
-	-NR14:^чЫҚ	Tag_N;
-	-NR15:^ҚАҚ	Tag_N;
-	<"-NR16": ["^" [А т ч Ы | А А ч Ы]]>	Tag_N;
-
-!! Отглагольные прилагательные
-LEXICON A_Deverbal
-	-ADJR1:^чУ	Tag_A;
-	-ADJR2:^Ғай	Tag_A;
-	-ADJR3:^ҒУр	Tag_A;
-	-ADJR4:^Ын	Tag_A;
-
-!!! Порядок 1 : Итератив (1)
-LEXICON V_Slot1
-	-ITER:^ҒУлА	V_Slot2_1;
-			V_Slot2_2;
-
-!!! Залоги (voice): -PASS, -REFL, -RECIP, -CAUS | -PASS и -REFL исключают друг друга ? Возможные сочетания : Д-151 (§99), ЧУ-310-311
-
-!!! Порядок 2 (ITER): -CAUS1 | -CAUS3 | -REFL | -RECIP
-LEXICON V_Slot2_1
-	-CAUS1:^т	V_Slot4;
-	-CAUS3:^Ур	V_Slot4;
-	-REFL:^Ун	V_Slot4;
-	-RECIP:^Уш	V_Slot4;
-
-!!! Порядок 2 (non-ITER): -CAUS, -PASS, -REFL, -RECIP
-LEXICON V_Slot2_2
-	-CAUS1:^т	V_Slot3_C2;
-	-CAUS2:^ҒУс	V_Slot3_C4;
-	-CAUS3:^Ур	V_Slot3_C1;
-	-CAUS4:^ДУр	V_Slot3_C1;
-	-CAUS4:^ДУр	V_Slot3_ITER;
-	-CAUS5:^Ыс	V_Slot4;
-	-PASS:^Ул	V_Slot3_C4;
-	-PASS:^Ул	V_Slot3_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
-	-REFL:^Ун	V_Slot3_C4; ! <<< Учесть V^н
-	-REFL:^Ун	V_Slot3_CR; ! <<< Учесть V^н
-	-RECIP:^Уш	V_Slot3_C1;
-	-RECIP:^Уш	V_Slot3_C4;
-	-RECIP:^Уш	V_Slot3_ITER;
-			V_Slot4;
-
-!!! Порядок 3 : -ITER (после -CAUS4 или -RECIP)
-LEXICON V_Slot3_ITER
-	-ITER:^ҒУлА	V_Slot4; ! <<< м.б. -DIST или -MULT (см. Телякова 2013) ???
-			V_Slot4;
-
-!!! Порядок 3 : -CAUS1, -PASS, -REFL (после -CAUS4 или -RECIP)
-LEXICON V_Slot3_C1
-	-CAUS1:^т	V_Slot4;
-	-PASS:^Ул	V_Slot4;
-	-REFL:^Ун	V_Slot4;
-			V_Slot4;
-
-!!! Порядок 3 : -CAUS2 (после -CAUS1)
-LEXICON V_Slot3_C2
-	-CAUS2:^ҒУс	V_Slot4;
-			V_Slot4;
-
-!!! Порядок 3 : -CAUS3 (после -CAUS2)
-LEXICON V_Slot3_C4
-	-CAUS4:^ДУр	V_Slot4;
-			V_Slot4;
-
-!!! Порядок 3 : -CAUS5, -RECIP (после -PASS или -REFL)
-LEXICON V_Slot3_CR
-	-CAUS5:^Ыс	V_Slot4;
-	-RECIP:^Уш	V_Slot4;
-			V_Slot4;
-
-!!! Порядок 4 : Отрицательные формы
-LEXICON V_Slot4
-	-NEG:^БА	V_Slot5_1;
-			V_Slot5_2;
-			V_CVB;
-
-!!! Порядок 5 : Время, вид, наклонение… (???)
-! При наличии отрицания
-LEXICON V_Slot5_1
-	-CON:^ҒАн		V_Slot5_3; ! конверб
-	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
-	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
-	-FUT:^с			PCTP_Clitic_Branching;
-	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! -NEG : ^БА^ҒА^ДЫг -> ^БАдЫг
-	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
-	-OPT:^й			PCTP_Clitic_Branching;
-	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
-	-SUPN:^ҒА			#; ! ЧУ-175 <<< EncliticBranching ???
-	0:^ҒАн				V_CVB; ! <<< Нужна помета!
-					V_IMPER;
-
-! При отсутствии отрицания
-LEXICON V_Slot5_2
-	-CON:^Ып		V_Slot5_3; ! -CON[CVB]
-	-SIM:^А			V_Slot5_5; ! -SIM[CVB]
-	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
-	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
-	-FUT:^Ар		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : Д-187 (§124), ЧУ-91
-	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! Д-189 (§125) Будущее возможное (ассумптив)
-	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB ? (Телякова 2012)
-	-OPT:^ҒАй		PCTP_Clitic_Branching; ! Д-174 (§117) Форма желания (оптатив)
-	-COND:^ЗА		PCTP_Clitic_Branching; ! Д-177 (§118), ЧУ-311
-	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching; ! Д-191 (§126) Несовершенное действие — «еще не делал» (кункатив)
-	<"-SUPN":["^" А р ("^" Ғ А)]>		#;     ! ЧУ-175 -SUPN : ^Ар | ^Ар^ҒА
-						V_IMPER;
-
-! Формы, образуемые от конверба -CON:^Ып либо -NEG-CON:^ҒАн
-LEXICON V_Slot5_3
-	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча(т) / ^чар : ЧУ-303
-	-PRS-INDR:^чат^тУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
-	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
-	-PST-INDR:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -INDR ?
-	-COND2:^чат^ЗА		PCTP_Clitic_Branching; ! Д-179 (§119) Условная форма сложная
-	-MAN:^Ыс		V_Slot5_4; ! Д-216 (§144) Форма решительности действия
-
-! Форма решительности действия
-LEXICON V_Slot5_4
-	<"-PRS":["^" ч а (р)]>	PCTP_Clitic_Branching;
-	-PST:^ҒАн		PCTP_Clitic_Branching;
-	-RPST:^ДУ		PCTP_Clitic_Branching;
-	-FUT:^Ар		PCTP_Clitic_Branching;
-				V_CVB; ! навеяно тарбағлабыза:тарбаг[N]-VR1[V]-CON-MAN-SIM[CVB] ^Ып^Ыс^А
-
-! Формы, образуемые от конверба -SIM:^А
-LEXICON V_Slot5_5
-	-NPST.HAB:^тУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
-
-!!! Для отрицательного глагола
-LEXICON VNEG_Slot4
-			Endoclitic_PART;
-
-!! Императивы
-LEXICON V_IMPER
-	-IMP:0		V_IMP;
-
-LEXICON V_IMP
-	<".1SG":["^" [А й (Ы н) | У й У н]]>	#; ! ^УйУн / ^Ай / ^АйЫн : Д-172-173 (§115)
-	.2SG:0					#;
-	.2SG.POL:^ЗАң				#;
-	.3SG:^ЗУн				#; ! ^ЗУн / ^ЗЫн (верх. Мрассу, Кондома : Д-170 (§113))
-	.1DU:^Аң				#; ! ‘мы вдвоем’ : Д-173 (§116)
-	.1PL:^Аң^ЛАр				#; ! ‘мы многие’ : Д-174
-	.2PL:^Лаар				#; ! ^аар после согласных :: Д-169 (§112) + ^ҒЫлА (верх. Мрассу : Д-170)
-	.3PL:^ЗУн^ЛАр				#; ! + ^ЗЫн ?
-
-!!!
-LEXICON PCTP_Clitic_Branching
-			Endoclitic_PART;
-			Tag_PTCP;
-
-!!! Порядок 6 : Аффиксы лица и числа
-!!! Варианты для различных видовременных форм моделируются в phonology/rules.xfst:VerbPersNum и phonology/rules.xfst:Elision
-LEXICON V_Slot6
-	-1SG:^БЫм		EncliticBranching;
-	-2SG:^ЗЫң		EncliticBranching;
-	-3SG:0			EncliticBranching; ! +Вариант: ^ДЫр < тур : Д-141 (§90)
-	-1PL:^БЫс		V_Slot6_1PL; ! +Вариант: -FUT:^Ар ^БЫс^ЛАр : ЧУ-93, Д-188 (§124) <<< Глосса ???
-	-2PL:^Заар		EncliticBranching;
-	-3PL:^ЛАр		EncliticBranching; ! ЧУ-252
-
-LEXICON V_Slot6_1PL
-	-PL:^ЛАр		#; ! -1PL-PL ‘мы многие’ : Д-188 (§124)
-				EncliticBranching;
-
-!!! Деепричастия / конвербы
-LEXICON V_CVB
-	-CON:^Уп	Tag_CVB; ! Соединительная либо попутно-предварительная форма : Д-155 (§102)
-	-SIM:^А		Tag_CVB; ! Действие, одновременное действию главного глагола : ЧУ-302
-	-ANT:^АлА	Tag_CVB; ! Anterior : Действие, после которого немедленно наступает действие главного глагола : ЧУ-302
-	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107)
-	-CVB:^чат^Ып	Tag_CVB; ! Действие, продолжающееся, пока совершается действие главного глагола : Д-158 (§103)
-
-LEXICON Tag_CVB
-	[CVB]:0		EncliticBranching;
-
-!!! Причастия
-LEXICON Tag_PTCP
-	[PTCP]:0	N_Slot1;
-
-
-!!! <<<<<<<<<<<<<<<<<<<<<<<<<<
-LEXICON Tag_V_Al
-	[V]:0		V_AddPlus;
-
-LEXICON V_AddPlus
-	+		Verb_MOV;
-
-
-
+LEXICON ADV_StemBoundary
+	-ATTR2:^ҒЫ	Tag_A_ATTR2;
+			Enclitic_PART_oq;
+			#;
 !!! Клитики
 
 LEXICON EncliticBranching
@@ -302,17 +83,6 @@ LEXICON Endoclitic_PART
 ! Междометия
 LEXICON Tag_INTJ
 	[INTJ]:0	#;
-! Пока только маркируются
-LEXICON Tag_ADV
-	[ADV]:0		ADV_StemBoundary;
-
-LEXICON ADV_StemBoundary
-	-ATTR2:^ҒЫ	Tag_A_ATTR2;
-			Enclitic_PART_oq;
-			#;
-! Частицы
-LEXICON Tag_PART
-	[PART]:0	#;
 ! !!!!!! Существительные :: -NUM > -POSS > -CASE > -PRED
 !!! Частеречная помета
 ! Имя нарицательное
@@ -687,3 +457,233 @@ LEXICON NUM_Collective
 
 LEXICON Tag_POST
 	[PSTP]:0	#; ! <<< Пока только маркируются. Анализ?
+! Частицы
+LEXICON Tag_PART
+	[PART]:0	#;
+!!! Описание «порядков» (Slots)
+LEXICON Tag_V
+	[V]:0		V_StemBoundary;
+
+! Отрицательный глагол [э + бес] : V_Slot1 и 3—4 не заполняются, V_Slot2 уже заполнен — ???
+LEXICON Tag_VNEG
+	[VNEG]:0	VNEG_Slot4;
+
+! Граница корня/основы
+LEXICON V_StemBoundary
+	V_Derivation;
+	V_Slot1;
+	V_CVB;
+
+! Словообразование
+LEXICON V_Derivation
+	V_Attenuation;
+	N_Deverbal;
+	A_Deverbal;
+
+LEXICON V_Attenuation
+	-ATTN:^мзЫрА	V_Slot1;
+
+!! Отглагольные существительные
+LEXICON N_Deverbal
+	-NR1:^Уг	Tag_N;
+	-NR2:^Уш	Tag_N;
+	-NR3:^ҒУ	Tag_N;
+	-NR4:^ҒУш	Tag_N;
+	-NR5:^УҚ	Tag_N;
+	-NR6:^Ут	Tag_N;
+	-NR7:^Ум	Tag_N;
+	-NR8:^АҚ	Tag_N;
+	-NR9:^л		Tag_N;
+	<"-NR10" : ["^" Қ У н]>	Tag_N;
+	-NR11:^БАҚ	Tag_N; ! <<< слито из ^пАқ и ^бАқ; образует сущ. типа албақ ‘взятие, взятка’, парбақ ‘езда’
+	-NR12:^БА	Tag_N;
+	-NR13:^чАҚ	Tag_N;
+	-NR14:^чЫҚ	Tag_N;
+	-NR15:^ҚАҚ	Tag_N;
+	<"-NR16": ["^" [А т ч Ы | А А ч Ы]]>	Tag_N;
+
+!! Отглагольные прилагательные
+LEXICON A_Deverbal
+	-ADJR1:^чУ	Tag_A;
+	-ADJR2:^Ғай	Tag_A;
+	-ADJR3:^ҒУр	Tag_A;
+	-ADJR4:^Ын	Tag_A;
+
+!!! Порядок 1 : Итератив (1)
+LEXICON V_Slot1
+	-ITER:^ҒУлА	V_Slot2_1;
+			V_Slot2_2;
+
+!!! Залоги (voice): -PASS, -REFL, -RECIP, -CAUS | -PASS и -REFL исключают друг друга ? Возможные сочетания : Д-151 (§99), ЧУ-310-311
+
+!!! Порядок 2 (ITER): -CAUS1 | -CAUS3 | -REFL | -RECIP
+LEXICON V_Slot2_1
+	-CAUS1:^т	V_Slot4;
+	-CAUS3:^Ур	V_Slot4;
+	-REFL:^Ун	V_Slot4;
+	-RECIP:^Уш	V_Slot4;
+
+!!! Порядок 2 (non-ITER): -CAUS, -PASS, -REFL, -RECIP
+LEXICON V_Slot2_2
+	-CAUS1:^т	V_Slot3_C2;
+	-CAUS2:^ҒУс	V_Slot3_C4;
+	-CAUS3:^Ур	V_Slot3_C1;
+	-CAUS4:^ДУр	V_Slot3_C1;
+	-CAUS4:^ДУр	V_Slot3_ITER;
+	-CAUS5:^Ыс	V_Slot4;
+	-PASS:^Ул	V_Slot3_C4;
+	-PASS:^Ул	V_Slot3_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
+	-REFL:^Ун	V_Slot3_C4; ! ???
+	-REFL:^Ун	V_Slot3_CR; ! <<< Учесть V^н
+	-RECIP:^Уш	V_Slot3_C1;
+	-RECIP:^Уш	V_Slot3_C4; ! ???
+	-RECIP:^Уш	V_Slot3_ITER;
+			V_Slot4;
+
+!!! Порядок 3 : -ITER (после -CAUS4 или -RECIP)
+LEXICON V_Slot3_ITER
+	-ITER:^ҒУлА	V_Slot4; ! <<< м.б. -DIST или -MULT (см. Телякова 2013) ???
+			V_Slot4;
+
+!!! Порядок 3 : -CAUS1, -PASS, -REFL (после -CAUS4 или -RECIP)
+LEXICON V_Slot3_C1
+	-CAUS1:^т	V_Slot4;
+	-PASS:^Ул	V_Slot4;
+	-REFL:^Ун	V_Slot4;
+			V_Slot4;
+
+!!! Порядок 3 : -CAUS2 (после -CAUS1)
+LEXICON V_Slot3_C2
+	-CAUS2:^ҒУс	V_Slot4;
+			V_Slot4;
+
+!!! Порядок 3 : -CAUS3 (после -CAUS2)
+LEXICON V_Slot3_C4
+	-CAUS4:^ДУр	V_Slot4;
+			V_Slot4;
+
+!!! Порядок 3 : -CAUS5, -RECIP (после -PASS или -REFL)
+LEXICON V_Slot3_CR
+	-CAUS5:^Ыс	V_Slot4;
+	-RECIP:^Уш	V_Slot4;
+			V_Slot4;
+
+!!! Порядок 4 : Отрицательные формы
+LEXICON V_Slot4
+	-NEG:^БА	V_Slot5_1;
+			V_Slot5_2;
+			V_CVB;
+
+!!! Порядок 5 : Время, вид, наклонение… (???)
+! При наличии отрицания
+LEXICON V_Slot5_1
+	-CON:^ҒАн		V_Slot5_3; ! конверб
+	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
+	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
+	-FUT:^с			PCTP_Clitic_Branching;
+	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! -NEG : ^БА^ҒА^ДЫг -> ^БАдЫг
+	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
+	-OPT:^й			PCTP_Clitic_Branching;
+	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
+	-SUPN:^ҒА			#; ! ЧУ-175 <<< EncliticBranching ???
+	0:^ҒАн				V_CVB; ! <<< Нужна помета!
+					V_IMPER;
+
+! При отсутствии отрицания
+LEXICON V_Slot5_2
+	-CON:^Ып		V_Slot5_3; ! -CON[CVB]
+	-SIM:^А			V_Slot5_5; ! -SIM[CVB]
+	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
+	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
+	-FUT:^Ар		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : Д-187 (§124), ЧУ-91
+	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! Д-189 (§125) Будущее возможное (ассумптив)
+	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB ? (Телякова 2012)
+	-OPT:^ҒАй		PCTP_Clitic_Branching; ! Д-174 (§117) Форма желания (оптатив)
+	-COND:^ЗА		PCTP_Clitic_Branching; ! Д-177 (§118), ЧУ-311
+	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching; ! Д-191 (§126) Несовершенное действие — «еще не делал» (кункатив)
+	<"-SUPN":["^" А р ("^" Ғ А)]>		#;     ! ЧУ-175 -SUPN : ^Ар | ^Ар^ҒА
+						V_IMPER;
+
+! Формы, образуемые от конверба -CON:^Ып либо -NEG-CON:^ҒАн
+LEXICON V_Slot5_3
+	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча(т) / ^чар : ЧУ-303
+	-PRS-INDR:^чат^тУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
+	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
+	-PST-INDR:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -INDR ?
+	-COND2:^чат^ЗА		PCTP_Clitic_Branching; ! Д-179 (§119) Условная форма сложная
+	-MAN:^Ыс		V_Slot5_4; ! Д-216 (§144) Форма решительности действия
+
+! Форма решительности действия
+LEXICON V_Slot5_4
+	<"-PRS":["^" ч а (р)]>	PCTP_Clitic_Branching;
+	-PST:^ҒАн		PCTP_Clitic_Branching;
+	-RPST:^ДУ		PCTP_Clitic_Branching;
+	-FUT:^Ар		PCTP_Clitic_Branching;
+				V_CVB; ! навеяно тарбағлабыза:тарбаг[N]-VR1[V]-CON-MAN-SIM[CVB] ^Ып^Ыс^А
+
+! Формы, образуемые от конверба -SIM:^А
+LEXICON V_Slot5_5
+	-NPST.HAB:^тУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
+
+!!! Для отрицательного глагола
+LEXICON VNEG_Slot4
+			Endoclitic_PART;
+
+!! Императивы
+LEXICON V_IMPER
+	-IMP:0		V_IMP;
+
+LEXICON V_IMP
+	<".1SG":["^" [А й (Ы н) | У й У н]]>	#; ! ^УйУн / ^Ай / ^АйЫн : Д-172-173 (§115)
+	.2SG:0					#;
+	.2SG.POL:^ЗАң				#;
+	.3SG:^ЗУн				#; ! ^ЗУн / ^ЗЫн (верх. Мрассу, Кондома : Д-170 (§113))
+	.1DU:^Аң				#; ! ‘мы вдвоем’ : Д-173 (§116)
+	.1PL:^Аң^ЛАр				#; ! ‘мы многие’ : Д-174
+	.2PL:^Лаар				#; ! ^аар после согласных :: Д-169 (§112) + ^ҒЫлА (верх. Мрассу : Д-170)
+	.3PL:^ЗУн^ЛАр				#; ! + ^ЗЫн ?
+
+!!!
+LEXICON PCTP_Clitic_Branching
+			Endoclitic_PART;
+			Tag_PTCP;
+
+!!! Порядок 6 : Аффиксы лица и числа
+!!! Варианты для различных видовременных форм моделируются в phonology/rules.xfst:VerbPersNum и phonology/rules.xfst:Elision
+LEXICON V_Slot6
+	-1SG:^БЫм		EncliticBranching;
+	-2SG:^ЗЫң		EncliticBranching;
+	-3SG:0			EncliticBranching; ! +Вариант: ^ДЫр < тур : Д-141 (§90)
+	-1PL:^БЫс		V_Slot6_1PL; ! +Вариант: -FUT:^Ар ^БЫс^ЛАр : ЧУ-93, Д-188 (§124) <<< Глосса ???
+	-2PL:^Заар		EncliticBranching;
+	-3PL:^ЛАр		EncliticBranching; ! ЧУ-252
+
+LEXICON V_Slot6_1PL
+	-PL:^ЛАр		#; ! -1PL-PL ‘мы многие’ : Д-188 (§124)
+				EncliticBranching;
+
+!!! Деепричастия / конвербы
+LEXICON V_CVB
+	-CON:^Уп	Tag_CVB; ! Соединительная либо попутно-предварительная форма : Д-155 (§102)
+	-SIM:^А		Tag_CVB; ! Действие, одновременное действию главного глагола : ЧУ-302
+	-ANT:^АлА	Tag_CVB; ! Anterior : Действие, после которого немедленно наступает действие главного глагола : ЧУ-302
+	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107)
+	-CVB:^чат^Ып	Tag_CVB; ! Действие, продолжающееся, пока совершается действие главного глагола : Д-158 (§103)
+
+LEXICON Tag_CVB
+	[CVB]:0		EncliticBranching;
+
+!!! Причастия
+LEXICON Tag_PTCP
+	[PTCP]:0	N_Slot1;
+
+
+!!! <<<<<<<<<<<<<<<<<<<<<<<<<<
+LEXICON Tag_V_Al
+	[V]:0		V_AddPlus;
+
+LEXICON V_AddPlus
+	+		Verb_MOV;
+
+
+

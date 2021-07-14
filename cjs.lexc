@@ -44,6 +44,189 @@ LEXICON Root
 	Adverb;
 	Particle;
 	Iterjection;
+!!! Прилагательные
+!!! Цель: минимальный словарь непроизводных основ
+LEXICON Adjective
+	аақ		Tag_A; ! ‘мелкий’
+	аар		Tag_A; ! ‘трудный, тяжелый’
+	ай		Tag_A; ! ‘светлый’ (ШС)
+	абаққай		Tag_A; ! ‘миловидный’
+! 	адаңма		Tag_A; ! <<< ‘невероятно’, ‘чудовищно’ (ШС)
+	ақ		Tag_A; ! ‘белый’
+	алтын		Tag_A; ! ‘золотой’
+	артық		Tag_A; ! ‘лишний’
+	арыг		Tag_A; ! ‘чистый’
+	изиг		Tag_A; ! ‘горячий, жаркий’
+	ачыг		Tag_A; ! ‘кислый, горький’ < ачы ‘киснуть’
+! 	қадыг		Tag_A; ! ‘строгий, твердый’
+! 	қазық		Tag_A; ! ‘здоровый’ < қазы ‘брюшной жир’ ??
+	қазақ		Tag_A; ! ‘русский’
+	қазыр		Tag_A; ! ‘жестокий’, ‘сильный’ < ? ??
+	қайран		Tag_A; ! ‘милый’ < ? ??
+	қал		Tag_A; ! ‘пресный’, ‘равнодушный’
+	қалын		Tag_A; ! ‘плотный, толстый’
+	қара		Tag_A; ! ‘черный, вороной’
+	қарам		Tag_A; ! ‘скупой’ (ШС)
+	қарс		Tag_A; ! ‘ломкий’ (ШС)
+	қарчы		Tag_A; ! ‘обратный’
+	кедей		Tag_A; ! ‘нелюдимый, безучастный’ < ? ??
+	кемчи		Tag_A; ! ‘скупой, жадный’
+	кең		Tag_A; ! ‘просторный’ + N
+	кер		Tag_A; ! ‘гнедой (конь)’
+	керсе		Tag_A; ! ‘умный’
+	кичиг		Tag_A; ! ‘маленький’
+	кӧк		Tag_A; ! ‘синий, зеленый’
+	қор		Tag_A; ! масть коня (Ф) — какая?
+	қуба		Tag_A; ! ‘бледный’
+	қуруг		Tag_A; ! ‘сухой’
+	кӱчӱр		Tag_A; ! ‘порочный’ (ШС)
+	қызыл		Tag_A; ! ‘красный’
+	қый		Tag_A; ! ‘косой (глаза)’
+	қыйға		Tag_A; ! ‘скупой’
+	қыр		Tag_A; ! ‘серый, седой’
+	қысқа		Tag_A; ! ‘короткий’
+	қышқы		Tag_A; ! ‘зимний’ (ЧУ)
+	маңзырақ	Tag_A; ! ‘торопливый’ < маңзыра ‘пешить’
+	моңу		Tag_A; ! ‘живой’
+	мӧңӱс		Tag_A; ! ‘грустный, слабый’
+	наа		Tag_A; ! ‘новый’
+	ниик		Tag_A; ! ‘легкий’
+	ныңнақ		Tag_A; ! ‘легкий’ < ? ??
+	оңдай		Tag_A; ! ‘удачный’ (ШС) < оң ‘удача’
+	ӧл		Tag_A; ! ‘мокрый’
+	ӧӧй		Tag_A; ! ‘неродной’
+	ӧске		Tag_A; ! ‘иной, прочий’
+	пай		Tag_A; ! ‘богатый’
+	пашқа		Tag_A; ! ‘другой, чужой’
+	пек		Tag_A; ! ‘крепкий’
+	пелен		Tag_A; ! ‘готовый’
+	пош		Tag_A; ! ‘вольный’
+	рақ		Tag_A; ! ‘далекий’
+	сайақ		Tag_A; ! ‘редкий’
+	сақ		Tag_A; ! ‘чуткий’
+	сар		Tag_A; ! ‘соловый’ (ШС)
+	сарыг		Tag_A; ! ‘желтый’ < сар ‘соловый’ ??
+	сол		Tag_A; ! ‘левый’
+	сооқ		Tag_A; ! ‘холодный’
+	сылағай		Tag_A; ! ‘гладкий’, ‘статный (чел.)’ < сыл? ‘гладкость, красота’ ?? ~ см. сылыг ‘красивый’
+	тайба		Tag_A; ! ‘ложный’ < тай? ‘скользить’ ??
+	тайыс		Tag_A; ! ‘мелкий (река)’
+	тақтыг		Tag_A; ! ‘деревянный’ (ШС) < тақ? ??
+	талай		Tag_A; ! ‘морской’’
+	тар		Tag_A; ! ‘узкий, тесный’
+	тас		Tag_A; ! ‘лысый, голый’
+	тек		Tag_A; ! ‘напрасный’
+	темир		Tag_A; ! ‘железный’, ‘крепкий’ < тебир ‘железо’ ??
+	тең		Tag_A; ! ‘ровный’
+	терең		Tag_A; ! ‘глубокий’
+	тириг		Tag_A; ! ‘живой’ ~ см. тирил ‘оживать’ < тир…? ??
+	тоқ		Tag_A; ! ‘сытый, питательный’
+	тӱс		Tag_A; ! ‘прямой’
+	узақ		Tag_A; ! ‘долгий’ ~ см. узал ‘удлиняться’ < ус…? ??
+	узун		Tag_A; ! ‘длинный’ ~ см. узал ??
+	улуг		Tag_A; ! ‘большой’
+	улыг		Tag_A; ! = улуг (Ф)
+	ӱлгер		Tag_A; ! ‘мифический’
+	ӱр		Tag_A; ! ‘долгий, длительный’ (ШС)
+	ӱскер		Tag_A; ! ‘глухой’
+	ӱӱр		Tag_A; ! ‘долгий, длительный’ (ШС)
+	чабал		Tag_A; ! ‘плохой, злой’
+	чағыс		Tag_A; ! ‘одинокий’
+	чажыл		Tag_A; ! ‘зеленый (цвет)’, ‘молодой (возр.)’
+	чайзаң		Tag_A; ! ‘красивый’
+	чалбақ		Tag_A; ! ‘широкий’ (Ф)
+	чаш		Tag_A; ! ‘сырой’, молодой’
+	чегрен		Tag_A; ! ‘рыжий (масть коня)’ (Ф)
+	чес		Tag_A; ! ‘медный’
+	чоон		Tag_A; ! ‘толстый (о чел.)’
+	чоқ		Tag_A; ! .NEG
+	чуға		Tag_A; ! ‘тонкий’
+	чылаш		Tag_A; ! ‘голый’ (Ф)
+	чымчақ		Tag_A; ! ‘мягкий’
+	шамдар		Tag_A; ! ‘игрений’ (Ф)
+	шебер		Tag_A; ! ’осторожный’
+	шым		Tag_A; ! ’тихий’
+	ығый		Tag_A; ! ’тугой’
+	ызық		Tag_A; ! ‘жертвенный’ (ШС) < ыс ‘отпавлять’ ??
+	элбек		Tag_A; ! ‘дешевый’ (ШС)
+	ээн		Tag_A; ! ‘пустой’
+	ээш		Tag_A; ! ‘расположенный у двери’ (ШС)
+	эрте		Tag_A; ! ‘ранний’ < эрт ‘проходить’ ??
+	эски		Tag_A; ! ‘старый, ветхий’
+!!! Наречия
+LEXICON Adverb
+	аара		Tag_ADV; ! ‘туда’
+	аара-пеере	Tag_ADV; ! ‘туда-сюда’
+	адаңма		Tag_ADV; ! ‘очень, весьма’
+	айбын		Tag_ADV; ! ‘поздно’
+	айтта		Tag_ADV; ! ‘слишком’
+! 	алды		Tag_ADV; ! ?
+	алында		Tag_ADV; ! ‘раньше, прежде’
+! 	алынаң		Tag_ADV; ! ?
+	ам		Tag_ADV; ! ‘сейчас, теперь’
+	амды		Tag_ADV; ! ‘сейчас’ < ам ‘наст. время’
+	ара-чара	Tag_ADV; ! ?
+	арий		Tag_ADV; ! ‘едва’
+! 	арта-перте	Tag_ADV; ! ‘накрест’
+	иштинги		Tag_ADV; ! >>> см. FAILURES.txt
+	иштинде		Tag_ADV; ! >>> см. FAILURES.txt
+	қайде		Tag_ADV; ! ‘как’
+	қайра		Tag_ADV; ! ‘настежь’
+	қалық		Tag_ADV; ! ‘вскачь’
+	қаморта		Tag_ADV; ! ‘точно’
+	қапчығай	Tag_ADV; ! ‘быстро’
+	кедере		Tag_ADV; ! ‘прочь’
+	кенетки		Tag_ADV; ! ‘вдруг, внезапно’
+	кече		Tag_ADV; ! ‘вчера, накануне’
+	қожа		Tag_ADV; ! ‘вместе’ < қош ‘добавлять’ ??
+	қооп		Tag_ADV; ! ‘отовсюду’ (ШС)
+	қошта		Tag_ADV; ! ‘близко, рядом’ < қош ‘добавлять’ ??
+	кӧӧче		Tag_ADV; ! ‘медленно, постепенно’ (ШС)
+	кӧче		Tag_ADV; ! ‘медленно, постепенно’ (ШС)
+	мағат		Tag_ADV; ! ‘очень’
+	май		Tag_ADV; ! ‘медленно’ тж. маай
+	маттап		Tag_ADV; ! ‘тщательно’
+	ӧре		Tag_ADV; ! ‘вверх’
+	пайа		Tag_ADV; ! ‘недавно’
+	пазоқ		Tag_ADV; ! ‘опять’ < паза ‘еще’ :: пас^а^оқ ??
+	пееде		Tag_ADV; ! ‘так, таким образом’
+	пеере		Tag_ADV; ! ‘сюда’
+	сооба		Tag_ADV; ! ‘следом’ < соо ‘зад’ + ба -INST ?
+	соонаң		Tag_ADV; ! ‘позади’
+	сыраңай		Tag_ADV; ! ‘сразу’
+	тек		Tag_ADV; ! ‘напрасно’
+	толдра		Tag_ADV; ! ‘полностью’
+	тың		Tag_ADV; ! ‘очень’
+	ур		Tag_ADV$ ! ‘долго’ (Ф)
+	ӱдӱре		Tag_ADV; ! ‘напротив’
+	ӱр		Tag_ADV; ! ‘долго’ (КА), ‘давно’ (ШС)
+	чаза		Tag_ADV; ! ‘мимо’
+	чуққа		Tag_ADV; ! ‘тихо’
+	чӱтче		Tag_ADV; ! = чӱче (Ф)
+	чӱче		Tag_ADV; ! ‘едва’
+	шала		Tag_ADV; ! ‘немного, чуть’ (Ф)
+	шедик		Tag_ADV; ! ‘трудно’
+	шым		Tag_ADV; ! ‘тихо’
+	ылтам		Tag_ADV; ! ‘скоро’
+	ыпта		Tag_ADV; ! ‘плотно’
+	эде		Tag_ADV; ! ‘так, таким образом’
+
+
+LEXICON Iterjection
+	а		Tag_INTJ; ! ‘’
+	абуг		Tag_INTJ; ! ‘’
+	абуу		Tag_INTJ; ! ‘’
+! 	ма		Tag_INTJ; ! ‘’
+! 	ме		Tag_INTJ; ! ‘’
+	мине		Tag_INTJ; ! ‘’
+	мна		Tag_INTJ; ! ‘’
+	мыно		Tag_INTJ; ! ‘’
+	пай-пай		Tag_INTJ; ! ‘’
+	чее		Tag_INTJ; ! ‘’
+	эзе		Tag_INTJ; ! ‘’
+	эй		Tag_INTJ; ! ‘’
+	эккей		Tag_INTJ; ! ‘эй, эгей, послушай, вот’ (Ф)
+	ээ		Tag_INTJ; ! ‘’
 !!! Существительные
 !!! Цель: минимальный словарь непроизводных основ
 LEXICON Noun
@@ -162,7 +345,7 @@ LEXICON Noun
 	ача		Tag_N; ! ‘B+ ст. брат’, ‘FB дядя по отцу’
 	ачаачы		Tag_N; ! ‘жажда’ (ШС) < ач(ы)…? ‘голод, жажда, горечь, горе…’ ??
 	ачыг		Tag_N; ! ‘горе’
-	ачығ		Tag_N; ! ‘горе’
+! 	ачығ		Tag_N; ! ‘горе’
 	ачый		Tag_N; ! ‘жалоба’
 	ачық		Tag_N; ! ‘промысел, охота’
 ! 	ачытқа		Tag_N; ! >>> POS ???
@@ -1837,21 +2020,99 @@ LEXICON ProperNoun
 	эр-қулатай	Tag_PN;
 	эрлик		Tag_PN;
 	эрлик-қан	Tag_PN;
-LEXICON Iterjection
-	а		Tag_INTJ; ! ‘’
-	абуг		Tag_INTJ; ! ‘’
-	абуу		Tag_INTJ; ! ‘’
-! 	ма		Tag_INTJ; ! ‘’
-! 	ме		Tag_INTJ; ! ‘’
-	мине		Tag_INTJ; ! ‘’
-	мна		Tag_INTJ; ! ‘’
-	мыно		Tag_INTJ; ! ‘’
-	пай-пай		Tag_INTJ; ! ‘’
-	чее		Tag_INTJ; ! ‘’
-	эзе		Tag_INTJ; ! ‘’
-	эй		Tag_INTJ; ! ‘’
-	эккей		Tag_INTJ; ! ‘эй, эгей, послушай, вот’ (Ф)
-	ээ		Tag_INTJ; ! ‘’
+!!!!!! Числительные
+LEXICON Numeral
+	пир	Tag_NUM; ! ’1’
+	ийги	Tag_NUM; ! ’2’
+	ӱш	Tag_NUM; ! ’3’
+	тӧрт	Tag_NUM; ! ’4’
+	пеш	Tag_NUM; ! ’5’
+	алты	Tag_NUM; ! ’6’
+	четти	Tag_NUM; ! ’7’
+	сегис	Tag_NUM; ! ’8’
+	тоғус	Tag_NUM; ! ’9’
+	ийги	Tag_NUM_Tens; ! ’2’ -> ‘20’
+	ӱш	Tag_NUM_Tens; ! ’3’ -> ‘30’
+	тӧрт	Tag_NUM_Tens; ! ’4’ -> ‘40’
+	пеш	Tag_NUM_Tens; ! ’5’ -> ‘50’
+	алты	Tag_NUM_Tens; ! ’6’ -> ‘60’
+	четти	Tag_NUM_Tens; ! ’7’ -> ‘70’
+	сегис	Tag_NUM_Tens; ! ’8’ -> ‘80’
+	тоғус	Tag_NUM_Tens; ! ’9’ -> ‘90’
+	он	Tag_NUM; ! ’10’
+	чегирбе	Tag_NUM; ! ’20’
+	одус	Tag_NUM; ! ’30’
+	қырық	Tag_NUM; ! ’40’
+	элиг	Tag_NUM; ! ’50’
+	алтон	Tag_NUM; ! ’60’ < алты + он	: Д-102 §66
+	четтон	Tag_NUM; ! ’70’ < четти + он	: Д-102 §66
+	сегизон	Tag_NUM; ! ’80’ < сегис + он	: Д-102 §66
+	тоғузон	Tag_NUM; ! ’90’ < тоғус + он	: Д-102 §66
+	чӱс	Tag_NUM; ! ’100’
+	муң	Tag_NUM; ! ’1000’
+	пирси	Tag_NUM; ! ’один из многих’ < пир ???
+	ийгеле	Tag_NUM; ! ’вдвоем’
+	ӱжеле	Tag_NUM; ! ‘втроем’ (Ф)
+	кӧп	Tag_NUM; ! ‘много’
+! Частицы
+LEXICON Particle
+	ба	Tag_PART; ! .INT — вопросительные частицы (ЧГ-48-49)
+	бе	Tag_PART; ! .INT
+	ма	Tag_PART; ! .INT
+	ме	Tag_PART; ! .INT
+	па	Tag_PART; ! .INT
+	пе	Tag_PART; ! .INT
+	не	Tag_PART; ! .INT ? ‘ли’
+	нем	Tag_PART; ! .INT ? ‘ли’
+	но	Tag_PART; ! см. TODO 1.6.1
+	ноо	Tag_PART; ! уточнить <<<
+	оно	Tag_PART; ! ‘вот’
+	бин	Tag_PART; ! .INT ? ‘ли’
+	бинем	Tag_PART; ! .INT ? ‘ли’
+	да	Tag_PART; ! ? при перечислении + ’даже’, ‘хоть [и]’
+	та	Tag_PART; ! = да
+	ла	Tag_PART; ! ? ‘лишь’, ‘только’
+	ле	Tag_PART; ! = ла/ле
+	на	Tag_PART; ! = ла/ле
+	не	Tag_PART; ! = ла/ле
+	дағы	Tag_PART; ! = rus V + -ка (давай-ка)
+	тағы	Tag_PART; ! = дағы
+	че	Tag_PART; ! ‘да’ (Ф)
+!!!!!! Послелоги
+LEXICON Postposition
+	! Собственно послелоги
+	наара	Tag_POST; ! ‘в эту сторону’
+	саара	Tag_POST; ! ‘по направлению’
+	<[с а [й [а | ы н] | н ы]]>	Tag_POST; ! …саны / сайын ‘каждый’, ‘всякий’
+	тебе	Tag_POST; ! ‘в сторону’
+	тӧӧнче	Tag_POST; ! ‘до’
+	ӱчин	Tag_POST; ! = ӱчӱн (Ф)
+	ӱчӱн	Tag_POST; ! ‘ради, из-за’
+	! Послелоги-наречия
+	аара	Tag_POST; ! ‘по ту сторону’, ‘туда’
+	ажыра	Tag_POST; ! ‘через’
+	ала	Tag_POST; ! ‘с тех пор как’
+	аразында	Tag_POST; ! ‘в’, ‘среди’
+	артын	Tag_POST; ! ‘в результате’
+	кестинде	Tag_POST; !  ‘за (чем-то)’
+	<[к е [ч | ж] и р е]>	Tag_POST; ! ‘через’
+	иштинге	Tag_POST; ! ‘внутрь’
+	иштинде	Tag_POST; ! ‘внутри’
+	кире	Tag_POST; ! ‘в’
+	кӧзӱбе	Tag_POST; ! ‘совсем’
+	пажында	Tag_POST; ! ‘через’ (о времени)
+	пеере	Tag_POST; ! ‘сюда’
+	ӱстӱне	Tag_POST; ! ‘на (что-то)’
+	четтире	Tag_POST; ! ‘до’
+	шығара	Tag_POST; ! ‘в течение’
+	шылтаанда	Tag_POST; ! …шылтанында ‘по случаю чего’, ‘из-за чего’
+	! Сравнительные слова-послелоги
+	ошқаш	Tag_POST; ! ‘подобно’, ‘похоже’
+	тоой	Tag_POST; ! тж. тӱней ‘пара’
+	чилеп	Tag_POST; ! тж. чылап ‘считая за’, ‘как’, ‘словно’
+	чӱӱнӱг	Tag_POST; ! ‘похожий’
+	ушқаш	Tag_POST; ! = ошқаш (Ф)
+	<[ш е (н) и]>	Tag_POST; ! ‘словно’, ‘как’
 !!! Глаголы
 !!! Цель: минимальный словарь непроизводных основ
 LEXICON Verb
@@ -2429,494 +2690,14 @@ LEXICON Verb_MOV
 LEXICON Verb_NEG
 	эбес		Tag_VNEG; ! Недостаточный глагол э + -NEG[БАс] ???
 	чоғул		Tag_VNEG; ! < чоқ ‘не|нет’
-!!!!!! Послелоги
-LEXICON Postposition
-	! Собственно послелоги
-	наара	Tag_POST; ! ‘в эту сторону’
-	саара	Tag_POST; ! ‘по направлению’
-	<[с а [й [а | ы н] | н ы]]>	Tag_POST; ! …саны / сайын ‘каждый’, ‘всякий’
-	тебе	Tag_POST; ! ‘в сторону’
-	тӧӧнче	Tag_POST; ! ‘до’
-	ӱчин	Tag_POST; ! = ӱчӱн (Ф)
-	ӱчӱн	Tag_POST; ! ‘ради, из-за’
-	! Послелоги-наречия
-	аара	Tag_POST; ! ‘по ту сторону’, ‘туда’
-	ажыра	Tag_POST; ! ‘через’
-	ала	Tag_POST; ! ‘с тех пор как’
-	аразында	Tag_POST; ! ‘в’, ‘среди’
-	артын	Tag_POST; ! ‘в результате’
-	кестинде	Tag_POST; !  ‘за (чем-то)’
-	<[к е [ч | ж] и р е]>	Tag_POST; ! ‘через’
-	иштинге	Tag_POST; ! ‘внутрь’
-	иштинде	Tag_POST; ! ‘внутри’
-	кире	Tag_POST; ! ‘в’
-	кӧзӱбе	Tag_POST; ! ‘совсем’
-	пажында	Tag_POST; ! ‘через’ (о времени)
-	пеере	Tag_POST; ! ‘сюда’
-	ӱстӱне	Tag_POST; ! ‘на (что-то)’
-	четтире	Tag_POST; ! ‘до’
-	шығара	Tag_POST; ! ‘в течение’
-	шылтаанда	Tag_POST; ! …шылтанында ‘по случаю чего’, ‘из-за чего’
-	! Сравнительные слова-послелоги
-	ошқаш	Tag_POST; ! ‘подобно’, ‘похоже’
-	тоой	Tag_POST; ! тж. тӱней ‘пара’
-	чилеп	Tag_POST; ! тж. чылап ‘считая за’, ‘как’, ‘словно’
-	чӱӱнӱг	Tag_POST; ! ‘похожий’
-	ушқаш	Tag_POST; ! = ошқаш (Ф)
-	<[ш е (н) и]>	Tag_POST; ! ‘словно’, ‘как’
-!!! Прилагательные
-!!! Цель: минимальный словарь непроизводных основ
-LEXICON Adjective
-	аақ		Tag_A; ! ‘мелкий’
-	аар		Tag_A; ! ‘трудный, тяжелый’
-	ай		Tag_A; ! ‘светлый’ (ШС)
-	абаққай		Tag_A; ! ‘миловидный’
-! 	адаңма		Tag_A; ! <<< ‘невероятно’, ‘чудовищно’ (ШС)
-	ақ		Tag_A; ! ‘белый’
-	алтын		Tag_A; ! ‘золотой’
-	артық		Tag_A; ! ‘лишний’
-	арыг		Tag_A; ! ‘чистый’
-	изиг		Tag_A; ! ‘горячий, жаркий’
-	ачыг		Tag_A; ! ‘кислый, горький’ < ачы ‘киснуть’
-! 	қадыг		Tag_A; ! ‘строгий, твердый’
-! 	қазық		Tag_A; ! ‘здоровый’ < қазы ‘брюшной жир’ ??
-	қазақ		Tag_A; ! ‘русский’
-	қазыр		Tag_A; ! ‘жестокий’, ‘сильный’ < ? ??
-	қайран		Tag_A; ! ‘милый’ < ? ??
-	қал		Tag_A; ! ‘пресный’, ‘равнодушный’
-	қалын		Tag_A; ! ‘плотный, толстый’
-	қара		Tag_A; ! ‘черный, вороной’
-	қарам		Tag_A; ! ‘скупой’ (ШС)
-	қарс		Tag_A; ! ‘ломкий’ (ШС)
-	қарчы		Tag_A; ! ‘обратный’
-	кедей		Tag_A; ! ‘нелюдимый, безучастный’ < ? ??
-	кемчи		Tag_A; ! ‘скупой, жадный’
-	кең		Tag_A; ! ‘просторный’ + N
-	кер		Tag_A; ! ‘гнедой (конь)’
-	керсе		Tag_A; ! ‘умный’
-	кичиг		Tag_A; ! ‘маленький’
-	кӧк		Tag_A; ! ‘синий, зеленый’
-	қор		Tag_A; ! масть коня (Ф) — какая?
-	қуба		Tag_A; ! ‘бледный’
-	қуруг		Tag_A; ! ‘сухой’
-	кӱчӱр		Tag_A; ! ‘порочный’ (ШС)
-	қызыл		Tag_A; ! ‘красный’
-	қый		Tag_A; ! ‘косой (глаза)’
-	қыйға		Tag_A; ! ‘скупой’
-	қыр		Tag_A; ! ‘серый, седой’
-	қысқа		Tag_A; ! ‘короткий’
-	қышқы		Tag_A; ! ‘зимний’ (ЧУ)
-	маңзырақ	Tag_A; ! ‘торопливый’ < маңзыра ‘пешить’
-	моңу		Tag_A; ! ‘живой’
-	мӧңӱс		Tag_A; ! ‘грустный, слабый’
-	наа		Tag_A; ! ‘новый’
-	ниик		Tag_A; ! ‘легкий’
-	ныңнақ		Tag_A; ! ‘легкий’ < ? ??
-	оңдай		Tag_A; ! ‘удачный’ (ШС) < оң ‘удача’
-	ӧл		Tag_A; ! ‘мокрый’
-	ӧӧй		Tag_A; ! ‘неродной’
-	ӧске		Tag_A; ! ‘иной, прочий’
-	пай		Tag_A; ! ‘богатый’
-	пашқа		Tag_A; ! ‘другой, чужой’
-	пек		Tag_A; ! ‘крепкий’
-	пелен		Tag_A; ! ‘готовый’
-	пош		Tag_A; ! ‘вольный’
-	рақ		Tag_A; ! ‘далекий’
-	сайақ		Tag_A; ! ‘редкий’
-	сақ		Tag_A; ! ‘чуткий’
-	сар		Tag_A; ! ‘соловый’ (ШС)
-	сарыг		Tag_A; ! ‘желтый’ < сар ‘соловый’ ??
-	сол		Tag_A; ! ‘левый’
-	сооқ		Tag_A; ! ‘холодный’
-	сылағай		Tag_A; ! ‘гладкий’, ‘статный (чел.)’ < сыл? ‘гладкость, красота’ ?? ~ см. сылыг ‘красивый’
-	тайба		Tag_A; ! ‘ложный’ < тай? ‘скользить’ ??
-	тайыс		Tag_A; ! ‘мелкий (река)’
-	тақтыг		Tag_A; ! ‘деревянный’ (ШС) < тақ? ??
-	талай		Tag_A; ! ‘морской’’
-	тар		Tag_A; ! ‘узкий, тесный’
-	тас		Tag_A; ! ‘лысый, голый’
-	тек		Tag_A; ! ‘напрасный’
-	темир		Tag_A; ! ‘железный’, ‘крепкий’ < тебир ‘железо’ ??
-	тең		Tag_A; ! ‘ровный’
-	терең		Tag_A; ! ‘глубокий’
-	тириг		Tag_A; ! ‘живой’ ~ см. тирил ‘оживать’ < тир…? ??
-	тоқ		Tag_A; ! ‘сытый, питательный’
-	тӱс		Tag_A; ! ‘прямой’
-	узақ		Tag_A; ! ‘долгий’ ~ см. узал ‘удлиняться’ < ус…? ??
-	узун		Tag_A; ! ‘длинный’ ~ см. узал ??
-	улуг		Tag_A; ! ‘большой’
-	улыг		Tag_A; ! = улуг (Ф)
-	ӱлгер		Tag_A; ! ‘мифический’
-	ӱр		Tag_A; ! ‘долгий, длительный’ (ШС)
-	ӱскер		Tag_A; ! ‘глухой’
-	ӱӱр		Tag_A; ! ‘долгий, длительный’ (ШС)
-	чабал		Tag_A; ! ‘плохой, злой’
-	чағыс		Tag_A; ! ‘одинокий’
-	чажыл		Tag_A; ! ‘зеленый (цвет)’, ‘молодой (возр.)’
-	чайзаң		Tag_A; ! ‘красивый’
-	чалбақ		Tag_A; ! ‘широкий’ (Ф)
-	чаш		Tag_A; ! ‘сырой’, молодой’
-	чегрен		Tag_A; ! ‘рыжий (масть коня)’ (Ф)
-	чес		Tag_A; ! ‘медный’
-	чоон		Tag_A; ! ‘толстый (о чел.)’
-	чоқ		Tag_A; ! .NEG
-	чуға		Tag_A; ! ‘тонкий’
-	чылаш		Tag_A; ! ‘голый’ (Ф)
-	чымчақ		Tag_A; ! ‘мягкий’
-	шамдар		Tag_A; ! ‘игрений’ (Ф)
-	шебер		Tag_A; ! ’осторожный’
-	шым		Tag_A; ! ’тихий’
-	ығый		Tag_A; ! ’тугой’
-	ызық		Tag_A; ! ‘жертвенный’ (ШС) < ыс ‘отпавлять’ ??
-	элбек		Tag_A; ! ‘дешевый’ (ШС)
-	ээн		Tag_A; ! ‘пустой’
-	ээш		Tag_A; ! ‘расположенный у двери’ (ШС)
-	эрте		Tag_A; ! ‘ранний’ < эрт ‘проходить’ ??
-	эски		Tag_A; ! ‘старый, ветхий’
-!!! Наречия
-LEXICON Adverb
-	аара		Tag_ADV; ! ‘туда’
-	аара-пеере	Tag_ADV; ! ‘туда-сюда’
-	адаңма		Tag_ADV; ! ‘очень, весьма’
-	айбын		Tag_ADV; ! ‘поздно’
-	айтта		Tag_ADV; ! ‘слишком’
-! 	алды		Tag_ADV; ! ?
-	алында		Tag_ADV; ! ‘раньше, прежде’
-! 	алынаң		Tag_ADV; ! ?
-	ам		Tag_ADV; ! ‘сейчас, теперь’
-	амды		Tag_ADV; ! ‘сейчас’ < ам ‘наст. время’
-	ара-чара	Tag_ADV; ! ?
-	арий		Tag_ADV; ! ‘едва’
-! 	арта-перте	Tag_ADV; ! ‘накрест’
-	иштинги		Tag_ADV; ! >>> см. FAILURES.txt
-	иштинде		Tag_ADV; ! >>> см. FAILURES.txt
-	қайде		Tag_ADV; ! ‘как’
-	қайра		Tag_ADV; ! ‘настежь’
-	қалық		Tag_ADV; ! ‘вскачь’
-	қаморта		Tag_ADV; ! ‘точно’
-	қапчығай	Tag_ADV; ! ‘быстро’
-	кедере		Tag_ADV; ! ‘прочь’
-	кенетки		Tag_ADV; ! ‘вдруг, внезапно’
-	кече		Tag_ADV; ! ‘вчера, накануне’
-	қожа		Tag_ADV; ! ‘вместе’ < қош ‘добавлять’ ??
-	қооп		Tag_ADV; ! ‘отовсюду’ (ШС)
-	қошта		Tag_ADV; ! ‘близко, рядом’ < қош ‘добавлять’ ??
-	кӧӧче		Tag_ADV; ! ‘медленно, постепенно’ (ШС)
-	кӧче		Tag_ADV; ! ‘медленно, постепенно’ (ШС)
-	мағат		Tag_ADV; ! ‘очень’
-	май		Tag_ADV; ! ‘медленно’ тж. маай
-	маттап		Tag_ADV; ! ‘тщательно’
-	ӧре		Tag_ADV; ! ‘вверх’
-	пайа		Tag_ADV; ! ‘недавно’
-	пазоқ		Tag_ADV; ! ‘опять’ < паза ‘еще’ :: пас^а^оқ ??
-	пееде		Tag_ADV; ! ‘так, таким образом’
-	пеере		Tag_ADV; ! ‘сюда’
-	сооба		Tag_ADV; ! ‘следом’ < соо ‘зад’ + ба -INST ?
-	соонаң		Tag_ADV; ! ‘позади’
-	сыраңай		Tag_ADV; ! ‘сразу’
-	тек		Tag_ADV; ! ‘напрасно’
-	толдра		Tag_ADV; ! ‘полностью’
-	тың		Tag_ADV; ! ‘очень’
-	ур		Tag_ADV$ ! ‘долго’ (Ф)
-	ӱдӱре		Tag_ADV; ! ‘напротив’
-	ӱр		Tag_ADV; ! ‘долго’ (КА), ‘давно’ (ШС)
-	чаза		Tag_ADV; ! ‘мимо’
-	чуққа		Tag_ADV; ! ‘тихо’
-	чӱтче		Tag_ADV; ! = чӱче (Ф)
-	чӱче		Tag_ADV; ! ‘едва’
-	шала		Tag_ADV; ! ‘немного, чуть’ (Ф)
-	шедик		Tag_ADV; ! ‘трудно’
-	шым		Tag_ADV; ! ‘тихо’
-	ылтам		Tag_ADV; ! ‘скоро’
-	ыпта		Tag_ADV; ! ‘плотно’
-	эде		Tag_ADV; ! ‘так, таким образом’
+! Пока только маркируются
+LEXICON Tag_ADV
+	[ADV]:0		ADV_StemBoundary;
 
-
-! Частицы
-LEXICON Particle
-	ба	Tag_PART; ! .INT — вопросительные частицы (ЧГ-48-49)
-	бе	Tag_PART; ! .INT
-	ма	Tag_PART; ! .INT
-	ме	Tag_PART; ! .INT
-	па	Tag_PART; ! .INT
-	пе	Tag_PART; ! .INT
-	не	Tag_PART; ! .INT ? ‘ли’
-	нем	Tag_PART; ! .INT ? ‘ли’
-	но	Tag_PART; ! см. TODO 1.6.1
-	ноо	Tag_PART; ! уточнить <<<
-	оно	Tag_PART; ! ‘вот’
-	бин	Tag_PART; ! .INT ? ‘ли’
-	бинем	Tag_PART; ! .INT ? ‘ли’
-	да	Tag_PART; ! ? при перечислении + ’даже’, ‘хоть [и]’
-	та	Tag_PART; ! = да
-	ла	Tag_PART; ! ? ‘лишь’, ‘только’
-	ле	Tag_PART; ! = ла/ле
-	на	Tag_PART; ! = ла/ле
-	не	Tag_PART; ! = ла/ле
-	дағы	Tag_PART; ! = rus V + -ка (давай-ка)
-	тағы	Tag_PART; ! = дағы
-	че	Tag_PART; ! ‘да’ (Ф)
-!!!!!! Числительные
-LEXICON Numeral
-	пир	Tag_NUM; ! ’1’
-	ийги	Tag_NUM; ! ’2’
-	ӱш	Tag_NUM; ! ’3’
-	тӧрт	Tag_NUM; ! ’4’
-	пеш	Tag_NUM; ! ’5’
-	алты	Tag_NUM; ! ’6’
-	четти	Tag_NUM; ! ’7’
-	сегис	Tag_NUM; ! ’8’
-	тоғус	Tag_NUM; ! ’9’
-	ийги	Tag_NUM_Tens; ! ’2’ -> ‘20’
-	ӱш	Tag_NUM_Tens; ! ’3’ -> ‘30’
-	тӧрт	Tag_NUM_Tens; ! ’4’ -> ‘40’
-	пеш	Tag_NUM_Tens; ! ’5’ -> ‘50’
-	алты	Tag_NUM_Tens; ! ’6’ -> ‘60’
-	четти	Tag_NUM_Tens; ! ’7’ -> ‘70’
-	сегис	Tag_NUM_Tens; ! ’8’ -> ‘80’
-	тоғус	Tag_NUM_Tens; ! ’9’ -> ‘90’
-	он	Tag_NUM; ! ’10’
-	чегирбе	Tag_NUM; ! ’20’
-	одус	Tag_NUM; ! ’30’
-	қырық	Tag_NUM; ! ’40’
-	элиг	Tag_NUM; ! ’50’
-	алтон	Tag_NUM; ! ’60’ < алты + он	: Д-102 §66
-	четтон	Tag_NUM; ! ’70’ < четти + он	: Д-102 §66
-	сегизон	Tag_NUM; ! ’80’ < сегис + он	: Д-102 §66
-	тоғузон	Tag_NUM; ! ’90’ < тоғус + он	: Д-102 §66
-	чӱс	Tag_NUM; ! ’100’
-	муң	Tag_NUM; ! ’1000’
-	пирси	Tag_NUM; ! ’один из многих’ < пир ???
-	ийгеле	Tag_NUM; ! ’вдвоем’
-	ӱжеле	Tag_NUM; ! ‘втроем’ (Ф)
-	кӧп	Tag_NUM; ! ‘много’
-!!! Описание «порядков» (Slots)
-LEXICON Tag_V
-	[V]:0		V_StemBoundary;
-
-! Отрицательный глагол [э + бес] : V_Slot1 и 3—4 не заполняются, V_Slot2 уже заполнен — ???
-LEXICON Tag_VNEG
-	[VNEG]:0	VNEG_Slot4;
-
-! Граница корня/основы
-LEXICON V_StemBoundary
-	V_Derivation;
-	V_Slot1;
-	V_CVB;
-
-! Словообразование
-LEXICON V_Derivation
-	V_Attenuation;
-	N_Deverbal;
-	A_Deverbal;
-
-LEXICON V_Attenuation
-	-ATTN:^мзЫрА	V_Slot1;
-
-!! Отглагольные существительные
-LEXICON N_Deverbal
-	-NR1:^Уг	Tag_N;
-	-NR2:^Уш	Tag_N;
-	-NR3:^ҒУ	Tag_N;
-	-NR4:^ҒУш	Tag_N;
-	-NR5:^УҚ	Tag_N;
-	-NR6:^Ут	Tag_N;
-	-NR7:^Ум	Tag_N;
-	-NR8:^АҚ	Tag_N;
-	-NR9:^л		Tag_N;
-	<"-NR10" : ["^" Қ У н]>	Tag_N;
-	-NR11:^БАҚ	Tag_N; ! <<< слито из ^пАқ и ^бАқ; образует сущ. типа албақ ‘взятие, взятка’, парбақ ‘езда’
-	-NR12:^БА	Tag_N;
-	-NR13:^чАҚ	Tag_N;
-	-NR14:^чЫҚ	Tag_N;
-	-NR15:^ҚАҚ	Tag_N;
-	<"-NR16": ["^" [А т ч Ы | А А ч Ы]]>	Tag_N;
-
-!! Отглагольные прилагательные
-LEXICON A_Deverbal
-	-ADJR1:^чУ	Tag_A;
-	-ADJR2:^Ғай	Tag_A;
-	-ADJR3:^ҒУр	Tag_A;
-	-ADJR4:^Ын	Tag_A;
-
-!!! Порядок 1 : Итератив (1)
-LEXICON V_Slot1
-	-ITER:^ҒУлА	V_Slot2_1;
-			V_Slot2_2;
-
-!!! Залоги (voice): -PASS, -REFL, -RECIP, -CAUS | -PASS и -REFL исключают друг друга ? Возможные сочетания : Д-151 (§99), ЧУ-310-311
-
-!!! Порядок 2 (ITER): -CAUS1 | -CAUS3 | -REFL | -RECIP
-LEXICON V_Slot2_1
-	-CAUS1:^т	V_Slot4;
-	-CAUS3:^Ур	V_Slot4;
-	-REFL:^Ун	V_Slot4;
-	-RECIP:^Уш	V_Slot4;
-
-!!! Порядок 2 (non-ITER): -CAUS, -PASS, -REFL, -RECIP
-LEXICON V_Slot2_2
-	-CAUS1:^т	V_Slot3_C2;
-	-CAUS2:^ҒУс	V_Slot3_C4;
-	-CAUS3:^Ур	V_Slot3_C1;
-	-CAUS4:^ДУр	V_Slot3_C1;
-	-CAUS4:^ДУр	V_Slot3_ITER;
-	-CAUS5:^Ыс	V_Slot4;
-	-PASS:^Ул	V_Slot3_C4;
-	-PASS:^Ул	V_Slot3_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
-	-REFL:^Ун	V_Slot3_C4; ! <<< Учесть V^н
-	-REFL:^Ун	V_Slot3_CR; ! <<< Учесть V^н
-	-RECIP:^Уш	V_Slot3_C1;
-	-RECIP:^Уш	V_Slot3_C4;
-	-RECIP:^Уш	V_Slot3_ITER;
-			V_Slot4;
-
-!!! Порядок 3 : -ITER (после -CAUS4 или -RECIP)
-LEXICON V_Slot3_ITER
-	-ITER:^ҒУлА	V_Slot4; ! <<< м.б. -DIST или -MULT (см. Телякова 2013) ???
-			V_Slot4;
-
-!!! Порядок 3 : -CAUS1, -PASS, -REFL (после -CAUS4 или -RECIP)
-LEXICON V_Slot3_C1
-	-CAUS1:^т	V_Slot4;
-	-PASS:^Ул	V_Slot4;
-	-REFL:^Ун	V_Slot4;
-			V_Slot4;
-
-!!! Порядок 3 : -CAUS2 (после -CAUS1)
-LEXICON V_Slot3_C2
-	-CAUS2:^ҒУс	V_Slot4;
-			V_Slot4;
-
-!!! Порядок 3 : -CAUS3 (после -CAUS2)
-LEXICON V_Slot3_C4
-	-CAUS4:^ДУр	V_Slot4;
-			V_Slot4;
-
-!!! Порядок 3 : -CAUS5, -RECIP (после -PASS или -REFL)
-LEXICON V_Slot3_CR
-	-CAUS5:^Ыс	V_Slot4;
-	-RECIP:^Уш	V_Slot4;
-			V_Slot4;
-
-!!! Порядок 4 : Отрицательные формы
-LEXICON V_Slot4
-	-NEG:^БА	V_Slot5_1;
-			V_Slot5_2;
-			V_CVB;
-
-!!! Порядок 5 : Время, вид, наклонение… (???)
-! При наличии отрицания
-LEXICON V_Slot5_1
-	-CON:^ҒАн		V_Slot5_3; ! конверб
-	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
-	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
-	-FUT:^с			PCTP_Clitic_Branching;
-	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! -NEG : ^БА^ҒА^ДЫг -> ^БАдЫг
-	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
-	-OPT:^й			PCTP_Clitic_Branching;
-	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
-	-SUPN:^ҒА			#; ! ЧУ-175 <<< EncliticBranching ???
-	0:^ҒАн				V_CVB; ! <<< Нужна помета!
-					V_IMPER;
-
-! При отсутствии отрицания
-LEXICON V_Slot5_2
-	-CON:^Ып		V_Slot5_3; ! -CON[CVB]
-	-SIM:^А			V_Slot5_5; ! -SIM[CVB]
-	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
-	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
-	-FUT:^Ар		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : Д-187 (§124), ЧУ-91
-	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! Д-189 (§125) Будущее возможное (ассумптив)
-	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB ? (Телякова 2012)
-	-OPT:^ҒАй		PCTP_Clitic_Branching; ! Д-174 (§117) Форма желания (оптатив)
-	-COND:^ЗА		PCTP_Clitic_Branching; ! Д-177 (§118), ЧУ-311
-	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching; ! Д-191 (§126) Несовершенное действие — «еще не делал» (кункатив)
-	<"-SUPN":["^" А р ("^" Ғ А)]>		#;     ! ЧУ-175 -SUPN : ^Ар | ^Ар^ҒА
-						V_IMPER;
-
-! Формы, образуемые от конверба -CON:^Ып либо -NEG-CON:^ҒАн
-LEXICON V_Slot5_3
-	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча(т) / ^чар : ЧУ-303
-	-PRS-INDR:^чат^тУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
-	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
-	-PST-INDR:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -INDR ?
-	-COND2:^чат^ЗА		PCTP_Clitic_Branching; ! Д-179 (§119) Условная форма сложная
-	-MAN:^Ыс		V_Slot5_4; ! Д-216 (§144) Форма решительности действия
-
-! Форма решительности действия
-LEXICON V_Slot5_4
-	<"-PRS":["^" ч а (р)]>	PCTP_Clitic_Branching;
-	-PST:^ҒАн		PCTP_Clitic_Branching;
-	-RPST:^ДУ		PCTP_Clitic_Branching;
-	-FUT:^Ар		PCTP_Clitic_Branching;
-				V_CVB; ! навеяно тарбағлабыза:тарбаг[N]-VR1[V]-CON-MAN-SIM[CVB] ^Ып^Ыс^А
-
-! Формы, образуемые от конверба -SIM:^А
-LEXICON V_Slot5_5
-	-NPST.HAB:^тУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
-
-!!! Для отрицательного глагола
-LEXICON VNEG_Slot4
-			Endoclitic_PART;
-
-!! Императивы
-LEXICON V_IMPER
-	-IMP:0		V_IMP;
-
-LEXICON V_IMP
-	<".1SG":["^" [А й (Ы н) | У й У н]]>	#; ! ^УйУн / ^Ай / ^АйЫн : Д-172-173 (§115)
-	.2SG:0					#;
-	.2SG.POL:^ЗАң				#;
-	.3SG:^ЗУн				#; ! ^ЗУн / ^ЗЫн (верх. Мрассу, Кондома : Д-170 (§113))
-	.1DU:^Аң				#; ! ‘мы вдвоем’ : Д-173 (§116)
-	.1PL:^Аң^ЛАр				#; ! ‘мы многие’ : Д-174
-	.2PL:^Лаар				#; ! ^аар после согласных :: Д-169 (§112) + ^ҒЫлА (верх. Мрассу : Д-170)
-	.3PL:^ЗУн^ЛАр				#; ! + ^ЗЫн ?
-
-!!!
-LEXICON PCTP_Clitic_Branching
-			Endoclitic_PART;
-			Tag_PTCP;
-
-!!! Порядок 6 : Аффиксы лица и числа
-!!! Варианты для различных видовременных форм моделируются в phonology/rules.xfst:VerbPersNum и phonology/rules.xfst:Elision
-LEXICON V_Slot6
-	-1SG:^БЫм		EncliticBranching;
-	-2SG:^ЗЫң		EncliticBranching;
-	-3SG:0			EncliticBranching; ! +Вариант: ^ДЫр < тур : Д-141 (§90)
-	-1PL:^БЫс		V_Slot6_1PL; ! +Вариант: -FUT:^Ар ^БЫс^ЛАр : ЧУ-93, Д-188 (§124) <<< Глосса ???
-	-2PL:^Заар		EncliticBranching;
-	-3PL:^ЛАр		EncliticBranching; ! ЧУ-252
-
-LEXICON V_Slot6_1PL
-	-PL:^ЛАр		#; ! -1PL-PL ‘мы многие’ : Д-188 (§124)
-				EncliticBranching;
-
-!!! Деепричастия / конвербы
-LEXICON V_CVB
-	-CON:^Уп	Tag_CVB; ! Соединительная либо попутно-предварительная форма : Д-155 (§102)
-	-SIM:^А		Tag_CVB; ! Действие, одновременное действию главного глагола : ЧУ-302
-	-ANT:^АлА	Tag_CVB; ! Anterior : Действие, после которого немедленно наступает действие главного глагола : ЧУ-302
-	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107)
-	-CVB:^чат^Ып	Tag_CVB; ! Действие, продолжающееся, пока совершается действие главного глагола : Д-158 (§103)
-
-LEXICON Tag_CVB
-	[CVB]:0		EncliticBranching;
-
-!!! Причастия
-LEXICON Tag_PTCP
-	[PTCP]:0	N_Slot1;
-
-
-!!! <<<<<<<<<<<<<<<<<<<<<<<<<<
-LEXICON Tag_V_Al
-	[V]:0		V_AddPlus;
-
-LEXICON V_AddPlus
-	+		Verb_MOV;
-
-
-
+LEXICON ADV_StemBoundary
+	-ATTR2:^ҒЫ	Tag_A_ATTR2;
+			Enclitic_PART_oq;
+			#;
 !!! Клитики
 
 LEXICON EncliticBranching
@@ -2946,17 +2727,6 @@ LEXICON Endoclitic_PART
 ! Междометия
 LEXICON Tag_INTJ
 	[INTJ]:0	#;
-! Пока только маркируются
-LEXICON Tag_ADV
-	[ADV]:0		ADV_StemBoundary;
-
-LEXICON ADV_StemBoundary
-	-ATTR2:^ҒЫ	Tag_A_ATTR2;
-			Enclitic_PART_oq;
-			#;
-! Частицы
-LEXICON Tag_PART
-	[PART]:0	#;
 ! !!!!!! Существительные :: -NUM > -POSS > -CASE > -PRED
 !!! Частеречная помета
 ! Имя нарицательное
@@ -3331,3 +3101,233 @@ LEXICON NUM_Collective
 
 LEXICON Tag_POST
 	[PSTP]:0	#; ! <<< Пока только маркируются. Анализ?
+! Частицы
+LEXICON Tag_PART
+	[PART]:0	#;
+!!! Описание «порядков» (Slots)
+LEXICON Tag_V
+	[V]:0		V_StemBoundary;
+
+! Отрицательный глагол [э + бес] : V_Slot1 и 3—4 не заполняются, V_Slot2 уже заполнен — ???
+LEXICON Tag_VNEG
+	[VNEG]:0	VNEG_Slot4;
+
+! Граница корня/основы
+LEXICON V_StemBoundary
+	V_Derivation;
+	V_Slot1;
+	V_CVB;
+
+! Словообразование
+LEXICON V_Derivation
+	V_Attenuation;
+	N_Deverbal;
+	A_Deverbal;
+
+LEXICON V_Attenuation
+	-ATTN:^мзЫрА	V_Slot1;
+
+!! Отглагольные существительные
+LEXICON N_Deverbal
+	-NR1:^Уг	Tag_N;
+	-NR2:^Уш	Tag_N;
+	-NR3:^ҒУ	Tag_N;
+	-NR4:^ҒУш	Tag_N;
+	-NR5:^УҚ	Tag_N;
+	-NR6:^Ут	Tag_N;
+	-NR7:^Ум	Tag_N;
+	-NR8:^АҚ	Tag_N;
+	-NR9:^л		Tag_N;
+	<"-NR10" : ["^" Қ У н]>	Tag_N;
+	-NR11:^БАҚ	Tag_N; ! <<< слито из ^пАқ и ^бАқ; образует сущ. типа албақ ‘взятие, взятка’, парбақ ‘езда’
+	-NR12:^БА	Tag_N;
+	-NR13:^чАҚ	Tag_N;
+	-NR14:^чЫҚ	Tag_N;
+	-NR15:^ҚАҚ	Tag_N;
+	<"-NR16": ["^" [А т ч Ы | А А ч Ы]]>	Tag_N;
+
+!! Отглагольные прилагательные
+LEXICON A_Deverbal
+	-ADJR1:^чУ	Tag_A;
+	-ADJR2:^Ғай	Tag_A;
+	-ADJR3:^ҒУр	Tag_A;
+	-ADJR4:^Ын	Tag_A;
+
+!!! Порядок 1 : Итератив (1)
+LEXICON V_Slot1
+	-ITER:^ҒУлА	V_Slot2_1;
+			V_Slot2_2;
+
+!!! Залоги (voice): -PASS, -REFL, -RECIP, -CAUS | -PASS и -REFL исключают друг друга ? Возможные сочетания : Д-151 (§99), ЧУ-310-311
+
+!!! Порядок 2 (ITER): -CAUS1 | -CAUS3 | -REFL | -RECIP
+LEXICON V_Slot2_1
+	-CAUS1:^т	V_Slot4;
+	-CAUS3:^Ур	V_Slot4;
+	-REFL:^Ун	V_Slot4;
+	-RECIP:^Уш	V_Slot4;
+
+!!! Порядок 2 (non-ITER): -CAUS, -PASS, -REFL, -RECIP
+LEXICON V_Slot2_2
+	-CAUS1:^т	V_Slot3_C2;
+	-CAUS2:^ҒУс	V_Slot3_C4;
+	-CAUS3:^Ур	V_Slot3_C1;
+	-CAUS4:^ДУр	V_Slot3_C1;
+	-CAUS4:^ДУр	V_Slot3_ITER;
+	-CAUS5:^Ыс	V_Slot4;
+	-PASS:^Ул	V_Slot3_C4;
+	-PASS:^Ул	V_Slot3_CR; ! <<< Учесть V^л :: См. phonology/rules.xfst > RemExtraV
+	-REFL:^Ун	V_Slot3_C4; ! ???
+	-REFL:^Ун	V_Slot3_CR; ! <<< Учесть V^н
+	-RECIP:^Уш	V_Slot3_C1;
+	-RECIP:^Уш	V_Slot3_C4; ! ???
+	-RECIP:^Уш	V_Slot3_ITER;
+			V_Slot4;
+
+!!! Порядок 3 : -ITER (после -CAUS4 или -RECIP)
+LEXICON V_Slot3_ITER
+	-ITER:^ҒУлА	V_Slot4; ! <<< м.б. -DIST или -MULT (см. Телякова 2013) ???
+			V_Slot4;
+
+!!! Порядок 3 : -CAUS1, -PASS, -REFL (после -CAUS4 или -RECIP)
+LEXICON V_Slot3_C1
+	-CAUS1:^т	V_Slot4;
+	-PASS:^Ул	V_Slot4;
+	-REFL:^Ун	V_Slot4;
+			V_Slot4;
+
+!!! Порядок 3 : -CAUS2 (после -CAUS1)
+LEXICON V_Slot3_C2
+	-CAUS2:^ҒУс	V_Slot4;
+			V_Slot4;
+
+!!! Порядок 3 : -CAUS3 (после -CAUS2)
+LEXICON V_Slot3_C4
+	-CAUS4:^ДУр	V_Slot4;
+			V_Slot4;
+
+!!! Порядок 3 : -CAUS5, -RECIP (после -PASS или -REFL)
+LEXICON V_Slot3_CR
+	-CAUS5:^Ыс	V_Slot4;
+	-RECIP:^Уш	V_Slot4;
+			V_Slot4;
+
+!!! Порядок 4 : Отрицательные формы
+LEXICON V_Slot4
+	-NEG:^БА	V_Slot5_1;
+			V_Slot5_2;
+			V_CVB;
+
+!!! Порядок 5 : Время, вид, наклонение… (???)
+! При наличии отрицания
+LEXICON V_Slot5_1
+	-CON:^ҒАн		V_Slot5_3; ! конверб
+	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
+	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
+	-FUT:^с			PCTP_Clitic_Branching;
+	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! -NEG : ^БА^ҒА^ДЫг -> ^БАдЫг
+	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB (Телякова 2012)
+	-OPT:^й			PCTP_Clitic_Branching;
+	-COND:^ЗА		PCTP_Clitic_Branching; ! ЧУ-311
+	-SUPN:^ҒА			#; ! ЧУ-175 <<< EncliticBranching ???
+	0:^ҒАн				V_CVB; ! <<< Нужна помета!
+					V_IMPER;
+
+! При отсутствии отрицания
+LEXICON V_Slot5_2
+	-CON:^Ып		V_Slot5_3; ! -CON[CVB]
+	-SIM:^А			V_Slot5_5; ! -SIM[CVB]
+	-PST:^ҒАн		PCTP_Clitic_Branching; ! -PLP | -PLUP ???
+	-RPST:^ДУ		PCTP_Clitic_Branching; ! ЧУ-303, Д-180 (§121), +PERF
+	-FUT:^Ар		PCTP_Clitic_Branching; ! Будущее ^Ар -FUT : Д-187 (§124), ЧУ-91
+	-ASSUM:^ҒА^ДЫг		PCTP_Clitic_Branching; ! Д-189 (§125) Будущее возможное (ассумптив)
+	-HAB:^чАң		PCTP_Clitic_Branching; ! ЧУ-82 или -PST.HAB ? (Телякова 2012)
+	-OPT:^ҒАй		PCTP_Clitic_Branching; ! Д-174 (§117) Форма желания (оптатив)
+	-COND:^ЗА		PCTP_Clitic_Branching; ! Д-177 (§118), ЧУ-311
+	-CUNC:^ҒАлАҚ		PCTP_Clitic_Branching; ! Д-191 (§126) Несовершенное действие — «еще не делал» (кункатив)
+	<"-SUPN":["^" А р ("^" Ғ А)]>		#;     ! ЧУ-175 -SUPN : ^Ар | ^Ар^ҒА
+						V_IMPER;
+
+! Формы, образуемые от конверба -CON:^Ып либо -NEG-CON:^ҒАн
+LEXICON V_Slot5_3
+	<"-PRS":["^" ч а (р | т)]>	PCTP_Clitic_Branching; ! ^ча(т) / ^чар : ЧУ-303
+	-PRS-INDR:^чат^тУр	PCTP_Clitic_Branching; ! Д-198 §131 < чат(^ып)+тур : ^чат^тыр (->) ^чадыр
+	-PST-IMPF:^чат^ҒАн	PCTP_Clitic_Branching; ! ЧУ-304
+	-PST-INDR:^ТУр		PCTP_Clitic_Branching; ! Д-200, ЧУ-173 или -INDR ?
+	-COND2:^чат^ЗА		PCTP_Clitic_Branching; ! Д-179 (§119) Условная форма сложная
+	-MAN:^Ыс		V_Slot5_4; ! Д-216 (§144) Форма решительности действия
+
+! Форма решительности действия
+LEXICON V_Slot5_4
+	<"-PRS":["^" ч а (р)]>	PCTP_Clitic_Branching;
+	-PST:^ҒАн		PCTP_Clitic_Branching;
+	-RPST:^ДУ		PCTP_Clitic_Branching;
+	-FUT:^Ар		PCTP_Clitic_Branching;
+				V_CVB; ! навеяно тарбағлабыза:тарбаг[N]-VR1[V]-CON-MAN-SIM[CVB] ^Ып^Ыс^А
+
+! Формы, образуемые от конверба -SIM:^А
+LEXICON V_Slot5_5
+	-NPST.HAB:^тУр		PCTP_Clitic_Branching; ! -NEG при помощи чоғул : Д-205 (§134)
+
+!!! Для отрицательного глагола
+LEXICON VNEG_Slot4
+			Endoclitic_PART;
+
+!! Императивы
+LEXICON V_IMPER
+	-IMP:0		V_IMP;
+
+LEXICON V_IMP
+	<".1SG":["^" [А й (Ы н) | У й У н]]>	#; ! ^УйУн / ^Ай / ^АйЫн : Д-172-173 (§115)
+	.2SG:0					#;
+	.2SG.POL:^ЗАң				#;
+	.3SG:^ЗУн				#; ! ^ЗУн / ^ЗЫн (верх. Мрассу, Кондома : Д-170 (§113))
+	.1DU:^Аң				#; ! ‘мы вдвоем’ : Д-173 (§116)
+	.1PL:^Аң^ЛАр				#; ! ‘мы многие’ : Д-174
+	.2PL:^Лаар				#; ! ^аар после согласных :: Д-169 (§112) + ^ҒЫлА (верх. Мрассу : Д-170)
+	.3PL:^ЗУн^ЛАр				#; ! + ^ЗЫн ?
+
+!!!
+LEXICON PCTP_Clitic_Branching
+			Endoclitic_PART;
+			Tag_PTCP;
+
+!!! Порядок 6 : Аффиксы лица и числа
+!!! Варианты для различных видовременных форм моделируются в phonology/rules.xfst:VerbPersNum и phonology/rules.xfst:Elision
+LEXICON V_Slot6
+	-1SG:^БЫм		EncliticBranching;
+	-2SG:^ЗЫң		EncliticBranching;
+	-3SG:0			EncliticBranching; ! +Вариант: ^ДЫр < тур : Д-141 (§90)
+	-1PL:^БЫс		V_Slot6_1PL; ! +Вариант: -FUT:^Ар ^БЫс^ЛАр : ЧУ-93, Д-188 (§124) <<< Глосса ???
+	-2PL:^Заар		EncliticBranching;
+	-3PL:^ЛАр		EncliticBranching; ! ЧУ-252
+
+LEXICON V_Slot6_1PL
+	-PL:^ЛАр		#; ! -1PL-PL ‘мы многие’ : Д-188 (§124)
+				EncliticBranching;
+
+!!! Деепричастия / конвербы
+LEXICON V_CVB
+	-CON:^Уп	Tag_CVB; ! Соединительная либо попутно-предварительная форма : Д-155 (§102)
+	-SIM:^А		Tag_CVB; ! Действие, одновременное действию главного глагола : ЧУ-302
+	-ANT:^АлА	Tag_CVB; ! Anterior : Действие, после которого немедленно наступает действие главного глагола : ЧУ-302
+	-LMF:^ҒАнче	Tag_CVB; ! Деепричастие предела в будущем (ЧУ-303, Оз-239 -LIM.FUT) + ^ҒАнчА (Д-161 §107)
+	-CVB:^чат^Ып	Tag_CVB; ! Действие, продолжающееся, пока совершается действие главного глагола : Д-158 (§103)
+
+LEXICON Tag_CVB
+	[CVB]:0		EncliticBranching;
+
+!!! Причастия
+LEXICON Tag_PTCP
+	[PTCP]:0	N_Slot1;
+
+
+!!! <<<<<<<<<<<<<<<<<<<<<<<<<<
+LEXICON Tag_V_Al
+	[V]:0		V_AddPlus;
+
+LEXICON V_AddPlus
+	+		Verb_MOV;
+
+
+

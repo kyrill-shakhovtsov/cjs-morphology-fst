@@ -28,12 +28,12 @@ digraph LEXC {
 	}
 	subgraph Tags {
 		graph [rank=same];
+		Tag_A	[fontcolor=tomato4,
+			label="Tag [A]"];
 		Tag_N	[fontcolor=tomato4,
 			label="Tag [N]"];
 		Tag_V	[fontcolor=tomato4,
 			label="Tag [V]"];
-		Tag_A	[fontcolor=tomato4,
-			label="Tag [A]"];
 	}
 	Root	[color=firebrick,
 		fillcolor=blanchedalmond,
@@ -85,14 +85,32 @@ digraph LEXC {
 	Tag_INTJ	[fontcolor=tomato4,
 		label="Tag [INTJ]"];
 	Iterjection -> Tag_INTJ;
-	N_StemBoundary	[fontcolor=navy,
-		label=N_StemBoundary];
-	Tag_N -> N_StemBoundary;
-	Tag_PN -> N_StemBoundary;
+	A_StemBoundary	[fontcolor=orange4,
+		label=A_StemBoundary];
+	Tag_A -> A_StemBoundary;
+	ADV_StemBoundary	[fontcolor=darkgreen,
+		label=ADV_StemBoundary];
+	Tag_ADV -> ADV_StemBoundary;
 	"Tag_INTJ_#"	[color=firebrick,
 		label="#",
 		shape=doublecircle];
 	Tag_INTJ -> "Tag_INTJ_#";
+	N_StemBoundary	[fontcolor=navy,
+		label=N_StemBoundary];
+	Tag_N -> N_StemBoundary;
+	Tag_PN -> N_StemBoundary;
+	NUM_Collective	[label=NUM_Collective];
+	Tag_NUM -> NUM_Collective;
+	NUM_Tens	[label=NUM_Tens];
+	Tag_NUM_Tens -> NUM_Tens;
+	"Tag_PART_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	Tag_PART -> "Tag_PART_#";
+	"Tag_POST_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	Tag_POST -> "Tag_POST_#";
 	V_StemBoundary	[fontcolor=darkgreen,
 		label=V_StemBoundary];
 	Tag_V -> V_StemBoundary;
@@ -103,164 +121,33 @@ digraph LEXC {
 	Verb_MOV -> Tag_V;
 	VNEG_Slot4	[label=VNEG_Slot4];
 	Tag_VNEG -> VNEG_Slot4;
-	"Tag_POST_#"	[color=firebrick,
-		label="#",
-		shape=doublecircle];
-	Tag_POST -> "Tag_POST_#";
-	A_StemBoundary	[fontcolor=orange4,
-		label=A_StemBoundary];
-	Tag_A -> A_StemBoundary;
-	ADV_StemBoundary	[fontcolor=darkgreen,
-		label=ADV_StemBoundary];
-	Tag_ADV -> ADV_StemBoundary;
-	"Tag_PART_#"	[color=firebrick,
-		label="#",
-		shape=doublecircle];
-	Tag_PART -> "Tag_PART_#";
-	NUM_Collective	[label=NUM_Collective];
-	Tag_NUM -> NUM_Collective;
-	NUM_Tens	[label=NUM_Tens];
-	Tag_NUM_Tens -> NUM_Tens;
-	V_Derivation	[fontcolor=darkgreen,
-		label=V_Derivation];
-	V_StemBoundary -> V_Derivation;
-	V_Slot1	[fontcolor=darkgreen,
-		label=V_Slot1];
-	V_StemBoundary -> V_Slot1;
-	V_CVB	[fontcolor=darkgreen,
-		label=V_CVB];
-	V_StemBoundary -> V_CVB;
-	Endoclitic_PART	[label=Endoclitic_PART];
-	VNEG_Slot4 -> Endoclitic_PART;
-	V_Attenuation	[fontcolor=darkgreen,
-		label=V_Attenuation];
-	V_Derivation -> V_Attenuation;
-	N_Deverbal	[fontcolor=navy,
-		label=N_Deverbal];
-	V_Derivation -> N_Deverbal;
-	A_Deverbal	[fontcolor=orange4,
-		label=A_Deverbal];
-	V_Derivation -> A_Deverbal;
-	V_Slot2_1	[fontcolor=darkgreen,
-		label=V_Slot2_1];
-	V_Slot1 -> V_Slot2_1;
-	V_Slot2_2	[fontcolor=darkgreen,
-		label=V_Slot2_2];
-	V_Slot1 -> V_Slot2_2;
-	Tag_CVB	[fontcolor=tomato4,
-		label="Tag [CVB]"];
-	V_CVB -> Tag_CVB;
-	V_Attenuation -> V_Slot1;
-	N_Deverbal -> Tag_N;
-	A_Deverbal -> Tag_A;
-	V_Slot4	[fontcolor=darkgreen,
-		label=V_Slot4];
-	V_Slot2_1 -> V_Slot4;
-	V_Slot2_2 -> V_Slot4;
-	V_Slot3_C2	[fontcolor=darkgreen,
-		label=V_Slot3_C2];
-	V_Slot2_2 -> V_Slot3_C2;
-	V_Slot3_C4	[fontcolor=darkgreen,
-		label=V_Slot3_C4];
-	V_Slot2_2 -> V_Slot3_C4;
-	V_Slot3_C1	[fontcolor=darkgreen,
-		label=V_Slot3_C1];
-	V_Slot2_2 -> V_Slot3_C1;
-	V_Slot3_ITER	[fontcolor=darkgreen,
-		label=V_Slot3_ITER];
-	V_Slot2_2 -> V_Slot3_ITER;
-	V_Slot3_CR	[fontcolor=darkgreen,
-		label=V_Slot3_CR];
-	V_Slot2_2 -> V_Slot3_CR;
-	V_Slot4 -> V_CVB;
-	V_Slot5_1	[fontcolor=darkgreen,
-		label=V_Slot5_1];
-	V_Slot4 -> V_Slot5_1;
-	V_Slot5_2	[fontcolor=darkgreen,
-		label=V_Slot5_2];
-	V_Slot4 -> V_Slot5_2;
-	V_Slot3_C2 -> V_Slot4;
-	V_Slot3_C4 -> V_Slot4;
-	V_Slot3_C1 -> V_Slot4;
-	V_Slot3_ITER -> V_Slot4;
-	V_Slot3_CR -> V_Slot4;
-	V_Slot5_1 -> V_CVB;
-	V_Slot5_3	[fontcolor=darkgreen,
-		label=V_Slot5_3];
-	V_Slot5_1 -> V_Slot5_3;
-	PCTP_Clitic_Branching	[label=PCTP_Clitic_Branching];
-	V_Slot5_1 -> PCTP_Clitic_Branching;
-	"V_Slot5_1_#"	[color=firebrick,
-		label="#",
-		shape=doublecircle];
-	V_Slot5_1 -> "V_Slot5_1_#";
-	V_IMPER	[fontcolor=darkgreen,
-		label=V_IMPER];
-	V_Slot5_1 -> V_IMPER;
-	V_Slot5_2 -> V_Slot5_3;
-	V_Slot5_2 -> PCTP_Clitic_Branching;
-	V_Slot5_2 -> V_IMPER;
-	V_Slot5_5	[fontcolor=darkgreen,
-		label=V_Slot5_5];
-	V_Slot5_2 -> V_Slot5_5;
-	"V_Slot5_2_#"	[color=firebrick,
-		label="#",
-		shape=doublecircle];
-	V_Slot5_2 -> "V_Slot5_2_#";
-	V_Slot5_3 -> PCTP_Clitic_Branching;
-	V_Slot5_4	[fontcolor=darkgreen,
-		label=V_Slot5_4];
-	V_Slot5_3 -> V_Slot5_4;
-	PCTP_Clitic_Branching -> Endoclitic_PART;
-	Tag_PTCP	[fontcolor=tomato4,
-		label="Tag [PTCP]"];
-	PCTP_Clitic_Branching -> Tag_PTCP;
-	V_IMP	[fontcolor=darkgreen,
-		label=V_IMP];
-	V_IMPER -> V_IMP;
-	V_Slot5_5 -> PCTP_Clitic_Branching;
-	V_Slot5_4 -> V_CVB;
-	V_Slot5_4 -> PCTP_Clitic_Branching;
-	V_Slot6	[fontcolor=darkgreen,
-		label=V_Slot6];
-	Endoclitic_PART -> V_Slot6;
-	"V_IMP_#"	[color=firebrick,
-		label="#",
-		shape=doublecircle];
-	V_IMP -> "V_IMP_#";
-	N_Slot1	[fontcolor=navy,
-		label=N_Slot1];
-	Tag_PTCP -> N_Slot1;
-	EncliticBranching	[label=EncliticBranching];
-	V_Slot6 -> EncliticBranching;
-	V_Slot6_1PL	[fontcolor=darkgreen,
-		label=V_Slot6_1PL];
-	V_Slot6 -> V_Slot6_1PL;
+	Tag_A_ATTR2	[fontcolor=orange4,
+		label="Tag [A_ATTR2]"];
+	ADV_StemBoundary -> Tag_A_ATTR2;
 	Enclitic_PART_oq	[label=Enclitic_PART_oq];
-	EncliticBranching -> Enclitic_PART_oq;
-	Enclitic_PART_other	[label=Enclitic_PART_other];
-	EncliticBranching -> Enclitic_PART_other;
+	ADV_StemBoundary -> Enclitic_PART_oq;
+	"ADV_StemBoundary_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	ADV_StemBoundary -> "ADV_StemBoundary_#";
+	A_ATTR2_NUM	[fontcolor=orange4,
+		label=A_ATTR2_NUM];
+	Tag_A_ATTR2 -> A_ATTR2_NUM;
 	Enclitic_PART_da	[label=Enclitic_PART_da];
-	EncliticBranching -> Enclitic_PART_da;
-	"EncliticBranching_#"	[color=firebrick,
-		label="#",
-		shape=doublecircle];
-	EncliticBranching -> "EncliticBranching_#";
-	V_Slot6_1PL -> EncliticBranching;
-	"V_Slot6_1PL_#"	[color=firebrick,
-		label="#",
-		shape=doublecircle];
-	V_Slot6_1PL -> "V_Slot6_1PL_#";
-	Tag_CVB -> EncliticBranching;
-	N_Slot2	[fontcolor=navy,
-		label=N_Slot2];
-	N_Slot1 -> N_Slot2;
-	V_AddPlus -> Verb_MOV;
 	Enclitic_PART_oq -> Enclitic_PART_da;
 	"Enclitic_PART_oq_#"	[color=firebrick,
 		label="#",
 		shape=doublecircle];
 	Enclitic_PART_oq -> "Enclitic_PART_oq_#";
+	EncliticBranching	[label=EncliticBranching];
+	EncliticBranching -> Enclitic_PART_oq;
+	Enclitic_PART_other	[label=Enclitic_PART_other];
+	EncliticBranching -> Enclitic_PART_other;
+	EncliticBranching -> Enclitic_PART_da;
+	"EncliticBranching_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	EncliticBranching -> "EncliticBranching_#";
 	"Enclitic_PART_other_#"	[color=firebrick,
 		label="#",
 		shape=doublecircle];
@@ -269,21 +156,20 @@ digraph LEXC {
 		label="#",
 		shape=doublecircle];
 	Enclitic_PART_da -> "Enclitic_PART_da_#";
-	ADV_StemBoundary -> Enclitic_PART_oq;
-	Tag_A_ATTR2	[fontcolor=orange4,
-		label="Tag [A_ATTR2]"];
-	ADV_StemBoundary -> Tag_A_ATTR2;
-	"ADV_StemBoundary_#"	[color=firebrick,
-		label="#",
-		shape=doublecircle];
-	ADV_StemBoundary -> "ADV_StemBoundary_#";
-	A_ATTR2_NUM	[fontcolor=orange4,
-		label=A_ATTR2_NUM];
-	Tag_A_ATTR2 -> A_ATTR2_NUM;
-	N_StemBoundary -> N_Slot1;
+	Endoclitic_PART	[label=Endoclitic_PART];
+	V_Slot6	[fontcolor=darkgreen,
+		label=V_Slot6];
+	Endoclitic_PART -> V_Slot6;
+	V_Slot6 -> EncliticBranching;
+	V_Slot6_1PL	[fontcolor=darkgreen,
+		label=V_Slot6_1PL];
+	V_Slot6 -> V_Slot6_1PL;
 	N_Derivation	[fontcolor=navy,
 		label=N_Derivation];
 	N_StemBoundary -> N_Derivation;
+	N_Slot1	[fontcolor=navy,
+		label=N_Slot1];
+	N_StemBoundary -> N_Slot1;
 	N_DIM	[fontcolor=navy,
 		label=N_DIM];
 	N_Derivation -> N_DIM;
@@ -299,6 +185,9 @@ digraph LEXC {
 	ADV_Denom	[fontcolor=darkgreen,
 		label=ADV_Denom];
 	N_Derivation -> ADV_Denom;
+	N_Slot2	[fontcolor=navy,
+		label=N_Slot2];
+	N_Slot1 -> N_Slot2;
 	N_DIM -> N_Slot1;
 	N_DIM_2	[fontcolor=navy,
 		label=N_DIM_2];
@@ -433,8 +322,8 @@ digraph LEXC {
 		label="#",
 		shape=doublecircle];
 	Pro_PERS_2SG -> "Pro_PERS_2SG_#";
-	Pro_PERS_3SG -> EncliticBranching;
 	Pro_PERS_3SG -> Enclitic_PART_oq;
+	Pro_PERS_3SG -> EncliticBranching;
 	"Pro_PERS_3SG_#"	[color=firebrick,
 		label="#",
 		shape=doublecircle];
@@ -457,4 +346,115 @@ digraph LEXC {
 	Pro_DEM_PROX_SG -> "Pro_DEM_PROX_SG_#";
 	NUM_Collective -> N_Slot2;
 	NUM_Tens -> Tag_NUM;
+	V_Derivation	[fontcolor=darkgreen,
+		label=V_Derivation];
+	V_StemBoundary -> V_Derivation;
+	V_Slot1	[fontcolor=darkgreen,
+		label=V_Slot1];
+	V_StemBoundary -> V_Slot1;
+	V_CVB	[fontcolor=darkgreen,
+		label=V_CVB];
+	V_StemBoundary -> V_CVB;
+	VNEG_Slot4 -> Endoclitic_PART;
+	V_Attenuation	[fontcolor=darkgreen,
+		label=V_Attenuation];
+	V_Derivation -> V_Attenuation;
+	N_Deverbal	[fontcolor=navy,
+		label=N_Deverbal];
+	V_Derivation -> N_Deverbal;
+	A_Deverbal	[fontcolor=orange4,
+		label=A_Deverbal];
+	V_Derivation -> A_Deverbal;
+	V_Slot2_1	[fontcolor=darkgreen,
+		label=V_Slot2_1];
+	V_Slot1 -> V_Slot2_1;
+	V_Slot2_2	[fontcolor=darkgreen,
+		label=V_Slot2_2];
+	V_Slot1 -> V_Slot2_2;
+	Tag_CVB	[fontcolor=tomato4,
+		label="Tag [CVB]"];
+	V_CVB -> Tag_CVB;
+	V_Attenuation -> V_Slot1;
+	N_Deverbal -> Tag_N;
+	A_Deverbal -> Tag_A;
+	V_Slot4	[fontcolor=darkgreen,
+		label=V_Slot4];
+	V_Slot2_1 -> V_Slot4;
+	V_Slot2_2 -> V_Slot4;
+	V_Slot3_C2	[fontcolor=darkgreen,
+		label=V_Slot3_C2];
+	V_Slot2_2 -> V_Slot3_C2;
+	V_Slot3_C4	[fontcolor=darkgreen,
+		label=V_Slot3_C4];
+	V_Slot2_2 -> V_Slot3_C4;
+	V_Slot3_C1	[fontcolor=darkgreen,
+		label=V_Slot3_C1];
+	V_Slot2_2 -> V_Slot3_C1;
+	V_Slot3_ITER	[fontcolor=darkgreen,
+		label=V_Slot3_ITER];
+	V_Slot2_2 -> V_Slot3_ITER;
+	V_Slot3_CR	[fontcolor=darkgreen,
+		label=V_Slot3_CR];
+	V_Slot2_2 -> V_Slot3_CR;
+	V_Slot4 -> V_CVB;
+	V_Slot5_1	[fontcolor=darkgreen,
+		label=V_Slot5_1];
+	V_Slot4 -> V_Slot5_1;
+	V_Slot5_2	[fontcolor=darkgreen,
+		label=V_Slot5_2];
+	V_Slot4 -> V_Slot5_2;
+	V_Slot3_C2 -> V_Slot4;
+	V_Slot3_C4 -> V_Slot4;
+	V_Slot3_C1 -> V_Slot4;
+	V_Slot3_ITER -> V_Slot4;
+	V_Slot3_CR -> V_Slot4;
+	V_Slot5_1 -> V_CVB;
+	V_Slot5_3	[fontcolor=darkgreen,
+		label=V_Slot5_3];
+	V_Slot5_1 -> V_Slot5_3;
+	PCTP_Clitic_Branching	[label=PCTP_Clitic_Branching];
+	V_Slot5_1 -> PCTP_Clitic_Branching;
+	"V_Slot5_1_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	V_Slot5_1 -> "V_Slot5_1_#";
+	V_IMPER	[fontcolor=darkgreen,
+		label=V_IMPER];
+	V_Slot5_1 -> V_IMPER;
+	V_Slot5_2 -> V_Slot5_3;
+	V_Slot5_2 -> PCTP_Clitic_Branching;
+	V_Slot5_2 -> V_IMPER;
+	V_Slot5_5	[fontcolor=darkgreen,
+		label=V_Slot5_5];
+	V_Slot5_2 -> V_Slot5_5;
+	"V_Slot5_2_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	V_Slot5_2 -> "V_Slot5_2_#";
+	V_Slot5_3 -> PCTP_Clitic_Branching;
+	V_Slot5_4	[fontcolor=darkgreen,
+		label=V_Slot5_4];
+	V_Slot5_3 -> V_Slot5_4;
+	PCTP_Clitic_Branching -> Endoclitic_PART;
+	Tag_PTCP	[fontcolor=tomato4,
+		label="Tag [PTCP]"];
+	PCTP_Clitic_Branching -> Tag_PTCP;
+	V_IMP	[fontcolor=darkgreen,
+		label=V_IMP];
+	V_IMPER -> V_IMP;
+	V_Slot5_5 -> PCTP_Clitic_Branching;
+	V_Slot5_4 -> V_CVB;
+	V_Slot5_4 -> PCTP_Clitic_Branching;
+	"V_IMP_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	V_IMP -> "V_IMP_#";
+	Tag_PTCP -> N_Slot1;
+	V_Slot6_1PL -> EncliticBranching;
+	"V_Slot6_1PL_#"	[color=firebrick,
+		label="#",
+		shape=doublecircle];
+	V_Slot6_1PL -> "V_Slot6_1PL_#";
+	Tag_CVB -> EncliticBranching;
+	V_AddPlus -> Verb_MOV;
 }
