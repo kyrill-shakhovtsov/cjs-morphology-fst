@@ -8,6 +8,8 @@
 аала[V]-IMP.2SG	аала
 аар[A]-SG-NOM	аар
 аар[A]-VR2[V]-IMP.2SG	аара
+аар[V]-IMP.2SG	аар
+аар[V]-NR1[N]-SG-NOM	аарыг
 аара[ADV]	аара
 аара[PSTP]	аара
 аара-пеере[ADV]	аара-пеере
@@ -426,11 +428,6 @@
 ачыг[N]-VR1[V]-IMP.2SG	ачығла
 ачыг[N]-VR2[V]-ADJR4[A]-SG-NOM	ачыған
 ачыг[N]-VR2[V]-IMP.2SG	ачыға
-ачығ[N]-ADVR[ADV]	ачығын
-ачығ[N]-SG-NOM	ачығ
-ачығ[N]-VR1[V]-IMP.2SG	ачығла
-ачығ[N]-VR2[V]-ADJR4[A]-SG-NOM	ачыған
-ачығ[N]-VR2[V]-IMP.2SG	ачыға
 ачый[N]-ADVR[ADV]	ачыйын
 ачый[N]-SG-NOM	ачый
 ачық[N]-ADVR[ADV]	ачығын
@@ -2159,6 +2156,9 @@
 сарға[V]-IMP.2SG	сарға
 сарға[V]-NR2[N]-SG-NOM	сарғаш
 сарғай[N]-SG-NOM	сарғай
+сары[NUM]-ACC	сарыны
+сары[NUM]-INSO	сарын
+сары[NUM]-NOM	сары
 сарыг[A]-SG-NOM	сарыг
 сарыг-қан[PN]-SG-NOM	сарыг-қан
 сарыг-қартыға[PN]-SG-NOM	сарыг-қартыға
@@ -2935,6 +2935,7 @@
 ундут[V]-NR2[N]-SG-NOM	ундудыш
 уңна[V]-IMP.2SG	уңна
 ӱп[N]-SG-NOM	ӱп
+ур[ADV]	ур
 ӱр[ADV]	ӱр
 ӱр[A]-SG-NOM	ӱр
 ӱр[A]-VR2[V]-IMP.2SG	ӱре
@@ -2992,6 +2993,7 @@
 ӱстӱ[N]-ADVR[ADV]	ӱстӱн
 ӱстӱ[N]-SG-NOM	ӱстӱ
 ӱстӱ[N]-VR1[V]-IMP.2SG	ӱстӱле
+устуқ[N]-SG-NOM	устуқ
 ӱстӱне[PSTP]	ӱстӱне
 ӱт[N]-VR1[V]-IMP.2SG	ӱтте
 ут[V]-IMP.2SG	ут
@@ -3013,7 +3015,10 @@
 уш[N]-VR3[V]-IMP.2SG	ужар
 ӱш[V]-ADJR3[A]-SG-NOM	ӱшкир
 ӱш[V]-ADJR3[A]-SG-NOM	ӱшкӱр
+уш[V]-IMP.2SG	уш
 ӱш[V]-IMP.2SG	ӱш
+уш[V]-NR2[N]-SG-NOM	ужуш
+уш[V]-NR2[N]-SG-NOM	ужыш
 ӱшкӱр[V]-IMP.2SG	ӱшкӱр
 ушқаш[PSTP]	ушқаш
 ча[N]-ADVR[ADV]-ATTR2[A]-SG-NOM	чанғы
