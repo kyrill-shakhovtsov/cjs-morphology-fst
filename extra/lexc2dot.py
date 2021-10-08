@@ -31,14 +31,14 @@ config = {
 	}
 
 if len(sys.argv) == 1:
-	print 'Использование: lex2dot.py файл.lexc'
+	print('Использование: lex2dot.py файл.lexc')
 	quit()
 
 if len(sys.argv) > 1:
 	try:
 		fh = open(sys.argv[1])
 	except:
-		print 'Ошибка: файл', sys.argv[1], 'не найден!'
+		print('Ошибка: файл', sys.argv[1], 'не найден!')
 		quit()
 
 # Разбор файла lexc
