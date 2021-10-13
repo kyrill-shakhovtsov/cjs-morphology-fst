@@ -2759,11 +2759,20 @@ LEXICON N_Derivation
 
 !!! Порядок 1 : Число
 LEXICON N_Slot1
-	-SG:0		N_Slot2;
-	-PL:^ЛАр	N_Slot2;
+	-SG:0		N_Slot2_SG;
+	-PL:^ЛАр	N_Slot2_PL;
 
 !!! Порядок 2 : Притяжательные аффиксы : ЧУ-53-54, Д-50 (§15)
-LEXICON N_Slot2
+LEXICON N_Slot2_SG
+	-POSS.1SG:^Ым		N_Slot3;
+	-POSS.2SG:^Ың		N_Slot3; ! <<< Или ^Уң ???
+	-POSS.3SG:^ЗУ		N_Slot3;
+	-POSS.1PL:^ЫбЫс		N_Slot3;
+	-POSS.2PL:^ЛАр^Ың	N_Slot3;
+	-POSS.3PL:^ЛАр^ЗЫ	N_Slot3;
+				N_Slot3;
+
+LEXICON N_Slot2_PL
 	-POSS.1SG:^Ым		N_Slot3;
 	-POSS.2SG:^Ың		N_Slot3; ! <<< Или ^Уң ???
 	-POSS.3SG:^ЗУ		N_Slot3;
