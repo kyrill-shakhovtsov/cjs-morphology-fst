@@ -116,11 +116,11 @@ LEXICON N_Slot1
 !!! Порядок 2 : Притяжательные аффиксы : ЧУ-53-54, Д-50 (§15)
 LEXICON N_Slot2
 	-POSS.1SG:^Ым		N_Slot3;
-	-POSS.2SG:^Ың		N_Slot3; ! <<< Нужен ли ^Уң ???
-	-POSS.3SG:^ЗУ		N_Slot3; ! <<< Нужен ли ^ЗУ ???
+	-POSS.2SG:^Ың		N_Slot3; ! <<< Или ^Уң ???
+	-POSS.3SG:^ЗУ		N_Slot3;
 	-POSS.1PL:^ЫбЫс		N_Slot3;
-	-POSS.2PL:^ЛАр^Ың	N_Slot3;
-	-POSS.3PL:^ЛАр^Ы	N_Slot3;
+	-POSS.2PL:^Ың		N_Slot3;
+	-POSS.3PL:^ЗЫ		N_Slot3;
 				N_Slot3;
 
 !!! Порядок 3 : Падежи

@@ -204,6 +204,7 @@
 алт[N]-ADVR[ADV]=EMP1	алтыноқ
 алт[N]-ADVR[ADV]	алтын
 алт[N]-SG-NOM	алт
+алт[N]-SG-POSS.3PL-GEN-ATTR2[A]-SG-NOM	+?
 алт[N]-SG-POSS.3SG-GEN-ATTR2[A]-SG-NOM	+?
 алт[N]-SG-POSS.3SG-LOC-ATTR2[A]-SG-NOM	алтындағы
 алт[N]-VR2[V]-ADJR4[A]-SG-NOM	алтан
@@ -231,9 +232,13 @@
 алты[NUM]-NOM	алты
 алты[NUM]-POSS.1SG-DAT	алтыма
 алты[NUM]-POSS.1SG-DAT	алтымға
+алты[NUM]-POSS.2PL-DAT	алтыңа
+алты[NUM]-POSS.2PL-DAT	алтыңға
 алты[NUM]-POSS.2SG-DAT	алтыңа
 алты[NUM]-POSS.2SG-DAT	алтыңға
-алты[NUM]-POSS.3PL-NOM	алтылары
+алты[NUM]-POSS.3PL-INSO=EMP1	алтыноқ
+алты[NUM]-POSS.3PL-INSO	алтын
+алты[NUM]-POSS.3PL-NOM	алты
 алты[NUM]-POSS.3SG-INSO	алтызын
 алты[NUM]-POSS.3SG-INST	алтызыба
 алты[NUM]-POSS.3SG-INST	алтызыбыла
@@ -304,6 +309,7 @@
 амды[ADV]-ATTR2[A]-SG-NOM	амдығы
 амды[ADV]	амды
 анмар[N]-SG-NOM	анмар
+аныг[N]-SG-NOM	аныг
 аң[N]-AG-VR1[V]-IMP.2SG	аңчыла
 аң[N]-NDRV3-VR2[V]-IMP.2SG	аңчыла
 аң[N]-NDRV3-VR3[V]-IMP.2SG	аңчылар
@@ -468,16 +474,19 @@
 иир[V]-NR3[N]-SG-NOM	иирги
 ийгеле[NUM]-NOM	ийгеле
 ийгеле[NUM]-POSS.1PL-ACC	ийгелебисти
+ийгеле[NUM]-POSS.3PL-NOM	ийгеле
 ийгеле[NUM]-POSS.3SG-INSO	ийгелезин
 ийгеле[NUM]-POSS.3SG-NOM	ийгелези
 ийги[NUM]-ACC	ийгини
 ийги[NUM]-COLL-NOM	ийгиле
+ийги[NUM]-COLL-POSS.3PL-NOM	ийгиле
 ийги[NUM]-COLL-POSS.3SG-INSO	ийгилезин
 ийги[NUM]-COLL-POSS.3SG-NOM	ийгилези
 ийги[NUM]-DAT	ийгиге
 ийги[NUM]-INST	ийгибе
 ийги[NUM]-INST	ийгибиле
 ийги[NUM]-NOM	ийги
+ийги[NUM]-POSS.3PL-NOM	ийги
 ийги[NUM]-POSS.3SG-GEN	ийгизиниң
 ийги[NUM]-POSS.3SG-INSO	ийгизин
 ийгиле[V]-IMP.2SG	ийгиле
@@ -565,6 +574,7 @@
 керт[V]-IMP.2SG	керт
 кес[V]-IMP.2SG	кес
 кес[V]-NR1[N]-SG-NOM	кезиг
+кес[V]-NR5[N]-SG-NOM	кезик
 кес[V]-NR8[N]-SG-NOM	кезек
 кести[N]-SG-NOM	кести
 кести[N]-VR1[V]-IMP.2SG	кестиле
@@ -1111,6 +1121,7 @@
 қойы[N]-VR1[V]-IMP.2SG	қойла
 қол[N]-ADVR[ADV]	қолын
 қол[N]-SG-NOM	қол
+қол[N]-SG-POSS.2PL-LOC-ATTR2[A]-SG-NOM	қолыңдағы
 қол[N]-SG-POSS.2SG-LOC-ATTR2[A]-SG-NOM	қолыңдағы
 қол[N]-SG-POSS.3SG-LOC-ATTR2[A]-SG-NOM	қолундағы
 қол[N]-SG-POSS.3SG-LOC-ATTR2[A]-SG-NOM	қолындағы
@@ -1608,7 +1619,10 @@
 омаш[N]-SG-NOM	омаш
 ӧн[N]-SG-NOM	ӧн
 он[NUM]-NOM	он
+он[NUM]-POSS.2PL-NOM	оның
 он[NUM]-POSS.2SG-NOM	оның
+он[NUM]-POSS.3PL-NOM-PRED.2SG	оның
+он[NUM]-POSS.3PL-NOM	оны
 он[NUM]-POSS.3SG-NOM-PRED.2SG	онуң
 он[NUM]-POSS.3SG-NOM-PRED.2SG	оның
 он[NUM]-POSS.3SG-NOM	ону
@@ -1645,6 +1659,7 @@
 ор[V]-NR3[N]-SG-NOM	орғу
 ор[V]-NR3[N]-SG-NOM	орғы
 ор[V]-NR8[N]-SG-NOM	орақ
+ӧр[V]-NR8[N]-SG-NOM	ӧрек
 ор[V]-NR9[N]-SG-NOM	орл
 ора[N]-ADVR[ADV]	оран
 ора[N]-SG-NOM	ора
@@ -1799,6 +1814,7 @@
 пас[V]-NR2[N]-SG-NOM	пазыш
 пас[V]-NR4[N]-SG-NOM	пасқыш
 пас[V]-NR6[N]-SG-NOM	пазыт
+пас[V]-NR8[N]-SG-NOM	пазақ
 пат[V]-IMP.2SG	пат
 пат[V]-NR1[N]-SG-NOM	падыг
 паш[N]-ADVR[ADV]	пажын
@@ -1851,6 +1867,8 @@
 пече[N]-VR1[V]-IMP.2SG	печеле
 пеш[NUM]-INSO	пежин
 пеш[NUM]-NOM	пеш
+пеш[NUM]-POSS.3PL-ACC	пежин
+пеш[NUM]-POSS.3PL-INSO	пежин
 пеш[NUM]-POSS.3SG-INSO	пежин
 пий[N]-SG-NOM	пий
 пий[N]-VR1[V]-IMP.2SG	пийле
@@ -1875,6 +1893,7 @@
 пирси[NUM]-NOM-PRED.1PL	пирсибис
 пирси[NUM]-NOM	пирси
 пирси[NUM]-POSS.1PL-NOM	пирсибис
+пирси[NUM]-POSS.3PL-NOM	пирси
 пис[N]-ATTR1[A]-SG-NOM	пистиг
 пис[N]-SG-NOM	пис
 пичен[N]-SG-NOM	пичен
@@ -2109,6 +2128,8 @@
 сары[NUM]-ACC	сарыны
 сары[NUM]-INSO	сарын
 сары[NUM]-NOM	сары
+сары[NUM]-POSS.3PL-INSO	сарын
+сары[NUM]-POSS.3PL-NOM	сары
 сарыг[A]-SG-NOM	сарыг
 сарыг-қартыға[PN]-SG-NOM	сарыг-қартыға
 сарыг-қыс[PN]-SG-NOM	сарыг-қыс
@@ -2651,6 +2672,7 @@
 торспақ[N]-SG-NOM	торспақ
 тӧрт[NUM]-ABL	тӧрттин
 тӧрт[NUM]-COLL-NOM	тӧртеле
+тӧрт[NUM]-COLL-POSS.3PL-NOM	тӧртеле
 тӧрт[NUM]-NOM	тӧрт
 торчуқ[N]-SG-NOM	торчуқ
 торчуқ[N]-VR1[V]-IMP.2SG	торчуқта
@@ -2792,6 +2814,7 @@
 уғжа[V]-NR9[N]-SG-NOM	уғжал
 ӱдӱре[ADV]	ӱдӱре
 ӱжеле[NUM]-NOM	ӱжеле
+ӱжеле[NUM]-POSS.3PL-NOM	ӱжеле
 ӱжеле[NUM]-POSS.3SG-NOM	ӱжелези
 ужу[N]-ADVR[ADV]	ужун
 ужу[N]-SG-NOM	ужу
@@ -2933,6 +2956,7 @@
 уш[N]-ATTR1[A]-SG-NOM	уштыг
 уш[N]-SG-NOM	уш
 ӱш[NUM]-COLL-NOM	ӱжеле
+ӱш[NUM]-COLL-POSS.3PL-NOM	ӱжеле
 ӱш[NUM]-COLL-POSS.3SG-NOM	ӱжелези
 ӱш[NUM]-ELA	ӱштең
 ӱш[NUM]-LOC-PRED.2SG	ӱштең
@@ -2945,6 +2969,7 @@
 ӱш[V]-ADJR3[A]-SG-NOM	ӱшкӱр
 уш[V]-IMP.2SG	уш
 ӱш[V]-IMP.2SG	ӱш
+уш[V]-NR13[N]-SG-NOM	ушчақ
 уш[V]-NR2[N]-SG-NOM	ужуш
 уш[V]-NR2[N]-SG-NOM	ужыш
 ӱшкӱр[V]-IMP.2SG	ӱшкӱр
@@ -3109,6 +3134,7 @@
 чар[V]-NR7[N]-SG-NOM	чарым
 чара[V]-IMP.2SG	чара
 чара[V]-NR2[N]-SG-NOM	чараш
+чара[V]-NR9[N]-SG-NOM	чарал
 чараш[N]-SG-NOM	чараш
 чараш[N]-VR6[V]-IMP.2SG	чаражық
 чарба[N]-ADVR[ADV]	чарбан
@@ -3149,6 +3175,7 @@
 час[N]-ATTR2[A]-SG-NOM	часқы
 час[N]-NDRV1-VR1[V]-IMP.2SG	частықта
 час[N]-SG-NOM	час
+час[N]-SG-POSS.3PL-LOC-ATTR2[A]-SG-NOM	чазыдағы
 час[N]-VR1[V]-ADJR4[A]-SG-NOM	частан
 час[N]-VR1[V]-IMP.2SG	часта
 час[N]-VR2[V]-ADJR4[A]-SG-NOM	чазан
@@ -3160,6 +3187,7 @@
 час[V]-NR1[N]-SG-NOM	чазыг
 час[V]-NR2[N]-SG-NOM	чазыш
 час[V]-NR3[N]-SG-NOM	часқы
+час[V]-NR6[N]-SG-NOM	чазыт
 часқы[N]-SG-NOM	часқы
 частық[N]-SG-NOM	частық
 частық[N]-VR1[V]-IMP.2SG	частықта
@@ -3190,6 +3218,7 @@
 че[PART]	че
 чеген[N]-SG-NOM	чеген
 чегирбе[NUM]-NOM	чегирбе
+чегирбе[NUM]-POSS.3PL-NOM	чегирбе
 чегрен[A]-SG-NOM	чегрен
 чедир[V]-IMP.2SG	чедир
 чеек[N]-SG-NOM	чеек
@@ -3253,7 +3282,10 @@
 четти[NUM]-NOM	четти
 четти[NUM]-POSS.1PL-NOM	четтибис
 четти[NUM]-POSS.1SG-NOM	четтим
+четти[NUM]-POSS.2PL-NOM	четтиң
 четти[NUM]-POSS.2SG-NOM	четтиң
+четти[NUM]-POSS.3PL-NOM-PRED.2SG	четтиң
+четти[NUM]-POSS.3PL-NOM	четти
 четтире[PSTP]	четтире
 четтон[NUM]-NOM	четтон
 чи[V]-IMP.2SG	чи
@@ -3358,7 +3390,7 @@
 чӱс[NUM]-INSO	чӱзин
 чӱс[NUM]-INSO	чӱзӱн
 чӱс[NUM]-NOM	чӱс
-чӱс[NUM]-POSS.2PL-ACC	чӱстериңни
+чӱс[NUM]-POSS.3PL-NOM	чӱзи
 чӱс[NUM]-POSS.3SG-INSO	чӱзин
 чӱс[NUM]-POSS.3SG-INSO	чӱзӱн
 чӱс[NUM]-POSS.3SG-NOM	чӱзи
@@ -3537,6 +3569,7 @@
 шық[V]-NR2[N]-SG-NOM	шығыш
 шыла[V]-IMP.2SG	шыла
 шыла[V]-NR3[N]-SG-NOM	шылағы
+шыла[V]-NR8[N]-SG-NOM	шылаақ
 шым[ADV]	шым
 шым[A]-SG-NOM	шым
 шым[A]-VR6[V]-IMP.2SG	шымық
@@ -3561,6 +3594,7 @@
 ызы[N]-VR3[V]-IMP.2SG	ызыр
 ызық[A]-SG-NOM	ызық
 ызыр[V]-IMP.2SG	ызыр
+ызыр[V]-NR8[N]-SG-NOM	ызырақ
 ық[V]-IMP.2SG	ық
 ылға[V]-IMP.2SG	ылға
 ылға[V]-NR6[N]-SG-NOM	ылғат

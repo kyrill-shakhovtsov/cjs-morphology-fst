@@ -11,9 +11,9 @@ read regex Contraction
 	.o. LDrop
 	.o. GDrop
 	.o. GJConv
+	.o. DropPlus
 	.o. VowelHarmony
 	.o. Assimilation
-	.o. DropPlus
 	.o. Voicing
 	.o. CleanUp
 	;
