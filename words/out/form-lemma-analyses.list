@@ -17003,6 +17003,7 @@
 ур[V]-RPST-3SG	ур[V]-IMP.2SG
 ур[V]-RPST[PTCP]-SG-NOM	ур[V]-IMP.2SG
 ур[V]-SIM[CVB]	ур[V]-IMP.2SG
+ура[A]-SG-NOM	ура[A]-SG-NOM
 ӱрген[V]-FUT-2PL	ӱрген[V]-IMP.2SG
 ӱрген[V]-NEG-PST-3SG	ӱрген[V]-IMP.2SG
 ӱрген[V]-NEG-PST[PTCP]-SG-NOM	ӱрген[V]-IMP.2SG
@@ -21876,6 +21877,7 @@
 эм[V]-RPST-3SG	эм[V]-IMP.2SG
 эм[V]-RPST[PTCP]-SG-NOM	эм[V]-IMP.2SG
 эм[V]-SIM[CVB]	эм[V]-IMP.2SG
+эмекте[V]-CON[CVB]	эмекте[V]-IMP.2SG
 эмчек[N]-ADVR[ADV]	эмчек[N]-ADVR[ADV]
 эмчек[N]-ATTR1[A]-SG-NOM	эмчек[N]-ATTR1[A]-SG-NOM
 эмчек[N]-PL-INSO	эмчек[N]-SG-NOM

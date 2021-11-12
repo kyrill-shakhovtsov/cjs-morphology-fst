@@ -46231,6 +46231,7 @@
 ӱр	ӱр[A]-SG-NOM
 ӱр	ӱр[ADV]
 ура	ур[V]-SIM[CVB]
+ура	ура[A]-SG-NOM
 урат	у[N]:Guess-VR8[V]-CAUS1-IMP.2SG
 урат	у[N]:Guess-VR8[V]-NR6[N]-SG-NOM
 урат	у[A]:Guess-VR8[V]-CAUS1-IMP.2SG
@@ -56498,9 +56499,7 @@
 эмейин	эм[V]-IMP.1SG
 эмейин	эм[N]-VR2[V]-IMP.1SG
 эмейлиг	эмей[N]:Guess-ATTR1[A]-SG-NOM
-эмектеп	эм[V]:Guess-NR8[N]-VR1[V]-CON[CVB]
-эмектеп	эмек[N]:Guess-VR1[V]-CON[CVB]
-эмектеп	эмек[A]:Guess-VR1[V]-CON[CVB]
+эмектеп	эмекте[V]-CON[CVB]
 эмектиг	эм[V]-NR8[N]-ATTR1[A]-SG-NOM
 эмелепчер	+?
 эме-эме	+?
