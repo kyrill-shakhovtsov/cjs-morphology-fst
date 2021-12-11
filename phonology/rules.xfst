@@ -146,7 +146,7 @@ define TA Т -> т || [р | CVoiceless] "^" _
 define LpA л -> п || а _ "+" п
 	.o. л -> к || а _ "+" к ;
 
-define Assimilation BA .o. DA .o. TA .o. KA .o. GA .o. LA .o. NA .o. ZA .o. LpA	;
+define Assimilation BA .o. KA .o. DA .o. TA .o. GA .o. LA .o. NA .o. ZA .o. LpA	;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! См. lexicon/numeral.lexc  ([20…50] 60…90) и morphotactics/nominal.lexc:NUM_Tens
