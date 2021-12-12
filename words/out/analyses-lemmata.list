@@ -1128,6 +1128,9 @@
 қос[N]-VR1[V]-IMP.2SG	қоста
 қос[N]-VR2[V]-ADJR4[A]-SG-NOM	қозан
 қос[N]-VR2[V]-IMP.2SG	қоза
+қосқа[V]-IMP.2SG	қосқа
+қосқа[V]-NR6[N]-SG-NOM	қосқат
+қосқа[V]-NR9[N]-SG-NOM	қосқал
 қоста[N]-SG-NOM	қоста
 қош[N]-NDRV2-VR2[V]-IMP.2SG	қоштажа
 қош[N]-SG-NOM	қош
@@ -1669,6 +1672,8 @@
 ӧт[V]-NR2[N]-SG-NOM	ӧдӱш
 ӧт[V]-NR5[N]-ATTR1[A]-SG-NOM	ӧдиктиг
 ӧт[V]-NR5[N]-ATTR1[A]-SG-NOM	ӧдӱктиг
+ӧт[V]-NR5[N]-SG-NOM	ӧдик
+ӧт[V]-NR5[N]-SG-NOM	ӧдӱк
 оттаг[N]-VR7[V]-IMP.2SG	оттаар
 оттаг[N]-VR7[V]-IMP.2SG	оттағар
 отуқ[N]-SG-NOM	отуқ
@@ -2082,6 +2087,7 @@
 сеек[N]-SG-NOM	сеек
 сеек[N]-VR1[V]-IMP.2SG	сеекте
 сен[V]-IMP.2SG	сен
+сен[V]-NR8[N]-SG-NOM	сенек
 сенек[N]-SG-NOM	сенек
 сенек[N]-VR1[V]-IMP.2SG	сенекте
 серанке[N]-SG-NOM	серанке
@@ -2091,6 +2097,7 @@
 сетки[V]-NR6[N]-SG-NOM	сеткит
 сий[V]-IMP.2SG	сий
 сий[V]-NR5[N]-ATTR1[A]-SG-NOM	сийиктиг
+сий[V]-NR5[N]-SG-NOM	сийик
 силги[V]-ADJR4[A]-SG-NOM	силгин
 силги[V]-IMP.2SG	силги
 силги[V]-NR6[N]-SG-NOM	силгит
@@ -2193,6 +2200,7 @@
 сӱс[V]-IMP.2SG	сӱс
 сӱс[V]-NR2[N]-SG-NOM	сӱзиш
 сӱс[V]-NR2[N]-SG-NOM	сӱзӱш
+сӱстӱк[V]-IMP.2SG	сӱстӱк
 сӱт[N]-SG-NOM	сӱт
 сӱт[N]-VR2[V]-IMP.2SG	сӱде
 сыбазын[PN]-SG-NOM	сыбазын
@@ -2238,6 +2246,7 @@
 сыны-сайы[PN]-SG-NOM	сыны-сайы
 сың[V]-IMP.2SG	сың
 сыр[N]-SG-NOM	сыр
+сыр[N]-VR6[V]-IMP.2SG	сырық
 сыраңай[ADV]	сыраңай
 сырт[N]-SG-NOM	сырт
 сырт[N]-SG-POSS.3SG-LOC-ATTR2[A]-SG-NOM	сыртындағы
@@ -2908,6 +2917,7 @@
 чаа[V]-IMP.2SG	чаа
 чаа[V]-NR9[N]-SG-NOM	чаал
 чаар[N]-SG-NOM	чаар
+чаар[N]-VR6[V]-IMP.2SG	чаарық
 чаба[N]-SG-NOM	чаба
 чаба[N]-VR1[V]-IMP.2SG	чабала
 чабақ[N]-SG-NOM	чабақ
@@ -3414,6 +3424,7 @@
 шеш[V]-IMP.2SG	шеш
 ший[V]-IMP.2SG	ший
 ший[V]-NR5[N]-ATTR1[A]-SG-NOM	шийиктиг
+ший[V]-NR5[N]-SG-NOM	шийик
 шире[N]-ADVR[ADV]	ширен
 шире[N]-SG-NOM	шире
 шире[N]-VR2[V]-IMP.2SG	ширее
@@ -3580,6 +3591,7 @@
 эм[V]-NR13[N]-ATTR1[A]-SG-NOM	эмчектиг
 эм[V]-NR13[N]-SG-NOM	эмчек
 эм[V]-NR8[N]-ATTR1[A]-SG-NOM	эмектиг
+эм[V]-NR8[N]-SG-NOM	эмек
 эмекте[V]-IMP.2SG	эмекте
 эмчек[N]-ADVR[ADV]	эмчегин
 эмчек[N]-ATTR1[A]-SG-NOM	эмчектиг
