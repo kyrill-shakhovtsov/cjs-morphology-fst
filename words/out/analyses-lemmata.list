@@ -802,6 +802,8 @@
 қақ[V]-IMP.2SG	қақ
 қақ[V]-NR12[N]-SG-NOM	қақпа
 қақ[V]-NR2[N]-SG-NOM	қағыш
+қақша[V]-IMP.2SG	қақша
+қақша[V]-NR9[N]-SG-NOM	қақшал
 қал[A]-SG-NOM	қал
 қал[A]-VR2[V]-IMP.2SG	қала
 қал[A]-VR2[V]-NR2[N]-SG-NOM	қалаш
@@ -1375,6 +1377,7 @@
 маңзыра[V]-IMP.2SG	маңзыра
 маңзыра[V]-NR1[N]-ATTR1[A]-SG-NOM	маңзыраглыг
 маңнан[V]-IMP.2SG	маңнан
+марқа[N]-SG-NOM	марқа
 марс[N]-SG-NOM	марс
 марс[N]-VR1[V]-IMP.2SG	марста
 мас[N]-SG-NOM	мас
@@ -1542,9 +1545,16 @@
 ой[N]-SG-NOM	ой
 ой[N]-VR1[V]-IMP.2SG	ойла
 ой[N]-VR2[V]-IMP.2SG	ойа
+ой[V]-IMP.2SG	ой
+ой[V]-NR1[N]-SG-NOM	ойуг
+ой[V]-NR1[N]-SG-NOM	ойыг
+ой[V]-NR5[N]-SG-NOM	ойуқ
+ой[V]-NR5[N]-SG-NOM	ойық
 ойа[V]-IMP.2SG	ойа
 ойас[N]-SG-NOM	ойас
 ойас[N]-VR1[V]-IMP.2SG	ойаста
+ойла[V]-IMP.2SG	ойла
+ойла[V]-NR6[N]-SG-NOM	ойлат
 оймақ[N]-ATTR1[A]-SG-NOM	оймақтыг
 оймақ[N]-SG-NOM	оймақ
 ойуқ[N]-SG-NOM	ойуқ
@@ -1589,6 +1599,8 @@
 оола[V]-IMP.2SG	оола
 оола[V]-NR2[N]-SG-NOM	оолаш
 оола[V]-NR3[N]-SG-NOM	оолағы
+ӧӧн[A]-SG-NOM	ӧӧн
+ӧӧн[N]-SG-NOM	ӧӧн
 ӧӧр[N]-SG-NOM	ӧӧр
 оорла[V]-IMP.2SG	оорла
 оорла[V]-NR2[N]-SG-NOM	оорлаш
@@ -1687,6 +1699,7 @@
 ошқаш[PSTP]	ошқаш
 ӧштӱ[N]-SG-NOM	ӧштӱ
 ӧштӱ[N]-VR1[V]-IMP.2SG	ӧштӱле
+ӧштӱг[A]-VR1[V]-IMP.2SG	ӧштӱгле
 па[PART]	па
 паа[N]-SG-NOM	паа
 паа[N]-VR3[V]-ADJR4[A]-SG-NOM	паарын
@@ -2323,6 +2336,8 @@
 талай[N]-VR1[V]-IMP.2SG	талайла
 талаш[N]-SG-NOM	талаш
 талаш[N]-VR2[V]-IMP.2SG	талажа
+талаш[V]-IMP.2SG	талаш
+талаш[V]-NR12[N]-SG-NOM	талашпа
 талла[V]-IMP.2SG	талла
 талық[N]-SG-NOM	талық
 там[N]-AG-VR1[V]-IMP.2SG	тамчыла
@@ -2436,6 +2451,7 @@
 тек[A]-VR1[V]-IMP.2SG	текте
 тек[A]-VR2[V]-IMP.2SG	теге
 тек[A]-VR2[V]-NR7[N]-SG-NOM	тегем
+тек[NUM]-NOM	+?
 текпер[N]-SG-NOM	текпер
 текпер[N]-VR1[V]-IMP.2SG	текперле
 тем[N]-ADVR[ADV]	темин
@@ -3611,6 +3627,8 @@
 эне[N]-VR3[V]-IMP.2SG	энер
 эне[N]-VR7[V]-IMP.2SG	энегер
 эне[N]-VR7[V]-IMP.2SG	энеер
+энел[V]-IMP.2SG	энел
+энел[V]-NR1[N]-SG-NOM	энелиг
 эңчей[V]-IMP.2SG	эңчей
 эп[N]-AG-VR1[V]-IMP.2SG	эпчиле
 эп[N]-ATTR1[A]-SG-NOM	эптиг
@@ -3619,6 +3637,11 @@
 эп[N]-SG-NOM	эп
 эп[N]-VR1[V]-IMP.2SG	эпте
 эп[N]-VR2[V]-IMP.2SG	эбе
+эп[V]-ADJR1[A]-SG-NOM	эпчи
+эп[V]-ADJR4[A]-SG-NOM	эбин
+эп[V]-IMP.2SG	эп
+эп[V]-NR6[N]-ADVR[ADV]	эбидин
+эп[V]-NR6[N]-SG-NOM	эбит
 эпчи[N]-SG-NOM	эпчи
 эпчи[N]-VR1[V]-IMP.2SG	эпчиле
 эр[N]-ADVR[ADV]	эрин
