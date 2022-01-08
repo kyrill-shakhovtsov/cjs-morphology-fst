@@ -450,6 +450,9 @@
 ийги[NUM]-COLL	ийгиле
 ийги[NUM]-NOM	+?
 ийгиле[V]-IMP.2SG	ийгиле
+ийгис[N]-ADVR[ADV]	ийгизин
+ийгис[N]-SG-NOM	ийгис
+ийгис[N]-VR1[V]-IMP.2SG	ийгисте
 илчирбе[N]-SG-NOM	илчирбе
 илчирбе[N]-VR1[V]-IMP.2SG	илчирбеле
 ин[N]-SG-NOM	ин
@@ -798,6 +801,9 @@
 қайын[V]-IMP.2SG	қайын
 қайыш[N]-SG-NOM	қайыш
 қайыш[N]-VR1[V]-IMP.2SG	қайышта
+қақ[N]-SG-NOM	қақ
+қақ[N]-VR1[V]-IMP.2SG	қақта
+қақ[N]-VR4[V]-IMP.2SG	қақсын
 қақ[V]-ADJR4[A]-SG-NOM	қағын
 қақ[V]-IMP.2SG	қақ
 қақ[V]-NR12[N]-SG-NOM	қақпа
@@ -1741,6 +1747,7 @@
 пала[N]-ATTR1[A]-SG-NOM	палалыг
 пала[N]-SG-NOM	пала
 пала[N]-VR1[V]-IMP.2SG	палла
+палаштоп[N]-SG-NOM	палаштоп
 палғаш[N]-SG-NOM	палғаш
 палке[N]-SG-NOM	палке
 палке[N]-VR1[V]-IMP.2SG	палкеле
@@ -1873,6 +1880,9 @@
 пӧлӱг[N]-SG-NOM	пӧлӱг
 пӧлӱк[N]-SG-NOM	пӧлӱк
 пом[N]-SG-NOM	пом
+пӧӧ[N]-SG-NOM	пӧӧ
+пӧӧ[N]-VR1[V]-ADJR4[A]-SG-NOM	пӧӧлен
+пӧӧ[N]-VR1[V]-IMP.2SG	пӧӧле
 пор[N]-SG-NOM	пор
 пор[N]-VR2[V]-ADJR4[A]-SG-NOM	поран
 пор[N]-VR2[V]-IMP.2SG	пора
@@ -2290,10 +2300,12 @@
 таг[N]-SG-NOM	таг
 таг[N]-VR2[V]-IMP.2SG	таға
 тадар[N]-SG-NOM	тадар
+тажор[N]-SG-NOM	тажор
 тазыл[N]-ADVR[ADV]	тазылын
 тазыл[N]-SG-NOM	тазыл
 тазыл[N]-VR2[V]-ADJR4[A]-SG-NOM	тазылан
 тазыл[N]-VR2[V]-IMP.2SG	тазыла
+тазын[N]-SG-NOM	тазын
 тай[V]-ADJR1[A]-SG-NOM	тайчы
 тай[V]-IMP.2SG	тай
 тай[V]-NR7[N]-SG-NOM	тайым
