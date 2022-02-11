@@ -19,13 +19,15 @@
 <Multi_key> <Cyrillic_CHE> <Cyrillic_HARDSIGN>	: "Ҷ"	U04B6 # CYRILLIC CAPITAL LETTER CHE WITH DESCENDER
 <Multi_key> <Cyrillic_che> <Cyrillic_hardsign>	: "ҷ"	U04B7 # CYRILLIC SMALL LETTER CHE WITH DESCENDER
 
-
-<Multi_key> <Cyrillic_EN> <question>	: "Ӈ" U04C7 # CYRILLIC CAPITAL LETTER EN WITH HOOK
-<Multi_key> <Cyrillic_en> <question>	: "ӈ" U04C7 # CYRILLIC SMALL LETTER EN WITH HOOK
-
+<Multi_key> <Cyrillic_EN> <question>		: "Ӈ" U04C7 # CYRILLIC CAPITAL LETTER EN WITH HOOK
+<Multi_key> <Cyrillic_en> <question>		: "ӈ" U04C7 # CYRILLIC SMALL LETTER EN WITH HOOK
 
 <Multi_key> <Cyrillic_EN> <Cyrillic_GHE>	: "Ҥ" U04A4 # CYRILLIC CAPITAL LIGATURE EN GHE
 <Multi_key> <Cyrillic_en> <Cyrillic_ghe>	: "ҥ" U04A5 # CYRILLIC SMALL LIGATURE EN GHE
 
 <Multi_key> <Cyrillic_ZHE> <Cyrillic_HARDSIGN>	: "Җ" U0496 # CYRILLIC CAPITAL LETTER ZHE WITH DESCENDER
 <Multi_key> <Cyrillic_zhe> <Cyrillic_hardsign>	: "җ" U0497 # CYRILLIC SMALL LETTER ZHE WITH DESCENDER
+
+<Multi_key> <c> <m>				: "̄"	U0304 # COMBINING MACRON
+<Multi_key> <d> <a>				: "̇"	U0307 # COMBINING DOT ABOVE
+<Multi_key> <r> <a>				: "̊"	U030A # COMBINING RING ABOVE
